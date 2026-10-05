@@ -1,0 +1,118 @@
+{
+  "result_id": "onpairplus-onpair16-rows-069b2393d94fb3cd",
+  "status": "qualified_owner_baseline_experiment",
+  "original_bytes": 39841347,
+  "original_rows": 1492936,
+  "columns": 23,
+  "methods": 4,
+  "trials_per_method": 7,
+  "selected_output_checks": 3220,
+  "independent_full_decodes": 23,
+  "synthetic_checks": 4,
+  "malformed_archive_rejections": 3,
+  "source_review": "SOURCE_REVIEW.md",
+  "unchanged_author_decoder": true,
+  "not_umbra_native_field_implementation": true,
+  "accounting": {
+    "archive_bytes": 27646020,
+    "custom_decoder_bytes": 67480,
+    "package_bytes": 27713500,
+    "compression_factor": 1.437615133418731,
+    "scores": {
+      "1": {
+        "median": 93.14477485624663,
+        "low": 90.33220905036899,
+        "high": 93.9898880415557
+      },
+      "3": {
+        "median": 77.0316976565303,
+        "low": 76.82711589541542,
+        "high": 78.73862980183205
+      },
+      "10": {
+        "median": 80.29326228829096,
+        "low": 79.25320843955076,
+        "high": 81.6499349368763
+      },
+      "30": {
+        "median": 82.89621044035769,
+        "low": 81.00304830390778,
+        "high": 84.38970902410674
+      },
+      "100": {
+        "median": 80.06248611531208,
+        "low": 78.8060844561017,
+        "high": 80.99661673382803
+      }
+    }
+  },
+  "strict_decoder_deployment_bytes": 27736068,
+  "setup_trials": [
+    {
+      "replay": 1,
+      "cold_setup_seconds": 0.037293313,
+      "encoding_seconds": 0.916530244,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 2,
+      "cold_setup_seconds": 0.036052925,
+      "encoding_seconds": 0.915378121,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 3,
+      "cold_setup_seconds": 0.036690467,
+      "encoding_seconds": 0.930172063,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 4,
+      "cold_setup_seconds": 0.036400744,
+      "encoding_seconds": 0.925928888,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 5,
+      "cold_setup_seconds": 0.036199343,
+      "encoding_seconds": 0.91117366,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 6,
+      "cold_setup_seconds": 0.036718282,
+      "encoding_seconds": 0.922934508,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    },
+    {
+      "replay": 7,
+      "cold_setup_seconds": 0.03595711,
+      "encoding_seconds": 0.918259114,
+      "dictionary_bytes": 2976736,
+      "token_offsets_bytes": 1883144,
+      "row_offsets_bytes": 11943672
+    }
+  ],
+  "median_cold_setup_seconds": 0.036400744,
+  "median_encoding_seconds": 0.918259114,
+  "cpu32_observed_busy_percent_range": [
+    0.0,
+    0.42449969678593086
+  ],
+  "benchmark_affinity": [
+    8
+  ],
+  "publication": "not published; user review required"
+}

@@ -1,0 +1,7 @@
+dataset,policy,variants,funding,input_tokens,cached_input_tokens,cache_write_input_tokens,output_tokens,reasoning_output_tokens,estimated_API_USD,uncertain_reservation_USD
+DBText,from-scratch,5,API,174418001,170100655,3547068,1219442,560717,283.113885000,8.450125000
+DBText,tools-allowed,5,ChatGPT subscription,202820586,198462848,0,984335,410499,,
+Python,from-scratch,4,API,115947693,113506090,1724492,973128,482059,190.889750000,0E-9
+Yelp,from-scratch,4,API,85244392,83300414,1464140,716407,306306,142.220894000,0E-9
+OpenStack,from-scratch,4,API,75777427,73834777,1523040,663204,242472,130.229077000,0E-9
+SQLStorm TPC-DS,from-scratch,4,API,83319267,81517054,1380412,686044,253220,137.292414000,0E-9

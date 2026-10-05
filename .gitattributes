@@ -1,0 +1,20 @@
+* text=auto eol=lf
+*.bin -text
+*.csv -text
+*.pdf -text
+*.png -text
+*.so -text
+*.zip -text
+*.gz -text
+*.hcb -text
+*.py -text
+# Frozen submissions retain original whitespace and source hashes.
+synthesized-code/**/source/** -whitespace
+synthesized-code/**/source/** -text
+# Hash-pinned measurement and figure inputs preserve exact bytes across platforms.
+paper/figures/** -text
+benchmarks/final/sources/** -text
+compression-lab-isolated/vendor/** -text
+# Raw transcripts and diffs retain their original whitespace and bytes.
+results/**/*.txt -text -whitespace
+results/**/*.diff -text -whitespace

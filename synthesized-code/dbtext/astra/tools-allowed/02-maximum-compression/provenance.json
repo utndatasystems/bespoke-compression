@@ -1,0 +1,39 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "tools-allowed",
+  "generation": "local ChatGPT subscription",
+  "stage": 2,
+  "objective": "Maximize compression factor at the required decompression speed; row speed is secondary.",
+  "result_id": "r-2e03e6ed02de3dfa3768698884f2bfe33276feaf9c1fb4eea9a5435964646b0c",
+  "build_id": "b-07222ef676df1f11144417e3de2803ee99247bee185da30e2c58241c6ce99a3e",
+  "build_export_sha256": "bc39b3cde84a89f3ccb0dc1ce2e5a6c999278677aab1cfaa3d91eef36ada9fdf",
+  "source_manifest_sha256": "292b4cb51b63dd9af4a344a8eaf70329504a87eb08b1bb490c55a014b16b4913",
+  "file_sha256": {
+    "source/codec.cpp": "1cc9d8fc180e6d09443b6d8b3255b6f139518460af589532ac6014fbe08cce27",
+    "source/encode_plans.h": "984de0864c106b022c8d2abbfa86ceec234e54aba79ebee962383b7722040ffb",
+    "source/entropy_plan.h": "390963a0deee538eaf4dc1ff06da25e800b346ddac3d6a552ab982778fd0151b",
+    "source/front.h": "d6027b46e6be7581a0c265357272d65ee1da28be082270e00d51e16256620423",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/ppmd/7zTypes.h": "5de943c886d5d7bbcf16203e9b292a9e7be327b43fe3dfd9f4ad07d6d0870ef6",
+    "source/ppmd/Compiler.h": "959dac87ac7109502f6467e910d0722b932176e243153bf8c663479aa8c29b20",
+    "source/ppmd/CpuArch.h": "051d8a61373d9b6c90eb3b80f2aa1d932126fec7091242b085276e0bbd9bec03",
+    "source/ppmd/Ppmd.h": "c67e58afd6cd0b0d598ae92338bc32fc96d951d65d041c086627f46287896e00",
+    "source/ppmd/Ppmd8.c": "c10d056bc7874f63af268d16a21da7308766b12c9af1942c4e11665d8a5417c8",
+    "source/ppmd/Ppmd8.h": "48fab0dad3aee20bfd67ffc6b9d340b78c5f4e0317cd4d1b9c1c06a07b5c2486",
+    "source/ppmd/Ppmd8Dec.c": "481cd1477cf93a0b08afb06a424907f510c4ea9206238f74096c9aacb9d3a3f2",
+    "source/ppmd/Ppmd8Enc.c": "8d1d2c23efcfa416d23d6686ecda091983119aa978959c3c0aa6a49359fef074",
+    "source/ppmd/Precomp.h": "fea249c753dfbbdd69d9397e91497205452b784279f70cad4658dc567cd2f85f",
+    "source/ppmd/README.origin": "e76caf46d5cc66497ed78b62f1aeb09ecfca4fe40a9538f1d23bd3ff64d9b1ff",
+    "source/ppmd_codec.h": "df3b53f3eb2d49b4f43faea8a1bb33659525c3329eef4ede59b2505deddef3f3",
+    "source/special.h": "9a40a6bdd7cc117183f223cf0bef7f50cac2674d3e675dd85c5811318893f0c5",
+    "source/wt.h": "7194e9b472a39c3d4018a434784516aa8d32206f663b3cb6a32b3a504ecb95f8",
+    "build-spec.json": "a5f174b2a136256c73054fd081e269b007990fe8f186f4f5e67d138ce7420e9a"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "84f7b83a605208af3aa60146e4dff031c7c4e0ac3d69b77b28d18808f34966eb",
+    "encoder.so": "6bc87ade8f6ecf781ce3a587603745bd19cefb067e52b487d78c251592d381e3"
+  },
+  "source_modified": false
+}

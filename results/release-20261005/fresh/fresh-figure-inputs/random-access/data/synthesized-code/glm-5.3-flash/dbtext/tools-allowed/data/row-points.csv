@@ -1,0 +1,36 @@
+arm,name,stage,percent,package_bytes,median,low,high,qualification,source,result_id
+baseline,OnPair+ row adapter,0,1,27713500,78.3733,77.22739999999999,79.59389999999999,independently verified hybrid,fresh-final-benchmark,fresh-server-replay
+baseline,OnPair+ row adapter,0,3,27713500,68.20439999999999,66.36439999999999,68.946,independently verified hybrid,fresh-final-benchmark,fresh-server-replay
+baseline,OnPair+ row adapter,0,10,27713500,71.14439999999999,67.9833,71.4221,independently verified hybrid,fresh-final-benchmark,fresh-server-replay
+baseline,OnPair+ row adapter,0,30,27713500,70.625,69.431,71.30189999999999,independently verified hybrid,fresh-final-benchmark,fresh-server-replay
+baseline,OnPair+ row adapter,0,100,27713500,68.3832,67.7144,69.136,independently verified hybrid,fresh-final-benchmark,fresh-server-replay
+baseline,FSST,0,1,24043323,50.436800000000005,48.6706,51.0454,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,FSST,0,3,24043323,47.267,46.198699999999995,47.522400000000005,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,FSST,0,10,24043323,45.2899,44.357099999999996,45.6524,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,FSST,0,30,24043323,43.6008,43.2577,43.7683,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,FSST,0,100,24043323,40.7209,40.4581,40.923300000000005,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,LZ4 block,0,1,29903706,0.9430230000000001,0.937956,0.943918,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,LZ4 block,0,3,29903706,2.77006,2.75181,2.77574,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,LZ4 block,0,10,29903706,8.58389,8.559610000000001,8.64992,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,LZ4 block,0,30,29903706,21.5745,21.532400000000003,21.789099999999998,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+baseline,LZ4 block,0,100,29903706,48.175599999999996,48.0385,48.299699999999994,pinned reference replay,fresh-final-benchmark,fresh-server-replay
+glm,Run 1,1,1,15428538,36.781393806313744,33.669950284579,40.72885402850932,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 1,1,3,15428538,33.89259070328197,33.62300713410769,34.03717078305255,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 1,1,10,15428538,31.350673010655548,31.28018166114035,31.421452824962394,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 1,1,30,15428538,27.9217795644519,27.565208120507027,27.960092580537573,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 1,1,100,15428538,26.653505602826648,26.621348473663172,26.685331994033426,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 2,2,1,13690308,8.2454478559771,8.127202558919377,8.972872099139641,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 2,2,3,13690308,8.599919004104832,8.584233426711567,8.627308379492147,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 2,2,10,13690308,7.799058830389934,7.786285520232005,7.843274235026467,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 2,2,30,13690308,7.483311717172597,7.429379924041834,7.4985571663655595,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 2,2,100,13690308,7.477298935201183,7.466091228831175,7.577786446687929,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 3,3,1,13382215,44.24803723200765,40.83081892039462,45.517128505722916,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 3,3,3,13382215,43.613959604526414,42.86569193609982,44.696499715925455,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 3,3,10,13382215,46.47892054674221,46.17662137524189,46.76515520861248,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 3,3,30,13382215,46.03891943627224,45.15597941188583,46.3886228302339,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 3,3,100,13382215,44.91858487768183,44.851348469818944,45.04041587806537,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 4,4,1,12005569,17.800947596441976,17.718073091197702,18.30827636128835,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 4,4,3,12005569,16.772865052707946,16.08319120215618,17.063496524610077,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 4,4,10,12005569,15.71554673517879,15.617874643695801,15.728183605534724,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 4,4,30,12005569,14.536223732444371,14.529680954559263,14.568697962598215,qualified,fresh-final-benchmark,fresh-server-replay
+glm,Run 4,4,100,12005569,14.01490692367031,14.006590442382375,14.051582883266676,qualified,fresh-final-benchmark,fresh-server-replay

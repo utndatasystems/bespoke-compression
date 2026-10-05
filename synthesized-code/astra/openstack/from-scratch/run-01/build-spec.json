@@ -1,0 +1,43 @@
+{
+  "commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-shared",
+      "-fPIC",
+      "-DENCODER",
+      "-I/source/interface",
+      "/source/simd_codec_compact.cpp",
+      "-o",
+      "/output/encoder.so"
+    ],
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-shared",
+      "-fPIC",
+      "-I/source/interface",
+      "/source/simd_codec_compact.cpp",
+      "-o",
+      "/output/decoder.so"
+    ],
+    [
+      "strip",
+      "--strip-all",
+      "/output/encoder.so",
+      "/output/decoder.so"
+    ]
+  ],
+  "decoder": "decoder.so",
+  "description": "OpenStack template inference, packed variable hexadecimal nibbles, compact 128-byte template chunks and AVX-512 VBMI2 byte expansion.",
+  "encoder": "encoder.so",
+  "name": "openstack_compact128",
+  "sources": [
+    "simd_codec_compact.cpp"
+  ],
+  "variant": "bulk"
+}

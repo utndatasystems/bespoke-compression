@@ -1,0 +1,17 @@
+{
+  "method": "dbtext-astra-tools-allowed-04-intermediate-decompression",
+  "package_bytes": 11649248,
+  "archive_bytes": 11597864,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.3391273392438263,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 12405112,
+  "deployment_scope": "decoder and its full nonplatform closure",
+  "decoder_bytes": 51384,
+  "ratio": 3.4200788754776275,
+  "median": 399.73535083432057,
+  "low": 395.1222204403976,
+  "high": 401.40640836359205,
+  "encode_MB_s": 1.2470379564879543,
+  "exact_decodes": 184
+}

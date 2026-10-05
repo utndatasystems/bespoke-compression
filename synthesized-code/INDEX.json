@@ -1,0 +1,256 @@
+{
+  "runs": [
+    {
+      "id": "astra-openstack-from-scratch-run-01",
+      "dataset": "openstack",
+      "path": "synthesized-code/astra/openstack/from-scratch/run-01",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-02",
+      "dataset": "openstack",
+      "path": "synthesized-code/astra/openstack/from-scratch/run-02",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-03",
+      "dataset": "openstack",
+      "path": "synthesized-code/astra/openstack/from-scratch/run-03",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-04",
+      "dataset": "openstack",
+      "path": "synthesized-code/astra/openstack/from-scratch/run-04",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-python-from-scratch-run-01",
+      "dataset": "python",
+      "path": "synthesized-code/astra/python/from-scratch/run-01",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-python-from-scratch-run-02",
+      "dataset": "python",
+      "path": "synthesized-code/astra/python/from-scratch/run-02",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-python-from-scratch-run-03",
+      "dataset": "python",
+      "path": "synthesized-code/astra/python/from-scratch/run-03",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-python-from-scratch-run-04",
+      "dataset": "python",
+      "path": "synthesized-code/astra/python/from-scratch/run-04",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-01",
+      "dataset": "sqlstorm-tpcds",
+      "path": "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-02",
+      "dataset": "sqlstorm-tpcds",
+      "path": "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-03",
+      "dataset": "sqlstorm-tpcds",
+      "path": "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-04",
+      "dataset": "sqlstorm-tpcds",
+      "path": "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-01",
+      "dataset": "yelp",
+      "path": "synthesized-code/astra/yelp/from-scratch/run-01",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-02",
+      "dataset": "yelp",
+      "path": "synthesized-code/astra/yelp/from-scratch/run-02",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-03",
+      "dataset": "yelp",
+      "path": "synthesized-code/astra/yelp/from-scratch/run-03",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-04",
+      "dataset": "yelp",
+      "path": "synthesized-code/astra/yelp/from-scratch/run-04",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-from-scratch-01-maximum-decompression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-from-scratch-02-maximum-compression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-from-scratch-03-intermediate-compression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-from-scratch-04-intermediate-decompression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-from-scratch-05-improve-both",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/from-scratch/05-improve-both",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A1",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/no-reference-target/A1",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A2",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/no-reference-target/A2",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A3",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/no-reference-target/A3",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A4",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/no-reference-target/A4",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-01-maximum-decompression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-02-maximum-compression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-03-intermediate-compression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-04-intermediate-decompression",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-05-improve-both",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/astra/tools-allowed/05-improve-both",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L1",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/luna/tools-allowed/L1",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L2",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/luna/tools-allowed/L2",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L3",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/luna/tools-allowed/L3",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L4",
+      "dataset": "dbtext",
+      "path": "synthesized-code/dbtext/luna/tools-allowed/L4",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G1",
+      "dataset": "dbtext",
+      "path": "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G2",
+      "dataset": "dbtext",
+      "path": "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G3",
+      "dataset": "dbtext",
+      "path": "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G4",
+      "dataset": "dbtext",
+      "path": "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G1",
+      "dataset": "yelp",
+      "path": "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G2",
+      "dataset": "yelp",
+      "path": "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G3",
+      "dataset": "yelp",
+      "path": "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3",
+      "recipe_status": "recorded_commands"
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G4",
+      "dataset": "yelp",
+      "path": "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4",
+      "recipe_status": "recorded_commands"
+    }
+  ]
+}

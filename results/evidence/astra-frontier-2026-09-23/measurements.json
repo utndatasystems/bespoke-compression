@@ -1,0 +1,3752 @@
+[
+  {
+    "name": "fastlz-dual-fast",
+    "result_id": "s-44553580f8b8c3a752ca888e8f213dd89acf1ecb6f4e1b24c14a613e5aad6ef9",
+    "candidate": {
+      "decoder": "a3d5f00dadc6e8331d03bea7d224454a56d6703144fa3f2c88a9351347ca2df5",
+      "encoder": "4848212e8e0c7e8a93c3f6c5cbcd2295a2674e3f0e92c66828eca0fd4858a01d"
+    },
+    "columns": [
+      {
+        "archive_bytes": 15717677,
+        "bytes": 100000488,
+        "decode_seconds": {
+          "max_seconds": 0.014008618,
+          "median_seconds": 0.013360973,
+          "min_seconds": 0.013219997,
+          "relative_MAD": 0.004679524462776782,
+          "work_per_second": 7484521374.304102
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.013826573,
+          "median_seconds": 0.013327647,
+          "min_seconds": 0.013261299,
+          "relative_MAD": 0.004398150701320375,
+          "work_per_second": 7503236542.804593
+        },
+        "encode_seconds": {
+          "max_seconds": 2.562050225,
+          "median_seconds": 2.555088574,
+          "min_seconds": 2.553556658,
+          "relative_MAD": 0.0003956254238252847,
+          "work_per_second": 39137777.460077986
+        },
+        "name": "corpus.bin",
+        "rows": null,
+        "selective": {},
+        "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 15717677,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 15733421,
+      "strict_deployment_bytes": 15733421
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.014008618,
+        "median_seconds": 0.013360973,
+        "min_seconds": 0.013219997,
+        "relative_MAD": 0.004679524462776782,
+        "work_per_second": 7484521374.304102
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.013826573,
+        "median_seconds": 0.013327647,
+        "min_seconds": 0.013261299,
+        "relative_MAD": 0.004398150701320375,
+        "work_per_second": 7503236542.804593
+      },
+      "encode_seconds": {
+        "max_seconds": 2.562050225,
+        "median_seconds": 2.555088574,
+        "min_seconds": 2.553556658,
+        "relative_MAD": 0.0003956254238252847,
+        "work_per_second": 39137777.460077986
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "81cee9e7307baf3c1fc656b5e5c70989cb6f0609044bb9de76619cab7839c73a",
+    "variant": "bulk",
+    "trials_file": "s-44553580f8b8c3a752ca888e8f213dd89acf1ecb6f4e1b24c14a613e5aad6ef9.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "yelp",
+    "point_id": "A5",
+    "method": "Astra LZ4-target \u00b7 LZ fast",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lz-fast",
+    "source_result_id": "s-d577529e5503a29cf64df996abb6ffc2dd718f46692284239b265e6df012bc03",
+    "export_sha256": "c7dc8a53a46aab287eb6375fcfcfc22d85f7c82e941c12890b1ef358724d247d",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-6f12b266a6893dc200f6a441b26fd0da45217127b622298818ab1585729295d3",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18743599,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.030814893,
+              "median_seconds": 0.029206200999999998,
+              "min_seconds": 0.028524453999999998,
+              "relative_MAD": 0.012833644471596987,
+              "work_per_second": 3423947126.8447413
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.031068372,
+              "median_seconds": 0.028607613,
+              "min_seconds": 0.02816854,
+              "relative_MAD": 0.015348117300104753,
+              "work_per_second": 3495590072.474764
+            },
+            "encode_seconds": {
+              "max_seconds": 2.849982367,
+              "median_seconds": 2.776627544,
+              "min_seconds": 2.76918836,
+              "relative_MAD": 0.0013941120797295386,
+              "work_per_second": 36015088.957858436
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18743599,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18760095,
+          "strict_deployment_bytes": 18897535
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.030814893,
+            "median_seconds": 0.029206200999999998,
+            "min_seconds": 0.028524453999999998,
+            "relative_MAD": 0.012833644471596987,
+            "work_per_second": 3423947126.8447413
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.031068372,
+            "median_seconds": 0.028607613,
+            "min_seconds": 0.02816854,
+            "relative_MAD": 0.015348117300104753,
+            "work_per_second": 3495590072.474764
+          },
+          "encode_seconds": {
+            "max_seconds": 2.849982367,
+            "median_seconds": 2.776627544,
+            "min_seconds": 2.76918836,
+            "relative_MAD": 0.0013941120797295386,
+            "work_per_second": 36015088.957858436
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "b376ef08f11c7358219360d327ffd1ff5bf0f3e8cc1601165126ac1e09e4a732",
+        "variant": "bulk",
+        "trials_file": "s-6f12b266a6893dc200f6a441b26fd0da45217127b622298818ab1585729295d3.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-4901ce12042dcb7a3cb7de93cc36bf47e6c6c588d8e3bab5955f4ef9f4ff79b3",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18475276,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.030224426999999998,
+              "median_seconds": 0.027285797,
+              "min_seconds": 0.026668431,
+              "relative_MAD": 0.012295297806400977,
+              "work_per_second": 3664928240.8719816
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.028649495,
+              "median_seconds": 0.027216317,
+              "min_seconds": 0.026338212,
+              "relative_MAD": 0.0271408875785802,
+              "work_per_second": 3674284364.0452895
+            },
+            "encode_seconds": {
+              "max_seconds": 5.116249168,
+              "median_seconds": 5.079418484,
+              "min_seconds": 5.048663343,
+              "relative_MAD": 0.0028011850263605135,
+              "work_per_second": 19687389.081052925
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18475276,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18491772,
+          "strict_deployment_bytes": 18629212
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.030224426999999998,
+            "median_seconds": 0.027285797,
+            "min_seconds": 0.026668431,
+            "relative_MAD": 0.012295297806400977,
+            "work_per_second": 3664928240.8719816
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.028649495,
+            "median_seconds": 0.027216317,
+            "min_seconds": 0.026338212,
+            "relative_MAD": 0.0271408875785802,
+            "work_per_second": 3674284364.0452895
+          },
+          "encode_seconds": {
+            "max_seconds": 5.116249168,
+            "median_seconds": 5.079418484,
+            "min_seconds": 5.048663343,
+            "relative_MAD": 0.0028011850263605135,
+            "work_per_second": 19687389.081052925
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "c5e71ec8cdb902cd6fba38fcb01ac7177be05e117d748697775a59d19e587b7a",
+        "variant": "bulk",
+        "trials_file": "s-4901ce12042dcb7a3cb7de93cc36bf47e6c6c588d8e3bab5955f4ef9f4ff79b3.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-fast/comparison.json",
+        "sha256": "a42a40471be2fa03c56bb11d80271c9bcb107ee8014d2d40c557f4321b98a1c8"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-fast/evidence.tar.gz",
+        "sha256": "5fe36434db06ef791427d6b8ad3aeebd077870d7d875aaab41aeab53522ba4d5"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/CPU8_REVIEW.json",
+        "sha256": "127bd9e5ab8e0f84b420d9ffc94c1f6744329ae2b3276aa70ce93f5f8b2730c2"
+      }
+    ]
+  },
+  {
+    "name": "fastlz-dual-balanced",
+    "result_id": "s-cfbbdd17d3658ab8a5716e14902a27b910733c513ac5f3df777ab41e87134c9e",
+    "candidate": {
+      "decoder": "bfc88cc85fbccc7aaae01233eae0917401fd9c1a4b9facfea02df0e4acbd714b",
+      "encoder": "d7ed7908e888af5dbe00b6cadac5f48813c38591687e7aca66370389b24b6095"
+    },
+    "columns": [
+      {
+        "archive_bytes": 14710085,
+        "bytes": 100000488,
+        "decode_seconds": {
+          "max_seconds": 0.018291276,
+          "median_seconds": 0.017689838,
+          "min_seconds": 0.016943846999999998,
+          "relative_MAD": 0.009116533458361692,
+          "work_per_second": 5652990603.98405
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.017232928,
+          "median_seconds": 0.016772256,
+          "min_seconds": 0.016656741,
+          "relative_MAD": 0.00688726668612738,
+          "work_per_second": 5962256240.305419
+        },
+        "encode_seconds": {
+          "max_seconds": 4.447296258,
+          "median_seconds": 4.421321754,
+          "min_seconds": 4.332286418,
+          "relative_MAD": 0.005469202276021482,
+          "work_per_second": 22617781.18942121
+        },
+        "name": "corpus.bin",
+        "rows": null,
+        "selective": {},
+        "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 14710085,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 14725829,
+      "strict_deployment_bytes": 14725829
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.018291276,
+        "median_seconds": 0.017689838,
+        "min_seconds": 0.016943846999999998,
+        "relative_MAD": 0.009116533458361692,
+        "work_per_second": 5652990603.98405
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.017232928,
+        "median_seconds": 0.016772256,
+        "min_seconds": 0.016656741,
+        "relative_MAD": 0.00688726668612738,
+        "work_per_second": 5962256240.305419
+      },
+      "encode_seconds": {
+        "max_seconds": 4.447296258,
+        "median_seconds": 4.421321754,
+        "min_seconds": 4.332286418,
+        "relative_MAD": 0.005469202276021482,
+        "work_per_second": 22617781.18942121
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "3c5d98280537b3d6075cb14a188748cc113cbc94bf12276284454ba64c31cbd7",
+    "variant": "bulk",
+    "trials_file": "s-cfbbdd17d3658ab8a5716e14902a27b910733c513ac5f3df777ab41e87134c9e.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "yelp",
+    "point_id": "A6",
+    "method": "Astra LZ4-target \u00b7 LZ balanced",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lz-balanced",
+    "source_result_id": "s-558caed3f72fd71e5b257d301adfe108e9957849366a6e92869e2d66f739cda7",
+    "export_sha256": "d75cfc45a56c0d26bc85eef6265bd39020818fe7dc2d20104f89f9bb22006ac0",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-44ea05abc62cb2b48b63c2e03198e4df1bab9a1417467b337303dcab53acb950",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18743599,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.031323033,
+              "median_seconds": 0.028487803000000003,
+              "min_seconds": 0.028253307,
+              "relative_MAD": 0.00823145259745036,
+              "work_per_second": 3510291334.15448
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.029925084,
+              "median_seconds": 0.028378517,
+              "min_seconds": 0.028104176,
+              "relative_MAD": 0.006541215666766489,
+              "work_per_second": 3523809507.0295606
+            },
+            "encode_seconds": {
+              "max_seconds": 2.764516617,
+              "median_seconds": 2.743260496,
+              "min_seconds": 2.737586916,
+              "relative_MAD": 0.0015565561514213975,
+              "work_per_second": 36453150.60156066
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18743599,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18760095,
+          "strict_deployment_bytes": 18897535
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.031323033,
+            "median_seconds": 0.028487803000000003,
+            "min_seconds": 0.028253307,
+            "relative_MAD": 0.00823145259745036,
+            "work_per_second": 3510291334.15448
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.029925084,
+            "median_seconds": 0.028378517,
+            "min_seconds": 0.028104176,
+            "relative_MAD": 0.006541215666766489,
+            "work_per_second": 3523809507.0295606
+          },
+          "encode_seconds": {
+            "max_seconds": 2.764516617,
+            "median_seconds": 2.743260496,
+            "min_seconds": 2.737586916,
+            "relative_MAD": 0.0015565561514213975,
+            "work_per_second": 36453150.60156066
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "67cd1fd170a4f319b1c08985bbfd2a92671f47143c1962b6d2a1f7c6d53a9895",
+        "variant": "bulk",
+        "trials_file": "s-44ea05abc62cb2b48b63c2e03198e4df1bab9a1417467b337303dcab53acb950.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-21dffc4f4718429d7e075994a05c1b62d8bd1827da184a13ea57df2f2a3887e0",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18475276,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.028944864,
+              "median_seconds": 0.026891705,
+              "min_seconds": 0.026433709,
+              "relative_MAD": 0.011862356812258536,
+              "work_per_second": 3718636955.1502967
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.027641655,
+              "median_seconds": 0.026686933,
+              "min_seconds": 0.0263878,
+              "relative_MAD": 0.01120896882380602,
+              "work_per_second": 3747170497.2617126
+            },
+            "encode_seconds": {
+              "max_seconds": 5.143521808,
+              "median_seconds": 5.034918497,
+              "min_seconds": 5.019427218,
+              "relative_MAD": 0.0026482363136453757,
+              "work_per_second": 19861391.611320853
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18475276,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18491772,
+          "strict_deployment_bytes": 18629212
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.028944864,
+            "median_seconds": 0.026891705,
+            "min_seconds": 0.026433709,
+            "relative_MAD": 0.011862356812258536,
+            "work_per_second": 3718636955.1502967
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.027641655,
+            "median_seconds": 0.026686933,
+            "min_seconds": 0.0263878,
+            "relative_MAD": 0.01120896882380602,
+            "work_per_second": 3747170497.2617126
+          },
+          "encode_seconds": {
+            "max_seconds": 5.143521808,
+            "median_seconds": 5.034918497,
+            "min_seconds": 5.019427218,
+            "relative_MAD": 0.0026482363136453757,
+            "work_per_second": 19861391.611320853
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "d8c1343467257476c6e96fceb4f2825cba80abec699eb65fd5e29d45dcb8de64",
+        "variant": "bulk",
+        "trials_file": "s-21dffc4f4718429d7e075994a05c1b62d8bd1827da184a13ea57df2f2a3887e0.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-balanced/comparison.json",
+        "sha256": "05c3fd596330311c625797f71fb41bc5e125d1d25b0e00aa0e1d9902f2c863fc"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-balanced/evidence.tar.gz",
+        "sha256": "e5ef9a930d30e44e4c34a3e63abeb8098581bceac5521fa0917fe2c9cab617be"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/CPU8_REVIEW.json",
+        "sha256": "127bd9e5ab8e0f84b420d9ffc94c1f6744329ae2b3276aa70ce93f5f8b2730c2"
+      }
+    ]
+  },
+  {
+    "name": "fastlz-dual-compact",
+    "result_id": "s-14e6d67804bc7c8ce7b5498927350b2be9b4a3b16e71b70f7e78a958fd74b3f2",
+    "candidate": {
+      "decoder": "86fe1c73150b0f1e55aa6166382e9340481c7696c3bcb5baf82438c755114824",
+      "encoder": "6c6e3d568a71f7e14db2deb851d430eb1078939dbd1b2276bd021cab7981fa04"
+    },
+    "columns": [
+      {
+        "archive_bytes": 13876785,
+        "bytes": 100000488,
+        "decode_seconds": {
+          "max_seconds": 0.020304124,
+          "median_seconds": 0.020194537,
+          "min_seconds": 0.019184643999999997,
+          "relative_MAD": 0.005210121925548565,
+          "work_per_second": 4951858415.966655
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.019872916,
+          "median_seconds": 0.019325086,
+          "min_seconds": 0.019142602,
+          "relative_MAD": 0.004324379203280058,
+          "work_per_second": 5174646467.29127
+        },
+        "encode_seconds": {
+          "max_seconds": 5.480728428,
+          "median_seconds": 5.437216619,
+          "min_seconds": 5.396546626,
+          "relative_MAD": 0.006393533205670533,
+          "work_per_second": 18391852.855476603
+        },
+        "name": "corpus.bin",
+        "rows": null,
+        "selective": {},
+        "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 13876785,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 13892529,
+      "strict_deployment_bytes": 13892529
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.020304124,
+        "median_seconds": 0.020194537,
+        "min_seconds": 0.019184643999999997,
+        "relative_MAD": 0.005210121925548565,
+        "work_per_second": 4951858415.966655
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.019872916,
+        "median_seconds": 0.019325086,
+        "min_seconds": 0.019142602,
+        "relative_MAD": 0.004324379203280058,
+        "work_per_second": 5174646467.29127
+      },
+      "encode_seconds": {
+        "max_seconds": 5.480728428,
+        "median_seconds": 5.437216619,
+        "min_seconds": 5.396546626,
+        "relative_MAD": 0.006393533205670533,
+        "work_per_second": 18391852.855476603
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "83bb71df4a7b41680fe078730b6dd5e0cb1451ae477cc04fa07501bf3d869d3e",
+    "variant": "bulk",
+    "trials_file": "s-14e6d67804bc7c8ce7b5498927350b2be9b4a3b16e71b70f7e78a958fd74b3f2.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "yelp",
+    "point_id": "A7",
+    "method": "Astra LZ4-target \u00b7 LZ compact",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lz-compact",
+    "source_result_id": "s-1e459dfa3e4dbbc700dc71dc23cb183980361105f0e4add80f4791a16dfb5080",
+    "export_sha256": "5c9820983a0c1c7671f34e8ac12a6d6c9447e5f3e3fe0fac4bb925c3e993a10e",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-c102e51ba8aa95b4e0c090b92d1d18ca3fcf84a11ffa7e71e5fcbb945f4fad09",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18743599,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.029080995,
+              "median_seconds": 0.028649528,
+              "min_seconds": 0.028211713,
+              "relative_MAD": 0.011154424603434958,
+              "work_per_second": 3490475933.844355
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.029945773,
+              "median_seconds": 0.02883038,
+              "min_seconds": 0.028097773,
+              "relative_MAD": 0.01755516229754855,
+              "work_per_second": 3468580296.2014375
+            },
+            "encode_seconds": {
+              "max_seconds": 2.783532925,
+              "median_seconds": 2.757669597,
+              "min_seconds": 2.743946767,
+              "relative_MAD": 0.004704913893279581,
+              "work_per_second": 36262679.2233515
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18743599,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18760095,
+          "strict_deployment_bytes": 18897535
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.029080995,
+            "median_seconds": 0.028649528,
+            "min_seconds": 0.028211713,
+            "relative_MAD": 0.011154424603434958,
+            "work_per_second": 3490475933.844355
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.029945773,
+            "median_seconds": 0.02883038,
+            "min_seconds": 0.028097773,
+            "relative_MAD": 0.01755516229754855,
+            "work_per_second": 3468580296.2014375
+          },
+          "encode_seconds": {
+            "max_seconds": 2.783532925,
+            "median_seconds": 2.757669597,
+            "min_seconds": 2.743946767,
+            "relative_MAD": 0.004704913893279581,
+            "work_per_second": 36262679.2233515
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "543d509dec22c2cbf94d65c36957880530f2af99d5352de837af106c5b549110",
+        "variant": "bulk",
+        "trials_file": "s-c102e51ba8aa95b4e0c090b92d1d18ca3fcf84a11ffa7e71e5fcbb945f4fad09.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-6394d1fa9aee3f2db006d679d99f9577afabd81388de8ee8c7c20c1998e70eb4",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18475276,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.031000282,
+              "median_seconds": 0.027315811000000002,
+              "min_seconds": 0.026440246,
+              "relative_MAD": 0.02189171685219242,
+              "work_per_second": 3660901299.9833684
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.027474416,
+              "median_seconds": 0.026850876,
+              "min_seconds": 0.02640264,
+              "relative_MAD": 0.01199461797819927,
+              "work_per_second": 3724291453.284429
+            },
+            "encode_seconds": {
+              "max_seconds": 5.142058684,
+              "median_seconds": 5.025054773,
+              "min_seconds": 5.017094734,
+              "relative_MAD": 0.0015840700966624683,
+              "work_per_second": 19900377.710768487
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18475276,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18491772,
+          "strict_deployment_bytes": 18629212
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.031000282,
+            "median_seconds": 0.027315811000000002,
+            "min_seconds": 0.026440246,
+            "relative_MAD": 0.02189171685219242,
+            "work_per_second": 3660901299.9833684
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.027474416,
+            "median_seconds": 0.026850876,
+            "min_seconds": 0.02640264,
+            "relative_MAD": 0.01199461797819927,
+            "work_per_second": 3724291453.284429
+          },
+          "encode_seconds": {
+            "max_seconds": 5.142058684,
+            "median_seconds": 5.025054773,
+            "min_seconds": 5.017094734,
+            "relative_MAD": 0.0015840700966624683,
+            "work_per_second": 19900377.710768487
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "e685d3557ce13085734d5d7666df7c518feea8d4e0f8728d8b87494790a3e3ec",
+        "variant": "bulk",
+        "trials_file": "s-6394d1fa9aee3f2db006d679d99f9577afabd81388de8ee8c7c20c1998e70eb4.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-compact/comparison.json",
+        "sha256": "d6e681e68780ed448bb34909caf5d01a25ff0c5f112230fc43fc7ef872611722"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lz-compact/evidence.tar.gz",
+        "sha256": "730d30dc94512c288627be94cb5a61d750841bb0c25bb0f5809babd5fac7e684"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/CPU8_REVIEW.json",
+        "sha256": "127bd9e5ab8e0f84b420d9ffc94c1f6744329ae2b3276aa70ce93f5f8b2730c2"
+      }
+    ]
+  },
+  {
+    "name": "yelp-lexical-streaming",
+    "result_id": "s-3cc9f4d8d02b593e154266383864249d48805590fb05e9606296a721ada3a60c",
+    "candidate": {
+      "decoder": "469dc2a00304527235671c4cd58d1f5ece20cefdbfb20792e055595b24d5426f",
+      "encoder": "9235addef8111435d014343c953cebd8ddac2092cd5a3fe5af157248c76c4742"
+    },
+    "columns": [
+      {
+        "archive_bytes": 13402037,
+        "bytes": 100000488,
+        "decode_seconds": {
+          "max_seconds": 0.024304187,
+          "median_seconds": 0.023000022000000002,
+          "min_seconds": 0.022796893,
+          "relative_MAD": 0.0033023881455417335,
+          "work_per_second": 4347843145.541339
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.018677691,
+          "median_seconds": 0.018610845,
+          "min_seconds": 0.018588189,
+          "relative_MAD": 0.0012173547197883476,
+          "work_per_second": 5373237378.528487
+        },
+        "encode_seconds": {
+          "max_seconds": 1.329396905,
+          "median_seconds": 1.324617935,
+          "min_seconds": 1.311721328,
+          "relative_MAD": 0.0036078101267744416,
+          "work_per_second": 75493835.13367574
+        },
+        "name": "corpus.bin",
+        "rows": null,
+        "selective": {},
+        "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 13402037,
+      "custom_decoder_bytes": 20136,
+      "excluded_standard_codec_bytes": 137440,
+      "nonplatform_dependency_bytes": 137440,
+      "package_bytes": 13422173,
+      "strict_deployment_bytes": 13559613
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.024304187,
+        "median_seconds": 0.023000022000000002,
+        "min_seconds": 0.022796893,
+        "relative_MAD": 0.0033023881455417335,
+        "work_per_second": 4347843145.541339
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.018677691,
+        "median_seconds": 0.018610845,
+        "min_seconds": 0.018588189,
+        "relative_MAD": 0.0012173547197883476,
+        "work_per_second": 5373237378.528487
+      },
+      "encode_seconds": {
+        "max_seconds": 1.329396905,
+        "median_seconds": 1.324617935,
+        "min_seconds": 1.311721328,
+        "relative_MAD": 0.0036078101267744416,
+        "work_per_second": 75493835.13367574
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "1553195b83380ad0f0f29c78e04c7b2133f7e3b62cdf6151a065d63af61b0798",
+    "variant": "bulk",
+    "trials_file": "s-3cc9f4d8d02b593e154266383864249d48805590fb05e9606296a721ada3a60c.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "yelp",
+    "point_id": "A8",
+    "method": "Astra LZ4-target \u00b7 Lexical",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lexical",
+    "source_result_id": "s-d9d7aaec63ca22bcf62e4d259b36f18f638e46f8b08dc1f4d85822e0533c168a",
+    "export_sha256": "6ab325b14d8aeec9ca8ae3f8672eea09f712e0cf4d63e81e2818e01e0a25cb40",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-ff03e6934aa898538a3adf817a724ba7d2860f9d519bc16a4336aae46098c4f4",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18743599,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.031800657,
+              "median_seconds": 0.028513939000000002,
+              "min_seconds": 0.028119845,
+              "relative_MAD": 0.008156572124251167,
+              "work_per_second": 3507073785.912216
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.029553156,
+              "median_seconds": 0.028737607,
+              "min_seconds": 0.028273101,
+              "relative_MAD": 0.01477600413980179,
+              "work_per_second": 3479777839.5396667
+            },
+            "encode_seconds": {
+              "max_seconds": 2.764299243,
+              "median_seconds": 2.755805252,
+              "min_seconds": 2.741400974,
+              "relative_MAD": 0.0020613361542429114,
+              "work_per_second": 36287211.48833924
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18743599,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18760095,
+          "strict_deployment_bytes": 18897535
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.031800657,
+            "median_seconds": 0.028513939000000002,
+            "min_seconds": 0.028119845,
+            "relative_MAD": 0.008156572124251167,
+            "work_per_second": 3507073785.912216
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.029553156,
+            "median_seconds": 0.028737607,
+            "min_seconds": 0.028273101,
+            "relative_MAD": 0.01477600413980179,
+            "work_per_second": 3479777839.5396667
+          },
+          "encode_seconds": {
+            "max_seconds": 2.764299243,
+            "median_seconds": 2.755805252,
+            "min_seconds": 2.741400974,
+            "relative_MAD": 0.0020613361542429114,
+            "work_per_second": 36287211.48833924
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "d37ce4487506d122976ecaab1e6d2bbabce9a9e95f874084985cf25823cb66d4",
+        "variant": "bulk",
+        "trials_file": "s-ff03e6934aa898538a3adf817a724ba7d2860f9d519bc16a4336aae46098c4f4.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-7dc0beb91283970b5146192eac2a84d00ea4edb40adc96060ab7ff6ebce5252b",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18475276,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.030155569,
+              "median_seconds": 0.026930151000000003,
+              "min_seconds": 0.026494747,
+              "relative_MAD": 0.009705478443102688,
+              "work_per_second": 3713328157.7218037
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.031222963,
+              "median_seconds": 0.027251939,
+              "min_seconds": 0.026409797,
+              "relative_MAD": 0.02647840948124824,
+              "work_per_second": 3669481573.4029055
+            },
+            "encode_seconds": {
+              "max_seconds": 5.230506012,
+              "median_seconds": 5.037844622,
+              "min_seconds": 5.016719706,
+              "relative_MAD": 0.00253061655461287,
+              "work_per_second": 19849855.54403627
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18475276,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18491772,
+          "strict_deployment_bytes": 18629212
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.030155569,
+            "median_seconds": 0.026930151000000003,
+            "min_seconds": 0.026494747,
+            "relative_MAD": 0.009705478443102688,
+            "work_per_second": 3713328157.7218037
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.031222963,
+            "median_seconds": 0.027251939,
+            "min_seconds": 0.026409797,
+            "relative_MAD": 0.02647840948124824,
+            "work_per_second": 3669481573.4029055
+          },
+          "encode_seconds": {
+            "max_seconds": 5.230506012,
+            "median_seconds": 5.037844622,
+            "min_seconds": 5.016719706,
+            "relative_MAD": 0.00253061655461287,
+            "work_per_second": 19849855.54403627
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "397e4be2c122b981cac9e419bd1af821a9280dddb0ccfce031aa66f62e67cf23",
+        "variant": "bulk",
+        "trials_file": "s-7dc0beb91283970b5146192eac2a84d00ea4edb40adc96060ab7ff6ebce5252b.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lexical/comparison.json",
+        "sha256": "c9e569458ac36672b6084a38bbbdff73611d88baa3a517952231a5971369b2c5"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lexical/evidence.tar.gz",
+        "sha256": "5e2ff7253b4a8c3556017352dab4c3f1f26f5cd3080abd8bf9a2401ebcf2b6ba"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/CPU8_REVIEW.json",
+        "sha256": "127bd9e5ab8e0f84b420d9ffc94c1f6744329ae2b3276aa70ce93f5f8b2730c2"
+      }
+    ]
+  },
+  {
+    "name": "yelp-lexical-streaming_pairs",
+    "result_id": "s-f9f993bdb312851d4137568fe7af7c6b58639822021788318657d9af70fb7563",
+    "candidate": {
+      "decoder": "469dc2a00304527235671c4cd58d1f5ece20cefdbfb20792e055595b24d5426f",
+      "encoder": "6ffcae35e841712c2c00d6944f2c9d62b9c6ed33900949163dea328afa8e31c5"
+    },
+    "columns": [
+      {
+        "archive_bytes": 12327118,
+        "bytes": 100000488,
+        "decode_seconds": {
+          "max_seconds": 0.024838765000000002,
+          "median_seconds": 0.024760109,
+          "min_seconds": 0.024416182,
+          "relative_MAD": 0.0031767226872871737,
+          "work_per_second": 4038774142.7148
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.0206704,
+          "median_seconds": 0.020364358,
+          "min_seconds": 0.020187052,
+          "relative_MAD": 0.007102703655082099,
+          "work_per_second": 4910564231.880033
+        },
+        "encode_seconds": {
+          "max_seconds": 1.463309116,
+          "median_seconds": 1.444923212,
+          "min_seconds": 1.441376925,
+          "relative_MAD": 0.0011501337830262812,
+          "work_per_second": 69208167.72095707
+        },
+        "name": "corpus.bin",
+        "rows": null,
+        "selective": {},
+        "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 12327118,
+      "custom_decoder_bytes": 20136,
+      "excluded_standard_codec_bytes": 137440,
+      "nonplatform_dependency_bytes": 137440,
+      "package_bytes": 12347254,
+      "strict_deployment_bytes": 12484694
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.024838765000000002,
+        "median_seconds": 0.024760109,
+        "min_seconds": 0.024416182,
+        "relative_MAD": 0.0031767226872871737,
+        "work_per_second": 4038774142.7148
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.0206704,
+        "median_seconds": 0.020364358,
+        "min_seconds": 0.020187052,
+        "relative_MAD": 0.007102703655082099,
+        "work_per_second": 4910564231.880033
+      },
+      "encode_seconds": {
+        "max_seconds": 1.463309116,
+        "median_seconds": 1.444923212,
+        "min_seconds": 1.441376925,
+        "relative_MAD": 0.0011501337830262812,
+        "work_per_second": 69208167.72095707
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "2f0e0c2ee527278e493edfd36acc3c0eb54beacd66377d0ba49b7b8c57ba93cd",
+    "variant": "bulk",
+    "trials_file": "s-f9f993bdb312851d4137568fe7af7c6b58639822021788318657d9af70fb7563.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "yelp",
+    "point_id": "A9",
+    "method": "Astra LZ4-target \u00b7 Lexical compact",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lexical-compact",
+    "source_result_id": "s-c2138c61cf033231d2ce5bf90491ffd3c7f4dc7bbfe92f1037d0b1571cb09deb",
+    "export_sha256": "a8a9df248bf449b2e07f56135dae54cbc894405d4f652c5d8bd0b4ff459d5e63",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-d3958946321888787a4860ceeff821a334efc23166c23579ff50068427253f9b",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18743599,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.029806362,
+              "median_seconds": 0.028233009,
+              "min_seconds": 0.028136061,
+              "relative_MAD": 0.003433852906007981,
+              "work_per_second": 3541970606.108616
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.034221884,
+              "median_seconds": 0.028332487,
+              "min_seconds": 0.028197965,
+              "relative_MAD": 0.004747977118987172,
+              "work_per_second": 3529534417.504542
+            },
+            "encode_seconds": {
+              "max_seconds": 2.834507205,
+              "median_seconds": 2.751182816,
+              "min_seconds": 2.736203696,
+              "relative_MAD": 0.004593875378436493,
+              "work_per_second": 36348179.92407815
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18743599,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18760095,
+          "strict_deployment_bytes": 18897535
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.029806362,
+            "median_seconds": 0.028233009,
+            "min_seconds": 0.028136061,
+            "relative_MAD": 0.003433852906007981,
+            "work_per_second": 3541970606.108616
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.034221884,
+            "median_seconds": 0.028332487,
+            "min_seconds": 0.028197965,
+            "relative_MAD": 0.004747977118987172,
+            "work_per_second": 3529534417.504542
+          },
+          "encode_seconds": {
+            "max_seconds": 2.834507205,
+            "median_seconds": 2.751182816,
+            "min_seconds": 2.736203696,
+            "relative_MAD": 0.004593875378436493,
+            "work_per_second": 36348179.92407815
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "67f76a27e1c31c24b2e9ef0b02bc2756cfcd08be026a45c36ef669cc2993d0e8",
+        "variant": "bulk",
+        "trials_file": "s-d3958946321888787a4860ceeff821a334efc23166c23579ff50068427253f9b.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-c4a81190cc6c002770022087c1b1fffe781ed357739aded3554693d0bd19890e",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 18475276,
+            "bytes": 100000488,
+            "decode_seconds": {
+              "max_seconds": 0.026818338,
+              "median_seconds": 0.026545503,
+              "min_seconds": 0.026401702,
+              "relative_MAD": 0.005417151070748308,
+              "work_per_second": 3767134794.921761
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.027159651,
+              "median_seconds": 0.026690941,
+              "min_seconds": 0.026389811,
+              "relative_MAD": 0.011282105040807672,
+              "work_per_second": 3746607809.743388
+            },
+            "encode_seconds": {
+              "max_seconds": 5.059052819,
+              "median_seconds": 5.021452676,
+              "min_seconds": 4.99834577,
+              "relative_MAD": 0.004089422389291062,
+              "work_per_second": 19914653.079964623
+            },
+            "name": "corpus.bin",
+            "rows": null,
+            "selective": {},
+            "sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 18475276,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 18491772,
+          "strict_deployment_bytes": 18629212
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.026818338,
+            "median_seconds": 0.026545503,
+            "min_seconds": 0.026401702,
+            "relative_MAD": 0.005417151070748308,
+            "work_per_second": 3767134794.921761
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.027159651,
+            "median_seconds": 0.026690941,
+            "min_seconds": 0.026389811,
+            "relative_MAD": 0.011282105040807672,
+            "work_per_second": 3746607809.743388
+          },
+          "encode_seconds": {
+            "max_seconds": 5.059052819,
+            "median_seconds": 5.021452676,
+            "min_seconds": 4.99834577,
+            "relative_MAD": 0.004089422389291062,
+            "work_per_second": 19914653.079964623
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "ab4daa377ac2cc1bdea73d88ddf68866aeba079430b232b038841bcc925da88a",
+        "variant": "bulk",
+        "trials_file": "s-c4a81190cc6c002770022087c1b1fffe781ed357739aded3554693d0bd19890e.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lexical-compact/comparison.json",
+        "sha256": "29c290459e1dcecb8732dcff1bd4dc37f9c0f8e5a6a7c9e419f25cb42bf607c0"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/cpu8/lexical-compact/evidence.tar.gz",
+        "sha256": "c6387a67cfde429f9a2940a786e16858cf656be3448d7a16372657eb2afbb85d"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/yelp-final-results/CPU8_REVIEW.json",
+        "sha256": "127bd9e5ab8e0f84b420d9ffc94c1f6744329ae2b3276aa70ce93f5f8b2730c2"
+      }
+    ]
+  },
+  {
+    "name": "lexical-bpe-30000-64-hybrid-lengths-unroll4",
+    "result_id": "s-8ef3e007943ff1c50c2c5b304bc664eb987cbb25b0a91dc0a4f7e402100cce61",
+    "candidate": {
+      "decoder": "545bc207fa01a0688eb8559c49456d4a52cfbb39de5ace282e8c2cb6876ee5a0",
+      "encoder": "008af6da5453103a7daf98ac578931c39aee528088d95d5a3835c01e3827d91f"
+    },
+    "columns": [
+      {
+        "archive_bytes": 1789855,
+        "bytes": 18444591,
+        "decode_seconds": {
+          "max_seconds": 0.0027989309999999997,
+          "median_seconds": 0.0025966410000000002,
+          "min_seconds": 0.0024752899999999998,
+          "relative_MAD": 0.02308713449414074,
+          "work_per_second": 7103250314.5409775
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.002232088,
+          "median_seconds": 0.002154431,
+          "min_seconds": 0.002103565,
+          "relative_MAD": 0.013799931397199471,
+          "work_per_second": 8561235425.966299
+        },
+        "encode_seconds": {
+          "max_seconds": 1.368110707,
+          "median_seconds": 1.353813902,
+          "min_seconds": 1.3483916,
+          "relative_MAD": 0.0035848302287561956,
+          "work_per_second": 13624170.185246037
+        },
+        "name": "queries.nul",
+        "rows": null,
+        "selective": {},
+        "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 1789855,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 137440,
+      "nonplatform_dependency_bytes": 137440,
+      "package_bytes": 1805599,
+      "strict_deployment_bytes": 1943039
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.0027989309999999997,
+        "median_seconds": 0.0025966410000000002,
+        "min_seconds": 0.0024752899999999998,
+        "relative_MAD": 0.02308713449414074,
+        "work_per_second": 7103250314.5409775
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.002232088,
+        "median_seconds": 0.002154431,
+        "min_seconds": 0.002103565,
+        "relative_MAD": 0.013799931397199471,
+        "work_per_second": 8561235425.966299
+      },
+      "encode_seconds": {
+        "max_seconds": 1.368110707,
+        "median_seconds": 1.353813902,
+        "min_seconds": 1.3483916,
+        "relative_MAD": 0.0035848302287561956,
+        "work_per_second": 13624170.185246037
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "e8feed4dafdfc76d49b2ccb8a5f1ab015467563516bddcda01cc60c4a45df9fc",
+    "variant": "bulk",
+    "trials_file": "s-8ef3e007943ff1c50c2c5b304bc664eb987cbb25b0a91dc0a4f7e402100cce61.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "sqlstorm-tpcds",
+    "point_id": "A6",
+    "method": "Astra LZ4-target \u00b7 BPE balanced",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "balanced",
+    "source_result_id": "s-03e6cccfe71970b632c1cc21aad3c92961484b90e9f529dcf0ca3d82198ebfd2",
+    "export_sha256": "0df7b0cf6b84f2d89c2c3022b3c9aa7045d378a4ac97c32aa259d393c679cd85",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-76981df824ca41b1e9336967dc54513495fb0dcc106ac179a4f47d87d5acd29e",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2737819,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005972919,
+              "median_seconds": 0.005958132,
+              "min_seconds": 0.005947258,
+              "relative_MAD": 0.001343206226381079,
+              "work_per_second": 3095700296.6701646
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005936146,
+              "median_seconds": 0.005907812,
+              "min_seconds": 0.005874997,
+              "relative_MAD": 0.0032629677450805535,
+              "work_per_second": 3122068034.663256
+            },
+            "encode_seconds": {
+              "max_seconds": 0.666374885,
+              "median_seconds": 0.664332279,
+              "min_seconds": 0.66399003,
+              "relative_MAD": 0.0004257492958580667,
+              "work_per_second": 27764104.775646463
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2737819,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2754315,
+          "strict_deployment_bytes": 2891755
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005972919,
+            "median_seconds": 0.005958132,
+            "min_seconds": 0.005947258,
+            "relative_MAD": 0.001343206226381079,
+            "work_per_second": 3095700296.6701646
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.005936146,
+            "median_seconds": 0.005907812,
+            "min_seconds": 0.005874997,
+            "relative_MAD": 0.0032629677450805535,
+            "work_per_second": 3122068034.663256
+          },
+          "encode_seconds": {
+            "max_seconds": 0.666374885,
+            "median_seconds": 0.664332279,
+            "min_seconds": 0.66399003,
+            "relative_MAD": 0.0004257492958580667,
+            "work_per_second": 27764104.775646463
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "7301291ea32b132e3c9c33a048482f353c13153b64c736078a4d15103da1235c",
+        "variant": "bulk",
+        "trials_file": "s-76981df824ca41b1e9336967dc54513495fb0dcc106ac179a4f47d87d5acd29e.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-18319e3bf87ec47c51cbd81532426aa7c156b7cf115d52a5b929edd31968b16a",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2668195,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005208981,
+              "median_seconds": 0.005141984,
+              "min_seconds": 0.005090511999999999,
+              "relative_MAD": 0.008141993440663938,
+              "work_per_second": 3587057252.60911
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005368709,
+              "median_seconds": 0.005216375,
+              "min_seconds": 0.005143315,
+              "relative_MAD": 0.012537250485250742,
+              "work_per_second": 3535902039.251396
+            },
+            "encode_seconds": {
+              "max_seconds": 1.536147112,
+              "median_seconds": 1.488227287,
+              "min_seconds": 1.482845146,
+              "relative_MAD": 0.0036164778370979408,
+              "work_per_second": 12393665.37700098
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2668195,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2684691,
+          "strict_deployment_bytes": 2822131
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005208981,
+            "median_seconds": 0.005141984,
+            "min_seconds": 0.005090511999999999,
+            "relative_MAD": 0.008141993440663938,
+            "work_per_second": 3587057252.60911
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.005368709,
+            "median_seconds": 0.005216375,
+            "min_seconds": 0.005143315,
+            "relative_MAD": 0.012537250485250742,
+            "work_per_second": 3535902039.251396
+          },
+          "encode_seconds": {
+            "max_seconds": 1.536147112,
+            "median_seconds": 1.488227287,
+            "min_seconds": 1.482845146,
+            "relative_MAD": 0.0036164778370979408,
+            "work_per_second": 12393665.37700098
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "ba20b44995f612675937165ac120afeebb3346ee3ec44452fb8fd71b1cc1ec35",
+        "variant": "bulk",
+        "trials_file": "s-18319e3bf87ec47c51cbd81532426aa7c156b7cf115d52a5b929edd31968b16a.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/balanced/comparison.json",
+        "sha256": "253a289459ff056a23b706dfafd80fc67507fa04962ecb3621dc46b8bfe2d605"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/balanced/evidence.tar.gz",
+        "sha256": "a9623c040164ad0d575ba8c15944c9af31116942d1a4c5e82567c56837ebf50e"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/CPU8_REVIEW.json",
+        "sha256": "f4d5d6b7c758a3c06b2f54442b599150433bd71b78a404084f17589da2ed99ed"
+      }
+    ]
+  },
+  {
+    "name": "lexical-bpe-30000-64-raw-unroll4",
+    "result_id": "s-b4462fcc40a43cb906573b8b261dd835dbf94aa22ac08121f771296c18a6a68c",
+    "candidate": {
+      "decoder": "f1270146e072e3fa397de4450a95a4a4d980889523ccc67f38ac974fc5969066",
+      "encoder": "ffd5abf3b0d387d1805cd7c56bdda08af248da1b515617985a676130f701f09b"
+    },
+    "columns": [
+      {
+        "archive_bytes": 2341081,
+        "bytes": 18444591,
+        "decode_seconds": {
+          "max_seconds": 0.002506616,
+          "median_seconds": 0.002316261,
+          "min_seconds": 0.002187449,
+          "relative_MAD": 0.03671736475293587,
+          "work_per_second": 7963088356.623023
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.002181373,
+          "median_seconds": 0.002131599,
+          "min_seconds": 0.002047817,
+          "relative_MAD": 0.023350545764001494,
+          "work_per_second": 8652936598.30015
+        },
+        "encode_seconds": {
+          "max_seconds": 1.376148543,
+          "median_seconds": 1.362094328,
+          "min_seconds": 1.356898701,
+          "relative_MAD": 0.003742602766348285,
+          "work_per_second": 13541346.308285927
+        },
+        "name": "queries.nul",
+        "rows": null,
+        "selective": {},
+        "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 2341081,
+      "custom_decoder_bytes": 15640,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 2356721,
+      "strict_deployment_bytes": 2356721
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.002506616,
+        "median_seconds": 0.002316261,
+        "min_seconds": 0.002187449,
+        "relative_MAD": 0.03671736475293587,
+        "work_per_second": 7963088356.623023
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.002181373,
+        "median_seconds": 0.002131599,
+        "min_seconds": 0.002047817,
+        "relative_MAD": 0.023350545764001494,
+        "work_per_second": 8652936598.30015
+      },
+      "encode_seconds": {
+        "max_seconds": 1.376148543,
+        "median_seconds": 1.362094328,
+        "min_seconds": 1.356898701,
+        "relative_MAD": 0.003742602766348285,
+        "work_per_second": 13541346.308285927
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "e956fd4ab8051899f7c65064b290826a449044590b746a83232d80a481c7bc72",
+    "variant": "bulk",
+    "trials_file": "s-b4462fcc40a43cb906573b8b261dd835dbf94aa22ac08121f771296c18a6a68c.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "sqlstorm-tpcds",
+    "point_id": "A7",
+    "method": "Astra LZ4-target \u00b7 BPE fast decode",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "fast-decode",
+    "source_result_id": "s-8d7e09c145399332bbb982a785231408ebdfbc2c39b1ebdab9b4816643139c41",
+    "export_sha256": "42451372521512c3fd94b8f5caa1b2f1bb401e043a7e0c749deb665ce41cac65",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-f3d89da409ba15a0a2b2463c07d023e67a6a81fb2c107d1bddc7b248d1a2a8f9",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2737819,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005759352,
+              "median_seconds": 0.005715576,
+              "min_seconds": 0.005702972000000001,
+              "relative_MAD": 0.0005948656793297167,
+              "work_per_second": 3227074751.5211067
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005889304,
+              "median_seconds": 0.005845134,
+              "min_seconds": 0.005778306,
+              "relative_MAD": 0.003405738859023665,
+              "work_per_second": 3155546305.6963277
+            },
+            "encode_seconds": {
+              "max_seconds": 0.678255892,
+              "median_seconds": 0.671593893,
+              "min_seconds": 0.667965286,
+              "relative_MAD": 0.003871393154553364,
+              "work_per_second": 27463905.184736393
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2737819,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2754315,
+          "strict_deployment_bytes": 2891755
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005759352,
+            "median_seconds": 0.005715576,
+            "min_seconds": 0.005702972000000001,
+            "relative_MAD": 0.0005948656793297167,
+            "work_per_second": 3227074751.5211067
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.005889304,
+            "median_seconds": 0.005845134,
+            "min_seconds": 0.005778306,
+            "relative_MAD": 0.003405738859023665,
+            "work_per_second": 3155546305.6963277
+          },
+          "encode_seconds": {
+            "max_seconds": 0.678255892,
+            "median_seconds": 0.671593893,
+            "min_seconds": 0.667965286,
+            "relative_MAD": 0.003871393154553364,
+            "work_per_second": 27463905.184736393
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "19fa084eff9f9e03ab8c540f345e65b5ee2de63d00fc1ef63d3b6512e51792b8",
+        "variant": "bulk",
+        "trials_file": "s-f3d89da409ba15a0a2b2463c07d023e67a6a81fb2c107d1bddc7b248d1a2a8f9.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-e497159c601ffa6c6af0da8aa3b6caa720a9eb620c4c8486c03b5e5ec4e9f069",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2668195,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005181627,
+              "median_seconds": 0.005108465,
+              "min_seconds": 0.0050981360000000005,
+              "relative_MAD": 0.002021938096864693,
+              "work_per_second": 3610593593.1830792
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005930273,
+              "median_seconds": 0.005297248,
+              "min_seconds": 0.005151636,
+              "relative_MAD": 0.024208419164064084,
+              "work_per_second": 3481919479.699648
+            },
+            "encode_seconds": {
+              "max_seconds": 1.488137381,
+              "median_seconds": 1.474513995,
+              "min_seconds": 1.470729479,
+              "relative_MAD": 0.0025666192473133152,
+              "work_per_second": 12508929.086156284
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2668195,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2684691,
+          "strict_deployment_bytes": 2822131
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005181627,
+            "median_seconds": 0.005108465,
+            "min_seconds": 0.0050981360000000005,
+            "relative_MAD": 0.002021938096864693,
+            "work_per_second": 3610593593.1830792
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.005930273,
+            "median_seconds": 0.005297248,
+            "min_seconds": 0.005151636,
+            "relative_MAD": 0.024208419164064084,
+            "work_per_second": 3481919479.699648
+          },
+          "encode_seconds": {
+            "max_seconds": 1.488137381,
+            "median_seconds": 1.474513995,
+            "min_seconds": 1.470729479,
+            "relative_MAD": 0.0025666192473133152,
+            "work_per_second": 12508929.086156284
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "b70e6e23a0ce500dc5d0bcc9e3cfb6cb24a317eb2cbfb489258b03348d8a87c1",
+        "variant": "bulk",
+        "trials_file": "s-e497159c601ffa6c6af0da8aa3b6caa720a9eb620c4c8486c03b5e5ec4e9f069.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/fast-decode/comparison.json",
+        "sha256": "0aa1bef13a97e1ed9cddda7f82ebe1b287593a96cceaeb8e46a6670e63f06ec1"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/fast-decode/evidence.tar.gz",
+        "sha256": "81ff7f580b9f7a3d2b9e704d6fe69a4488c05e417fb396453429228338e3be27"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/CPU8_REVIEW.json",
+        "sha256": "f4d5d6b7c758a3c06b2f54442b599150433bd71b78a404084f17589da2ed99ed"
+      }
+    ]
+  },
+  {
+    "name": "lexical-bpe-30000-64-compact-lengths-unroll4",
+    "result_id": "s-f3ee181b32866a680aa431ad8c5d245b8da9d94e9080610f6843635947be31ec",
+    "candidate": {
+      "decoder": "db3b9411be5a287305ddb17058d7ba847a72a3322c1a1f74e61f498af1892166",
+      "encoder": "105d34fa980ae758549bf09471948bc9ebee5651d283c39ffce29cabba21e135"
+    },
+    "columns": [
+      {
+        "archive_bytes": 1596956,
+        "bytes": 18444591,
+        "decode_seconds": {
+          "max_seconds": 0.004142181,
+          "median_seconds": 0.003901397,
+          "min_seconds": 0.003729698,
+          "relative_MAD": 0.0380827688133251,
+          "work_per_second": 4727688825.310523
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.002323845,
+          "median_seconds": 0.002146586,
+          "min_seconds": 0.002050434,
+          "relative_MAD": 0.0391258491390514,
+          "work_per_second": 8592523663.156286
+        },
+        "encode_seconds": {
+          "max_seconds": 1.413282901,
+          "median_seconds": 1.397957535,
+          "min_seconds": 1.390542456,
+          "relative_MAD": 0.005127836018280688,
+          "work_per_second": 13193956.567500457
+        },
+        "name": "queries.nul",
+        "rows": null,
+        "selective": {},
+        "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 1596956,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 137440,
+      "nonplatform_dependency_bytes": 137440,
+      "package_bytes": 1612700,
+      "strict_deployment_bytes": 1750140
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.004142181,
+        "median_seconds": 0.003901397,
+        "min_seconds": 0.003729698,
+        "relative_MAD": 0.0380827688133251,
+        "work_per_second": 4727688825.310523
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.002323845,
+        "median_seconds": 0.002146586,
+        "min_seconds": 0.002050434,
+        "relative_MAD": 0.0391258491390514,
+        "work_per_second": 8592523663.156286
+      },
+      "encode_seconds": {
+        "max_seconds": 1.413282901,
+        "median_seconds": 1.397957535,
+        "min_seconds": 1.390542456,
+        "relative_MAD": 0.005127836018280688,
+        "work_per_second": 13193956.567500457
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "6f98a3bb6126fdab1554d972b4421b286a84bf0c03bc3b2677ee09c5419a5d24",
+    "variant": "bulk",
+    "trials_file": "s-f3ee181b32866a680aa431ad8c5d245b8da9d94e9080610f6843635947be31ec.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "sqlstorm-tpcds",
+    "point_id": "A8",
+    "method": "Astra LZ4-target \u00b7 BPE compact",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "compact",
+    "source_result_id": "s-a13efd1ee6385e32c8306705e6eafe858059b0a70a98d1ded8873973edd0ee59",
+    "export_sha256": "0736f6c384f37b1b20c2c1e806e24732e4380a6c4c68f40aae6444595d80e193",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-5d44e1f8e45a1085f04320cb7f1bfe73cb27720452760012a824793ceb7579ef",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2737819,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005748188,
+              "median_seconds": 0.005701431,
+              "min_seconds": 0.005682637,
+              "relative_MAD": 0.001957052536459676,
+              "work_per_second": 3235080982.3007593
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.00604254,
+              "median_seconds": 0.005874383,
+              "min_seconds": 0.005764979,
+              "relative_MAD": 0.018469854621327993,
+              "work_per_second": 3139834600.501874
+            },
+            "encode_seconds": {
+              "max_seconds": 0.678530963,
+              "median_seconds": 0.668895021,
+              "min_seconds": 0.667166991,
+              "relative_MAD": 0.00019671098732836477,
+              "work_per_second": 27574717.139358107
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2737819,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2754315,
+          "strict_deployment_bytes": 2891755
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005748188,
+            "median_seconds": 0.005701431,
+            "min_seconds": 0.005682637,
+            "relative_MAD": 0.001957052536459676,
+            "work_per_second": 3235080982.3007593
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.00604254,
+            "median_seconds": 0.005874383,
+            "min_seconds": 0.005764979,
+            "relative_MAD": 0.018469854621327993,
+            "work_per_second": 3139834600.501874
+          },
+          "encode_seconds": {
+            "max_seconds": 0.678530963,
+            "median_seconds": 0.668895021,
+            "min_seconds": 0.667166991,
+            "relative_MAD": 0.00019671098732836477,
+            "work_per_second": 27574717.139358107
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "19241a303abd16a8c713dbe7922bf835723cc059a25123e9077d18f95b192ba4",
+        "variant": "bulk",
+        "trials_file": "s-5d44e1f8e45a1085f04320cb7f1bfe73cb27720452760012a824793ceb7579ef.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-554439518d2cc2c327f2e82e26cbbbaf648b94430e3d321e74e9de91b6aa4418",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2668195,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005610634,
+              "median_seconds": 0.005164847,
+              "min_seconds": 0.005095161,
+              "relative_MAD": 0.005303158060635756,
+              "work_per_second": 3571178584.7673707
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005518458,
+              "median_seconds": 0.005251697,
+              "min_seconds": 0.005186585,
+              "relative_MAD": 0.005065029456192901,
+              "work_per_second": 3512120177.534995
+            },
+            "encode_seconds": {
+              "max_seconds": 1.486469774,
+              "median_seconds": 1.478869397,
+              "min_seconds": 1.469910255,
+              "relative_MAD": 0.003064108304081747,
+              "work_per_second": 12472089.176648233
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2668195,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2684691,
+          "strict_deployment_bytes": 2822131
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005610634,
+            "median_seconds": 0.005164847,
+            "min_seconds": 0.005095161,
+            "relative_MAD": 0.005303158060635756,
+            "work_per_second": 3571178584.7673707
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.005518458,
+            "median_seconds": 0.005251697,
+            "min_seconds": 0.005186585,
+            "relative_MAD": 0.005065029456192901,
+            "work_per_second": 3512120177.534995
+          },
+          "encode_seconds": {
+            "max_seconds": 1.486469774,
+            "median_seconds": 1.478869397,
+            "min_seconds": 1.469910255,
+            "relative_MAD": 0.003064108304081747,
+            "work_per_second": 12472089.176648233
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "5ca8560429a8f7a157981e8c71020535a5984420e885dad0ddc729a8478253ee",
+        "variant": "bulk",
+        "trials_file": "s-554439518d2cc2c327f2e82e26cbbbaf648b94430e3d321e74e9de91b6aa4418.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/compact/comparison.json",
+        "sha256": "d0d8be26b992cf0c23079770a544098f434b5ba3c3a4224a23127ee221d953ed"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/compact/evidence.tar.gz",
+        "sha256": "aead4494b7504cc54450841ac80d8013129e99427deb28d618943a09809cc80f"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/CPU8_REVIEW.json",
+        "sha256": "f4d5d6b7c758a3c06b2f54442b599150433bd71b78a404084f17589da2ed99ed"
+      }
+    ]
+  },
+  {
+    "name": "longmatch-h16-d8-greedy",
+    "result_id": "s-7c70f2e1414d7219db9a1036d150c7c57919823cf3b2f703d13882b2f62d29a5",
+    "candidate": {
+      "decoder": "9f7481c3bc9a9654ad9f50f2645a9a0b201b038fd4515b75d2b57832d63c8d50",
+      "encoder": "0a1fa2b93cd6b288a6c2c9a68346ca97cfa7c837a40b2067e1fd1778a984c609"
+    },
+    "columns": [
+      {
+        "archive_bytes": 2492346,
+        "bytes": 18444591,
+        "decode_seconds": {
+          "max_seconds": 0.004237496,
+          "median_seconds": 0.004085887,
+          "min_seconds": 0.003852086,
+          "relative_MAD": 0.023156538592476808,
+          "work_per_second": 4514219556.243235
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.003855369,
+          "median_seconds": 0.003714992,
+          "min_seconds": 0.003539707,
+          "relative_MAD": 0.018570161120131698,
+          "work_per_second": 4964907326.852924
+        },
+        "encode_seconds": {
+          "max_seconds": 0.277088101,
+          "median_seconds": 0.271327149,
+          "min_seconds": 0.266121324,
+          "relative_MAD": 0.005666767979786644,
+          "work_per_second": 67979157.51512209
+        },
+        "name": "queries.nul",
+        "rows": null,
+        "selective": {},
+        "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 2492346,
+      "custom_decoder_bytes": 15744,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 2508090,
+      "strict_deployment_bytes": 2508090
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.004237496,
+        "median_seconds": 0.004085887,
+        "min_seconds": 0.003852086,
+        "relative_MAD": 0.023156538592476808,
+        "work_per_second": 4514219556.243235
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.003855369,
+        "median_seconds": 0.003714992,
+        "min_seconds": 0.003539707,
+        "relative_MAD": 0.018570161120131698,
+        "work_per_second": 4964907326.852924
+      },
+      "encode_seconds": {
+        "max_seconds": 0.277088101,
+        "median_seconds": 0.271327149,
+        "min_seconds": 0.266121324,
+        "relative_MAD": 0.005666767979786644,
+        "work_per_second": 67979157.51512209
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 8,
+    "depth": "full",
+    "raw_trials_sha256": "7916e55befdeecb2973babffed4adf16ba5a041b2d0f72c0d4116669b617273a",
+    "variant": "bulk",
+    "trials_file": "s-7c70f2e1414d7219db9a1036d150c7c57919823cf3b2f703d13882b2f62d29a5.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "sqlstorm-tpcds",
+    "point_id": "A9",
+    "method": "Astra LZ4-target \u00b7 LZ fast encode",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "fast-encode",
+    "source_result_id": "s-3bc342de23c2fa19a3392c27ca61650a3e2657d9a8e45beddd937579050462d1",
+    "export_sha256": "0e2ebf8923e2de068227ebc37a22229061af0ffe35c08dc202cc3eaf4df743cd",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 8
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-d130e8bfccc297b3f808c4bb28a3f2e3e9008a2fb3fb63cc9e60a0d4de90900a",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2737819,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.006003115999999999,
+              "median_seconds": 0.005714556,
+              "min_seconds": 0.005696456,
+              "relative_MAD": 0.0024444593770714578,
+              "work_per_second": 3227650757.1191883
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.006066404,
+              "median_seconds": 0.005873327,
+              "min_seconds": 0.005778325,
+              "relative_MAD": 0.01032328014428629,
+              "work_per_second": 3140399129.8288007
+            },
+            "encode_seconds": {
+              "max_seconds": 0.677034773,
+              "median_seconds": 0.671860903,
+              "min_seconds": 0.669624664,
+              "relative_MAD": 0.0033284255565620086,
+              "work_per_second": 27452990.51878302
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2737819,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2754315,
+          "strict_deployment_bytes": 2891755
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.006003115999999999,
+            "median_seconds": 0.005714556,
+            "min_seconds": 0.005696456,
+            "relative_MAD": 0.0024444593770714578,
+            "work_per_second": 3227650757.1191883
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.006066404,
+            "median_seconds": 0.005873327,
+            "min_seconds": 0.005778325,
+            "relative_MAD": 0.01032328014428629,
+            "work_per_second": 3140399129.8288007
+          },
+          "encode_seconds": {
+            "max_seconds": 0.677034773,
+            "median_seconds": 0.671860903,
+            "min_seconds": 0.669624664,
+            "relative_MAD": 0.0033284255565620086,
+            "work_per_second": 27452990.51878302
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "952fb6d2e4a2fc3143b4593152ee2410cb4de89d744cbb61534f927c0661d8b4",
+        "variant": "bulk",
+        "trials_file": "s-d130e8bfccc297b3f808c4bb28a3f2e3e9008a2fb3fb63cc9e60a0d4de90900a.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-66f0c0ad104bc9b2e4b4d129fe6cdf4cc4bb2462d47e7a3808314c9fd420fad0",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 2668195,
+            "bytes": 18444591,
+            "decode_seconds": {
+              "max_seconds": 0.005317899,
+              "median_seconds": 0.005142761,
+              "min_seconds": 0.00510162,
+              "relative_MAD": 0.007999788440489408,
+              "work_per_second": 3586515297.910986
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.006374421,
+              "median_seconds": 0.005533227,
+              "min_seconds": 0.005142144,
+              "relative_MAD": 0.03578888052125826,
+              "work_per_second": 3333423877.241978
+            },
+            "encode_seconds": {
+              "max_seconds": 1.497623624,
+              "median_seconds": 1.487603667,
+              "min_seconds": 1.469750114,
+              "relative_MAD": 0.002261683723047849,
+              "work_per_second": 12398860.939349918
+            },
+            "name": "queries.nul",
+            "rows": null,
+            "selective": {},
+            "sha256": "469c5e5c75dd89d440ee1bd336fa3ec5292986025dfa744cc5afdf05a877201c"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 2668195,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 2684691,
+          "strict_deployment_bytes": 2822131
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.005317899,
+            "median_seconds": 0.005142761,
+            "min_seconds": 0.00510162,
+            "relative_MAD": 0.007999788440489408,
+            "work_per_second": 3586515297.910986
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.006374421,
+            "median_seconds": 0.005533227,
+            "min_seconds": 0.005142144,
+            "relative_MAD": 0.03578888052125826,
+            "work_per_second": 3333423877.241978
+          },
+          "encode_seconds": {
+            "max_seconds": 1.497623624,
+            "median_seconds": 1.487603667,
+            "min_seconds": 1.469750114,
+            "relative_MAD": 0.002261683723047849,
+            "work_per_second": 12398860.939349918
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 8,
+        "depth": "full",
+        "raw_trials_sha256": "f7fcbb387483f2c7c8ba4cfc675e1a6bda834a46f1ecd50986342488819b2e5b",
+        "variant": "bulk",
+        "trials_file": "s-66f0c0ad104bc9b2e4b4d129fe6cdf4cc4bb2462d47e7a3808314c9fd420fad0.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/fast-encode/comparison.json",
+        "sha256": "a81ba56e8a9876faf4a9f0e7cb490545cd0ab4e6245ffd3848ddd1dc68034b69"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/cpu8/fast-encode/evidence.tar.gz",
+        "sha256": "f6782b9cdb39673ecff2a5b343419fd1d72162d1baccf48c0f3102179febb746"
+      },
+      {
+        "path": "experiments/astra-frontier-2026-09-23/sqlstorm-final-results/CPU8_REVIEW.json",
+        "sha256": "f4d5d6b7c758a3c06b2f54442b599150433bd71b78a404084f17589da2ed99ed"
+      }
+    ]
+  },
+  {
+    "name": "template-safe",
+    "result_id": "s-7fd267b77d94fc8816b9cd5567233ce8b217c86190c6c36c90eef58dbaa7e9b1",
+    "candidate": {
+      "decoder": "3af27058a15e6185b2986afaec7d20bf9341f490d0b57be39cf857bfb55f92e7",
+      "encoder": "14486d204b8761a6ee8bb0a4c9d5f5eb89d0d0869f38d9c841c51a96edded3e6"
+    },
+    "columns": [
+      {
+        "archive_bytes": 441376,
+        "bytes": 5436122,
+        "decode_seconds": {
+          "max_seconds": 0.000543328,
+          "median_seconds": 0.000424051,
+          "min_seconds": 0.000398922,
+          "relative_MAD": 0.05925938153665475,
+          "work_per_second": 12819500484.61152
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.000436548,
+          "median_seconds": 0.000369942,
+          "min_seconds": 0.000347745,
+          "relative_MAD": 0.04924015115883027,
+          "work_per_second": 14694525087.716454
+        },
+        "encode_seconds": {
+          "max_seconds": 0.046807843,
+          "median_seconds": 0.043929478,
+          "min_seconds": 0.043312874,
+          "relative_MAD": 0.014036224149988756,
+          "work_per_second": 123746564.8920299
+        },
+        "name": "openstack_abnormal.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+      },
+      {
+        "archive_bytes": 1054702,
+        "bytes": 15499595,
+        "decode_seconds": {
+          "max_seconds": 0.001137304,
+          "median_seconds": 0.001104682,
+          "min_seconds": 0.000992834,
+          "relative_MAD": 0.02665563483427793,
+          "work_per_second": 14030820634.354502
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.001017513,
+          "median_seconds": 0.000990568,
+          "min_seconds": 0.000973162,
+          "relative_MAD": 0.0039553064504406635,
+          "work_per_second": 15647179194.15931
+        },
+        "encode_seconds": {
+          "max_seconds": 0.136577143,
+          "median_seconds": 0.127001014,
+          "min_seconds": 0.125198589,
+          "relative_MAD": 0.01419220952046884,
+          "work_per_second": 122043080.69540295
+        },
+        "name": "openstack_normal1.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+      },
+      {
+        "archive_bytes": 2665824,
+        "bytes": 40506365,
+        "decode_seconds": {
+          "max_seconds": 0.003420307,
+          "median_seconds": 0.003266476,
+          "min_seconds": 0.003167019,
+          "relative_MAD": 0.014862500137763088,
+          "work_per_second": 12400631445.019035
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.003026639,
+          "median_seconds": 0.002800972,
+          "min_seconds": 0.002683182,
+          "relative_MAD": 0.035641912878815005,
+          "work_per_second": 14461538708.705406
+        },
+        "encode_seconds": {
+          "max_seconds": 0.363463433,
+          "median_seconds": 0.352952422,
+          "min_seconds": 0.351681372,
+          "relative_MAD": 0.0024384023068129666,
+          "work_per_second": 114764377.50581579
+        },
+        "name": "openstack_normal2.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 4161902,
+      "custom_decoder_bytes": 29352,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 4191254,
+      "strict_deployment_bytes": 4191254
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.005000299000000001,
+        "median_seconds": 0.004883154,
+        "min_seconds": 0.004583904,
+        "relative_MAD": 0.01741886493852133,
+        "work_per_second": 12582458386.526413
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.004383253,
+        "median_seconds": 0.0041823730000000005,
+        "min_seconds": 0.00406133,
+        "relative_MAD": 0.025908975598302776,
+        "work_per_second": 14690722706.941727
+      },
+      "encode_seconds": {
+        "max_seconds": 0.535285082,
+        "median_seconds": 0.525831344,
+        "min_seconds": 0.522941129,
+        "relative_MAD": 0.0054964677039107315,
+        "work_per_second": 116847507.66778179
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 24,
+    "depth": "full",
+    "raw_trials_sha256": "c3bc6a1fbdefda5582ae9d9b4b73163e05720957c527426c79db679cb3924d91",
+    "variant": "bulk",
+    "trials_file": "s-7fd267b77d94fc8816b9cd5567233ce8b217c86190c6c36c90eef58dbaa7e9b1.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "openstack",
+    "point_id": "A7",
+    "method": "Astra LZ4-target \u00b7 Learned templates",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "learned-templates",
+    "source_result_id": "s-55e81d8d422dcbceb5d1b02bb34b200c42c48841420ed2bcdeaef92e32dac171",
+    "export_sha256": "685f00eafb6e278cc5883cf9dcfcd08c58d3c701c6db645af9f65ad7d126a18b",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 24
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-fe866157a832065d4822359e87a0d0be115d7c23102bb98cdd1ea0b8f657aa96",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 619106,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.000890953,
+              "median_seconds": 0.0006731160000000001,
+              "min_seconds": 0.000658572,
+              "relative_MAD": 0.021606974132244848,
+              "work_per_second": 8076055241.59283
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000628695,
+              "median_seconds": 0.000610322,
+              "min_seconds": 0.00059663,
+              "relative_MAD": 0.014747952720039438,
+              "work_per_second": 8906973695.852354
+            },
+            "encode_seconds": {
+              "max_seconds": 0.051727795,
+              "median_seconds": 0.050919369,
+              "min_seconds": 0.050705818,
+              "relative_MAD": 0.0033301276769553425,
+              "work_per_second": 106759414.08464822
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1746411,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.001936549,
+              "median_seconds": 0.001839161,
+              "min_seconds": 0.0018259720000000001,
+              "relative_MAD": 0.0021161823244404006,
+              "work_per_second": 8427535707.858094
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.001765665,
+              "median_seconds": 0.001727994,
+              "min_seconds": 0.001713804,
+              "relative_MAD": 0.0064948142181049775,
+              "work_per_second": 8969704177.213577
+            },
+            "encode_seconds": {
+              "max_seconds": 0.147032034,
+              "median_seconds": 0.144928739,
+              "min_seconds": 0.144443015,
+              "relative_MAD": 0.001719065533303286,
+              "work_per_second": 106946317.94181277
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4244113,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.005935532,
+              "median_seconds": 0.0058815000000000004,
+              "min_seconds": 0.005766936,
+              "relative_MAD": 0.004984782793505125,
+              "work_per_second": 6887080676.698121
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005349617,
+              "median_seconds": 0.005245718,
+              "min_seconds": 0.005198086,
+              "relative_MAD": 0.008468812086353068,
+              "work_per_second": 7721796139.2511
+            },
+            "encode_seconds": {
+              "max_seconds": 0.388804502,
+              "median_seconds": 0.372269616,
+              "min_seconds": 0.372116649,
+              "relative_MAD": 0.00010628049751974294,
+              "work_per_second": 108809215.84532431
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6609630,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6626126,
+          "strict_deployment_bytes": 6763566
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.008663325,
+            "median_seconds": 0.008415747,
+            "min_seconds": 0.008294951,
+            "relative_MAD": 0.01239450282904163,
+            "work_per_second": 7300847090.579125
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.007696095,
+            "median_seconds": 0.007593431,
+            "min_seconds": 0.007516304,
+            "relative_MAD": 0.004652178968900943,
+            "work_per_second": 8091478279.05462
+          },
+          "encode_seconds": {
+            "max_seconds": 0.587496023,
+            "median_seconds": 0.568107532,
+            "min_seconds": 0.567554327,
+            "relative_MAD": 0.0008299977969662676,
+            "work_per_second": 108152204.53722131
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "6068d4947c2a7bd49eefa21288212563b57b544c4d0022f10de19b3988a3f535",
+        "variant": "bulk",
+        "trials_file": "s-fe866157a832065d4822359e87a0d0be115d7c23102bb98cdd1ea0b8f657aa96.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-6f88cd5c7df451bd226353b099a5da896625b4df7d5764ca23496aef408be131",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 616482,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.00086759,
+              "median_seconds": 0.0007775330000000001,
+              "min_seconds": 0.000634288,
+              "relative_MAD": 0.10293453782669017,
+              "work_per_second": 6991500039.22663
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000781371,
+              "median_seconds": 0.000730005,
+              "min_seconds": 0.000670942,
+              "relative_MAD": 0.04804213669769372,
+              "work_per_second": 7446691461.01739
+            },
+            "encode_seconds": {
+              "max_seconds": 0.169372906,
+              "median_seconds": 0.163654115,
+              "min_seconds": 0.161457999,
+              "relative_MAD": 0.010930650903584128,
+              "work_per_second": 33217142.141522076
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1739145,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.0022212,
+              "median_seconds": 0.00189773,
+              "min_seconds": 0.001803849,
+              "relative_MAD": 0.03307899437749319,
+              "work_per_second": 8167439519.847397
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.002179625,
+              "median_seconds": 0.001823291,
+              "min_seconds": 0.001769277,
+              "relative_MAD": 0.005131929022849453,
+              "work_per_second": 8500889325.949615
+            },
+            "encode_seconds": {
+              "max_seconds": 0.464594974,
+              "median_seconds": 0.458663369,
+              "min_seconds": 0.456858561,
+              "relative_MAD": 0.003388251831377431,
+              "work_per_second": 33792964.617586456
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4222274,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.005829351,
+              "median_seconds": 0.0048451430000000005,
+              "min_seconds": 0.00475928,
+              "relative_MAD": 0.007310620140623456,
+              "work_per_second": 8360200101.421154
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.005592751,
+              "median_seconds": 0.004475551,
+              "min_seconds": 0.004405501,
+              "relative_MAD": 0.01470165349473184,
+              "work_per_second": 9050587290.81626
+            },
+            "encode_seconds": {
+              "max_seconds": 1.179260354,
+              "median_seconds": 1.173410707,
+              "min_seconds": 1.168123438,
+              "relative_MAD": 0.0013531894591787802,
+              "work_per_second": 34520193.78923223
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6577901,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6594397,
+          "strict_deployment_bytes": 6731837
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.008538313,
+            "median_seconds": 0.007553277000000001,
+            "min_seconds": 0.0073210789999999994,
+            "relative_MAD": 0.008362595466841686,
+            "work_per_second": 8134493412.594295
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.008092033,
+            "median_seconds": 0.007110727,
+            "min_seconds": 0.006915116,
+            "relative_MAD": 0.01621057874954269,
+            "work_per_second": 8640759517.2758
+          },
+          "encode_seconds": {
+            "max_seconds": 1.803448642,
+            "median_seconds": 1.795835108,
+            "min_seconds": 1.789105581,
+            "relative_MAD": 0.0031716096731971596,
+            "work_per_second": 34213654.54227438
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "8e032eb9d717c20e1cdc33876c3b1298b6506fd92782fcfede656527e2e754a5",
+        "variant": "bulk",
+        "trials_file": "s-6f88cd5c7df451bd226353b099a5da896625b4df7d5764ca23496aef408be131.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/learned-templates/comparison.json",
+        "sha256": "caf03548ff6156d5a8cd6588b7955bb3d7ea08b00838ccc69d3aa82aa463a0f2"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/learned-templates/evidence.tar.gz",
+        "sha256": "91a80ccebd022d8a0d5bfd4e48bffcd99806cc70f34325a21c1c5de75d00092e"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/REVIEW.json",
+        "sha256": "105a224138a0a9196eb2e25d79f1763ebfd9670181f02338433ad425148e3155"
+      }
+    ]
+  },
+  {
+    "name": "template-safe-lz4-blocks",
+    "result_id": "s-bff8558c0247c25b2a5f67bc269e3ffbc828c877e1e262d63bd6f4a37877f3f3",
+    "candidate": {
+      "decoder": "d1eb4c26f6e9c07d73d6b832d681e51e453f15b88883beee071f14fe369d2bfa",
+      "encoder": "0b2e6a9f690400fe2e63774d71227eedbf97a8f0125f18f2f3a8e540119015e7"
+    },
+    "columns": [
+      {
+        "archive_bytes": 385704,
+        "bytes": 5436122,
+        "decode_seconds": {
+          "max_seconds": 0.000698568,
+          "median_seconds": 0.000591439,
+          "min_seconds": 0.000520409,
+          "relative_MAD": 0.1178735254185132,
+          "work_per_second": 9191348558.346676
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.00054046,
+          "median_seconds": 0.000455926,
+          "min_seconds": 0.000449794,
+          "relative_MAD": 0.00409276944065484,
+          "work_per_second": 11923255089.64174
+        },
+        "encode_seconds": {
+          "max_seconds": 0.051243132,
+          "median_seconds": 0.048664573,
+          "min_seconds": 0.048636011,
+          "relative_MAD": 0.0005869156603922694,
+          "work_per_second": 111705942.63716236
+        },
+        "name": "openstack_abnormal.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+      },
+      {
+        "archive_bytes": 1000032,
+        "bytes": 15499595,
+        "decode_seconds": {
+          "max_seconds": 0.001500026,
+          "median_seconds": 0.001400508,
+          "min_seconds": 0.0013650679999999999,
+          "relative_MAD": 0.025305103576702227,
+          "work_per_second": 11067123500.901102
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.001385872,
+          "median_seconds": 0.001237264,
+          "min_seconds": 0.001217521,
+          "relative_MAD": 0.011139094000957079,
+          "work_per_second": 12527314299.93922
+        },
+        "encode_seconds": {
+          "max_seconds": 0.144712518,
+          "median_seconds": 0.14217893,
+          "min_seconds": 0.140394794,
+          "relative_MAD": 0.0016340888203336544,
+          "work_per_second": 109014711.25151947
+        },
+        "name": "openstack_normal1.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+      },
+      {
+        "archive_bytes": 2357297,
+        "bytes": 40506365,
+        "decode_seconds": {
+          "max_seconds": 0.004433612,
+          "median_seconds": 0.003971147,
+          "min_seconds": 0.003833077,
+          "relative_MAD": 0.03476829238504657,
+          "work_per_second": 10200167609.00566
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.003725784,
+          "median_seconds": 0.003582787,
+          "min_seconds": 0.003412625,
+          "relative_MAD": 0.03178084547030007,
+          "work_per_second": 11305825604.480534
+        },
+        "encode_seconds": {
+          "max_seconds": 0.392211167,
+          "median_seconds": 0.390977515,
+          "min_seconds": 0.38839721,
+          "relative_MAD": 0.00315530165462336,
+          "work_per_second": 103602799.25560425
+        },
+        "name": "openstack_normal2.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 3743033,
+      "custom_decoder_bytes": 29560,
+      "excluded_standard_codec_bytes": 137440,
+      "nonplatform_dependency_bytes": 137440,
+      "package_bytes": 3772593,
+      "strict_deployment_bytes": 3910033
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.006469499,
+        "median_seconds": 0.006047524,
+        "min_seconds": 0.0057589419999999995,
+        "relative_MAD": 0.034136284535621446,
+        "work_per_second": 10159874024.476793
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.00556145,
+        "median_seconds": 0.0052747,
+        "min_seconds": 0.005085075,
+        "relative_MAD": 0.02723112214912695,
+        "work_per_second": 11648450527.992113
+      },
+      "encode_seconds": {
+        "max_seconds": 0.584893648,
+        "median_seconds": 0.582093856,
+        "min_seconds": 0.577524454,
+        "relative_MAD": 0.002387888114043319,
+        "work_per_second": 105553565.57482716
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 24,
+    "depth": "full",
+    "raw_trials_sha256": "1dae82d2367d6b6058a74bd659e6f99ce261a4cc5b508115747068501c5165cf",
+    "variant": "bulk",
+    "trials_file": "s-bff8558c0247c25b2a5f67bc269e3ffbc828c877e1e262d63bd6f4a37877f3f3.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "openstack",
+    "point_id": "A8",
+    "method": "Astra LZ4-target \u00b7 Templates + LZ4",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "templates-lz4-blocks",
+    "source_result_id": "s-bed88859ea2f108f19cb0daa2b1c9f40f8504d2af7f479c759a8b9cc53835acd",
+    "export_sha256": "ff3b77a794b113cf003d61e17cf07aca675bbc539b0ce7b94764f553290040c3",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 24
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-f25ec882b870441a8a60cb6466ca5a23e6a62bd06595810d34cb3521bd5fea21",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 619106,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.000855161,
+              "median_seconds": 0.000783986,
+              "min_seconds": 0.00062683,
+              "relative_MAD": 0.06017964606510826,
+              "work_per_second": 6933952902.220193
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000712644,
+              "median_seconds": 0.000681206,
+              "min_seconds": 0.000640087,
+              "relative_MAD": 0.033964762494751964,
+              "work_per_second": 7980144038.660846
+            },
+            "encode_seconds": {
+              "max_seconds": 0.052264295,
+              "median_seconds": 0.051172416,
+              "min_seconds": 0.050942765,
+              "relative_MAD": 0.0032244911008304914,
+              "work_per_second": 106231490.02775246
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1746411,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.002115433,
+              "median_seconds": 0.0018948790000000001,
+              "min_seconds": 0.001761736,
+              "relative_MAD": 0.07026464486650602,
+              "work_per_second": 8179728098.73348
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.001754837,
+              "median_seconds": 0.00170928,
+              "min_seconds": 0.001664978,
+              "relative_MAD": 0.017277450154450917,
+              "work_per_second": 9067908710.100159
+            },
+            "encode_seconds": {
+              "max_seconds": 0.149388018,
+              "median_seconds": 0.146103402,
+              "min_seconds": 0.144062796,
+              "relative_MAD": 0.010679463849856033,
+              "work_per_second": 106086475.6592047
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4244113,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.00481906,
+              "median_seconds": 0.00474572,
+              "min_seconds": 0.00458203,
+              "relative_MAD": 0.015453924799608882,
+              "work_per_second": 8535346585.976417
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.004324826,
+              "median_seconds": 0.004288258,
+              "min_seconds": 0.00418456,
+              "relative_MAD": 0.006877851099444243,
+              "work_per_second": 9445878722.782072
+            },
+            "encode_seconds": {
+              "max_seconds": 0.380560608,
+              "median_seconds": 0.37500925,
+              "min_seconds": 0.370291413,
+              "relative_MAD": 0.012506560838166106,
+              "work_per_second": 108014308.98037848
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6609630,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6626126,
+          "strict_deployment_bytes": 6763566
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.007708058,
+            "median_seconds": 0.007364782,
+            "min_seconds": 0.007068026,
+            "relative_MAD": 0.028741923386191182,
+            "work_per_second": 8342688486.909728
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.006738227,
+            "median_seconds": 0.006694077999999999,
+            "min_seconds": 0.006540361000000001,
+            "relative_MAD": 0.006595232383010945,
+            "work_per_second": 9178572762.372952
+          },
+          "encode_seconds": {
+            "max_seconds": 0.580659386,
+            "median_seconds": 0.571367575,
+            "min_seconds": 0.566697965,
+            "relative_MAD": 0.006891514626114551,
+            "work_per_second": 107535122.20220056
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "17c9946e37b3e1132366d13523dbc40da4bf46e378e0ca553440d4949bf132a4",
+        "variant": "bulk",
+        "trials_file": "s-f25ec882b870441a8a60cb6466ca5a23e6a62bd06595810d34cb3521bd5fea21.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-b6db541beb8edfbece12c495e4a1e82695955796ea549a5fd50295ca37050ade",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 616482,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.000887555,
+              "median_seconds": 0.000827486,
+              "min_seconds": 0.000738199,
+              "relative_MAD": 0.011566358826614581,
+              "work_per_second": 6569442866.70711
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000788677,
+              "median_seconds": 0.000719909,
+              "min_seconds": 0.000678042,
+              "relative_MAD": 0.05815596137845201,
+              "work_per_second": 7551123822.594244
+            },
+            "encode_seconds": {
+              "max_seconds": 0.163725816,
+              "median_seconds": 0.162368449,
+              "min_seconds": 0.161778504,
+              "relative_MAD": 0.0010254701638494543,
+              "work_per_second": 33480162.146526385
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1739145,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.002182349,
+              "median_seconds": 0.0018803770000000001,
+              "min_seconds": 0.001788688,
+              "relative_MAD": 0.03844760917624504,
+              "work_per_second": 8242812478.56148
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.001805743,
+              "median_seconds": 0.001793634,
+              "min_seconds": 0.001767184,
+              "relative_MAD": 0.005359510357185532,
+              "work_per_second": 8641448032.318745
+            },
+            "encode_seconds": {
+              "max_seconds": 0.468249067,
+              "median_seconds": 0.46202689,
+              "min_seconds": 0.454288855,
+              "relative_MAD": 0.00289140963202373,
+              "work_per_second": 33546954.377482228
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4222274,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.005141209,
+              "median_seconds": 0.0049106060000000005,
+              "min_seconds": 0.004784681,
+              "relative_MAD": 0.015375902688995847,
+              "work_per_second": 8248750765.180509
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.004598165,
+              "median_seconds": 0.004482209,
+              "min_seconds": 0.004454917,
+              "relative_MAD": 0.006088961938187162,
+              "work_per_second": 9037143292.51492
+            },
+            "encode_seconds": {
+              "max_seconds": 1.180290235,
+              "median_seconds": 1.1748293,
+              "min_seconds": 1.163926423,
+              "relative_MAD": 0.0016107003800467136,
+              "work_per_second": 34478511.048371024
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6577901,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6594397,
+          "strict_deployment_bytes": 6731837
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.007909903000000001,
+            "median_seconds": 0.007648275999999999,
+            "min_seconds": 0.007581779,
+            "relative_MAD": 0.005429328125711136,
+            "work_per_second": 8033455121.127952
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.007121321000000001,
+            "median_seconds": 0.007022577,
+            "min_seconds": 0.00693002,
+            "relative_MAD": 0.003367140011423218,
+            "work_per_second": 8749221546.449402
+          },
+          "encode_seconds": {
+            "max_seconds": 1.805431538,
+            "median_seconds": 1.799158416,
+            "min_seconds": 1.781026989,
+            "relative_MAD": 0.002027094427909411,
+            "work_per_second": 34150456.93230384
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "6fe59c9e8e3ee42210caca7855c3f6799a4ab7cd45a8e85493dc31b3fb0ca7db",
+        "variant": "bulk",
+        "trials_file": "s-b6db541beb8edfbece12c495e4a1e82695955796ea549a5fd50295ca37050ade.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/templates-lz4-blocks/comparison.json",
+        "sha256": "5a58d42770b7a2feaeaf9f7a42d44dbdfcd696bad7543a60642d5392da8f416b"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/templates-lz4-blocks/evidence.tar.gz",
+        "sha256": "0f5062b50454199ee865906d1f5f74997e083161f6141aa84d82c5b678b3ed77"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/REVIEW.json",
+        "sha256": "105a224138a0a9196eb2e25d79f1763ebfd9670181f02338433ad425148e3155"
+      }
+    ]
+  },
+  {
+    "name": "fast-lz-nibble15-suffix-final",
+    "result_id": "s-d6631a5b6d3195608e97c947cb0d5ff849c12f6ec8849fdeaf3e688320d7fb61",
+    "candidate": {
+      "decoder": "29d33cbd1486550ad78f1ed0e7b961bb091026105e8c15cd4c911796745d820e",
+      "encoder": "5626bc6e12e2122b4449a593e85da8d1f0de6cf7cba7050bb3950cb62e92a724"
+    },
+    "columns": [
+      {
+        "archive_bytes": 501684,
+        "bytes": 5436122,
+        "decode_seconds": {
+          "max_seconds": 0.000493938,
+          "median_seconds": 0.000477119,
+          "min_seconds": 0.00037386,
+          "relative_MAD": 0.034641253020734925,
+          "work_per_second": 11393639741.867332
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.000470445,
+          "median_seconds": 0.000386418,
+          "min_seconds": 0.000373309,
+          "relative_MAD": 0.009481959950105872,
+          "work_per_second": 14067983375.515633
+        },
+        "encode_seconds": {
+          "max_seconds": 0.038688948,
+          "median_seconds": 0.037722026,
+          "min_seconds": 0.037450945,
+          "relative_MAD": 0.004899551259521471,
+          "work_per_second": 144110022.08630046
+        },
+        "name": "openstack_abnormal.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+      },
+      {
+        "archive_bytes": 1413117,
+        "bytes": 15499595,
+        "decode_seconds": {
+          "max_seconds": 0.001272235,
+          "median_seconds": 0.001127182,
+          "min_seconds": 0.001106972,
+          "relative_MAD": 0.013907248341439145,
+          "work_per_second": 13750747439.189056
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.001160625,
+          "median_seconds": 0.001108733,
+          "min_seconds": 0.001045149,
+          "relative_MAD": 0.041716084936589876,
+          "work_per_second": 13979555943.586058
+        },
+        "encode_seconds": {
+          "max_seconds": 0.103284828,
+          "median_seconds": 0.10177935,
+          "min_seconds": 0.101512319,
+          "relative_MAD": 0.0026236265018395274,
+          "work_per_second": 152286244.70484436
+        },
+        "name": "openstack_normal1.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+      },
+      {
+        "archive_bytes": 3451948,
+        "bytes": 40506365,
+        "decode_seconds": {
+          "max_seconds": 0.003937638,
+          "median_seconds": 0.003355275,
+          "min_seconds": 0.0032730999999999997,
+          "relative_MAD": 0.016694905782685437,
+          "work_per_second": 12072442646.280857
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.003672451,
+          "median_seconds": 0.003154131,
+          "min_seconds": 0.003082087,
+          "relative_MAD": 0.009416539769591064,
+          "work_per_second": 12842321704.456789
+        },
+        "encode_seconds": {
+          "max_seconds": 0.259698995,
+          "median_seconds": 0.248291868,
+          "min_seconds": 0.247295289,
+          "relative_MAD": 0.004013739990872345,
+          "work_per_second": 163140119.43395585
+        },
+        "name": "openstack_normal2.log",
+        "rows": null,
+        "selective": {},
+        "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+      }
+    ],
+    "accounting": {
+      "archive_bytes": 5366749,
+      "custom_decoder_bytes": 15688,
+      "excluded_standard_codec_bytes": 0,
+      "nonplatform_dependency_bytes": 0,
+      "package_bytes": 5382437,
+      "strict_deployment_bytes": 5382437
+    },
+    "timing": {
+      "decode_seconds": {
+        "max_seconds": 0.005441368,
+        "median_seconds": 0.004927671,
+        "min_seconds": 0.004854781999999999,
+        "relative_MAD": 0.014791774856722468,
+        "work_per_second": 12468787384.547386
+      },
+      "decode_warm_seconds": {
+        "max_seconds": 0.00510298,
+        "median_seconds": 0.004690093,
+        "min_seconds": 0.00457413,
+        "relative_MAD": 0.024062422642791997,
+        "work_per_second": 13100397369.519112
+      },
+      "encode_seconds": {
+        "max_seconds": 0.398778772,
+        "median_seconds": 0.38921485,
+        "min_seconds": 0.387122303,
+        "relative_MAD": 0.0038774034443957895,
+        "work_per_second": 157861607.79836637
+      }
+    },
+    "quality_passed": true,
+    "roundtrips": 24,
+    "depth": "full",
+    "raw_trials_sha256": "c44c1b75fb879186c877553d3d98525c3b710eadba3eca2decadcee6910a8a33",
+    "variant": "bulk",
+    "trials_file": "s-d6631a5b6d3195608e97c947cb0d5ff849c12f6ec8849fdeaf3e688320d7fb61.jsonl",
+    "cpu": 8,
+    "warmups": 1,
+    "measured_trials": 7,
+    "dataset": "openstack",
+    "point_id": "A9",
+    "method": "Astra LZ4-target \u00b7 LZ + packed literals",
+    "family": "Astra Ultra LZ4-target",
+    "mode": "lz-packed-literals",
+    "source_result_id": "s-837ede79f13369e96ade663e1f49065c867e7d186d64f3415718e266315df02b",
+    "export_sha256": "9a6c6206b4e4cd5f6e466db525cc09d90e66b5cb44ad6defac1babee4df6cc5d",
+    "qualification": {
+      "depth": "full",
+      "quality_passed": true,
+      "eligible": true,
+      "roundtrips": 24
+    },
+    "same_measured_native_binaries": true,
+    "archive_sha256_match_original": true,
+    "full_independent_source_audit": false,
+    "controls": [
+      {
+        "name": "lz4hc9",
+        "result_id": "s-084d510e1241d94b106314b9a1bee164c16549bc6318e305c2e5eb54591e2edb",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "97509e6edfa8a4242c65d19b7648dc4ac26874f04c652024a1c30f0aed3423ac"
+        },
+        "columns": [
+          {
+            "archive_bytes": 619106,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.000835375,
+              "median_seconds": 0.000650621,
+              "min_seconds": 0.000603205,
+              "relative_MAD": 0.07287806572489974,
+              "work_per_second": 8355282107.402005
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000793476,
+              "median_seconds": 0.000646593,
+              "min_seconds": 0.000605886,
+              "relative_MAD": 0.02131479926321495,
+              "work_per_second": 8407331969.260416
+            },
+            "encode_seconds": {
+              "max_seconds": 0.054949812,
+              "median_seconds": 0.05230436,
+              "min_seconds": 0.050224908,
+              "relative_MAD": 0.030072789342991728,
+              "work_per_second": 103932482.87523258
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1746411,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.001821883,
+              "median_seconds": 0.001734581,
+              "min_seconds": 0.001670224,
+              "relative_MAD": 0.0159168121869201,
+              "work_per_second": 8935642094.546175
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.001815513,
+              "median_seconds": 0.001712352,
+              "min_seconds": 0.00169242,
+              "relative_MAD": 0.011640130066715293,
+              "work_per_second": 9051640667.339424
+            },
+            "encode_seconds": {
+              "max_seconds": 0.146251006,
+              "median_seconds": 0.144117446,
+              "min_seconds": 0.142802677,
+              "relative_MAD": 0.008966749244223957,
+              "work_per_second": 107548360.24501848
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4244113,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.004843598,
+              "median_seconds": 0.004740790999999999,
+              "min_seconds": 0.004590199,
+              "relative_MAD": 0.015240283741679525,
+              "work_per_second": 8544220785.096834
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.004478834,
+              "median_seconds": 0.004215523,
+              "min_seconds": 0.004138539,
+              "relative_MAD": 0.01826202822283251,
+              "work_per_second": 9608858734.728764
+            },
+            "encode_seconds": {
+              "max_seconds": 0.376103233,
+              "median_seconds": 0.369527904,
+              "min_seconds": 0.366076009,
+              "relative_MAD": 0.004687756949472371,
+              "work_per_second": 109616525.73874366
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6609630,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6626126,
+          "strict_deployment_bytes": 6763566
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.007416925,
+            "median_seconds": 0.007137855,
+            "min_seconds": 0.006927984999999999,
+            "relative_MAD": 0.023578091737643806,
+            "work_per_second": 8607919606.100151
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.006931194,
+            "median_seconds": 0.006647012,
+            "min_seconds": 0.006493939000000001,
+            "relative_MAD": 0.011797180447395073,
+            "work_per_second": 9243564175.903399
+          },
+          "encode_seconds": {
+            "max_seconds": 0.572376194,
+            "median_seconds": 0.5663315959999999,
+            "min_seconds": 0.562497815,
+            "relative_MAD": 0.005046124956093801,
+            "work_per_second": 108491354.5950207
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "ef4093e0a89ab5f5ce2dc2ca3c6ff5d3109a23dec217d9a0374d785a5c9e543b",
+        "variant": "bulk",
+        "trials_file": "s-084d510e1241d94b106314b9a1bee164c16549bc6318e305c2e5eb54591e2edb.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      },
+      {
+        "name": "lz4hc12",
+        "result_id": "s-82ed830a34bf8b2b41de6b19e85516aab936e19a009f0b9d8f2c0772aeee46a6",
+        "candidate": {
+          "decoder": "7511a5954784042d658a1230a5866d9e4e1e7a2bed45c3addabc51ad7c95104b",
+          "encoder": "fab593c15ce20da6cb1892d0ef6c63fa04f57233204c5f696ca80b9b3a12a2ae"
+        },
+        "columns": [
+          {
+            "archive_bytes": 616482,
+            "bytes": 5436122,
+            "decode_seconds": {
+              "max_seconds": 0.0008364739999999999,
+              "median_seconds": 0.000646474,
+              "min_seconds": 0.00063726,
+              "relative_MAD": 0.01425270003124644,
+              "work_per_second": 8408879552.773972
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.000723928,
+              "median_seconds": 0.000692274,
+              "min_seconds": 0.000657195,
+              "relative_MAD": 0.03348385176967506,
+              "work_per_second": 7852558380.063385
+            },
+            "encode_seconds": {
+              "max_seconds": 0.166015576,
+              "median_seconds": 0.160592391,
+              "min_seconds": 0.160127478,
+              "relative_MAD": 0.002115598366052102,
+              "work_per_second": 33850433.175255485
+            },
+            "name": "openstack_abnormal.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+          },
+          {
+            "archive_bytes": 1739145,
+            "bytes": 15499595,
+            "decode_seconds": {
+              "max_seconds": 0.001997038,
+              "median_seconds": 0.0018452100000000001,
+              "min_seconds": 0.0017881210000000002,
+              "relative_MAD": 0.02569842998899862,
+              "work_per_second": 8399908411.508717
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.001868221,
+              "median_seconds": 0.001843414,
+              "min_seconds": 0.00177744,
+              "relative_MAD": 0.011515590095333914,
+              "work_per_second": 8408092267.933302
+            },
+            "encode_seconds": {
+              "max_seconds": 0.467051419,
+              "median_seconds": 0.461829098,
+              "min_seconds": 0.455963332,
+              "relative_MAD": 0.00644939440346824,
+              "work_per_second": 33561321.85503825
+            },
+            "name": "openstack_normal1.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199"
+          },
+          {
+            "archive_bytes": 4222274,
+            "bytes": 40506365,
+            "decode_seconds": {
+              "max_seconds": 0.004863926,
+              "median_seconds": 0.004804322,
+              "min_seconds": 0.004705692,
+              "relative_MAD": 0.012406329134475256,
+              "work_per_second": 8431234417.676417
+            },
+            "decode_warm_seconds": {
+              "max_seconds": 0.004577638,
+              "median_seconds": 0.004460307,
+              "min_seconds": 0.004415393,
+              "relative_MAD": 0.008615998853890526,
+              "work_per_second": 9081519500.787725
+            },
+            "encode_seconds": {
+              "max_seconds": 1.17408063,
+              "median_seconds": 1.167703801,
+              "min_seconds": 1.161758536,
+              "relative_MAD": 0.0021433586135941873,
+              "work_per_second": 34688903.95433422
+            },
+            "name": "openstack_normal2.log",
+            "rows": null,
+            "selective": {},
+            "sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7"
+          }
+        ],
+        "accounting": {
+          "archive_bytes": 6577901,
+          "custom_decoder_bytes": 16496,
+          "excluded_standard_codec_bytes": 137440,
+          "nonplatform_dependency_bytes": 137440,
+          "package_bytes": 6594397,
+          "strict_deployment_bytes": 6731837
+        },
+        "timing": {
+          "decode_seconds": {
+            "max_seconds": 0.0076400750000000005,
+            "median_seconds": 0.007244326,
+            "min_seconds": 0.007209428,
+            "relative_MAD": 0.004817287350127445,
+            "work_per_second": 8481407656.14358
+          },
+          "decode_warm_seconds": {
+            "max_seconds": 0.0071263690000000005,
+            "median_seconds": 0.006959558,
+            "min_seconds": 0.0069075659999999995,
+            "relative_MAD": 0.007470589367888119,
+            "work_per_second": 8828446001.886902
+          },
+          "encode_seconds": {
+            "max_seconds": 1.800818467,
+            "median_seconds": 1.791546586,
+            "min_seconds": 1.778314259,
+            "relative_MAD": 0.0025764242113880858,
+            "work_per_second": 34295553.61838634
+          }
+        },
+        "quality_passed": true,
+        "roundtrips": 24,
+        "depth": "full",
+        "raw_trials_sha256": "4de058916064a3768c07a2f49ce7287f8e4d24810b51c83fd5315ffd60e45ef6",
+        "variant": "bulk",
+        "trials_file": "s-82ed830a34bf8b2b41de6b19e85516aab936e19a009f0b9d8f2c0772aeee46a6.jsonl",
+        "cpu": 8,
+        "warmups": 1,
+        "measured_trials": 7
+      }
+    ],
+    "source_receipts": [
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/lz-packed-literals/comparison.json",
+        "sha256": "8b93a8633863a4b73799e41807de27981e853ba72b273ec4cee4dae6713ee986"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/lz-packed-literals/evidence.tar.gz",
+        "sha256": "2646202d4a87a8e380d7b81f37158a84b20a4a06ee56587373447713d95e8617"
+      },
+      {
+        "path": "experiments/astra-openstack-frontier-2026-09-22/cpu8-replay/REVIEW.json",
+        "sha256": "105a224138a0a9196eb2e25d79f1763ebfd9670181f02338433ad425148e3155"
+      }
+    ]
+  }
+]

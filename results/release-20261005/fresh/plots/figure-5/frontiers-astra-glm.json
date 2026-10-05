@@ -1,0 +1,282 @@
+{
+  "from-scratch": [
+    {
+      "name": "Run 1",
+      "arm": "from-scratch",
+      "ratio": 2.4789140458771497,
+      "decode_GB_s": 4.003311362086667
+    },
+    {
+      "name": "Run 4",
+      "arm": "from-scratch",
+      "ratio": 3.2180057326058495,
+      "decode_GB_s": 1.5638219127690065
+    },
+    {
+      "name": "Zstd-20",
+      "arm": "baseline",
+      "ratio": 3.4191299689739894,
+      "decode_GB_s": 0.8733069153771194
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 0.8711090384586665
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 0.8683003542911809
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.22845207671828813
+    },
+    {
+      "name": "Run 2",
+      "arm": "from-scratch",
+      "ratio": 3.7879405899099674,
+      "decode_GB_s": 0.1676654558016481
+    }
+  ],
+  "tools-allowed": [
+    {
+      "name": "Run 1",
+      "arm": "tools-allowed",
+      "ratio": 2.4811189742265043,
+      "decode_GB_s": 5.159112849058707
+    },
+    {
+      "name": "Run 3",
+      "arm": "tools-allowed",
+      "ratio": 3.107376345382563,
+      "decode_GB_s": 1.6789320077860368
+    },
+    {
+      "name": "Zstd-20",
+      "arm": "baseline",
+      "ratio": 3.4191299689739894,
+      "decode_GB_s": 0.8733069153771194
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 0.8711090384586665
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 0.8683003542911809
+    },
+    {
+      "name": "Run 4",
+      "arm": "tools-allowed",
+      "ratio": 3.4200788754776275,
+      "decode_GB_s": 0.39973535083432055
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.22845207671828813
+    },
+    {
+      "name": "bzip2-9",
+      "arm": "baseline",
+      "ratio": 3.531983270099909,
+      "decode_GB_s": 0.020387463884303004
+    },
+    {
+      "name": "Run 2",
+      "arm": "tools-allowed",
+      "ratio": 3.887426415574471,
+      "decode_GB_s": 0.01991461311480882
+    }
+  ],
+  "boundary-only": [
+    {
+      "name": "Run 1",
+      "arm": "boundary-only",
+      "ratio": 2.4825768750299098,
+      "decode_GB_s": 3.4512368159674596
+    },
+    {
+      "name": "Run 3",
+      "arm": "boundary-only",
+      "ratio": 3.065291973807412,
+      "decode_GB_s": 1.9929447439235126
+    },
+    {
+      "name": "Run 4",
+      "arm": "boundary-only",
+      "ratio": 3.258182349001357,
+      "decode_GB_s": 1.3294080306810594
+    },
+    {
+      "name": "Zstd-20",
+      "arm": "baseline",
+      "ratio": 3.4191299689739894,
+      "decode_GB_s": 0.8733069153771194
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 0.8711090384586665
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 0.8683003542911809
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.22845207671828813
+    },
+    {
+      "name": "Run 2",
+      "arm": "boundary-only",
+      "ratio": 3.8535845055546227,
+      "decode_GB_s": 0.1127584498888645
+    }
+  ],
+  "glm": [
+    {
+      "name": "OnPair+",
+      "arm": "baseline",
+      "ratio": 2.462001977444771,
+      "decode_GB_s": 2.4038469300853533
+    },
+    {
+      "name": "Run 3",
+      "arm": "glm",
+      "ratio": 2.9771862879201985,
+      "decode_GB_s": 1.0478522477288292
+    },
+    {
+      "name": "Zstd-20",
+      "arm": "baseline",
+      "ratio": 3.4191299689739894,
+      "decode_GB_s": 0.8733069153771194
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 0.8711090384586665
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 0.8683003542911809
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.22845207671828813
+    },
+    {
+      "name": "bzip2-9",
+      "arm": "baseline",
+      "ratio": 3.531983270099909,
+      "decode_GB_s": 0.020387463884303004
+    }
+  ],
+  "combined": [
+    {
+      "name": "Run 1",
+      "arm": "tools-allowed",
+      "ratio": 2.4811189742265043,
+      "decode_GB_s": 5.159112849058707
+    },
+    {
+      "name": "Run 1",
+      "arm": "boundary-only",
+      "ratio": 2.4825768750299098,
+      "decode_GB_s": 3.4512368159674596
+    },
+    {
+      "name": "Run 3",
+      "arm": "boundary-only",
+      "ratio": 3.065291973807412,
+      "decode_GB_s": 1.9929447439235126
+    },
+    {
+      "name": "Run 3",
+      "arm": "tools-allowed",
+      "ratio": 3.107376345382563,
+      "decode_GB_s": 1.6789320077860368
+    },
+    {
+      "name": "Run 4",
+      "arm": "from-scratch",
+      "ratio": 3.2180057326058495,
+      "decode_GB_s": 1.5638219127690065
+    },
+    {
+      "name": "Run 4",
+      "arm": "boundary-only",
+      "ratio": 3.258182349001357,
+      "decode_GB_s": 1.3294080306810594
+    },
+    {
+      "name": "Zstd-20",
+      "arm": "baseline",
+      "ratio": 3.4191299689739894,
+      "decode_GB_s": 0.8733069153771194
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 0.8711090384586665
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 0.8683003542911809
+    },
+    {
+      "name": "Run 4",
+      "arm": "tools-allowed",
+      "ratio": 3.4200788754776275,
+      "decode_GB_s": 0.39973535083432055
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.22845207671828813
+    },
+    {
+      "name": "Run 2",
+      "arm": "from-scratch",
+      "ratio": 3.7879405899099674,
+      "decode_GB_s": 0.1676654558016481
+    },
+    {
+      "name": "Run 2",
+      "arm": "boundary-only",
+      "ratio": 3.8535845055546227,
+      "decode_GB_s": 0.1127584498888645
+    },
+    {
+      "name": "Run 2",
+      "arm": "tools-allowed",
+      "ratio": 3.887426415574471,
+      "decode_GB_s": 0.01991461311480882
+    }
+  ]
+}

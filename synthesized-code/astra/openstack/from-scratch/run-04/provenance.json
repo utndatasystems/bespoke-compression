@@ -1,0 +1,26 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "openstack",
+  "run": 4,
+  "original_bytes": 61442082,
+  "result_id": "r-ebca84722953abb4be91afdb2d8116be896f49e62babf8f31945ed8115508b4b",
+  "build_id": "b-35eeb092c2f9d94452b982e30f577cc1498fe89e12d512b62f7d112b895bd9b9",
+  "package_bytes": 2407801,
+  "compression_factor": 25.51792361578054,
+  "decompression_median_MB_s": 5185.9464263633645,
+  "decompression_range_MB_s": [
+    5069.970650617584,
+    5647.541385176203
+  ],
+  "source_sha256": {
+    "source/codec.cpp": "e23f68c61c245e39428f69797fe456eb46b37135d1bb12e9bb0fb8d64c179f95",
+    "source/entropy.h": "4c9a1f998ecd609a959207fddd37b9cd699730937ba22acc6e726c989d433696",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/smalllz.h": "d8fb61f2307aa46ac43bd2689b15c81e66ea5a35d5863127c654c437d4ac0a9e",
+    "source/split.h": "5864a39cd44728f7d8682be9a1c80adf2de1c66f215dfeab347fda961f7741cc",
+    "source/timestamp.h": "2a9d658bffad318ac746c6d2b862378949743bbc304327a4d673efa37c42a2b2",
+    "source/uuidpack.h": "587ceb81b45deddea07cbfb6ab01c987605eafb9d378a698d7a0dc35a2b189de",
+    "source/wrapper.cpp": "e7419dd74f30645dd12ebc8d7e8f643deeae0043f0fd1815dd098b62554bd2c1"
+  }
+}

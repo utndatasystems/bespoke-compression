@@ -1,0 +1,33 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "from-scratch",
+  "generation": "server API",
+  "stage": 4,
+  "objective": "Maximize compression factor at an intermediate decompression speed.",
+  "result_id": "r-664e4cd853dd61aaf37e8249d696e363e90074bd961c58c54dee45974d119504",
+  "build_id": "b-8ddd6719b03a315688c1aa36e2c48594a0f914eb28820cb290b93ea1648c2007",
+  "build_export_sha256": "04d8954c84a80330ee7cff8113afa7596a3d1da4f1c99325d14edf9027cf49de",
+  "source_manifest_sha256": "8e7f1c380dfe879320af1fa42f58592bc7ff65ed333c933e3fd878edf4d352da",
+  "file_sha256": {
+    "source/FITTING.json": "0c19fe446e7afdff910ad42168a4db6ce3a196d364ee21cc7c0e0e4301fd5165",
+    "source/FORMAT.md": "78a21577132e7cbfec5d96d16c9001c78fe7acf04fcee6a2615edd0421f1ecf5",
+    "source/codec_final.cpp": "64544020fa27a9627e5735c021d4e9a2a947e36d727024ea7062847f36f52363",
+    "source/dpack.h": "b37dd0da94870fc2227e1ef56e6375ea12ecacda4cb1c38f6eaa8920e6cf6b7a",
+    "source/fit_settings.h": "f5a8071ec994cb1861d32ebc13eac624e1babe666318ac115bf8d254d8ca6e14",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/location.h": "62e4251de6e71b24e62262101c3573e0a25ab9903a95384e101602fc3611549e",
+    "source/optparse.h": "620ad779377bdf3d814f99ec75d86c07b0cd33dea46866ccee5f391693c876f6",
+    "source/repair_train.h": "5ad40c2b602b8891efc62d1f0fa1d325f58f063fc067b1909a539e26fa6eb876",
+    "source/structured.h": "0bbb12918884398ee548aaea453c7a491ce73d58e4f6c21c57a0fe79e8397852",
+    "source/textcodec_packed.h": "6fa962caee537fb65931ed92dcf33a5a69a3bedf8737c57e4dbe62632579042a",
+    "source/urls.h": "2b9c7b3df84b8ae8097ee8ab45883c20baab11eec84d269d3b22b7c79327982b",
+    "build-spec.json": "bcf0019423aca3df6c2f4c0e6bf853d6a9888ef6dec36790c0cf25fb3b7fcb01"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "1dea994b5edf77c6f00d63467c19cf0c017247b85534c9eb2ae53d918a780fbc",
+    "encoder.so": "fd8cb1f2d3c76feb1c18cbf7ce3b1fc5977ac0f81427d9c1cabf6259821ab10b"
+  },
+  "source_modified": false
+}

@@ -1,0 +1,31 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "sqlstorm-tpcds",
+  "run": 4,
+  "original_bytes": 18444591,
+  "result_id": "r-dc657e516f0d871c448de0ba447e2138b91dc096ad91980f0be202cdaf9b58de",
+  "build_id": "b-a89c89abf36335f81c2149270519014085ea393c0e48775bca3832f49b59bc07",
+  "package_bytes": 1146493,
+  "compression_factor": 16.087835686742093,
+  "decompression_median_MB_s": 1243.4824266654387,
+  "decompression_range_MB_s": [
+    1187.8558574989595,
+    1262.485657687476
+  ],
+  "online_encoding_median_seconds": 0.023969797,
+  "source_sha256": {
+    "build-spec.json": "295387b208b51cfdb8b0e1da60db93b21f720aa04d208d18042fa3e9d799f34f",
+    "source/final/README.md": "1f3fc7436e48e3686623a549c6c3e3ca85be2c852bf985eefc1589086cc99f1c",
+    "source/final/analysis_repair.cpp": "3805bae9e4936bf25557a1cc8c0342a0e8601bbac0b40eb83268660c364e4b2b",
+    "source/final/lzexp_dp.cpp": "46550da64b6a962dbfa49b9680a577e1dbea4ef23da29b02a95f3161ea11a086",
+    "source/final/lzexp_tok.cpp": "8c163fd5d2dda7f7df18e02ecc9a84276dcf6bef2e21273aaaafb80d83224c41",
+    "source/final/lzfinal_decoder.cpp": "21bd630042544ce3609bc73f5e38a190d044a10145f9a40f0762dd4e8d4156c1",
+    "source/final/lzfinal_encoder.cpp": "3ba800d9ce45fff5237a6502acaa3131010dfdcf26e6d4624ed2c1b1e162c4f2",
+    "source/final/lzfinal_entropy.h": "ec089a2ea1862d358fff5f934e45a63a354908969f4b59ed4e6cbf88d25e051f",
+    "source/final/lzfinal_pack.cpp": "61b3e09dcda3419570f7872272c19406d07fe5f67919bbd3407d83ed24ef6dc9",
+    "source/final/lzfinal_payload.h": "b057c2b222f0c1dcd50c2d577abefc00267e605ed6dea6e4ac66c237aca8024b",
+    "source/final/reproduce_final.py": "6fc98cada93238d6057f708e9cea0b3021e26fe741c1c86a470155c96e5f7a62",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  }
+}

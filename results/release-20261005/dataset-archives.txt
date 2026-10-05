@@ -1,0 +1,5 @@
+Verified 23 files, 39,841,347 bytes: dbtext
+Verified 1 files, 99,999,986 bytes: python
+Verified 1 files, 100,000,488 bytes: yelp
+Verified 3 files, 61,442,082 bytes: openstack
+Verified 1 files, 18,444,591 bytes: sqlstorm-tpcds

@@ -1,0 +1,144 @@
+{
+  "observed_utc": "2026-10-05T07:14:13.030865+00:00",
+  "published_commit": "3743a9a042e371af37af76bd568a38760659147e",
+  "files_compared": 695,
+  "full_tree_bytes_identical": false,
+  "timed_kernels_codec_sources_and_build_recipes_identical": true,
+  "identical_frozen_source_and_kernel_files": 397,
+  "categories": {
+    "release_documentation": [
+      "benchmarks/README.md",
+      "compression-lab-isolated/README.md",
+      "synthesized-code/README.md",
+      "synthesized-code/astra/openstack/from-scratch/README.md",
+      "synthesized-code/astra/python/from-scratch/README.md",
+      "synthesized-code/astra/sqlstorm-tpcds/from-scratch/README.md",
+      "synthesized-code/astra/yelp/from-scratch/README.md",
+      "synthesized-code/dbtext/astra/README.md",
+      "synthesized-code/dbtext/astra/no-reference-target/A1/README.md",
+      "synthesized-code/dbtext/astra/no-reference-target/A2/README.md",
+      "synthesized-code/dbtext/astra/no-reference-target/A3/README.md",
+      "synthesized-code/dbtext/astra/three-workloads/README.md",
+      "synthesized-code/dbtext/combined/README.md",
+      "synthesized-code/dbtext/luna/tools-allowed/L1/README.md",
+      "synthesized-code/dbtext/luna/tools-allowed/L2/README.md",
+      "synthesized-code/dbtext/luna/tools-allowed/L3/README.md",
+      "synthesized-code/dbtext/luna/tools-allowed/L4/README.md",
+      "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/README.md",
+      "synthesized-code/glm-5.3-flash/yelp/tools-allowed/README.md"
+    ],
+    "json_semantics_unchanged": [
+      "benchmarks/SOURCE_MAP.json",
+      "datasets/ARCHIVES.json",
+      "synthesized-code/dbtext/astra/no-reference-target/A1/measurements.json",
+      "synthesized-code/dbtext/astra/no-reference-target/A1/provenance.json",
+      "synthesized-code/dbtext/astra/no-reference-target/A2/measurements.json",
+      "synthesized-code/dbtext/astra/no-reference-target/A2/provenance.json",
+      "synthesized-code/dbtext/astra/onpair16-row-baseline/UPSTREAM_HASHES.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L1/measurements.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L1/provenance.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L2/measurements.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L2/provenance.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L3/measurements.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L3/provenance.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L4/measurements.json",
+      "synthesized-code/dbtext/luna/tools-allowed/L4/provenance.json"
+    ],
+    "administrative_wall_clock_and_cpu_cap_removal": [
+      "benchmarks/dbtext/build.py",
+      "benchmarks/dbtext/run.py",
+      "benchmarks/final/resume_structured.py",
+      "benchmarks/final/rows.py",
+      "benchmarks/final/run.py",
+      "benchmarks/fsst-paper/run.py",
+      "benchmarks/upstream/fetch.py",
+      "compression-lab-isolated/src/lab_interface/api.py",
+      "compression-lab-isolated/src/lab_interface/cli.py",
+      "compression-lab-isolated/src/lab_interface/dbtext.py",
+      "compression-lab-isolated/src/lab_interface/linux_sandbox.py",
+      "compression-lab-isolated/src/lab_interface/mcp_server.py",
+      "compression-lab-isolated/src/lab_interface/profiling.py",
+      "compression-lab-isolated/src/lab_interface/remote.py",
+      "compression-lab-isolated/src/lab_interface/remote_worker.py",
+      "compression-lab-isolated/src/lab_interface/validation.py",
+      "compression-lab-isolated/src/lab_interface/workflow.py",
+      "compression-lab-isolated/vendor/compression_lab/_sandbox.py",
+      "compression-lab-isolated/vendor/compression_lab/benchmark_run.py",
+      "compression-lab-isolated/vendor/compression_lab/candidate.py",
+      "compression-lab-isolated/vendor/compression_lab/runner.py",
+      "compression-lab-isolated/vendor/compression_lab/strings.py",
+      "datasets/fetch_dbtext.py",
+      "datasets/fetch_upstream.py",
+      "reproduce.py",
+      "synthesized-code/build.py",
+      "synthesized-code/dbtext/astra/onpair16-row-baseline/build.py",
+      "synthesized-code/dbtext/astra/onpair16-row-baseline/run.py"
+    ],
+    "runtime_hash_pins_and_documented_cap_removal": [
+      "compression-lab-isolated/runtime-lock.json"
+    ],
+    "test_updated_to_unlimited_execute_api": [
+      "compression-lab-isolated/tests/test_interface.py"
+    ],
+    "newline_normalization": [
+      "synthesized-code/.gitignore"
+    ]
+  },
+  "metadata_semantics": {
+    "benchmarks/SOURCE_MAP.json": {
+      "semantically_equal": true
+    },
+    "compression-lab-isolated/runtime-lock.json": {
+      "semantically_equal": false,
+      "changed_top_level_keys": [
+        "files",
+        "release_changes"
+      ]
+    },
+    "datasets/ARCHIVES.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/provenance.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/provenance.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/UPSTREAM_HASHES.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/provenance.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/provenance.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/provenance.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/measurements.json": {
+      "semantically_equal": true
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/provenance.json": {
+      "semantically_equal": true
+    }
+  },
+  "diff_review": "Production Python differences were reviewed as execution-cap removal; memory, CPU affinity, trials, warmups, native timers, algorithms and recipes preserved. Original timed execution identity remains historical. Current Brotli continuation imports the exact public checkout.",
+  "identities_receipt": "POSTPUBLICATION_SOURCE_IDENTITIES.json",
+  "diff_receipt": "POSTPUBLICATION_SOURCE_DIFFERENCES.diff"
+}

@@ -1,0 +1,501 @@
+{
+  "version": "0.7.3.dev1",
+  "source": "astra-zstd-frontier-2026-09-23/lab-runtime",
+  "retrieved_utc": "2026-09-24",
+  "files": {
+    "compression_lab/__init__.py": {
+      "sha256": "54ae52f5a2a0184b461b9a6897c152da4bb5de9eee61d83321c460aabf79e0c5",
+      "bytes": 27
+    },
+    "compression_lab/_launch.py": {
+      "sha256": "ed5551c8546c0c047fd5ca413a0382c6e40f270bdfd768051e5ee20a09cd7bfe",
+      "bytes": 349
+    },
+    "compression_lab/_sandbox.py": {
+      "sha256": "ead593536f4091fd911d88950411f39ebb7f3ce01b4011ce31a87ea3a9dca9b3",
+      "bytes": 7607
+    },
+    "compression_lab/benchmark_run.py": {
+      "sha256": "4b26fd3865fb9ef977ea4271610c20149ec63f6baa679513690501f3d1065fe0",
+      "bytes": 3848
+    },
+    "compression_lab/candidate.py": {
+      "sha256": "1ee37b849e66a5150a24907db353524d709a35a867e37a222be26de8cfd7c0d3",
+      "bytes": 30498
+    },
+    "compression_lab/data/strings/codec.h": {
+      "sha256": "4c044be13dcac5991080a8b1f12e0dcf0906c5a749e1ef88bf43e29dab2c44e3",
+      "bytes": 1181
+    },
+    "compression_lab/data/strings/driver.cpp": {
+      "sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0",
+      "bytes": 4720
+    },
+    "compression_lab/data/strings/onpair.cpp": {
+      "sha256": "5744ad32d75829020ede46cf847c57bcd7f28724b6f9a06cec124a60f6ab5d29",
+      "bytes": 6002
+    },
+    "compression_lab/data/strings/reference.cpp": {
+      "sha256": "55b08502bc97ec442adc0051a5e145d1d68e1decc5202f5c767b949ab6493d62",
+      "bytes": 5092
+    },
+    "compression_lab/native_workloads.py": {
+      "sha256": "879ab9101b8d2fea5ee4117da019a890aa2bd290eb31f4c0459e63d8fb0f0c30",
+      "bytes": 635
+    },
+    "compression_lab/resources.py": {
+      "sha256": "a939e62ce073d44a6255b3c38019d934fcbd71090de37f127d66763ad2662b95",
+      "bytes": 2359
+    },
+    "compression_lab/runner.py": {
+      "sha256": "63365d6ef0cca8808a75bd3c89f1fa4e6fdf59ef134f3c1da450df032452bd4b",
+      "bytes": 17955
+    },
+    "compression_lab/strings.py": {
+      "sha256": "2a1e021cd692b114ff0a51455fc0f3b7f30f3772242af4082a20bed3cd9c3203",
+      "bytes": 24685
+    },
+    "compression_lab/util.py": {
+      "sha256": "715cb36d533578e8f85b05c78e8f4746f8f1f3a04b434522080b47c554dbdd97",
+      "bytes": 9196
+    },
+    "compression_lab/data/LICENSE": {
+      "sha256": "39d2e4576bac7918d0246cd334c469c3e43c0a20351346144f06105a095867c0",
+      "bytes": 1284
+    }
+  },
+  "excluded_documentation": {
+    "compression_lab/data/SKILL.md": {
+      "sha256": "30027c1738a712fd52b09eecbd1900891270060ced2aaea9a2cec6acdc674b28",
+      "bytes": 1072
+    },
+    "compression_lab/data/RESEARCH_GUIDANCE.md": {
+      "sha256": "b231267a4651cf8c724622d9453a24aca0db8d8c8e3b63728ed1050bbee303dc",
+      "bytes": 1195
+    }
+  },
+  "packaging_note": "Only the transitive runtime modules and native string adapters used by the tool-only facade and final benchmarks are shipped; their original bytes are unchanged. Unused legacy engines, reference parsers, guidance and workload fixtures are excluded with their original hashes.",
+  "excluded_legacy": {
+    "compression_lab/__main__.py": {
+      "sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "bytes": 47
+    },
+    "compression_lab/accounting.py": {
+      "sha256": "2d3fc996fb47e3ff4b6a5df395fb464919ee4932b7d7c040583965d41be2c119",
+      "bytes": 11891
+    },
+    "compression_lab/baselines.py": {
+      "sha256": "945e9255374bceda1b3399e4c9b13fdd678509086803c5bb22b813412d242ed2",
+      "bytes": 13663
+    },
+    "compression_lab/cli.py": {
+      "sha256": "006adf84688e88a2807f7be0d4e061b6bedcaf3c7f2a7ca229caab3f26835c4c",
+      "bytes": 14488
+    },
+    "compression_lab/connections.py": {
+      "sha256": "8a59bf6ed8f44d7394f7bbcc432b2624f3acfb8c63aebc4054af27b3f254d21e",
+      "bytes": 8158
+    },
+    "compression_lab/controller.py": {
+      "sha256": "ed44330fdd390fcb90249226a3d8c4245abc4e8e53fdf12003fc0b6524a82177",
+      "bytes": 36261
+    },
+    "compression_lab/data/examples/hadoop/manifest.json": {
+      "sha256": "86b4b928a237754cf37226687892d4705c9e277d9093af4ebb68f1b1af1aebc7",
+      "bytes": 2155
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000001.hcb": {
+      "sha256": "715e80ebfc3c8dddf07b1deb3b1f5369b3384ab9bdd6fe4135e4b0bd8ef6c12b",
+      "bytes": 574354
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000019.hcb": {
+      "sha256": "23d8df673019c5f525af6d1fad2532b91fe0e843cc96f01963c115710c5cdc73",
+      "bytes": 1462632
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000036.hcb": {
+      "sha256": "79717096ba0f996837b7ed1b903bc3a786a4d257fd6f75a60487a3ea8812304f",
+      "bytes": 392574
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000059.hcb": {
+      "sha256": "4c79a590526db2389030d779d2f4382d88d4c21b21f9dacf17ae194bc910aab7",
+      "bytes": 257868
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000075.hcb": {
+      "sha256": "3151061052bee78f75af30e3acbc14e034da08de2d05b94ffea8769cfdf3feae",
+      "bytes": 280430
+    },
+    "compression_lab/data/examples/hadoop/objects/search-000088.hcb": {
+      "sha256": "5b6246033bb78110da63f8a767f35f8a85089258e9e904aa5bbc4952abbe7817",
+      "bytes": 528792
+    },
+    "compression_lab/data/examples/openstack/manifest.json": {
+      "sha256": "7e660d7e775ba5132dc302d2f3b929f8e8cdf51903a4b572cb7936a6660e4095",
+      "bytes": 2156
+    },
+    "compression_lab/data/examples/openstack/objects/search-000001.hcb": {
+      "sha256": "13bb012bb88880fbc22a1b41255a10b4f8cb7f1588c417f0444453c09d40b8d9",
+      "bytes": 255761
+    },
+    "compression_lab/data/examples/openstack/objects/search-000005.hcb": {
+      "sha256": "48654f1562a59c89aff319abb6b12e044b7a98ae4c467277a2f812ebad0a708c",
+      "bytes": 255924
+    },
+    "compression_lab/data/examples/openstack/objects/search-000009.hcb": {
+      "sha256": "f361dd5144bfd1e1b2fc93ba19543e7f64e85af0f8484852f6fad1c67455e951",
+      "bytes": 255755
+    },
+    "compression_lab/data/examples/openstack/objects/search-000013.hcb": {
+      "sha256": "353072e4e80b297e40a5ae56f0f9e692b8442cedca8297bfa0866a815b89be36",
+      "bytes": 255841
+    },
+    "compression_lab/data/examples/openstack/objects/search-000017.hcb": {
+      "sha256": "f974a6f508dfda0d66a7efcf0e1228765d6e96159572ae0082275253fbefb8a6",
+      "bytes": 256001
+    },
+    "compression_lab/data/examples/openstack/objects/search-000021.hcb": {
+      "sha256": "30b2a1ff506d860192ca0d946f539730b1c8fba3458635c36e7dc2b0773df9c2",
+      "bytes": 255962
+    },
+    "compression_lab/data/fixtures/all_bytes.hcb": {
+      "sha256": "8d33d2977985ce89f7a0e2e195347884f8612aa640244942a84c350dae4d3850",
+      "bytes": 4136
+    },
+    "compression_lab/data/fixtures/crlf.hcb": {
+      "sha256": "4076701e68f47f94ba4a74ea3a72ac74d0371b3513f28af64ea6f315f8161581",
+      "bytes": 720
+    },
+    "compression_lab/data/fixtures/digits_only.hcb": {
+      "sha256": "64671d4d87fa3651782f393327ca1b9763d96486d2a89f743ba3de3324b59e35",
+      "bytes": 56
+    },
+    "compression_lab/data/fixtures/empty.hcb": {
+      "sha256": "4f4ce57b8505df1617f1bed8efb5941345bda076facbb98ec9ae12ab264e3f7e",
+      "bytes": 40
+    },
+    "compression_lab/data/fixtures/empty_lines.hcb": {
+      "sha256": "e1968edc7fa094d65c2e28168f7b6a6a273640a71dc3c93c5342f1bbb513ef9a",
+      "bytes": 140
+    },
+    "compression_lab/data/fixtures/invalid_utf8.hcb": {
+      "sha256": "3989a4d2e3dd96eb89faf80a10d3f771a7aa565a10e23d58e7c5a5032a9c8b43",
+      "bytes": 46
+    },
+    "compression_lab/data/fixtures/long_digit_run.hcb": {
+      "sha256": "c3a2a30eaa000704fba5d56ed27e8db81f1c3a4a760c845ecb192e5cfd96457f",
+      "bytes": 10041
+    },
+    "compression_lab/data/fixtures/long_line.hcb": {
+      "sha256": "3e1d1f45efb1f001a3b3f144214ff4424cc6570ddce9463ca3481ec2721e17b5",
+      "bytes": 100041
+    },
+    "compression_lab/data/fixtures/many_columns.hcb": {
+      "sha256": "6d12e5bad696cdda5762e27565a24544ede4220140876be4581d7f276467fcf8",
+      "bytes": 841
+    },
+    "compression_lab/data/fixtures/multi_entry.hcb": {
+      "sha256": "1f6cd6cc30e21b19270fc425c4f70bd1f3e33a5c7fce17b2c67dc3c3a0d320f0",
+      "bytes": 61
+    },
+    "compression_lab/data/fixtures/newline_in_path.hcb": {
+      "sha256": "0b5f9d7dea586ec9791e7f6d044fc403eb260ad85236cf8e5d1c426e42ca4d7b",
+      "bytes": 32
+    },
+    "compression_lab/data/fixtures/no_final_newline.hcb": {
+      "sha256": "af217cb8340cbacbb695607e41ca5aae2664e6fc87fcbb50fc582e477fd6d92c",
+      "bytes": 63
+    },
+    "compression_lab/data/fixtures/one_byte.hcb": {
+      "sha256": "d6ea37d1d4cc7fbac1c18e50a256b2fc460ac02c406af7535e03be18d2ded484",
+      "bytes": 41
+    },
+    "compression_lab/data/fixtures/random_4k.hcb": {
+      "sha256": "0066d5005c67e4d802c084ab968dbfcbfca130560b4a4293d3e93190900a2387",
+      "bytes": 4136
+    },
+    "compression_lab/data/fixtures/structured_crlf.hcb": {
+      "sha256": "8191fab2181c6d9e51dd85c30cab621307dd1346434a644c3735de230abddf92",
+      "bytes": 702
+    },
+    "compression_lab/data/fixtures/structured_day_31_february.hcb": {
+      "sha256": "b6bf4c255c27d579815074e03d2d8d87397db074dc7ecf44d2e60a9ab1cbbe50",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_day_zero.hcb": {
+      "sha256": "0c1690282eb0929ffd7765928524141100447290c078e645f4f3c04505d4a37f",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_hour_24.hcb": {
+      "sha256": "6127b73843949744cf288ab7e580279634123421f68ad4a50a70ac15a4a29979",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_leading_zero_integer.hcb": {
+      "sha256": "f3e26e3e9438602747df455d9029e829edc4b26213817f2b2a4b7393d8d8e771",
+      "bytes": 386
+    },
+    "compression_lab/data/fixtures/structured_leap_day_invalid.hcb": {
+      "sha256": "b9d6e5975f35f4ff31d258ba2764aaf4ef98ff4e45a7ace2ff8de429ca3bb9d6",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_leap_day_valid.hcb": {
+      "sha256": "b91883a6201603b5d63fac6d93281f3cfb96e061caa7e8558a7918667f75753b",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_literal_template_marker.hcb": {
+      "sha256": "b5a8839a25467d2dd856872402890126047b30f390ac3892c0b8018c7a18b975",
+      "bytes": 382
+    },
+    "compression_lab/data/fixtures/structured_long_float.hcb": {
+      "sha256": "64fb81b6b55dae99f1ee601882f15a6996e43f3fa43db161af8bce5ffdeb7c83",
+      "bytes": 5381
+    },
+    "compression_lab/data/fixtures/structured_long_integer.hcb": {
+      "sha256": "6608101c25f737eee80a78424fe295ba36a6fe8142fde356250922a111a54333",
+      "bytes": 5377
+    },
+    "compression_lab/data/fixtures/structured_many_slots.hcb": {
+      "sha256": "d2b565af8ffc2f6d08fa9e2e9835d823a898248674902fa12dc042dc4e295de6",
+      "bytes": 1470
+    },
+    "compression_lab/data/fixtures/structured_message_binary.hcb": {
+      "sha256": "3cb1f8a36ef8c7b0db71000767f86eb2f7a5a0ec932b28ead4db14787d20ba7d",
+      "bytes": 626
+    },
+    "compression_lab/data/fixtures/structured_month_13.hcb": {
+      "sha256": "ea8985fbbff75395df3f2b384a971b7262fcfa7cedeaf85a49aa0d3c175212be",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_month_zero.hcb": {
+      "sha256": "03d4cef75f120442428d9e881a7cd6eda80477e7031cf41b0cef0df92d85b527",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_normal_next.hcb": {
+      "sha256": "342485ee7050747d2af5bda40a1ea9e06593c7f4ac61b5e5de6529054fc30182",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_nul_message.hcb": {
+      "sha256": "6d994c5006e766fca9b4bffe57095cb56388a3a1826fa92844a2925d5a173645",
+      "bytes": 375
+    },
+    "compression_lab/data/fixtures/structured_second_60.hcb": {
+      "sha256": "c6225a68754982e621fbf57ac987a64261378a139c1e74c76fd27552018cc3e8",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_trailing_no_lf.hcb": {
+      "sha256": "d2b305a03e2f5e2405dad777d386dce993697fcfbd5f4ca5ace406920cd2eda2",
+      "bytes": 369
+    },
+    "compression_lab/data/fixtures/structured_year_9999.hcb": {
+      "sha256": "9d62b2a54b6b9ffce75070bc317587e9da34e76a0144f6c3aaa2ed2acc540ee8",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/structured_year_zero.hcb": {
+      "sha256": "ec1bc279b6687eb0cc6380f71d3ee669ed03aa7207ca5a8cece436bb5e1328c1",
+      "bytes": 700
+    },
+    "compression_lab/data/fixtures/unicode_path.hcb": {
+      "sha256": "8cf7c69ba563b63ff68f6b7fe78b2a0726d888435e30e6d92c71d739e164aabb",
+      "bytes": 44
+    },
+    "compression_lab/data/native/baseline.cpp": {
+      "sha256": "4cb10133024b2f9220e90991cdbeaec7713f29469bc2c30cff0aa884348f6334",
+      "bytes": 8444
+    },
+    "compression_lab/data/native/dictionary_prepare.cpp": {
+      "sha256": "4d5ab1e918db30ba304a62ee390723e58c4754ce41d32743c49074ce78a2a92f",
+      "bytes": 3098
+    },
+    "compression_lab/data/native/lab_crc.hpp": {
+      "sha256": "87a5ff131dae51905c293a10a489e7d9d77164e16034cf2c9555d8c0f7af4961",
+      "bytes": 1607
+    },
+    "compression_lab/data/native/lab_transforms.hpp": {
+      "sha256": "6e2736c79c1b4ecae75f9ef173973bf2685aceddd1a24b3d8bd2eb6551e63137",
+      "bytes": 1754
+    },
+    "compression_lab/data/native/parallel_baseline.cpp": {
+      "sha256": "30698d1b99978e74ef22cda94156781400b09eeac6db7782b02d59ff5033917a",
+      "bytes": 31423
+    },
+    "compression_lab/data/native/parallel_workers.hpp": {
+      "sha256": "856d211ec30e115a982f30dcf17d52dede8ae04b358d2265a97210a9a7169d25",
+      "bytes": 3517
+    },
+    "compression_lab/data/native-build-manifest.json": {
+      "sha256": "b5d8ecfb1a6c611246c132b37ba9a5445fd9c319ca779183b8eac4d7b79478f2",
+      "bytes": 37472
+    },
+    "compression_lab/data/upstream-stable.json": {
+      "sha256": "d6db4c5bafbcbf70f1b85b8e3a8a3e7d95849e8d86f1faf557dc61199c8445af",
+      "bytes": 6852
+    },
+    "compression_lab/dataset.py": {
+      "sha256": "dd8282b8b9d7ea9b2e922c659c8ff59704882bd717731008c73be7b2142fb33a",
+      "bytes": 16632
+    },
+    "compression_lab/demo.py": {
+      "sha256": "fb73a7d62d858ce7bfcabf6b5c232d7dceed34cb4e8d43b3e777824ec9950a47",
+      "bytes": 4871
+    },
+    "compression_lab/deployment.py": {
+      "sha256": "314804f40f6819de4b294f0e77f377d2e233c28634da6b8e6e14501fa0e48959",
+      "bytes": 6031
+    },
+    "compression_lab/engine.py": {
+      "sha256": "ef0f1ad1f5fad4adbe6e4e8c01480a2f9310a1587efc9944cfb84b41524243f0",
+      "bytes": 64150
+    },
+    "compression_lab/gates.py": {
+      "sha256": "e01caa113ac26e3c65da845b5263734c88df3417399af6ab10b3641da0543159",
+      "bytes": 27085
+    },
+    "compression_lab/hcb.py": {
+      "sha256": "d24d6aa8929131100424afc2951e179d96066287c3d7a9d9aa7b4565d4536bf3",
+      "bytes": 4790
+    },
+    "compression_lab/instructions.py": {
+      "sha256": "b6262b4c0a5ab3d43b3b2bcafe2cff705919affbff74aa8322b628724910a3ac",
+      "bytes": 15021
+    },
+    "compression_lab/inventory.py": {
+      "sha256": "4abb636a41db8579d0432706b66429f8ae77e1d7d6aaf6e6ae80cfc58587de02",
+      "bytes": 4412
+    },
+    "compression_lab/mcp_server.py": {
+      "sha256": "bb1d2b33228254a4560c2e2c60e28ee66d3706e24b36c941a14cd2f1a5a434e7",
+      "bytes": 9879
+    },
+    "compression_lab/native_baselines.py": {
+      "sha256": "e29cde81a2454233949ca5294bbd44d68652667ea57639b2f480a81fc67faefc",
+      "bytes": 12073
+    },
+    "compression_lab/native_remote.py": {
+      "sha256": "f724a2b004038a1ec1d16cb11c08388e2d350eae9188234db56c528fc524b9ff",
+      "bytes": 2610
+    },
+    "compression_lab/native_strings.py": {
+      "sha256": "9a84f304bc06839c2f3cbd7a1feb4b6e56af6f126261a8355034e67f86a8c15a",
+      "bytes": 20299
+    },
+    "compression_lab/native_strings_server.py": {
+      "sha256": "44ef7ad876122b953378d682d9d292ebec5323fdaa3f82b4a86f9737479d3f21",
+      "bytes": 7840
+    },
+    "compression_lab/owner.py": {
+      "sha256": "8c887adf63035166a11e37772cb792ecdb054ba08a0f512b249fca3681c4b764",
+      "bytes": 16339
+    },
+    "compression_lab/policy.py": {
+      "sha256": "af6f9fa77f5e58c751b229f4a412472bc7094050bc12c42fa54cd70c1eb31c75",
+      "bytes": 7067
+    },
+    "compression_lab/refinement.py": {
+      "sha256": "d5fb9f7e5d11cc474009e119767acebbf2b7c834c909edaf6785a4136ba6cb5d",
+      "bytes": 20526
+    },
+    "compression_lab/reporting.py": {
+      "sha256": "404d509a717ba6db420eef9cffcc122164e4233dc80c773bb05dabd63733a6c5",
+      "bytes": 32579
+    },
+    "compression_lab/research.py": {
+      "sha256": "c6e1b7983a45ab8dc31cc3027736930bedda0afde3a309162f73a36372dc6036",
+      "bytes": 8437
+    },
+    "compression_lab/screening.py": {
+      "sha256": "589c3ef00cdc2e705dcf73d368f45fc186de479db6ddd9c9ea3e0f0e753029e9",
+      "bytes": 9209
+    },
+    "compression_lab/stream.py": {
+      "sha256": "4637f295aed005436b8d570370575e26075a1b49ed5574ddf2265a814e1ff4b8",
+      "bytes": 5515
+    },
+    "compression_lab/worker.py": {
+      "sha256": "05bc6be2bddd26fd86a8b10d628e66e1269d31340e013b5c3768ac257d571155",
+      "bytes": 3979
+    },
+    "compression_lab/workloads/__init__.py": {
+      "sha256": "d043e6aac4e6a4f55b7812ba117794093c29d7ba0d6b0bc47454fbf2f6037158",
+      "bytes": 114
+    },
+    "compression_lab/workloads/_persistent_sandbox.py": {
+      "sha256": "7589a6cc691aa79389a18fcafbdbe828b4eb3ed34b8ffc3c98305359c9b8530d",
+      "bytes": 3125
+    },
+    "compression_lab/workloads/bridge.py": {
+      "sha256": "62eba5218e89e6ab1581e979107178fab87cc61e1d77d67f3f6e3421052d919b",
+      "bytes": 16336
+    },
+    "compression_lab/workloads/cards.py": {
+      "sha256": "d55c522534aeed2b02fb608243667db41c654178b7f8874e6ceb21ea81238503",
+      "bytes": 3267
+    },
+    "compression_lab/workloads/fixtures.py": {
+      "sha256": "62f056e14a72548a3e305d0b19c65e965fcf908b588fc772acd2a6a977457a7c",
+      "bytes": 6345
+    },
+    "compression_lab/workloads/metrics.py": {
+      "sha256": "483cd433b31d9856c15e35450ff61472dda0cfd00a1033de28b31a4a67c004d7",
+      "bytes": 3829
+    },
+    "compression_lab/workloads/mutable.py": {
+      "sha256": "f936ec81e33bcb986af457f81622c59bd03b97c546a1ce808207293545a919fc",
+      "bytes": 17489
+    },
+    "compression_lab/workloads/mutable_cases.py": {
+      "sha256": "cc3b0dbbc744b9ed73800fef6d710da360cf20b378954c2cb1cacc5f630f6e28",
+      "bytes": 24531
+    },
+    "compression_lab/workloads/oracle.py": {
+      "sha256": "3050d4a048105ea12f1842fa06ef5e73d653d3ed0ac915a78e8ea27c8e9a6223",
+      "bytes": 13261
+    },
+    "compression_lab/workloads/protocol.py": {
+      "sha256": "4522ed837ec921399b7be72a75feb7e1a532a450fb292c4753fcf9304fdd62f4",
+      "bytes": 2858
+    },
+    "compression_lab/workloads/reference_store.py": {
+      "sha256": "b2d66e0c1624227a6dfc808acfb4b18a125c7d8cdb47e1c0a8af8dad8945e73e",
+      "bytes": 30170
+    },
+    "compression_lab/workloads/registry.py": {
+      "sha256": "0b5f9fb3de72bb0651749c6f93d41bb72c6ba2167b9f4a990884d8d8c2adb034",
+      "bytes": 21014
+    },
+    "compression_lab/workloads/relational.py": {
+      "sha256": "ceba6189ad6bd7b7cb9b09687e510f6be7cd3c270b2674cdc0f54c25ee323f57",
+      "bytes": 13678
+    },
+    "compression_lab/workloads/session.py": {
+      "sha256": "0b690e92f3c1f8762c1f92d96c14023bbbf52b041f76c42d21d0ad116c5936cc",
+      "bytes": 17134
+    },
+    "compression_lab/workloads/static.py": {
+      "sha256": "83e06ebc2059a3f37cd7794de6ef88ea70bd4e74192e7df6308c86f0c5c825ab",
+      "bytes": 1102
+    }
+  },
+  "release_changes": {
+    "runtime_time_limits": "disabled",
+    "upstream_files_before_change": {
+      "compression_lab/_sandbox.py": {
+        "upstream_sha256": "c89b7a2661d702bc857b94205b84197cc88c974fbc7c9a4e272b312c50bd4935",
+        "release_sha256": "ead593536f4091fd911d88950411f39ebb7f3ce01b4011ce31a87ea3a9dca9b3"
+      },
+      "compression_lab/benchmark_run.py": {
+        "upstream_sha256": "cfe69f1364c2a8739962488e963ab2e908953805412587df8696ead6fccfcc79",
+        "release_sha256": "4b26fd3865fb9ef977ea4271610c20149ec63f6baa679513690501f3d1065fe0"
+      },
+      "compression_lab/candidate.py": {
+        "upstream_sha256": "ec88954f464a4c19a428e55a1427172aaa424a430f11e0076dde5f2d6de0a4fb",
+        "release_sha256": "1ee37b849e66a5150a24907db353524d709a35a867e37a222be26de8cfd7c0d3"
+      },
+      "compression_lab/runner.py": {
+        "upstream_sha256": "6f83f2f76fb65851938efbb8d4589a76088ebbedcee956cfa348c539468b4c25",
+        "release_sha256": "63365d6ef0cca8808a75bd3c89f1fa4e6fdf59ef134f3c1da450df032452bd4b"
+      },
+      "compression_lab/strings.py": {
+        "upstream_sha256": "67c150f60e63f9dbf10e36a63d88aec2e894bb5666d1680cb05f2644faead336",
+        "release_sha256": "2a1e021cd692b114ff0a51455fc0f3b7f30f3772242af4082a20bed3cd9c3203"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "figure": "figure-3",
+    "file": "bulk-datasets-grouped.pdf",
+    "sha256": "addef807f4756564947c7a298f7fb46e8c39ec3fe3da9c9f9145e9264756aac1"
+  },
+  {
+    "figure": "figure-4",
+    "file": "dbtext-random-access-comparison.pdf",
+    "sha256": "9fe6715762a9aa852fabc3a520b07f982613b689197e70b86c68cfc54fb8cb97"
+  },
+  {
+    "figure": "figure-5",
+    "file": "dbtext-astra-glm-paper-ready.pdf",
+    "sha256": "f1c8e526bd4735f5481e48ef9d8a982adea5b999aaffcfb532641055ab609e64"
+  },
+  {
+    "figure": "figure-1",
+    "file": "figure-1.pdf",
+    "sha256": "f537396db15460750fd5c9c63fb3a32f94541c0d8383d332e27825cda7018447",
+    "kind": "schematic asset"
+  },
+  {
+    "figure": "figure-2",
+    "file": "figure-2.pdf",
+    "sha256": "33e1586a771dc42be6ad7f0c36188eb75cf0656c4ab903cdf35e63673e9279c2",
+    "kind": "schematic asset"
+  },
+  {
+    "figure": "figure-6",
+    "file": "figure-6.pdf",
+    "sha256": "99063ea2a8033c0d6b77e541dc2b6d60fb4a854c92cae0f8cc9b138370675b1b",
+    "kind": "schematic asset"
+  },
+  {
+    "figure": "figure-7",
+    "file": "figure-7.pdf",
+    "sha256": "57dc0353eefe49b4fc3ab4ee9e69bcd954f6f9daf74ac89e9fbd0a5584760e69",
+    "kind": "schematic asset"
+  }
+]

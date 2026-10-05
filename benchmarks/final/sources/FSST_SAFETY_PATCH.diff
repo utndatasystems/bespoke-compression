@@ -1,0 +1,11 @@
+--- original/libfsst.cpp
++++ fixed/libfsst.cpp
+@@ -73,7 +73,7 @@
+          u8* cur = line[sample[i]];
+          u8* end = cur + len[sample[i]];
+          if (sampleParam < 0 && i+1 == sample.size()) 
+-            cur -= sampleSize; // use only last part of last line (which could be too long for an efficient sample)
++            cur -= sampleParam; // use only last part of last line (which could be too long for an efficient sample)
+          while(cur < end) byteHisto[*cur++]++;
+       }
+       u32 minSize = FSST_SAMPLEMAXSZ, i = st->terminator = 256;

@@ -1,0 +1,15 @@
+random-access returncode: 0
+Verified 16 runs, 3 baselines, 95 unchanged measurements, and no overlapping labels.
+/dev/shm/bespoke-release-20261005/replay/fresh-figure-inputs/random-access/dbtext-random-access-comparison.pdf
+
+dbtext returncode: 1
+Traceback (most recent call last):
+  File "/dev/shm/bespoke-release-20261005/replay/fresh-figure-inputs/dbtext/plotting/plot.py", line 174, in <module>
+    draw_block(list(policies),paper)
+  File "/dev/shm/bespoke-release-20261005/replay/fresh-figure-inputs/dbtext/plotting/plot.py", line 148, in draw_block
+    place_labels(ax,entries,base+runs,frontiers,paper=paper)
+  File "/dev/shm/bespoke-release-20261005/replay/fresh-figure-inputs/dbtext/plotting/plot.py", line 112, in place_labels
+    assert not any(DrawingPath(seg).intersects_path(patch,filled=True) for seg in segments),('Label hides frontier',label_keys[i])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Label hides frontier', ('tools-allowed', 3))
+

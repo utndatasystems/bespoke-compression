@@ -1,0 +1,61 @@
+[
+  {
+    "argv": [
+      "make",
+      "libfsst.a"
+    ],
+    "returncode": 0,
+    "stdout": "g++ -std=c++17 -W -Wall -g -O1 -march=native -c fsst_avx512.cpp # -O1: no constant propagation reduces register pressure and improves unrolling\ng++ -std=c++17 -W -Wall -c -O3 -march=native -DNDEBUG -g libfsst.cpp \nar ru libfsst.a libfsst.o fsst_avx512.o \nranlib libfsst.a\n",
+    "stderr": "In file included from /usr/lib/gcc/x86_64-linux-gnu/13/include/immintrin.h:53,\n                 from fsst_avx512.cpp:21:\nIn function \u2018__m512i _mm512_mask_expandloadu_epi64(__m512i, __mmask8, const void*)\u2019,\n    inlined from \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019 at .fsst_avx512_unroll1.inc:20:54:\n/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:11041:10: warning: \u2018job1\u2019 may be used uninitialized [-Wmaybe-uninitialized]\n11041 |   return (__m512i) __builtin_ia32_expandloaddi512_mask ((const __v8di *) __P,\n      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n11042 |                                                         (__v8di) __W,\n      |                                                         ~~~~~~~~~~~~~\n11043 |                                                         (__mmask8) __U);\n      |                                                         ~~~~~~~~~~~~~~~\nfsst_avx512.cpp: In function \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019:\nfsst_avx512.cpp:92:12: note: \u2018job1\u2019 was declared here\n   92 |    __m512i job1, job2, job3, job4; // will contain current jobs, for each unroll 1,2,3,4\n      |            ^~~~\nIn function \u2018__m512i _mm512_mask_expandloadu_epi64(__m512i, __mmask8, const void*)\u2019,\n    inlined from \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019 at .fsst_avx512_unroll2.inc:40:54:\n/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:11041:10: warning: \u2018job2\u2019 may be used uninitialized [-Wmaybe-uninitialized]\n11041 |   return (__m512i) __builtin_ia32_expandloaddi512_mask ((const __v8di *) __P,\n      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n11042 |                                                         (__v8di) __W,\n      |                                                         ~~~~~~~~~~~~~\n11043 |                                                         (__mmask8) __U);\n      |                                                         ~~~~~~~~~~~~~~~\nfsst_avx512.cpp: In function \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019:\nfsst_avx512.cpp:92:18: note: \u2018job2\u2019 was declared here\n   92 |    __m512i job1, job2, job3, job4; // will contain current jobs, for each unroll 1,2,3,4\n      |                  ^~~~\nIn function \u2018__m512i _mm512_mask_expandloadu_epi64(__m512i, __mmask8, const void*)\u2019,\n    inlined from \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019 at .fsst_avx512_unroll3.inc:60:54:\n/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:11041:10: warning: \u2018job3\u2019 may be used uninitialized [-Wmaybe-uninitialized]\n11041 |   return (__m512i) __builtin_ia32_expandloaddi512_mask ((const __v8di *) __P,\n      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n11042 |                                                         (__v8di) __W,\n      |                                                         ~~~~~~~~~~~~~\n11043 |                                                         (__mmask8) __U);\n      |                                                         ~~~~~~~~~~~~~~~\nfsst_avx512.cpp: In function \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019:\nfsst_avx512.cpp:92:24: note: \u2018job3\u2019 was declared here\n   92 |    __m512i job1, job2, job3, job4; // will contain current jobs, for each unroll 1,2,3,4\n      |                        ^~~~\nIn function \u2018__m512i _mm512_mask_expandloadu_epi64(__m512i, __mmask8, const void*)\u2019,\n    inlined from \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019 at .fsst_avx512_unroll4.inc:80:54:\n/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:11041:10: warning: \u2018job4\u2019 may be used uninitialized [-Wmaybe-uninitialized]\n11041 |   return (__m512i) __builtin_ia32_expandloaddi512_mask ((const __v8di *) __P,\n      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n11042 |                                                         (__v8di) __W,\n      |                                                         ~~~~~~~~~~~~~\n11043 |                                                         (__mmask8) __U);\n      |                                                         ~~~~~~~~~~~~~~~\nfsst_avx512.cpp: In function \u2018u32 fsst_compressAVX512(SymbolTable&, u8*, u8*, SIMDjob*, SIMDjob*, u32, u32)\u2019:\nfsst_avx512.cpp:92:30: note: \u2018job4\u2019 was declared here\n   92 |    __m512i job1, job2, job3, job4; // will contain current jobs, for each unroll 1,2,3,4\n      |                              ^~~~\nar: `u' modifier ignored since `D' is the default (see `U')\nar: creating libfsst.a\n"
+  },
+  {
+    "argv": [
+      "g++",
+      "-std=c++17",
+      "-O3",
+      "-march=native",
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/repro.cpp",
+      "-I/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst",
+      "/home/iachnyk/compression-research/evaluations/dbtext-payload-evaluation-2026-09-24/build/fsst/libfsst.a",
+      "-o",
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/original"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/original",
+      "/home/iachnyk/compression-research/datasets/04-fsst-dbtext/data/chinese"
+    ],
+    "returncode": -11,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "g++",
+      "-std=c++17",
+      "-O3",
+      "-march=native",
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/repro.cpp",
+      "-I/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst",
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/libfsst.a",
+      "-o",
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/fixed"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/fixed",
+      "/home/iachnyk/compression-research/datasets/04-fsst-dbtext/data/chinese"
+    ],
+    "returncode": 0,
+    "stdout": "byte_exact 763287 payload 448946 table 601\n",
+    "stderr": ""
+  }
+]

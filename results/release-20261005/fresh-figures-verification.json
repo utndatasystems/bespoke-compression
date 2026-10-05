@@ -1,0 +1,10 @@
+{
+  "archive": "published-3743a9a-fresh-figures-evidence.tar.gz",
+  "sha256": "67c7a7729ebc7c821403703201706423690c75dde3508f1466b3a44952d62c83",
+  "bytes": 940435,
+  "manifest": "published-3743a9a-fresh-figures-evidence.tar.gz.manifest.json",
+  "manifest_sha256": "7b62e92b4c5f0453b7ad1755efae55c1e9b0e41a3e1aa3425bfa6916505815bb",
+  "every_member_sha256_verified": true,
+  "verified_members": 44,
+  "published_commit": "3743a9a042e371af37af76bd568a38760659147e"
+}

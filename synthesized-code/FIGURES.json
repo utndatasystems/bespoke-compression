@@ -1,0 +1,51 @@
+{
+  "paper": "Bespoke_Compression - 2026-10-05T000401.041.pdf",
+  "note": "Figures 3-5 are regenerated from saved measurements. Figures 1,2,6,7 are schematic artwork; 1/6/7 also include editable TikZ sources.",
+  "figures": [
+    {
+      "id": "figure-3",
+      "directory": "paper/figures/bulk",
+      "script": "plot.py",
+      "pdfs": [
+        "bulk-datasets-grouped.pdf"
+      ]
+    },
+    {
+      "id": "figure-4",
+      "directory": "paper/figures/random-access",
+      "script": "plot.py",
+      "pdfs": [
+        "dbtext-random-access-comparison.pdf"
+      ]
+    },
+    {
+      "id": "figure-5",
+      "directory": "paper/figures/dbtext",
+      "script": "plotting/plot.py",
+      "pdfs": [
+        "dbtext-astra-glm-paper-ready.pdf"
+      ]
+    }
+  ],
+  "schematics": [
+    {
+      "figure": 1,
+      "file": "openstack-run1-full-row.pdf",
+      "source": "openstack-run1-full-row.tex"
+    },
+    {
+      "figure": 2,
+      "file": "sysdiag-crop.pdf"
+    },
+    {
+      "figure": 6,
+      "file": "indentation_buckets.pdf",
+      "source": "indentation_buckets.tex"
+    },
+    {
+      "figure": 7,
+      "file": "dbtext-uuid.pdf",
+      "source": "dbtext-uuid.tex"
+    }
+  ]
+}

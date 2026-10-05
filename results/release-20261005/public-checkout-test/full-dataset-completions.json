@@ -1,0 +1,52 @@
+{
+  "dbtext": {
+    "sha256": "32351ad7326d068c4d30170872f51bb387386326009c9509ccbf971ca3060e0c",
+    "record": {
+      "dataset": "dbtext",
+      "full": true,
+      "byte_exact": true,
+      "postprocessing_recovered": true,
+      "bulk_configurations": 41,
+      "native_row_configurations": 16,
+      "control_replays": 7,
+      "jobs_resubmitted": 0,
+      "timed_kernels_changed": false,
+      "repair": "Exclude unused historical OnPair+ curve; use raw-trial min/max and collision-safe fresh plot labels",
+      "label_script_sha256": "ded8c852fb65c824146db23d125a732724c604df250aa7f7cbe5d259c857a1f3",
+      "before_source_sha256": "3e665d03d8c313b62e82d86c7c144676a6f2df75e060b51053ffdd1659325a1e",
+      "after_source_sha256": "3e665d03d8c313b62e82d86c7c144676a6f2df75e060b51053ffdd1659325a1e"
+    }
+  },
+  "openstack": {
+    "sha256": "3e7dbc80d80661a1f668644e2a1ccc5847e9a039c6329413f00599fcaed240fb",
+    "record": {
+      "dataset": "openstack",
+      "full": true,
+      "byte_exact": true
+    }
+  },
+  "python": {
+    "sha256": "b514c71a4266b98a932e97655c16fc8f0156e58dda0f161d2e8d25d325f842df",
+    "record": {
+      "dataset": "python",
+      "full": true,
+      "byte_exact": true
+    }
+  },
+  "yelp": {
+    "sha256": "4ba2e9c87207c0829bc6f7c50f1f72aa872a1306ff2261c9c835803c8c6b7248",
+    "record": {
+      "byte_exact": true,
+      "dataset": "yelp",
+      "full": true
+    }
+  },
+  "sqlstorm-tpcds": {
+    "sha256": "061319017aefd3c38ec86c66fe7d6c98431ecc190d60f7e68d87235229424d7d",
+    "record": {
+      "dataset": "sqlstorm-tpcds",
+      "full": true,
+      "byte_exact": true
+    }
+  }
+}

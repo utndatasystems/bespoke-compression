@@ -1,0 +1,63 @@
+{
+  "codec_count": 42,
+  "complete_file_roundtrips": 534,
+  "bulk_roundtrips_passed": true,
+  "selected_rows_passed": true,
+  "mcp_tests": {
+    "server": 36,
+    "wsl": 36
+  },
+  "paper_pdfs": 7,
+  "input_files": 29,
+  "server_storage_deletions": 0,
+  "fresh_dbtext_benchmark": "passed",
+  "dbtext_bulk_configurations": 41,
+  "dbtext_native_row_configurations": 16,
+  "postprocessing_recovered_without_measurement_replay": true,
+  "private_candidate_test": {
+    "commit": "c33ab3c56ad4125095010ac7c5cd4c78cad76e50",
+    "codec_builds": 42,
+    "complete_file_roundtrips": 534,
+    "pdfs": 7,
+    "mcp_tests": 36
+  },
+  "completed_durable_archive_members_verified": 34187,
+  "fresh_openstack_benchmark": "passed",
+  "fresh_openstack_configurations": 27,
+  "fresh_openstack_complete_file_decodes": 648,
+  "fresh_python_benchmark": "passed",
+  "fresh_python_configurations": 27,
+  "fresh_python_complete_file_decodes": 216,
+  "yelp_original_timeout_receipt_retained": true,
+  "yelp_successes_replayed": 0,
+  "fresh_sqlstorm_benchmark": "passed",
+  "fresh_sqlstorm_configurations": 27,
+  "fresh_sqlstorm_complete_file_decodes": 216,
+  "fresh_benchmark_datasets": [
+    "dbtext",
+    "openstack",
+    "python",
+    "yelp",
+    "sqlstorm-tpcds"
+  ],
+  "fresh_full_benchmark_complete": true,
+  "fresh_yelp_benchmark": "passed",
+  "fresh_yelp_configurations": 27,
+  "fresh_yelp_complete_file_decodes": 216,
+  "fresh_paper_pdfs": 7,
+  "fresh_generator_hashes_match_public_commit": true,
+  "published_checkout_test": {
+    "commit": "3743a9a042e371af37af76bd568a38760659147e",
+    "codec_builds": 42,
+    "complete_file_roundtrips": 534,
+    "mcp_tests": 36,
+    "saved_pdfs": 7,
+    "fresh_pdfs": 7,
+    "bundled_input_files": 29
+  },
+  "timed_kernels_and_codec_source_identical": true,
+  "full_measured_runtime_tree_identical": false,
+  "runtime_change": "Administrative wall-clock and CPU limits removed; original measured receipts retained",
+  "yelp_original_failed_receipts_retained": 2,
+  "yelp_successful_measurements_replayed": 0
+}

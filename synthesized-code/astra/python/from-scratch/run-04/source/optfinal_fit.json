@@ -1,0 +1,37 @@
+{
+  "source": "optfinal_frozen.cpp",
+  "source_sha256": "5d705dc9581e07f68fe3f62fa01a5c88308056c3c2158a09c8bf8d8e940d00f4",
+  "model": "analysis_costs_refit.h",
+  "model_sha256": "994ce2b4944cb75f1a5916f59fcd1a3db4f10ff292f1821eebd2887817edeb94",
+  "depth": 32,
+  "penalty": 0,
+  "window": 67108864,
+  "block_bytes": 1048576,
+  "hash_heads": [
+    4,
+    6,
+    8,
+    12,
+    16,
+    24
+  ],
+  "literal_run_max": 32,
+  "cpu": 15,
+  "chunk_offsets": [
+    0,
+    25165824,
+    50331648,
+    75497472,
+    99999986
+  ],
+  "chunk_seconds": [
+    24.155,
+    32.336,
+    38.64,
+    35.549
+  ],
+  "total_chunk_seconds": 130.68,
+  "fit_output": "optfinal_p0.bin",
+  "model_refit_seconds": 8.344630867242813,
+  "note": "Sequential research fitting with hash history recreated for each chunk. Uses refitted model trained from opt64_p0.bin; initial greedy model fit and advanced parser fit are upstream one-time training costs."
+}

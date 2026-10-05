@@ -1,0 +1,10 @@
+{
+  "experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/TRIALS.json": "069b2393d94fb3cd8b0ae9bae614b981abf91cba59f958b108d4108884b465d8",
+  "experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json": "af06481dfe308811f9c7420d7d6ff8bdd4bfdbc4f829f8724e13b16321ad72d2",
+  "experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/FULL_DECODE.json": "fcfee0406678e0b9b94cb62740b8b8a1c0d75903f4cc32ea8531ffd56ebd1f56",
+  "experiments/onpairplus-onpair16-rows-2026-09-27/UPSTREAM_HASHES.json": "eb3bf12fd1a1514f2f40d8bbebc7d83fec2e7e695693b7acf334ca745ec7f984",
+  "experiments/onpairplus-onpair16-rows-2026-09-27/SOURCE_REVIEW.md": "ef065a78fcd877ef2e2ee925fcfae9024471d65f0861bc52f0b40efbaa828f15",
+  "experiments/onpairplus-onpair16-rows-2026-09-27/HARNESS_REVIEW.json": "d9c0ffb601c034d8cb0415c5319b2d002014d1d46f8671624c04ac04d50debea",
+  "output/dbtext-astra-comparison-clean-2026-09-26/row-points.csv": "954226a29ffd0ab769b0b95c5011343b68ae8c269e76c76a7cb26935807231cb",
+  "output/dbtext-astra-comparison-clean-2026-09-26/bulk-points.csv": "9d8a41eef50a03f0b3eb32bc8438ca1a6834892d3d5dbe675e3070fc70e8e9f1"
+}

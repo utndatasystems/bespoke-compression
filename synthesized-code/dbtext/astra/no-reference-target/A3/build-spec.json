@@ -1,0 +1,56 @@
+{
+  "commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-fPIC",
+      "-shared",
+      "-DENTROPY_REPARSE",
+      "-DENCODER",
+      "-I/source",
+      "/source/codec.cpp",
+      "-o",
+      "/output/encoder.so"
+    ],
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-fPIC",
+      "-shared",
+      "-I/source",
+      "/source/codec.cpp",
+      "-o",
+      "/output/decoder.so",
+      "-Wl,--build-id=none",
+      "-s"
+    ],
+    [
+      "objcopy",
+      "--remove-section=.comment",
+      "/output/decoder.so"
+    ]
+  ],
+  "decoder": "decoder.so",
+  "description": "Independent column archives with packed numeric records, learned URL templates, and learned phrase token dictionaries; exact bulk and bounded selective decoding.",
+  "encoder": "encoder.so",
+  "name": "dbtext-phrases-v7",
+  "sources": [
+    "codec.cpp",
+    "structured.h",
+    "location.h",
+    "url.h",
+    "phrase.h",
+    "phrase_fast.h",
+    "entropy.h",
+    "gphrase.h",
+    "gphrase_fast.h",
+    "dictpack.h",
+    "reparse.inc",
+    "entropy_fast.h"
+  ],
+  "variant": "rows"
+}

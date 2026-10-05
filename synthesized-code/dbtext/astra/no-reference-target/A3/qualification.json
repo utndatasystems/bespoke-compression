@@ -1,0 +1,46 @@
+{
+  "campaign": "dbtext-reference-ablation-2026-09-28",
+  "arm": "scratch",
+  "stage": 3,
+  "result_id": "r-5ec4e979e868b2f74220c1cc2a8adcc9c187fd5755ae1545a3b8adc01bbc241f",
+  "qualification": "qualified",
+  "package_bytes": 12997570,
+  "decode_MB_s": 1989.8907080490005,
+  "checked_utc": "2026-09-29T00:51:55.168077+00:00",
+  "source_review_sha256": "776bfe5ffbc8242e83ac38925890a40faa66999d6058a388f19ed1c93565ade4",
+  "source_manifest_sha256": "1232f4789c092ade8c380a14fc910e03c1e848fba9b901e8036c9f6fd3559eda",
+  "diagnostic_calls": 391,
+  "bulk_range_MB_s": [
+    1897.5754910882217,
+    2024.7066332818194
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 20.55675889185874,
+      "min": 20.5041042003028,
+      "max": 20.764235337519363
+    },
+    "3": {
+      "median": 19.701324045696875,
+      "min": 19.41044742309851,
+      "max": 19.70556351657183
+    },
+    "10": {
+      "median": 21.49527825016572,
+      "min": 21.232064077720985,
+      "max": 21.717527803227302
+    },
+    "30": {
+      "median": 24.339497132034843,
+      "min": 24.28630208954851,
+      "max": 24.84510058657112
+    },
+    "100": {
+      "median": 98.12702413453266,
+      "min": 96.46703320713806,
+      "max": 98.32161870482503
+    }
+  },
+  "boundary_met": true,
+  "scope": "Retained evidence and numeric verification plus named owner source review; no fresh benchmark or comprehensive independent source audit. Later ablation boundaries remain fixed regardless of this result."
+}

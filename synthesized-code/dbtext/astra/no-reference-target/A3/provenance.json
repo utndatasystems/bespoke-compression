@@ -1,0 +1,20 @@
+{
+  "source_sha256": {
+    "source/codec.cpp": "738684d6f3d9bef343ae4e738fc4254a59cacb8f4fc6b00365e62e53770a3b15",
+    "source/dictpack.h": "768159454b6170a83af4d15a0e58612455ff94f11dc141b875c18c061dcbfe2c",
+    "source/entropy.h": "c179a3ae7d2307382fdb7558b3e27abc9ca40db807055708e6281ef079e71a19",
+    "source/entropy_fast.h": "a337f3854f7d9643d51c5cbc87036ee38b63d87c533b9458d50da594afa4fd46",
+    "source/gphrase.h": "478991c00040769c63e070d0e32c8bf98a0e473d1e426de97999c1ec8b839ffa",
+    "source/gphrase_fast.h": "073059d6e7bf3b99f2b65c556deb8cb3ab2a4565658cd107e57e8b75966ed36c",
+    "source/location.h": "48e3cb278f493a7b812888fab87cf97aef7d27aaf237e203c3c245620b90ddaa",
+    "source/phrase.h": "572f3e2ff5ea4c88d266cc1ddf38de065e850211b6d497a93e8033e1852c6f97",
+    "source/phrase_fast.h": "206481f77b3ba34dbb8dae6a1370510ebe34bfa212b931215f24184596392866",
+    "source/reparse.inc": "6a7ec88320c1eb0e592a4495a25d9adc47bba4e8bbe1687d78be7cad1d692c81",
+    "source/structured.h": "9c0562d120c050f82d9a45d358862414cf0d846a9fd4c73a66d22cda7d15f5d9",
+    "source/url.h": "2b4d178af105a1c359ff0f131d78f5f11ca9bb04d934fb5371b7420ca21e6023",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "result_id": "r-5ec4e979e868b2f74220c1cc2a8adcc9c187fd5755ae1545a3b8adc01bbc241f",
+  "recovery": "Retained owner-selected source review, matched to measured candidate hashes",
+  "original_build_spec_sha256": "53a7cec6e6b7618c1a3b304d2cdf675a03d712d1f33c705c06c01b5e446e1567"
+}

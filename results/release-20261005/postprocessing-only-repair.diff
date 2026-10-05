@@ -1,0 +1,74 @@
+diff --git a/benchmarks/final/run.py b/benchmarks/final/run.py
+index 4aa3e05..f2edde2 100644
+--- a/benchmarks/final/run.py
++++ b/benchmarks/final/run.py
+@@ -268,13 +268,20 @@ def update_dbtext(figures, points, folder):
+     for rel, glm in [('synthesized-code/dbtext/astra/data/row-points.csv',False),
+                      ('synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/row-points.csv',True)]:
+         path = base / rel
+-        rows = [r for r in csv.DictReader(path.open()) if int(r['stage']) <= 4]
++        rows = [r for r in csv.DictReader(path.open()) if int(r['stage']) <= 4
++                and (r['arm'] != 'baseline' or r['name'] in {'FSST','LZ4 block','OnPair+ row adapter'})]
+         controls = load(folder / 'control-rows/summary.json')['krows_per_second']
+         onpair = load(folder / 'onpair16-rows/summary.json')['krows_per_second']
++        control_trials = load(folder / 'control-rows/trials.json')
++        onpair_trials = load(folder / 'onpair16-rows/trials.json')
+         for r in rows:
+             if r['arm']=='baseline':
+                 values = onpair if r['name']=='OnPair+ row adapter' else controls[{'FSST':'fsst','LZ4 block':'lz4','Uncompressed':'uncompressed'}[r['name']]]
+                 r['median'] = values[r['percent']] / 1000
++                trials = onpair_trials if r['name']=='OnPair+ row adapter' else [t for t in control_trials
++                    if t['method']=={'FSST':'fsst','LZ4 block':'lz4'}[r['name']]]
++                rates = [t['krows_per_second'][r['percent']] / 1000 for t in trials]
++                r.update(low=min(rates),high=max(rates))
+                 if r['name']=='OnPair+ row adapter':
+                     r['package_bytes'] = sum(p.stat().st_size for p in (folder / 'onpair16-rows/1/archives').glob('*.bin')) + (folder.parent / 'onpair16/librow-adapter.so').stat().st_size
+                 else:
+@@ -284,6 +291,8 @@ def update_dbtext(figures, points, folder):
+                 p = next(p for p in points if p['arm']==r['arm'] and p['stage']==int(r['stage']))
+                 r['package_bytes'] = p['package_bytes']
+                 r['median'] = p['selective'][r['percent']]['median_rows_M_s']
++                r.update(low=p['selective'][r['percent']]['min_rows_M_s'],
++                         high=p['selective'][r['percent']]['max_rows_M_s'])
+             r.update(source='fresh-final-benchmark',result_id='fresh-server-replay')
+         csvwrite(path, rows)
+         if glm:
+diff --git a/paper/figures/dbtext/plotting/plot.py b/paper/figures/dbtext/plotting/plot.py
+index 2faf781..c159233 100644
+--- a/paper/figures/dbtext/plotting/plot.py
++++ b/paper/figures/dbtext/plotting/plot.py
+@@ -87,7 +87,9 @@ def place_labels(ax, entries, marked_points, frontiers, paper=False):
+               arrowprops=dict(arrowstyle='-',color=col,lw=.4,shrinkA=1,shrinkB=2)
+               if p['arm']=='baseline' else None)
+   labels.append(annotation);label_keys.append(key)
+- # Keep the established placement elsewhere; pin these crowded labels locally.
++ # Preserve the paper's hand-adjusted positions when they remain clear.
++ # Fresh timings can move the frontier; then use the collision-aware placement.
++ automatic_positions=[a.get_position() for a in labels]
+  overrides={
+   ('tools-allowed',3):((8,-2.5),0,'center','center'),
+   ('boundary-only',3):((0,9),0,'center','center'),
+@@ -100,8 +102,21 @@ def place_labels(ax, entries, marked_points, frontiers, paper=False):
+  for label,key in zip(labels,label_keys):
+   if key in overrides:
+    offset,rotation,ha,va=overrides[key]
+-   label.set_position(offset);label.set_rotation(rotation)
+-   label.set_rotation_mode('anchor');label.set_ha(ha);label.set_va(va)
++   label.set_position(offset);label.set_rotation(rotation)
++   label.set_rotation_mode('anchor');label.set_ha(ha);label.set_va(va)
++ fig.canvas.draw()
++ boxes=[a.get_bbox_patch().get_window_extent() for a in labels]
++ patches=[a.get_bbox_patch().get_path().transformed(a.get_bbox_patch().get_transform()) for a in labels]
++ obstructed=any(
++  any(patch.intersects_path(other,filled=True) for other in patches[:i])
++  or any(DrawingPath(seg).intersects_path(patch,filled=True) for seg in segments)
++  or any(patch.intersects_bbox(b,filled=True) for b in point_boxes)
++  or not (area.contains(boxes[i].x0,boxes[i].y0) and area.contains(boxes[i].x1,boxes[i].y1))
++  for i,patch in enumerate(patches))
++ if obstructed:
++  for label,offset in zip(labels,automatic_positions):
++   label.set_position(offset);label.set_rotation(0)
++   label.set_rotation_mode('anchor');label.set_ha('center');label.set_va('center')
+  # Validate actual rendered patches too, so font or layout changes fail visibly.
+  fig.canvas.draw()
+  boxes=[a.get_bbox_patch().get_window_extent() for a in labels]

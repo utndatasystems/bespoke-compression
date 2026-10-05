@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "yelp",
+  "workload": "bulk",
+  "implementation": "from-scratch",
+  "stage": 3,
+  "result_id": "r-35da9ba00336cc1b21722e2a31dd35832fa9d57edc95eaf1e8f43cf1a0579666",
+  "build_id": "b-ecca9e29d760668e3ca7eb73dd8987fa039fa1de41872ccb0f3d972b893760ce",
+  "build_export_sha256": "5464d01c42093bd9147693871bb1ebb083290fa20918aa5209a1a9e2ed3d2621",
+  "source_sha256": {
+    "build-spec.json": "eb76f980d2c948e0886f293bc92052011bfc7b43fdc8ee7dd6630258db15371a",
+    "source/codec_primitive_trim_runtime.cpp": "9a941fc379bfb11dbc04bf29d9e73c06a61289084b0bb3b42d4bd2f007bafe98",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/primitive_strcodec.h": "a974db911b7b9598c7ba9bbeac1a7e8e87e2a363669f4a544bbdb25f97adbcce",
+    "source/simd_helpers.h": "7634eae8dcce56ed70a211834769ba9568aebbe908ace3e2bb85430db015985e"
+  },
+  "input_bytes": 100000488,
+  "qualification": "qualified"
+}

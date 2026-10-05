@@ -1,0 +1,40 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "python",
+  "run": 1,
+  "original_bytes": 99999986,
+  "result_id": "r-3490f2114251c9e9db6254819eb03ebe7c9921d1afa209b4d88023c6c97a0dc7",
+  "build_id": "b-c6eca5350cf480397c7b0ca5da66429d0b91202b2b49aa24dc68fc6244cd47cc",
+  "package_bytes": 29935624,
+  "compression_factor": 3.340501136705886,
+  "decompression_median_MB_s": 6123.819358081569,
+  "decompression_range_MB_s": [
+    5621.007348737407,
+    6185.769573246791
+  ],
+  "online_encoding_median_seconds": 10.121148561,
+  "source_sha256": {
+    "build-spec.json": "515109dda16ea74a5dea6c611ff2a7505953074494002850be137e3823750991",
+    "source/compact-cost.json": "f5756be1b334b903911a847240bf5b2ca769b0df302951c72558579d48007f9f",
+    "source/compact.cpp": "efd0ba16c573a163ed51baf0d3e835809186b7b18f56ce25141ddb999012b163",
+    "source/decoder.cpp": "610598cad5bd1596c731025c0c93ba9889127ca7831814be32643a859bf8f8ca",
+    "source/encoder.cpp": "10075fa612b281975999a2243f0f941a59d8c3b786a084f77a0f1bcdd90d4a39",
+    "source/fit_bpe.cpp": "387d7c75c582807736bcd9cf39f3995e5fcbee63d7c6ffc8cb9c283953e7d6ba",
+    "source/fit_dp.cpp": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9",
+    "source/fit_payload.cpp": "7fc89bdded501bfee2887490545d5c5511ea1370430528ddf80401b4e3cb9585",
+    "source/fit_refine.cpp": "4459ab8c26237a03bc29613b2dfde1d351cea67cebf5adc5ea430cc9ad65f15b",
+    "source/fitting-costs.json": "2cfa9db59ab5f1d2a6de8ebad8997f9564a7abff4a9b12cb3eb470bbbe123f77",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/limit-costs.json": "ad838e41b2d3cc40627eec90676dff5a43e7999dc782a2b029e82c63a132179f",
+    "source/limitdict.py": "b7984c4cebd2642fb9e752e5ccc92b05c9f79f1b629055cd21603a442cbb331b",
+    "source/payload.inc": "ec62c58a22ca587d16d568c056b7f1df1ac49f2d759f48d65c31d2a51b7d1d76",
+    "source/r16-cost1.json": "fe542478899437935ec325e8b5d1b0271cf1befd4f23e7cc2e169c7fc8fa5439",
+    "source/r16-cost2.json": "10ac77916dee924d5dc4af9ab785d78d4c9a9d39e9244544b6cd9425a5c2df08",
+    "source/r16-cost3.json": "485a28d63fe13be5ad6f58385f15281beee937b48ff0e885517b8c24bb9dcdc1",
+    "source/r16-cost4w.json": "ecb8096cf0e0a96202061105e9dabeb235dfd53f862649a830bd629093643de4",
+    "source/r16-dp.cpp": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9",
+    "source/r16-refine.cpp": "7a2a70c646d9c2fd3a525a09b8af81f4bc039fea1e4202ee0ca612ab7efe30e5",
+    "source/r16-refine_weighted.cpp": "eefdc069c6b6b121c0625967f7efc31680c9508e4ada20085680bb44713d691c"
+  }
+}

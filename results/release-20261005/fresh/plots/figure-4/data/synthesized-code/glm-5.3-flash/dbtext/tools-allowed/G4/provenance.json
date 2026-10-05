@@ -1,0 +1,60 @@
+{
+  "stage": 4,
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "original_bytes": 39841347,
+  "result_id": "fresh-server-replay",
+  "package_bytes": 12005569,
+  "strict_package_bytes": 12964337,
+  "exempt_standard_library_bytes": 958768,
+  "compression_factor": 3.318572155971949,
+  "decode_MB_s": 299.9649969849794,
+  "bulk_range_MB_s": [
+    284.5435451282982,
+    309.81360675885924
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 25.37761997942462,
+      "min": 24.814549764039402,
+      "max": 25.633537347554107
+    },
+    "3": {
+      "median": 21.052910257462056,
+      "min": 20.843701460885004,
+      "max": 21.096795471756117
+    },
+    "10": {
+      "median": 18.393846788467453,
+      "min": 18.342040850727454,
+      "max": 18.670585878618407
+    },
+    "30": {
+      "median": 17.30558876022051,
+      "min": 16.990899140702055,
+      "max": 17.404489044092827
+    },
+    "100": {
+      "median": 16.81071164318684,
+      "min": 16.574165639569795,
+      "max": 16.8559161208294
+    }
+  },
+  "target_met": false,
+  "source_sha256": {
+    "build-spec.json": "d669560fb25d3db33782a3d7c098aa8910e4efaaab0862f014f3e59225254f50",
+    "source/codec/decoder.c": "17373406e1ffb125452d0a52f49ca3023cae1fcba682e83d97f4785c23eb2030",
+    "source/codec/encoder.c": "d516fcaf94cf13ef197226acf0c0e812b3a282a52465247f6949ca71cf4c8d66",
+    "source/codec/fitdata.c": "e838342b63c77f74722919d4d22470665d1b9f41e15c17d8472847e0eeb9f05f",
+    "source/codec/fitdata.h": "93022a1b059d6b2fe2072c14b81f14260f81bc7584f7a91e0401a123a616ffdd",
+    "source/codec/zstd.h": "0ba495bbc0d329c6ecc07a822e7a720da42027c54e6016d7cb5a9c5fa9f9d00c",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "exports_sha256": {
+    "b-9bc05dbf65326f1a97b2b650b0aba5e7e867cd10a4983105f3c8fa45e70f9a4c.zip": "27bd240b669328366eb9287c9eac372dc529b9028f597ee6202822096322c6ad",
+    "r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812.zip": "b5a48552eb121fbaa6a9e11363a48c63e7bdd4cb73e7fdcd85c7ba408a7f1bb4",
+    "v-5ada43a0b6f551e3bfbbe22f2115ad71603042eb833bd05be73a3119624640cd.zip": "307272bb4e89444068da0b47869a63b5b9c1b3ccc8761f203f9934654c4cd173"
+  },
+  "qualification_sha256": "ab9effee3dbf9f229a1ffeda2743ec424becd028edee5dcb2b736b238c4644f8"
+}

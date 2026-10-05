@@ -1,0 +1,17 @@
+{
+  "method": "bzip2-1",
+  "package_bytes": 12587110,
+  "archive_bytes": 12587110,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.5274466749329534,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 15676182,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 3.1652497674207978,
+  "median": 27.76790660756015,
+  "low": 27.743963450870318,
+  "high": 27.775836494019984,
+  "encode_MB_s": 11.030490149086894,
+  "exact_decodes": 184
+}

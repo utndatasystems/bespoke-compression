@@ -1,0 +1,17 @@
+{
+  "method": "LZ4-HC12",
+  "package_bytes": 17051360,
+  "archive_bytes": 17051360,
+  "original_bytes": 39841347,
+  "bits_per_byte": 3.4238521102210724,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 20140432,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 2.336549518630772,
+  "median": 2157.618621958681,
+  "low": 2111.695647525814,
+  "high": 2165.5649419499828,
+  "encode_MB_s": 8.956691872383145,
+  "exact_decodes": 184
+}

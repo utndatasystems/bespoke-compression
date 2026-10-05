@@ -1,0 +1,27 @@
+[
+  {
+    "argv": [
+      "taskset",
+      "-c",
+      "14",
+      "/work/analyzebpe/r16/refine_weighted",
+      "3",
+      "4w",
+      "49152"
+    ],
+    "wall_seconds": 3.670200042426586,
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "taskset",
+      "-c",
+      "14",
+      "/work/analyzebpe/r16/dp",
+      "/work/analyzebpe/r16/dict4w.bin",
+      "/work/analyzebpe/r16/tokens4w.bin"
+    ],
+    "wall_seconds": 12.370107151567936,
+    "returncode": 0
+  }
+]

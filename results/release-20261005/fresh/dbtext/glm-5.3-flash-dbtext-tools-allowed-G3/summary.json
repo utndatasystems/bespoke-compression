@@ -1,0 +1,17 @@
+{
+  "method": "glm-5.3-flash-dbtext-tools-allowed-G3",
+  "package_bytes": 13382215,
+  "archive_bytes": 13355271,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.6871009155388244,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 14275519,
+  "deployment_scope": "decoder and its full nonplatform closure",
+  "decoder_bytes": 26944,
+  "ratio": 2.9771862879201985,
+  "median": 1047.8522477288293,
+  "low": 1027.5203139236648,
+  "high": 1065.8623975897772,
+  "encode_MB_s": 0.791345314792274,
+  "exact_decodes": 184
+}

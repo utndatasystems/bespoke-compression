@@ -1,0 +1,60 @@
+{
+  "stage": 2,
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "original_bytes": 39841347,
+  "result_id": "fresh-server-replay",
+  "package_bytes": 13690308,
+  "strict_package_bytes": 13690308,
+  "exempt_standard_library_bytes": 0,
+  "compression_factor": 2.910186315749799,
+  "decode_MB_s": 258.53543834197643,
+  "bulk_range_MB_s": [
+    252.6586316920138,
+    262.6674270227227
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 11.60378018694438,
+      "min": 11.542157084477886,
+      "max": 11.676495254280573
+    },
+    "3": {
+      "median": 10.211728092746897,
+      "min": 10.120021360413594,
+      "max": 10.477012071004122
+    },
+    "10": {
+      "median": 9.382601735757303,
+      "min": 9.290256010267782,
+      "max": 9.421615619180995
+    },
+    "30": {
+      "median": 8.971376616344408,
+      "min": 8.964881432613208,
+      "max": 8.988519347333465
+    },
+    "100": {
+      "median": 9.035652766841421,
+      "min": 8.971015385804707,
+      "max": 9.100849572375939
+    }
+  },
+  "target_met": false,
+  "source_sha256": {
+    "build-spec.json": "82eb412f1bac46e28c6b411628c70d6b98fb3c82e7603d961385d9d26e0a327d",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/src/bpe.h": "4178d602b597f795869fca0795590301262316cc9214fa3c263ed912c549d2a0",
+    "source/src/common.h": "4345ddf8002eb5a62c1cf7b5b4c812ca467b47078422140a9ac09fc77a01977b",
+    "source/src/dec.cpp": "73a605e134753956e8393e5fe1fb79fa40dd0eb95ca293925a4b424d89878906",
+    "source/src/enc.cpp": "6a5163d02b4a3b64c82b2837c7c0280ee6d24d5fa6fc40980b7643a7868915f6",
+    "source/src/huff.h": "40dc749b096eaf133b34a6fe0abd1d943160f81804426cf68888bef43e4a15a3"
+  },
+  "exports_sha256": {
+    "b-d255f203018dc24e99284c4524058fafb8b615dc3f136ba509a148e3a587e6f4.zip": "7ddfd114f6b54b1ae413f83931140c9c13ed797aba771ca8f47fc6d80a18712c",
+    "r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658.zip": "d048cec5d65404a2a9a36c2943ac5d579c68eefeaa0b503bb3ec3e9afb55b1c0",
+    "v-879a515ca7ef32e8475c627de7f90fe040bd3915c87304d2d9631945dffc15e8.zip": "35d9a8f5cb7cdaf0cacf209bf30d5c7d01864cac2fcc116d35a11cd664060a00"
+  },
+  "qualification_sha256": "66ee79e6c300c8933dd06531feec8a02b296858e99ffd004a644c9455b1f8f96"
+}

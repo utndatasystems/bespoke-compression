@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "yelp",
+  "workload": "bulk",
+  "implementation": "from-scratch",
+  "stage": 2,
+  "result_id": "r-aee5d94b115fe3417c8b8ef6392cc2f437fd7ca0c81efba2ec3b71673798ca94",
+  "build_id": "b-d6280853215ce57d3eb70111a65f50e8c142042c33b1d8bf9e964baba85d203c",
+  "build_export_sha256": "18971928d777dc89ac9de32cd0940146d4ad20588d3fa3be75cb3bb36af01dd1",
+  "source_sha256": {
+    "build-spec.json": "a371b645b7ddaffefcd489999098804c3148e663b8362d6c47b4c7757cfd1301",
+    "source/codec.cpp": "a1c470daab3efc1947f2eb28cadd5eb257235235ed383ca918f9fedb4724ecb6",
+    "source/complex.h": "ce9a983fac6f8f1f59641024061baf5ed1bf54afe00811e5d81f32796ab7fa18",
+    "source/id_simdfused.h": "012f29e2897208213dea6cebc5011ee9bbc39f2300e44356261edcd84596c4f2",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/location_huff.h": "c63a9603b41e70ff17080a0e335c85252e98d49dee73b9043b9ed04c6a239f47",
+    "source/numeric.h": "03afc0d657ba00da939f42f7ff96026e328b6f0371be54430057a8fb5b3a231d",
+    "source/numeric_group_huff.h": "d9439871afe9b3034b3245a10417f88896a9c340abb86f7862deed84470af986",
+    "source/text.h": "c950ae82ff31cb0684af621e28df197e98826d0555d845c6f3d61bf1f2963dbd"
+  },
+  "input_bytes": 100000488,
+  "qualification": "qualified"
+}

@@ -1,0 +1,17 @@
+{
+  "method": "LZ4-HC9",
+  "package_bytes": 17238273,
+  "archive_bytes": 17238273,
+  "original_bytes": 39841347,
+  "bits_per_byte": 3.4613835721969943,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 20327345,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 2.3112145282767016,
+  "median": 1889.3659513622324,
+  "low": 1867.5828669690322,
+  "high": 1911.2873629894593,
+  "encode_MB_s": 15.171241703039327,
+  "exact_decodes": 184
+}

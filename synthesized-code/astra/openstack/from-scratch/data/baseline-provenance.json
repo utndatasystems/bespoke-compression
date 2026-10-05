@@ -1,0 +1,11 @@
+{
+  "original_bytes": 61442082,
+  "input_count": 3,
+  "source_sha256": {
+    "output/compla6-publish-2026-09-15/results/tables/data.csv": "b22b610b0c5c2206c87c8d6061f226897559b84a247a14a3dfcdae9fb7145e84",
+    "experiments/string-baseline-timing-audit-2026-09-25/BASELINE_SUMMARY.csv": "41c16c24ad7e463e0bd329f8a1e11da8ee1d4463dacbf819d3ca413fedbaf3cd"
+  },
+  "baseline_count": 22,
+  "timing": "Audited single-core resident-input setup plus full reconstruction; one warmup, seven trials; sum three input times before median.",
+  "accounting": "Baseline adapters and conventional installed codec binaries excluded; archives and all data-dependent metadata charged. Generated custom decoder fully charged."
+}

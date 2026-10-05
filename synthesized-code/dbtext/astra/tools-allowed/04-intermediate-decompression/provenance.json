@@ -1,0 +1,34 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "tools-allowed",
+  "generation": "local ChatGPT subscription",
+  "stage": 4,
+  "objective": "Maximize compression factor at an intermediate decompression speed.",
+  "result_id": "r-a2562a01009c9ead7a86ca87288202820478ba70f164c662ba610085960f24f2",
+  "build_id": "b-078dbebd89f5b70e0a95dc62bd3f9a23726e8df439b68bfca5a60fda097fed31",
+  "build_export_sha256": "d76e194c28502ad487abca540be86a751c010d74790a45b5fe4a0281d43aa40a",
+  "source_manifest_sha256": "ec130e9d9ab721bc9aa244ef14b39138c11686ced03aa9e4f72bf4a3e01200ef",
+  "file_sha256": {
+    "source/FORMAT13.md": "9580c9b9a23969835cac9143acec49ea65410c48d424188230bf2d3644c3131e",
+    "source/codec13.cpp": "0d180b34c92c862f8cb6dd91c2140a3c6f010a42e5c1101ea15e3b29be4c90b5",
+    "source/dict_location_fast.h": "699e3ddfd6c1a8f5614c5cbf53f1e7bfe8d470382c6fb47ee2e1297125e8411c",
+    "source/dict_url.hpp": "c467cc88fd9e4f6c5d0456e40a061645f64d9672dba3c18ac9cce8c3acf23942",
+    "source/dict_url_codec_v4.hpp": "ebd077f502cf59363500103f7d5c4e44def25da5437294d1799eb184b57870fe",
+    "source/fsst/fsst.h": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+    "source/fsst/libfsst.cpp": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+    "source/fsst/libfsst.hpp": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+    "source/hc_pruned.h": "a423c4937058015462432f0ed8dc07a8fb3a8d1caeb2c57006e890fff476aa84",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/ph_selective.h": "6c9f9a3fe0c51f35387c1863158f82f53e47cf29ec3c9e68c43ae0a393fc5875",
+    "source/reparse.h": "d8f60185c4aa0f8f9a6d6c5269093cc1288381c7e32bbeb4e78ed288e47b9db0",
+    "source/special_uuid18.h": "acc0161562a5c144af13042941d057f3919004c2d1944fa7ef8e5733d0fe8f42",
+    "build-spec.json": "04c937a4207a244669876d52a67ece37e574679574183d49cb98a2d98785fc85"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "f7093034761e880e360177e41c456d21d1b2b45ac548702d4f0e81bf81ce13d0",
+    "encoder.so": "910021779c882959f46fa8cb0aa0febf48c694cad94bd30d14e347e1b33813ce"
+  },
+  "source_modified": false
+}

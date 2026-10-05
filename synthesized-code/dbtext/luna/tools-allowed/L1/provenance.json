@@ -1,0 +1,17 @@
+{
+  "dataset": "dbtext",
+  "model": "Luna",
+  "policy": "tools-allowed",
+  "stage": 1,
+  "result_id": "r-c54c633f7a2c7317ed6697e51bf12f6c46f116f3bd4436702f2681fdf1b3bd94",
+  "source_sha256": {
+    "source/codec-large-hybrid128j.cpp": "44821bc0d41fd7d62ee3c9521b334707dd85a92d9611f57eecd9834989a3629e",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "source_export_sha256": "66ec468f3a48a58f325d91651cc0662b981ecee59102e1dfe6262558f43156a5",
+  "plotted": {
+    "package_bytes": "16167072",
+    "ratio": "2.4643514298693048",
+    "qualification": "qualified"
+  }
+}

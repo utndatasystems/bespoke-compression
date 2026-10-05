@@ -1,0 +1,21 @@
+{
+  "artifact": "completed-openstack-evidence.tar.gz",
+  "sha256": "beeb129c11bb786cdf1b6584c5471e3f0b5996194c9f60a481d815cb37b71e9e",
+  "bytes": 123913017,
+  "files": 380,
+  "manifest": "completed-openstack-evidence.tar.gz.manifest.json",
+  "verification": {
+    "dataset": "openstack",
+    "native_configurations": 25,
+    "additional_original_baselines": 2,
+    "complete_file_decodes": 648,
+    "input_files": 3,
+    "full": true,
+    "byte_exact": true,
+    "jobs_resubmitted": 0,
+    "validation_scope": "Frozen full-file replay; historical qualification caveats retained"
+  },
+  "every_member_sha256_verified": true,
+  "verified_members": 380,
+  "published_numeric_members": 122
+}

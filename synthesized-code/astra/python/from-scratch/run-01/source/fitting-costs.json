@@ -1,0 +1,74 @@
+{
+  "bpe-cost": {
+    "initial_bpe_wall_seconds": 21.73,
+    "user_seconds": 21.3,
+    "system_seconds": 0.24
+  },
+  "compile-cost": {
+    "fitting_compilation_wall_seconds": 7.69,
+    "user_seconds": 5.97,
+    "system_seconds": 0.7
+  },
+  "decoder-compile-cost": {
+    "decoder_compile_wall_seconds": 0.61,
+    "user_seconds": 0.34,
+    "system_seconds": 0.1
+  },
+  "dp0-cost": {
+    "initial_dp_wall_seconds": 17.3,
+    "user_seconds": 14.03,
+    "system_seconds": 0.55
+  },
+  "dp4-cost": {
+    "refined_dp_wall_seconds": 14.52,
+    "user_seconds": 13.76,
+    "system_seconds": 0.52
+  },
+  "encoder-compile-cost": {
+    "data_dependent_encoder_compile_wall_seconds": 1.47,
+    "user_seconds": 1.2,
+    "system_seconds": 0.11
+  },
+  "payload-cost": {
+    "payload_generation_wall_seconds": 0.43,
+    "user_seconds": 0.26,
+    "system_seconds": 0.05
+  },
+  "refine-cost": {
+    "refinement_wall_seconds": 3.49,
+    "user_seconds": 3.24,
+    "system_seconds": 0.18
+  },
+  "total_wall_seconds": 67.24,
+  "reproduction_checks": {
+    "dict.bin": {
+      "sha256": "b71451c0ac9c83d2364b8e49d8e3b14615167ef3f853aacd67eaac697be3009e",
+      "matches_original": true
+    },
+    "tokens.bin": {
+      "sha256": "45fea6c805b20295739a5b433059730a457c360e16cdc2ca5ba91235eb60743f",
+      "matches_original": true
+    },
+    "dict4.bin": {
+      "sha256": "e8ff04b5caf79f5fbef09b89c566613ccbce7098b11e83c178c7ed7d519cdfb6",
+      "matches_original": true
+    },
+    "tokens4.bin": {
+      "sha256": "e9ab84ca35492c6673108595814547947f2554f09b2722e0110b872edac5c783",
+      "matches_original": true
+    },
+    "payload.inc": {
+      "sha256": "a04a0b0f5a917f8871d43f727a66b067e1a6ed04ca75238f15d6f7e234bee6f3",
+      "matches_original": true
+    }
+  },
+  "chain": [
+    "Compile fitting tools",
+    "Character BPE on first10kbytes of each100kbyte segment,10MBtotal,64sweeps upto65536vocab",
+    "OptimalfullcorpusDP",
+    "Keep256chars+highestfrequency48896phrases; addtop16384adjacentpairs",
+    "OptimalDPwithrefineddictionary",
+    "Reorderdictionarybydescendingtokenfrequency andemitpayload",
+    "Compileencoderanddecoder"
+  ]
+}

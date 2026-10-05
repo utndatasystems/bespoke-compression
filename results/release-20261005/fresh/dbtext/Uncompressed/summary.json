@@ -1,0 +1,17 @@
+{
+  "method": "Uncompressed",
+  "package_bytes": 39841347,
+  "archive_bytes": 39841347,
+  "original_bytes": 39841347,
+  "bits_per_byte": 8.0,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 42930419,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 1.0,
+  "median": 13261.908851425707,
+  "low": 13110.62704784921,
+  "high": 13627.132331262197,
+  "encode_MB_s": 7384.2943001439935,
+  "exact_decodes": 184
+}

@@ -1,0 +1,14 @@
+{
+  "legacy_timeout_seconds": 0.01,
+  "elapsed_seconds": 1.120774801,
+  "returncode": 0,
+  "reason": null,
+  "wall_cap": null,
+  "cpu_cap": null,
+  "sandbox": "required",
+  "runtime_pins": {
+    "version": "0.7.3.dev1",
+    "manifest_sha256": "0e656a679e24115c6603d53929f6eb78cb4ecf5f14f451640ace11c45164fcb2"
+  },
+  "verified_utc": "2026-10-05T06:27:15.609568+00:00"
+}

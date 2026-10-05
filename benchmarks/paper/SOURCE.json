@@ -1,0 +1,11 @@
+{
+  "note": "Recorded C++ measurement wrappers. Python entry points only relocate builds and select complete inputs.",
+  "sha256": {
+    "benchmarks/paper/bulk-reference.cpp": "89a87a6d4de486458fcc72ced1f9b1410d3260f9aabe038ac1e9299103505639",
+    "benchmarks/paper/extra_baseline.cpp": "edb102ded36e7e542df97212d703837c1cebf6b92d9fc7e5210d8fa8e8579017",
+    "benchmarks/dbtext/benchmark.cpp": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0",
+    "benchmarks/dbtext/codec.h": "95ca377d103cfc75f115ba8bc1f6e5397ca0aa38508fb98b92985c9ae048883c",
+    "benchmarks/dbtext/reference.cpp": "160cf6d5e2e66ad644b122dc403350c5349e2597978f7df769629003f4ce3127",
+    "benchmarks/dbtext/onpair.cpp": "f2a8ff96ae2401bd86c13b01e30537cb70494bebbfb4f19d774cfc65895897bb"
+  }
+}

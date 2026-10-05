@@ -1,0 +1,14 @@
+{
+  "dataset": "python",
+  "files": [
+    {
+      "input": "corpus.bin",
+      "bytes": 99999986,
+      "input_sha256": "e93875891e627bc96422d5bf1ce2b243ead9070761d5bff3d68a84e69b829ad8",
+      "archive_bytes": 16771787,
+      "archive_sha256": "a4ece6b97f3f17533b6206cada45e53aed7ad3bcc8281cbacc329a09e12fd05b",
+      "bulk_roundtrip": true,
+      "selected_rows_roundtrip": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+arm,name,stage,percent,package_bytes,median,low,high,qualification,source,result_id
+baseline,OnPair+ row adapter,0,1,27713500,93.14477485624663,90.33220905036899,93.9898880415557,independently verified hybrid,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ row adapter,0,3,27713500,77.0316976565303,76.82711589541542,78.73862980183205,independently verified hybrid,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ row adapter,0,10,27713500,80.29326228829096,79.25320843955076,81.6499349368763,independently verified hybrid,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ row adapter,0,30,27713500,82.89621044035769,81.00304830390778,84.38970902410674,independently verified hybrid,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ row adapter,0,100,27713500,80.06248611531208,78.8060844561017,80.99661673382803,independently verified hybrid,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,FSST,0,1,24043323,54.17027393032534,52.874304346959356,54.708135679527494,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,FSST,0,3,24043323,53.077356899691885,52.172636987906365,53.69891125337794,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,FSST,0,10,24043323,51.60021030307675,50.31303733013862,52.46604084857771,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,FSST,0,30,24043323,51.54639527613368,50.81272795740476,52.39152971030688,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,FSST,0,100,24043323,47.62515727832201,46.63168408294804,47.995343287941964,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,LZ4 block,0,1,29903706,1.1644960590452267,1.1525885267377889,1.1827633079444848,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,LZ4 block,0,3,29903706,3.420676058320125,3.3984505008218564,3.4741707306509877,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,LZ4 block,0,10,29903706,10.657649301214642,10.459816267005818,10.760033581605459,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,LZ4 block,0,30,29903706,26.739849001978985,26.37195619654912,26.973015278894234,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,LZ4 block,0,100,29903706,59.24317123638387,58.04090878969583,59.68538101509046,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ old block,0,1,38402648,1.1262208275630607,1.1157879191471265,1.1531424894083786,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ old block,0,3,38402648,3.3603217351678722,3.288465697061864,3.3781590159540733,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ old block,0,10,38402648,10.477015857748555,10.44380502038909,10.769348171407362,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ old block,0,30,38402648,27.405762051443396,27.097708392563735,27.697357908161592,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+baseline,OnPair+ old block,0,100,38402648,61.463888884792624,60.8462637665564,62.04344441013694,pinned reference replay,experiments/onpairplus-onpair16-rows-2026-09-27/batch-01/SUMMARY.json,onpairplus-onpair16-rows-069b2393d94fb3cd
+glm,Run 1,1,1,15428538,58.27531874140393,57.63016585430461,59.43713869121794,qualified,G1/provenance.json,r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309
+glm,Run 1,1,3,15428538,46.137079539270566,44.710266272401924,46.67416723775639,qualified,G1/provenance.json,r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309
+glm,Run 1,1,10,15428538,39.0852153280022,38.860517019016115,39.37189292529739,qualified,G1/provenance.json,r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309
+glm,Run 1,1,30,15428538,33.74544292703062,32.89781223344568,33.811466434805304,qualified,G1/provenance.json,r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309
+glm,Run 1,1,100,15428538,31.75371127140218,31.628041207674805,32.37246964974675,qualified,G1/provenance.json,r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309
+glm,Run 2,2,1,13690308,11.60378018694438,11.542157084477886,11.676495254280573,qualified,G2/provenance.json,r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658
+glm,Run 2,2,3,13690308,10.211728092746897,10.120021360413594,10.477012071004122,qualified,G2/provenance.json,r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658
+glm,Run 2,2,10,13690308,9.382601735757303,9.290256010267782,9.421615619180995,qualified,G2/provenance.json,r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658
+glm,Run 2,2,30,13690308,8.971376616344408,8.964881432613208,8.988519347333465,qualified,G2/provenance.json,r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658
+glm,Run 2,2,100,13690308,9.035652766841421,8.971015385804707,9.100849572375939,qualified,G2/provenance.json,r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658
+glm,Run 3,3,1,13382215,64.05935928179957,63.936856181366814,64.78467635491756,qualified,G3/provenance.json,r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af
+glm,Run 3,3,3,13382215,59.47432883755541,58.31860955512827,60.02201980010149,qualified,G3/provenance.json,r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af
+glm,Run 3,3,10,13382215,58.61477609603259,56.32841538809684,58.89185863438107,qualified,G3/provenance.json,r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af
+glm,Run 3,3,30,13382215,56.5705514146086,56.16497042381116,57.34060190126501,qualified,G3/provenance.json,r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af
+glm,Run 3,3,100,13382215,55.685421079152704,55.38205653433517,55.88864150418823,qualified,G3/provenance.json,r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af
+glm,Run 4,4,1,12005569,25.37761997942462,24.814549764039402,25.633537347554107,qualified,G4/provenance.json,r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812
+glm,Run 4,4,3,12005569,21.052910257462056,20.843701460885004,21.096795471756117,qualified,G4/provenance.json,r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812
+glm,Run 4,4,10,12005569,18.393846788467453,18.342040850727454,18.670585878618407,qualified,G4/provenance.json,r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812
+glm,Run 4,4,30,12005569,17.30558876022051,16.990899140702055,17.404489044092827,qualified,G4/provenance.json,r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812
+glm,Run 4,4,100,12005569,16.81071164318684,16.574165639569795,16.8559161208294,qualified,G4/provenance.json,r-74e8627cbb4c18e08df722847e58b760d82df8f842c2aad70c3fde6b8142b812

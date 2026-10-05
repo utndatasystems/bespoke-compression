@@ -1,0 +1,21 @@
+{
+  "artifact": "completed-python-evidence.tar.gz",
+  "sha256": "c64d100c9e8b8bcc1c539051426f67c3c2c292ea880486a05b82458da0424e23",
+  "bytes": 777975073,
+  "files": 314,
+  "manifest": "completed-python-evidence.tar.gz.manifest.json",
+  "verification": {
+    "dataset": "python",
+    "native_configurations": 25,
+    "additional_original_baselines": 2,
+    "complete_file_decodes": 216,
+    "input_files": 1,
+    "full": true,
+    "byte_exact": true,
+    "jobs_resubmitted": 0,
+    "validation_scope": "Frozen full-file replay; historical qualification caveats retained"
+  },
+  "every_member_sha256_verified": true,
+  "verified_members": 314,
+  "published_numeric_members": 114
+}

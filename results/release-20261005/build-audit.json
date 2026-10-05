@@ -1,0 +1,217 @@
+{
+  "action": "build",
+  "platform": "Linux-6.8.0-41-generic-x86_64-with-glibc2.39",
+  "runs": [
+    {
+      "id": "astra-openstack-from-scratch-run-01",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-02",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-03",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-openstack-from-scratch-run-04",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-python-from-scratch-run-01",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-python-from-scratch-run-02",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-python-from-scratch-run-03",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-python-from-scratch-run-04",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-01",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-02",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-03",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-sqlstorm-tpcds-from-scratch-run-04",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-01",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-02",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-03",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "astra-yelp-from-scratch-run-04",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-from-scratch-01-maximum-decompression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-from-scratch-02-maximum-compression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-from-scratch-03-intermediate-compression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-from-scratch-04-intermediate-decompression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-from-scratch-05-improve-both",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A1",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A2",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A3",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-no-reference-target-A4",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-01-maximum-decompression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-02-maximum-compression",
+      "status": "passed",
+      "exit_code": 0,
+      "recovery": "Missing bzip2 development header installed in project-local prefix; source/flags unchanged"
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-03-intermediate-compression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-04-intermediate-decompression",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-astra-tools-allowed-05-improve-both",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L1",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L2",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L3",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "dbtext-luna-tools-allowed-L4",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G1",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G2",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G3",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G4",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G1",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G2",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G3",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G4",
+      "status": "passed",
+      "exit_code": 0
+    }
+  ]
+}

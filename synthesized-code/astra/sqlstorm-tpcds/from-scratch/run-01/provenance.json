@@ -1,0 +1,23 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "sqlstorm-tpcds",
+  "run": 1,
+  "original_bytes": 18444591,
+  "result_id": "r-9300bea7d2142e29e3ea4bddc3a14b51584d1f3e3f649be6e083576da5309fd6",
+  "build_id": "b-9038f28cea2d40ce4a032b7f7b56b7a6f3aa5a83fcc134e3f865b21c8364bf44",
+  "package_bytes": 3132148,
+  "compression_factor": 5.888799315996562,
+  "decompression_median_MB_s": 12182.745230658265,
+  "decompression_range_MB_s": [
+    11352.194170215907,
+    12464.953409978672
+  ],
+  "online_encoding_median_seconds": 16.016193255,
+  "source_sha256": {
+    "build-spec.json": "8f223196978313ed855f2f2c0368cab18e5aaad9076053c7a47a35b35c3ea9be",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/root_direct24_encoder.cpp": "7e90f023a3a93243212c28fc99001b6d71712dbeffc345850005dc6073642132",
+    "source/root_direct24_mask_decoder.cpp": "42c5c72d37ba2e812a3d8bfd6cbdbf16e44fb8af2990a7e39ac455fcd9c9ca12"
+  }
+}

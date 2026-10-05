@@ -1,0 +1,12 @@
+{
+  "initial_greedy_fit_seconds": 52.412,
+  "initial_model_generation_seconds": 5.854272313416004,
+  "advanced_model_training_parse_seconds": 178.97,
+  "refit_model_generation_seconds": 8.3446,
+  "final_parse_fitting_seconds": 130.68,
+  "trace_preparation_seconds": 0.15389662235975266,
+  "codec_compile_seconds": 3.049485020339489,
+  "fitting_program_compile_seconds": 2.1428615525364876,
+  "notes": "Research timings; required one-time model training, fitting, trace preparation and compilation. The measured lab_encode call separately validates fitted copies, gathers input literals and entropy-codes the final archive.",
+  "preprocessing_and_compilation_total_seconds": 381.60711550865176
+}

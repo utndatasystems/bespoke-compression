@@ -1,0 +1,49 @@
+{
+  "commands": [
+    [
+      "g++",
+      "-std=c++17",
+      "-O3",
+      "-march=icelake-server",
+      "-fPIC",
+      "-shared",
+      "-I/source/interface",
+      "/source/template_encoder.cpp",
+      "-o",
+      "/output/encoder.so"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O3",
+      "-march=icelake-server",
+      "-mprefer-vector-width=512",
+      "-fPIC",
+      "-shared",
+      "-fno-exceptions",
+      "-fno-rtti",
+      "-I/source/interface",
+      "/source/compact_decoder.cpp",
+      "-o",
+      "/output/decoder.so"
+    ],
+    [
+      "strip",
+      "--strip-all",
+      "/output/encoder.so",
+      "/output/decoder.so"
+    ]
+  ],
+  "decoder": "decoder.so",
+  "encoder": "encoder.so",
+  "name": "openstack_compact_kernels",
+  "sources": [
+    "template_encoder.cpp",
+    "compact_decoder.cpp",
+    "compact_generated.h",
+    "fast_fields.h",
+    "alt_gen.py",
+    "compact_gen.py"
+  ],
+  "variant": "bulk"
+}

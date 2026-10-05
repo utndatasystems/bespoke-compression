@@ -1,0 +1,20 @@
+{
+  "native_packages": {
+    "bubblewrap": "0.9.0-1ubuntu0.3",
+    "clang": "1:18.0-59~exp2",
+    "cmake": "3.28.3-1build7",
+    "g++": "4:13.2.0-7ubuntu1",
+    "gcc": "4:13.2.0-7ubuntu1",
+    "libboost-dev:amd64": "1.83.0.1ubuntu2",
+    "libbrotli-dev:amd64": "1.1.0-2build2",
+    "libbz2-dev:amd64": "1.0.8-5.1build0.1",
+    "liblz4-dev:amd64": "1.9.4-1build1.1",
+    "liblzma-dev:amd64": "5.6.1+really5.4.5-1ubuntu0.3",
+    "libzstd-dev:amd64": "1.5.5+dfsg2-2build1.1",
+    "proot": "5.1.0-1.3",
+    "zlib1g-dev:amd64": "1:1.3.dfsg-3.1ubuntu2.1"
+  },
+  "matplotlib": "3.10.6",
+  "mcp": "1.29.1",
+  "python": "3.12.3"
+}

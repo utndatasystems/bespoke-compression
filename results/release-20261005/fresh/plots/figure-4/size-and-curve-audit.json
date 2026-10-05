@@ -1,0 +1,260 @@
+{
+  "unit": "decimal MB = 1000000 bytes",
+  "accounting": "Same package_bytes as the evaluated compression-factor data, including stored indexes. Standard library exemptions follow the existing benchmark.",
+  "selection_percent": [
+    1,
+    3,
+    10,
+    30,
+    100
+  ],
+  "runs": {
+    "from-scratch/1": {
+      "package_bytes": 16072097,
+      "throughput_M_rows_s": [
+        58.80142908447709,
+        59.62440842418121,
+        62.896390739355994,
+        63.67629991315544,
+        57.691304785862066
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "from-scratch/2": {
+      "package_bytes": 10517944,
+      "throughput_M_rows_s": [
+        1.7349419644563562,
+        2.0225751683031263,
+        2.8430641743334943,
+        4.84569120850363,
+        8.841920371954426
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "from-scratch/3": {
+      "package_bytes": 12993067,
+      "throughput_M_rows_s": [
+        42.102074642623435,
+        44.540579038523155,
+        47.37388439288193,
+        46.21099164902354,
+        56.68754201746354
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "from-scratch/4": {
+      "package_bytes": 12380757,
+      "throughput_M_rows_s": [
+        58.51809643196361,
+        59.62014645234181,
+        62.08110783207216,
+        61.343281086271034,
+        55.353878668182205
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "tools-allowed/1": {
+      "package_bytes": 16057814,
+      "throughput_M_rows_s": [
+        68.48902721118758,
+        73.02225884412587,
+        74.20816837856755,
+        76.09605443934925,
+        71.6167124775265
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "tools-allowed/2": {
+      "package_bytes": 10248772,
+      "throughput_M_rows_s": [
+        19.778667576847898,
+        16.958468387742553,
+        15.232677447543246,
+        14.49991573593038,
+        14.386479704031519
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "tools-allowed/3": {
+      "package_bytes": 12821539,
+      "throughput_M_rows_s": [
+        50.24836403095239,
+        52.29596697183074,
+        56.513249106698495,
+        57.17763203701364,
+        49.60458290382512
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "tools-allowed/4": {
+      "package_bytes": 11649248,
+      "throughput_M_rows_s": [
+        44.98973117692833,
+        47.6900046832336,
+        45.65927103913231,
+        43.8201954241229,
+        40.199456539785196
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "glm/1": {
+      "package_bytes": 15428538,
+      "throughput_M_rows_s": [
+        36.781393806313744,
+        33.89259070328197,
+        31.350673010655548,
+        27.9217795644519,
+        26.653505602826648
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "glm/2": {
+      "package_bytes": 13690308,
+      "throughput_M_rows_s": [
+        8.2454478559771,
+        8.599919004104832,
+        7.799058830389934,
+        7.483311717172597,
+        7.477298935201183
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "glm/3": {
+      "package_bytes": 13382215,
+      "throughput_M_rows_s": [
+        44.24803723200765,
+        43.613959604526414,
+        46.47892054674221,
+        46.03891943627224,
+        44.91858487768183
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "glm/4": {
+      "package_bytes": 12005569,
+      "throughput_M_rows_s": [
+        17.800947596441976,
+        16.772865052707946,
+        15.71554673517879,
+        14.536223732444371,
+        14.01490692367031
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "boundary-only/1": {
+      "package_bytes": 16048384,
+      "throughput_M_rows_s": [
+        42.583426549948605,
+        48.66788215784879,
+        50.01939800023861,
+        49.07436963706339,
+        83.82441074969029
+      ],
+      "source": "data/ablation/stage-01/QUALIFICATION.json",
+      "result_id": "fresh-server-replay"
+    },
+    "boundary-only/2": {
+      "package_bytes": 10338776,
+      "throughput_M_rows_s": [
+        1.0993243169616003,
+        1.2133878156575373,
+        1.7748596998407955,
+        3.3813652117162376,
+        6.879007322779325
+      ],
+      "source": "data/ablation/stage-02/QUALIFICATION.json",
+      "result_id": "fresh-server-replay"
+    },
+    "boundary-only/3": {
+      "package_bytes": 12997570,
+      "throughput_M_rows_s": [
+        14.99319692098638,
+        16.350829524493964,
+        18.10961296586686,
+        21.42199277350735,
+        83.69162897535725
+      ],
+      "source": "data/ablation/stage-03/QUALIFICATION.json",
+      "result_id": "fresh-server-replay"
+    },
+    "boundary-only/4": {
+      "package_bytes": 12228090,
+      "throughput_M_rows_s": [
+        34.63500962401424,
+        35.422160870360955,
+        35.92916806269245,
+        36.75620183510434,
+        54.92624315782844
+      ],
+      "source": "data/ablation/stage-04/QUALIFICATION.json",
+      "result_id": "fresh-server-replay"
+    }
+  },
+  "baselines": {
+    "FSST": {
+      "package_bytes": 24043323,
+      "throughput_M_rows_s": [
+        50.436800000000005,
+        47.267,
+        45.2899,
+        43.6008,
+        40.7209
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "OnPair+ row adapter": {
+      "package_bytes": 27713500,
+      "throughput_M_rows_s": [
+        78.3733,
+        68.20439999999999,
+        71.14439999999999,
+        70.625,
+        68.3832
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    },
+    "LZ4 block": {
+      "package_bytes": 29903706,
+      "throughput_M_rows_s": [
+        0.9430230000000001,
+        2.77006,
+        8.58389,
+        21.5745,
+        48.175599999999996
+      ],
+      "source": "fresh-final-benchmark",
+      "result_id": "fresh-server-replay"
+    }
+  },
+  "inputs_sha256": {
+    "data/ablation/stage-01/QUALIFICATION.json": "7462ce1b7f2373c5aae90814daf18fa4821559f914cfab7891a5883619ff1d72",
+    "data/ablation/stage-02/QUALIFICATION.json": "3229cbebd01f4175875c77818fc90ca73b26e897d7a667d69f2108deef01c232",
+    "data/ablation/stage-03/QUALIFICATION.json": "b7f06f47e1f2fe1688f2c18e9bc3b0a30a8845b164ad5648739cd3964e7ac2d3",
+    "data/ablation/stage-04/QUALIFICATION.json": "e21da40325330c390c49a4411cebe2dbd1675b1cc63549077d2ba64c828b069b",
+    "data/synthesized-code/dbtext/astra/data/row-points.csv": "ac4ffb0d0fbe464158522658b09b1f565c6842e144b6bf5ded8789dd31d2b589",
+    "data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/provenance.json": "33f05ae431651339b8042dca0dc3bd9c0de4bd6ea0cdcf6e15f85fceac738d66",
+    "data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/provenance.json": "7a4e12ad174d663b376005d0f1b858ab7521113b22dfd63e9a2e2e3ea176bba0",
+    "data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/provenance.json": "73ce82dead504b1492e80f4b752d22497054506a27b16ad88683d9529d846bfd",
+    "data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/provenance.json": "395aefead0d455f198c3486d1646ed8d4c3e2e4bd1eaa23b49faa963eef8a125",
+    "data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/row-points.csv": "4d77081cd1e14265a98eb187747aa6dcf6df6db7cdbc72d6970430cad95cce79"
+  },
+  "verification": {
+    "text_collisions": [],
+    "plotted_points": 95,
+    "template_width_mm": 126
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "method": "zlib-9",
+  "package_bytes": 14386051,
+  "archive_bytes": 14386051,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.8886675944967424,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 17475123,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 2.7694429138336853,
+  "median": 213.24653729091253,
+  "low": 212.436620685291,
+  "high": 213.39100701612227,
+  "encode_MB_s": 8.84927357939613,
+  "exact_decodes": 184
+}

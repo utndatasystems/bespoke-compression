@@ -1,0 +1,17 @@
+{
+  "method": "LZ4-default",
+  "package_bytes": 24606522,
+  "archive_bytes": 24606522,
+  "original_bytes": 39841347,
+  "bits_per_byte": 4.9409016216243895,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 27695594,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 1.6191376822778936,
+  "median": 1634.1349319970193,
+  "low": 1618.8793881362908,
+  "high": 1638.8164492614037,
+  "encode_MB_s": 278.8653051990432,
+  "exact_decodes": 184
+}

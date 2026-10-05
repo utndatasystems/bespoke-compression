@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "source/codec.cpp": "afe11a6842d67777e4c69b2e9c3704e23cfe36cffe282ad0c84a7fffe05e2077",
+    "source/exports.map": "93ea007285bae33214d6d8a189826d3ef039404037f16b480620299ef5819984",
+    "source/location2.h": "2a75ec7c21247c51fcdcef60e65146979f0aaffe8c13ccdad80a45fd0bf55cd7",
+    "source/special.h": "68263975225c5572074308b6913340a1e995061af23a17d17771cca13804127f",
+    "source/textbit.h": "7777c75867d2e5f1212f8bf4c5fbb62517ad6386a8d7003756f4727fd8b6f003",
+    "source/texthuff.h": "4a284ac80e3a661d8d62e95edcd086c9a4e8933f82914567369ad64319ea979e",
+    "source/train.h": "e4be0b55c43cc2e54a5abedecba898a78af4503447da62e946a676ee0bfbb564",
+    "source/url.h": "98847e2fca1bab25b97e9cab71e0b2a4015df1ae6ab6d5e907678d740188d23a",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "result_id": "r-fcc95b8d87fa152105916368713abdc54f265a8f006eb0cf3c1d2809d4df34fb",
+  "recipe_status": "recorded_commands",
+  "original_build_spec_sha256": "97b042f7415631a2cca06cbaf031ef765eb76456fddf389cabc3729ebda231b8",
+  "recovery": "Retained review source exactly matched to original retained-file hashes; original build recipe recovered from the evaluation server and matched to its recorded SHA-256 on 2026-10-01"
+}

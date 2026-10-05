@@ -1,0 +1,17 @@
+{
+  "method": "dbtext-astra-no-reference-target-A2",
+  "package_bytes": 10338776,
+  "archive_bytes": 10309928,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.075989248054289,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 10338776,
+  "deployment_scope": "decoder and its full nonplatform closure",
+  "decoder_bytes": 28848,
+  "ratio": 3.8535845055546227,
+  "median": 112.7584498888645,
+  "low": 111.11651552463478,
+  "high": 114.6781025269263,
+  "encode_MB_s": 1.0639146316254877,
+  "exact_decodes": 184
+}

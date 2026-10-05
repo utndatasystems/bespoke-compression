@@ -1,0 +1,20 @@
+[
+  {
+    "artifact": "completed-dbtext-evidence.tar.gz",
+    "sha256": "9b499ebd9dd9f57d92855f9d0dd00e3e252ddb5470a08a068e24bcb241d4e56b",
+    "bytes": 1456968765,
+    "files": 31453,
+    "manifest": "completed-dbtext-evidence.tar.gz.manifest.json",
+    "every_member_sha256_verified": true,
+    "verified_members": 31453
+  },
+  {
+    "artifact": "private-candidate-test-evidence.tar.gz",
+    "sha256": "a1d5ee19b2cb248f48567c70daa3ec210cdab9e3a8bf0266fdff16dfa05126e4",
+    "bytes": 131415121,
+    "files": 661,
+    "manifest": "private-candidate-test-evidence.tar.gz.manifest.json",
+    "every_member_sha256_verified": true,
+    "verified_members": 661
+  }
+]

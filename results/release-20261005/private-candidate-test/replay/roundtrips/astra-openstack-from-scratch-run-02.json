@@ -1,0 +1,32 @@
+{
+  "dataset": "openstack",
+  "files": [
+    {
+      "input": "openstack_abnormal.log",
+      "bytes": 5436122,
+      "input_sha256": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4",
+      "archive_bytes": 192504,
+      "archive_sha256": "6836464e6fc65c31c97a32a607197d053512ebfbcc179ccc3a62e6b5e8e1e65f",
+      "bulk_roundtrip": true,
+      "selected_rows_roundtrip": null
+    },
+    {
+      "input": "openstack_normal1.log",
+      "bytes": 15499595,
+      "input_sha256": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199",
+      "archive_bytes": 517718,
+      "archive_sha256": "fcd66314ac8bce9e8a41db09fa73ee9bb0a1ed6ddd1670f3240547713dc741f9",
+      "bulk_roundtrip": true,
+      "selected_rows_roundtrip": null
+    },
+    {
+      "input": "openstack_normal2.log",
+      "bytes": 40506365,
+      "input_sha256": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7",
+      "archive_bytes": 1212788,
+      "archive_sha256": "696f70d2db40793f1e5a7b69f3e5b48c3dda406b82b603ad2bb2f03b0db4cae4",
+      "bulk_roundtrip": true,
+      "selected_rows_roundtrip": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage{booktabs,times}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+{\Large\bfseries Current GPT research-run accounting}\par
+\vspace{3mm}
+GPT-6 Astra Ultra, 26--27 September 2026. Twenty-six published results across
+five datasets. Scratch: from scratch. Tools: tools allowed.\par
+\vspace{5mm}
+\input{table.tex}
+\vspace{4mm}
+
+{\small
+\textbf{Cost.} The 21 API results total \$883.746020 in recorded token-based
+estimates, including all model sessions, failed attempts, restarts and continuations.
+These are not invoices. One additional \$8.450125 reservation for DBText
+Scratch A3 is unresolved and is excluded. A dash denotes a ChatGPT
+subscription result with no attributable per-result dollar charge in the
+records; it does not mean zero cost. Separate supervisor work, subscription
+fees, taxes and machine costs are excluded.\par
+\vspace{2mm}
+\textbf{Usage.} Input includes cached input; output includes reasoning.
+M = one million tokens.\par
+\vspace{2mm}
+\textbf{Code lines.} Nonblank, noncomment lines in the published custom source,
+headers and fitting/build scripts, summed across files and counted once per file.
+Imported libraries, supplied interfaces, metadata and generated data-only files
+are excluded. Counts describe the selected solution, not abandoned candidates;
+they depend on source formatting. Per-file counts and exclusions accompany the table.\par
+\vspace{2mm}
+\textbf{Elapsed.} Wall-clock span across all model sessions, including tools
+and recovery pauses. API: first request to last response. Subscription:
+first native turn start to last token event. The long Python/OpenStack A2
+and DBText A3 spans include recovery waits. This is not model compute time.\par
+\vspace{2mm}
+Source: saved campaign ledgers and deduplicated native token events.
+Exact counts, timestamps, result IDs and historical rates accompany the
+table in CSV and JSON. The older 22 September accounting table is separate.
+}
+\end{document}

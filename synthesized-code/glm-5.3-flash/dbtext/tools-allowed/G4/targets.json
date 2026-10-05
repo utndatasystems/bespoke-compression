@@ -1,0 +1,193 @@
+{
+  "stage": 4,
+  "objective": "intermediate-decompression",
+  "arm": "open",
+  "pool": "own",
+  "original_bytes": 39841347,
+  "factor_floor": 3.419137891469042,
+  "speed_floor_MB_s": 317.16584887355623,
+  "bulk": {
+    "maximum_package_bytes": 11652453,
+    "minimum_decode_MB_s": 317.1658488735562
+  },
+  "dbtext": {
+    "maximum_package_bytes": 24043323,
+    "minimum_rows_M_s": {
+      "1": 54.37688138658341,
+      "3": 53.79812136470688,
+      "10": 52.0188255615935,
+      "30": 52.00703412942664,
+      "100": 47.53383706940963
+    }
+  },
+  "anonymous_reference_pairs": [
+    [
+      2.462001977444771,
+      4361.396834613082
+    ],
+    [
+      3.531983270099909,
+      23.06466930350025
+    ],
+    [
+      3.419137891469042,
+      1061.5962681249978
+    ]
+  ],
+  "selected_reference": {
+    "method": "Zstd-22",
+    "package_bytes": 11652454,
+    "compression_factor": 3.419137891469042,
+    "decode_MB_s": 1061.5962681249978,
+    "low_MB_s": 1010.7755329149039,
+    "high_MB_s": 1067.0293247453947,
+    "decode_seconds": [
+      0.039416612000000004,
+      0.037592531,
+      0.03752966,
+      0.037408397,
+      0.037338568,
+      0.037558668999999996,
+      0.037485433
+    ],
+    "encode_MB_s": 2.847216859583311,
+    "origin": "baseline"
+  },
+  "fast_endpoint": {
+    "method": "OnPair+",
+    "package_bytes": 16182500,
+    "compression_factor": 2.462001977444771,
+    "decode_MB_s": 4361.396834613082,
+    "low_MB_s": 3173.8299008960507,
+    "high_MB_s": 4664.288748111635,
+    "decode_seconds": [
+      0.011554072,
+      0.011914725,
+      0.012553082,
+      0.011579616000000001,
+      0.01219702,
+      0.011304656,
+      0.012353565,
+      0.008541784,
+      0.00918788,
+      0.00911597,
+      0.009134997,
+      0.009427962,
+      0.009107255,
+      0.009694675,
+      0.008935763,
+      0.008890143,
+      0.008939831,
+      0.009455656,
+      0.008889248,
+      0.009487481,
+      0.009097453
+    ],
+    "encode_MB_s": 43.78728153109424,
+    "outer_replays": 3,
+    "replay_seconds": [
+      [
+        0.011554072,
+        0.011914725,
+        0.012553082,
+        0.011579616000000001,
+        0.01219702,
+        0.011304656,
+        0.012353565
+      ],
+      [
+        0.008541784,
+        0.00918788,
+        0.00911597,
+        0.009134997,
+        0.009427962,
+        0.009107255,
+        0.009694675
+      ],
+      [
+        0.008935763,
+        0.008890143,
+        0.008939831,
+        0.009455656,
+        0.008889248,
+        0.009487481,
+        0.009097453
+      ]
+    ],
+    "replay_MB_s": [
+      3343.874659297634,
+      4361.396834613082,
+      4456.6107569595
+    ],
+    "origin": "baseline"
+  },
+  "dense_endpoint": {
+    "method": "bzip2-9",
+    "package_bytes": 11280163,
+    "compression_factor": 3.531983270099909,
+    "decode_MB_s": 23.06466930350025,
+    "low_MB_s": 22.71343536995004,
+    "high_MB_s": 23.476155420755845,
+    "decode_seconds": [
+      1.697098451,
+      1.729225339,
+      1.7236105240000001,
+      1.7398269769999999,
+      1.722926893,
+      1.727375601,
+      1.754087233
+    ],
+    "encode_MB_s": 12.224360698113282,
+    "origin": "baseline"
+  },
+  "admitted_qualified_points": [
+    {
+      "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+      "source_campaign": "glm-five-stage-open-2026-09-26",
+      "dataset": "dbtext",
+      "arm": "open",
+      "stage": 1,
+      "qualification": "qualified",
+      "qualification_receipt_sha256": "5668942550cf8e006ac0d543f1c0605e305e86744607ef8dcce23ae3c6ee3086",
+      "result_id": "r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309",
+      "package_bytes": 15428538,
+      "decode_MB_s": 925.913267867622,
+      "origin": "qualified_run",
+      "compression_factor": 2.582315122793877
+    },
+    {
+      "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+      "source_campaign": "glm-five-stage-open-2026-09-26",
+      "dataset": "dbtext",
+      "arm": "open",
+      "stage": 2,
+      "qualification": "qualified",
+      "qualification_receipt_sha256": "66ee79e6c300c8933dd06531feec8a02b296858e99ffd004a644c9455b1f8f96",
+      "result_id": "r-013cb7b0934db5d7a6747b5bd261789e34f44677c2dccd49ed34475b08cab658",
+      "package_bytes": 13690308,
+      "decode_MB_s": 258.53543834197643,
+      "origin": "qualified_run",
+      "compression_factor": 2.910186315749799
+    },
+    {
+      "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+      "source_campaign": "glm-five-stage-open-2026-09-26",
+      "dataset": "dbtext",
+      "arm": "open",
+      "stage": 3,
+      "qualification": "qualified",
+      "qualification_receipt_sha256": "bde1d2606ab05d4e5bdc07a025e3abdea65a7f898ccebdbe3bec0a5a00acf228",
+      "result_id": "r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af",
+      "package_bytes": 13382215,
+      "decode_MB_s": 1179.1287592596138,
+      "origin": "qualified_run",
+      "compression_factor": 2.9771862879201985
+    }
+  ],
+  "comparisons": {
+    "factor": ">",
+    "decode_MB_s": ">="
+  },
+  "baseline_source_sha256": "929ac078cf56e60122ac0e0eba40c116a9285228945fd4b003cc86ae666998bf",
+  "prompt_sha256": "025fdb0e4d985b75bc1a2eb6f5e0c648765d355c01ee31f47a9ae607b050babf"
+}

@@ -1,0 +1,19 @@
+{"from-scratch": ["Run 1", "Run 4", "Run 2"], "tools-allowed": ["Run 1", "Run 3", "Run 4", "Run 2"], "boundary-only": ["Run 1", "Run 3", "Run 4", "Run 2"], "glm": ["Run 3"], "combined": ["Run 1", "Run 1", "Run 3", "Run 4", "Run 4", "Zstd-21", "Zstd-22", "Run 4", "Brotli-11", "Run 2", "Run 2", "Run 2"]}
+Verified 16 runs, 3 baselines, 95 unchanged measurements, and no overlapping labels.
+/dev/shm/bespoke-release-20261005/replay/fresh-figure-inputs/random-access/dbtext-random-access-comparison.pdf
+{"from-scratch": ["Run 1", "Run 4", "Run 2"], "tools-allowed": ["Run 1", "Run 3", "Run 4", "Run 2"], "boundary-only": ["Run 1", "Run 3", "Run 4", "Run 2"], "glm": ["Run 3"], "combined": ["Run 1", "Run 1", "Run 3", "Run 3", "Run 4", "Run 4", "Zstd-20", "Zstd-21", "Zstd-22", "Run 4", "Brotli-11", "Run 2", "Run 2", "Run 2"]}
+{
+  "dataset": "dbtext",
+  "full": true,
+  "byte_exact": true,
+  "postprocessing_recovered": true,
+  "bulk_configurations": 41,
+  "native_row_configurations": 16,
+  "control_replays": 7,
+  "jobs_resubmitted": 0,
+  "timed_kernels_changed": false,
+  "repair": "Exclude unused historical OnPair+ curve; use raw-trial min/max and collision-safe fresh plot labels",
+  "label_script_sha256": "ded8c852fb65c824146db23d125a732724c604df250aa7f7cbe5d259c857a1f3",
+  "before_source_sha256": "3e665d03d8c313b62e82d86c7c144676a6f2df75e060b51053ffdd1659325a1e",
+  "after_source_sha256": "3e665d03d8c313b62e82d86c7c144676a6f2df75e060b51053ffdd1659325a1e"
+}

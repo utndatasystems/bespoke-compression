@@ -1,0 +1,68 @@
+{
+  "stage": 3,
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "original_bytes": 39841347,
+  "result_id": "r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af",
+  "package_bytes": 13382215,
+  "strict_package_bytes": 14275519,
+  "exempt_standard_library_bytes": 893304,
+  "compression_factor": 2.9771862879201985,
+  "decode_MB_s": 1179.1287592596138,
+  "bulk_range_MB_s": [
+    1171.1669675764392,
+    1194.8458360595582
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 64.05935928179957,
+      "min": 63.936856181366814,
+      "max": 64.78467635491756
+    },
+    "3": {
+      "median": 59.47432883755541,
+      "min": 58.31860955512827,
+      "max": 60.02201980010149
+    },
+    "10": {
+      "median": 58.61477609603259,
+      "min": 56.32841538809684,
+      "max": 58.89185863438107
+    },
+    "30": {
+      "median": 56.5705514146086,
+      "min": 56.16497042381116,
+      "max": 57.34060190126501
+    },
+    "100": {
+      "median": 55.685421079152704,
+      "min": 55.38205653433517,
+      "max": 55.88864150418823
+    }
+  },
+  "target_met": true,
+  "source_sha256": {
+    "build-spec.json": "c5d509ec778cec0dced21ddeefd1614664b010d55c803a29e757da5e28aa3fa3",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/src/decoder.cpp": "f22650754fdc4c0c3dcabcc77958af59ade78caec0bb4bfb8366991bb093b112",
+    "source/src/encoder.cpp": "42303187135b343665675f309ed6f3043c868e93155baaf02049220aa05b77d1",
+    "source/src/format.h": "57d772430af157a3fbe1cc8b6a9d9b6068e16277c0ae3d217a21bbcb59e0affd",
+    "source/src/fsst/fsst.h": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+    "source/src/fsst/fsst_avx512.cpp": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9",
+    "source/src/fsst/fsst_avx512.inc": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477",
+    "source/src/fsst/fsst_avx512_unroll1.inc": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729",
+    "source/src/fsst/fsst_avx512_unroll2.inc": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36",
+    "source/src/fsst/fsst_avx512_unroll3.inc": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27",
+    "source/src/fsst/fsst_avx512_unroll4.inc": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2",
+    "source/src/fsst/libfsst.cpp": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+    "source/src/fsst/libfsst.hpp": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+    "source/src/huff.h": "6966c8d9be365bc62872444712c040f9fa62e552206e08a0f261382b5e6df625"
+  },
+  "exports_sha256": {
+    "b-aea2046f0c7e007965dca18aebf7cb4a4e97df50245eac98f91750502fe2b968.zip": "123b951ec737ddd7dca84a0023987526af3b03e423eb8e54df74db5d65d12685",
+    "r-60edd6f33bed49e06c5969c7158536ae8ced9f0c076fdd38f218d6648cfd98af.zip": "43ebdc822acd3a014c6a7adf557a525b1183919b281c4c090ef77735c4af6f88",
+    "v-b1f7de7349f1c4e5a2bf0fd93723f12983eec1e6e82bea0561a8954afeb425c6.zip": "a61170909a3fd7d3a37ed5e7f8fa9d5cea64f4b341c624cca0ec1618105227f7"
+  },
+  "qualification_sha256": "bde1d2606ab05d4e5bdc07a025e3abdea65a7f898ccebdbe3bec0a5a00acf228"
+}

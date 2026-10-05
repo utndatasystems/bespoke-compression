@@ -1,0 +1,32 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "from-scratch",
+  "generation": "server API",
+  "stage": 3,
+  "objective": "Maximize decompression speed at an intermediate compression factor.",
+  "result_id": "r-ef877dac50a89a41ecf0b81ddb0ac4c485774159e142ae9c8b0dba1e770f495c",
+  "build_id": "b-ab50c71d39d6a6c4c477f198cefeb226df07e764d8187ca9c2ec9b732c4357f6",
+  "build_export_sha256": "7a550b8df76b4b63962fac0e7e990d108bf18cf3ecb1dfb2cde16d194ca46c59",
+  "source_manifest_sha256": "057da8e4d9f56a803c43688d54885785c933e91ed2f79946342b1dcb37cf1a5b",
+  "file_sha256": {
+    "source/README.md": "2d5977d8389ccea2a4cfe56ad8986ff7b5e89e5f5fdcd140cad4605e60763b4e",
+    "source/huffman.h": "83f6f148d2f7fd2b42cec349efe3340738ec8f1244c4244b9435e02bf96891df",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/main.cpp": "3a28623562187a6c48dbffc3e5cfc789740fd3b781a01e88745aaab9915cb30c",
+    "source/phrase.h": "6bc8fdd751ffc7f36caf2f4401e276c77e326d090b843e6f1215a8ffdcdf1d5a",
+    "source/phrase_dict.h": "ecf0c4ac087f5e5002edca098928efe676ad57bbcd3ec8125b618faf937b1d42",
+    "source/phrase_grammar.h": "50e918c93c1de1a1814c0cc7ac1205045748f91757bf12bbce1b485b63fe37d7",
+    "source/residual.h": "c50e5f3d86eee090e55d080ceee7cbbf1051c6017e540ba5ae343ea261d1a8e2",
+    "source/row_index.h": "7e708bd0acc4c37dcb2314d06c6d8f303684899caeae98c3dad977b586398688",
+    "source/special_compact.h": "b32e93bdba20f6771fadd56203e9af7b638b50b3f898e14f25fd31103a778eb7",
+    "source/structure_hybrid2.h": "edd38bc97bfed781299ef8e71c8a38c320e14bf96778d870ab9929fa4357ef19",
+    "build-spec.json": "df12b837b69241e47c4c7b19c956a09ba435e7335ff8a6cb2a23c99f596e999b"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "a0be92a243bbcbc85117f80a618329cb83fd5a2365ade7a15bedfd76231b5f52",
+    "encoder.so": "90e54a09d36f83cd04ab00fd2b76c4050ca785978e71dd28c59528eab235025e"
+  },
+  "source_modified": false
+}

@@ -1,0 +1,13 @@
+{
+  "published_commit": "3743a9a042e371af37af76bd568a38760659147e",
+  "archive": "published-3743a9a-source-test-evidence.tar.gz",
+  "sha256": "df4c402b0016edd95e8f7b40bcdb6e23e92ff60c03d04a71178bcf46a9b391d6",
+  "bytes": 133931727,
+  "manifest": "published-3743a9a-source-test-evidence.tar.gz.manifest.json",
+  "manifest_sha256": "324eece00d0ceca56da95b9de74f6504425190ad90804b635bafc6b7b7b957ee",
+  "source_builds_and_verifications": 42,
+  "mcp_tests": 36,
+  "fresh_measurements_included": false,
+  "every_member_sha256_verified": true,
+  "verified_members": 695
+}

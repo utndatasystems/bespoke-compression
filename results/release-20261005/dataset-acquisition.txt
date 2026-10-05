@@ -1,0 +1,24 @@
+Verified all 23 original columns
+Verified 1 files, 99,999,986 original bytes: python
+Verified 1 files, 100,000,488 original bytes: yelp
+Verified 3 files, 61,442,082 original bytes: openstack
+Cloning into '/dev/shm/bespoke-release-20261005/bespoke-input-qfj6ykx_/sqlstorm'...
+Note: switching to 'b3bb0b96794a6afe9bb8f3ff2b243562b779c40d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b3bb0b9 add results
+Verified 1 files, 18,444,591 original bytes: sqlstorm-tpcds

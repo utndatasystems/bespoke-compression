@@ -1,0 +1,134 @@
+{
+  "from-scratch": [
+    {
+      "name": "Run 1",
+      "arm": "from-scratch",
+      "ratio": 2.4789140458771497,
+      "decode_GB_s": 5.6619394954677595
+    },
+    {
+      "name": "Run 4",
+      "arm": "from-scratch",
+      "ratio": 3.2180057326058495,
+      "decode_GB_s": 1.6523930146949344
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 1.0655402792567905
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 1.0615962681249977
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.2918114456122725
+    },
+    {
+      "name": "Run 2",
+      "arm": "from-scratch",
+      "ratio": 3.7879405899099674,
+      "decode_GB_s": 0.19267644567481948
+    }
+  ],
+  "tools-allowed": [
+    {
+      "name": "Run 1",
+      "arm": "tools-allowed",
+      "ratio": 2.4817445950065546,
+      "decode_GB_s": 5.724190005649286
+    },
+    {
+      "name": "Run 3",
+      "arm": "tools-allowed",
+      "ratio": 3.107376345382563,
+      "decode_GB_s": 1.6187874984585673
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 1.0655402792567905
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 1.0615962681249977
+    },
+    {
+      "name": "Run 4",
+      "arm": "tools-allowed",
+      "ratio": 3.4200788754776275,
+      "decode_GB_s": 0.4298023620012928
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.2918114456122725
+    },
+    {
+      "name": "Run 2",
+      "arm": "tools-allowed",
+      "ratio": 3.887426415574471,
+      "decode_GB_s": 0.02318445784418257
+    }
+  ],
+  "boundary-only": [
+    {
+      "name": "OnPair+",
+      "arm": "baseline",
+      "ratio": 2.462001977444771,
+      "decode_GB_s": 4.361396834613083
+    },
+    {
+      "name": "Run 1",
+      "arm": "boundary-only",
+      "ratio": 2.4825768750299098,
+      "decode_GB_s": 3.962901868081009
+    },
+    {
+      "name": "Run 3",
+      "arm": "boundary-only",
+      "ratio": 3.065291973807412,
+      "decode_GB_s": 1.9898907080490005
+    },
+    {
+      "name": "Run 4",
+      "arm": "boundary-only",
+      "ratio": 3.258182349001357,
+      "decode_GB_s": 1.280475615043807
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 1.0655402792567905
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 1.0615962681249977
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.2918114456122725
+    },
+    {
+      "name": "Run 2",
+      "arm": "boundary-only",
+      "ratio": 3.8535845055546227,
+      "decode_GB_s": 0.13134862014301982
+    }
+  ]
+}

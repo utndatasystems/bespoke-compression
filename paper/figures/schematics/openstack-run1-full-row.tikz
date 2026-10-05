@@ -1,0 +1,114 @@
+% Edit this file, then recompile main.tex.
+\begingroup%
+\def\rmdefault{qtm}%
+\def\ttdefault{zi4}%
+\normalfont%
+\definecolor{HexLogInk}{HTML}{343B41}%
+\definecolor{HexLogText}{HTML}{626870}%
+\definecolor{HexLogAccent}{HTML}{D76B1E}%
+\definecolor{HexLogNibble}{HTML}{FAC17D}%
+\definecolor{HexLogDecoder}{HTML}{C9E5F4}%
+\newcommand{\slot}{\makebox[.5em][c]{\tikz[baseline=-.45pt]\draw[line width=.25pt] (0,0) rectangle (2.05pt,3.4pt);}}%
+\newcommand{\LogRow}{\begin{tabular}{@{}l@{}}
+nova-compute.log.2017-05-14\_21:\textcolor{HexLogAccent}{\bfseries 2}\textcolor{HexLogAccent}{\bfseries 7}:\textcolor{HexLogAccent}{\bfseries 0}\textcolor{HexLogAccent}{\bfseries 9}\\
+2017-05-14 \textcolor{HexLogAccent}{\bfseries 1}\textcolor{HexLogAccent}{\bfseries 9}:\textcolor{HexLogAccent}{\bfseries 3}\textcolor{HexLogAccent}{\bfseries 9}:\textcolor{HexLogAccent}{\bfseries 4}\textcolor{HexLogAccent}{\bfseries 4}.\textcolor{HexLogAccent}{\bfseries 9}\textcolor{HexLogAccent}{\bfseries 5}\textcolor{HexLogAccent}{\bfseries 6} 2931 INFO\\
+nova.compute.manager [-] [instance:\\
+\textcolor{HexLogAccent}{\bfseries 3}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries d}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries c}\textcolor{HexLogAccent}{\bfseries 1}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries 4}-\textcolor{HexLogAccent}{\bfseries 9}\textcolor{HexLogAccent}{\bfseries 6}\textcolor{HexLogAccent}{\bfseries 7}\textcolor{HexLogAccent}{\bfseries 8}-4\textcolor{HexLogAccent}{\bfseries a}\textcolor{HexLogAccent}{\bfseries 3}\textcolor{HexLogAccent}{\bfseries a}-\textcolor{HexLogAccent}{\bfseries a}\textcolor{HexLogAccent}{\bfseries 2}\textcolor{HexLogAccent}{\bfseries 1}\textcolor{HexLogAccent}{\bfseries b}-\textcolor{HexLogAccent}{\bfseries a}\textcolor{HexLogAccent}{\bfseries 1}\textcolor{HexLogAccent}{\bfseries 4}\textcolor{HexLogAccent}{\bfseries 5}\textcolor{HexLogAccent}{\bfseries a}\textcolor{HexLogAccent}{\bfseries 4}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries 5}\textcolor{HexLogAccent}{\bfseries e}\textcolor{HexLogAccent}{\bfseries 6}\textcolor{HexLogAccent}{\bfseries 1}]\\
+VM Stopped (Lifecycle Event)
+\end{tabular}}%
+\newcommand{\LogTemplate}{\begin{tabular}{@{}l@{}}
+nova-compute.log.2017-05-14\_21:\slot{}\slot{}:\slot{}\slot{}\\
+2017-05-14 \slot{}\slot{}:\slot{}\slot{}:\slot{}\slot{}.\slot{}\slot{}\slot{} 2931 INFO\\
+nova.compute.manager [-] [instance:\\
+\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}-\slot{}\slot{}\slot{}\slot{}-4\slot{}\slot{}\slot{}-\slot{}\slot{}\slot{}\slot{}-\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}\slot{}]\\
+VM Stopped (Lifecycle Event)
+\end{tabular}}%
+
+\begin{tikzpicture}[x=1pt,y=1pt,
+  panel/.style={draw=HexLogInk,fill=white,line width=.45pt,rounded corners=.6pt,
+    inner xsep=4pt,inner ysep=4pt,outer sep=0pt,
+    font=\ttfamily\fontsize{6.2}{8.5}\selectfont,text=HexLogText},
+  title/.style={font=\rmfamily\fontsize{8.5}{9}\selectfont,anchor=south west,inner sep=0pt},
+  arrow/.style={draw=HexLogInk,line width=.65pt,-{Triangle[length=4pt,width=3.6pt]},
+    shorten <=1.5pt,shorten >=1.5pt,rounded corners=2.8pt}]
+\node[panel,anchor=north west] (template) at (0,0) {\LogTemplate};
+\path let \p1=(template.south west),\p2=(template.north east) in
+  coordinate (nibbleNW) at (\x1,\y1-19)
+  coordinate (nibbleSE) at (\x2,\y1-37);
+\node[title] at ($(template.north west)+(0,3)$) {Template};
+\node[title] at ($(nibbleNW)+(0,3)$) {Packed nibbles};
+% The decoder and output align with the midpoint between the template's top
+% border and the packed-nibble array's bottom border.
+\path let \p1=(template.north west),\p2=(nibbleSE) in
+  coordinate (mid) at (0,{(\y1+\y2)/2});
+
+  
+
+\path let \p1=(template.east),\p2=(mid) in
+  node[panel,fill=HexLogDecoder,minimum width=29pt,minimum height=28pt,
+  align=center,font=\rmfamily\fontsize{8.7}{9.5}\selectfont,anchor=west]
+  (simd) at ({\x1+26},\y2) {AVX-512\\{\ttfamily\fontsize{6.3}{7}\selectfont VPSHUFB}\\{\ttfamily\fontsize{6.3}{7}\selectfont VPEXPANDB}};
+\node[panel,anchor=west] (output) at ($(simd.east)+(15,0)$) {\LogRow};
+\node[title] at ($(output.north west)+(0,3)$) {Reconstructed log row};
+\path[fill=HexLogNibble] (nibbleNW) rectangle (nibbleSE);
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.02272727*(\x2-\x1)},{\y1-4.5}) {2};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.06818182*(\x2-\x1)},{\y1-4.5}) {7};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.11363636*(\x2-\x1)},{\y1-4.5}) {0};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.15909091*(\x2-\x1)},{\y1-4.5}) {9};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.20454545*(\x2-\x1)},{\y1-4.5}) {1};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.25000000*(\x2-\x1)},{\y1-4.5}) {9};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.29545455*(\x2-\x1)},{\y1-4.5}) {3};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.34090909*(\x2-\x1)},{\y1-4.5}) {9};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.38636364*(\x2-\x1)},{\y1-4.5}) {4};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.43181818*(\x2-\x1)},{\y1-4.5}) {4};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.47727273*(\x2-\x1)},{\y1-4.5}) {9};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.52272727*(\x2-\x1)},{\y1-4.5}) {5};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.56818182*(\x2-\x1)},{\y1-4.5}) {6};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.61363636*(\x2-\x1)},{\y1-4.5}) {3};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.65909091*(\x2-\x1)},{\y1-4.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.70454545*(\x2-\x1)},{\y1-4.5}) {d};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.75000000*(\x2-\x1)},{\y1-4.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.79545455*(\x2-\x1)},{\y1-4.5}) {c};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.84090909*(\x2-\x1)},{\y1-4.5}) {1};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.88636364*(\x2-\x1)},{\y1-4.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.93181818*(\x2-\x1)},{\y1-4.5}) {4};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.97727273*(\x2-\x1)},{\y1-4.5}) {9};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.02272727*(\x2-\x1)},{\y1-13.5}) {6};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.06818182*(\x2-\x1)},{\y1-13.5}) {7};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.11363636*(\x2-\x1)},{\y1-13.5}) {8};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.15909091*(\x2-\x1)},{\y1-13.5}) {a};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.20454545*(\x2-\x1)},{\y1-13.5}) {3};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.25000000*(\x2-\x1)},{\y1-13.5}) {a};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.29545455*(\x2-\x1)},{\y1-13.5}) {a};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.34090909*(\x2-\x1)},{\y1-13.5}) {2};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.38636364*(\x2-\x1)},{\y1-13.5}) {1};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.43181818*(\x2-\x1)},{\y1-13.5}) {b};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.47727273*(\x2-\x1)},{\y1-13.5}) {a};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.52272727*(\x2-\x1)},{\y1-13.5}) {1};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.56818182*(\x2-\x1)},{\y1-13.5}) {4};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.61363636*(\x2-\x1)},{\y1-13.5}) {5};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.65909091*(\x2-\x1)},{\y1-13.5}) {a};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.70454545*(\x2-\x1)},{\y1-13.5}) {4};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.75000000*(\x2-\x1)},{\y1-13.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.79545455*(\x2-\x1)},{\y1-13.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.84090909*(\x2-\x1)},{\y1-13.5}) {5};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.88636364*(\x2-\x1)},{\y1-13.5}) {e};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.93181818*(\x2-\x1)},{\y1-13.5}) {6};
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in node[font=\ttfamily\bfseries\fontsize{5.5}{6}\selectfont,inner sep=0pt] at ({\x1+0.97727273*(\x2-\x1)},{\y1-13.5}) {1};
+
+\foreach \i in {1,...,21}{
+  \path let \p1=(nibbleNW),\p2=(nibbleSE) in
+    coordinate (dividerT) at ({\x1+\i*(\x2-\x1)/22},\y1)
+    coordinate (dividerB) at ({\x1+\i*(\x2-\x1)/22},\y2);
+  \draw[HexLogInk,line width=.35pt] (dividerT)--(dividerB);
+}
+\draw[HexLogInk,line width=.35pt] ($(nibbleNW)+(0,-9)$)--($(nibbleSE)+(0,9)$);
+\draw[HexLogInk,line width=.45pt] (nibbleNW) rectangle (nibbleSE);
+
+\draw[arrow] (template.east)--++(12,0)|-($(simd.west)+(0,6)$);
+\path let \p1=(nibbleNW),\p2=(nibbleSE) in
+  coordinate (nibbleOut) at (\x2,{(\y1+\y2)/2});
+\draw[arrow] (nibbleOut)--++(12,0)|-($(simd.west)+(0,-6)$);
+\draw[arrow] (simd.east)--(output.west);
+\pgfresetboundingbox\path[use as bounding box] ($(template.north west)+(-1,14)$) rectangle ($(output.east |- nibbleSE)+(1,-1)$);\end{tikzpicture}%
+\endgroup%

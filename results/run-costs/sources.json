@@ -1,0 +1,497 @@
+{
+  "collected_utc": "2026-09-22T11:24:38.197682+00:00",
+  "runs": [
+    {
+      "run_id": "dbtext-astra-standard",
+      "dataset": "dbtext",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "prompt": "standard",
+      "source_kind": "Settled request cost ledger",
+      "source_sha256": "c923f63ab209f34e56342c2ad9db1b38109d57c0dafea1cebc3de9d5bbd08720",
+      "source_hash_basis": "Original ledger bytes",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "dbtext-A1",
+          "paper_point_id": "A1",
+          "result_id": "s-635e33eb45ba79ac8409d7eab7155fc7a08ce1e43e491bd4fcc0f3821667662a",
+          "path": "dbtext/astra/A1-bulk-adaptive32-shared-ssse3-corrected"
+        },
+        {
+          "key": "dbtext-A2",
+          "paper_point_id": "A2",
+          "result_id": "s-3cbca18196976092c153c5c9c21cea6b60681d0d5f8e805107f9477019a36568",
+          "path": "dbtext/astra/A2-bulk-fastencode-typed-zstd1"
+        },
+        {
+          "key": "dbtext-A3",
+          "paper_point_id": "A3",
+          "result_id": "s-ff93df5291a63b3732f17c98ccd0e3da2cea73b78f5a50e2565ae3e513181e41",
+          "path": "dbtext/astra/A3-shared-pruned-direct-rows-simd-corrected"
+        }
+      ]
+    },
+    {
+      "run_id": "dbtext-glm-standard",
+      "dataset": "dbtext",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "standard",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "6381203811014a4405f0ac9f6b8f239fedec98ff1e6a460e7b8f848f2a1b5096",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "dbtext-G1",
+          "paper_point_id": "G1",
+          "result_id": "s-784a4b4963aa9929b79fcefe0844d01a1d1f2f3ba362d1afe2ebc9487abba310",
+          "path": "dbtext/glm-5.3-flash/G1-dbtext-strong-bulk"
+        },
+        {
+          "key": "dbtext-G2",
+          "paper_point_id": "G2",
+          "result_id": "s-d46a8ca0826ebda2b88bb98df26a16d56dc1ee1e558fe5900da03710060b7af1",
+          "path": "dbtext/glm-5.3-flash/G2-dbtext-strong-rows"
+        }
+      ]
+    },
+    {
+      "run_id": "dbtext-glm-decode-first",
+      "dataset": "dbtext",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "decode-first",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "2abad5e0e5ae80b7d01496f371145e4a4e51f1a26f03e6e70133dd7c3bb0a22b",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "dbtext-G3",
+          "paper_point_id": "G3",
+          "result_id": "s-681a815898c141a7ccfb50f78cdd3ec83d84d65685b9de773c07609c563b781f",
+          "path": "dbtext/glm-5.3-flash/G3-dbtex"
+        },
+        {
+          "key": "dbtext-G4",
+          "paper_point_id": "G4",
+          "result_id": "s-ddc358b3ad4f3086692eec48762c9a8437f136e1c64a05a898a8fa54092dd88d",
+          "path": "dbtext/glm-5.3-flash/G4-dbtex"
+        }
+      ]
+    },
+    {
+      "run_id": "python-astra-standard",
+      "dataset": "python",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "prompt": "standard",
+      "source_kind": "Settled request cost ledger",
+      "source_sha256": "f3259d19f6fbbab39a10336e54865594b91f178b819c8a7a6574cfc78ee6d173",
+      "source_hash_basis": "Original ledger bytes",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "python-A1",
+          "paper_point_id": "A1",
+          "result_id": "s-a6f3d03e78a3902f8c41b8f059aee50c512c4945e40c1230e91d1f8556c16f29",
+          "path": "python/astra/A1-lzsse8-block8m-level0"
+        },
+        {
+          "key": "python-A2",
+          "paper_point_id": "A2",
+          "result_id": "s-ecf893963d27514e9ef62f002448d8c04733c9b315ff82f396aa60797de4fef8",
+          "path": "python/astra/A2-lzsse8-block8m-level5"
+        },
+        {
+          "key": "python-A3",
+          "paper_point_id": "A3",
+          "result_id": "s-50e8c41c16d57907c73afd4761599a05e4066d8e775d9bf32f9c01699fb9c9c6",
+          "path": "python/astra/A3-global-lzsse8-m32-h24dual-prefetch16-level5"
+        },
+        {
+          "key": "python-A4",
+          "paper_point_id": "A4",
+          "result_id": "s-08b6cbacbc4d8cb2f2d347b189cdb68a7f1d9976946f1788458aab3035b56ec2",
+          "path": "python/astra/A4-global-lzsse8-m48-h24dual-prefetch16-level5"
+        },
+        {
+          "key": "python-A5",
+          "paper_point_id": "A5",
+          "result_id": "s-b3b4108a9a59570deb1925f637c7d91f8a33fe07864749bb2dbb5930ab936cd7",
+          "path": "python/astra/A5-zstd-seqfilter-l12t8r4x1"
+        },
+        {
+          "key": "python-A6",
+          "paper_point_id": "A6",
+          "result_id": "s-62d9e0965d9596985611fe9fc8be90b8c68a668f2e3c909d17b5d833a60eea96",
+          "path": "python/astra/A6-zstd-seqfilter-opt17m6-t7-recent4-extend"
+        }
+      ]
+    },
+    {
+      "run_id": "python-glm-standard",
+      "dataset": "python",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "standard",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "07419e5b25b2aa9c27c12555ff8137a8529ad01e5553cf2bb8c4926326b5857a",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "python-G1",
+          "paper_point_id": "G1",
+          "result_id": "s-4dff27824dc24b51d473576a623258816d0ba67bf9c4e67791ed1690c41659bf",
+          "path": "python/glm-5.3-flash/G1-pytok-lzma"
+        }
+      ]
+    },
+    {
+      "run_id": "python-glm-decode-first",
+      "dataset": "python",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "decode-first",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "b7cdadd893e0f9e4deaf85af40eb8750ffc0fe21167396bbe31e62f42cc65176",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "python-G2",
+          "paper_point_id": "G2",
+          "result_id": "s-c9bfc1df3bd889262ff2fa97e9587b6c2780e10ea9bb5144abf6594509635116",
+          "path": "python/glm-5.3-flash/G2-pyfast"
+        }
+      ]
+    },
+    {
+      "run_id": "yelp-astra-standard",
+      "dataset": "yelp",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "prompt": "standard",
+      "source_kind": "Settled request cost ledger",
+      "source_sha256": "0864e6121f518dc8ac6eb0d0aac18fe6d9740cc531a2398a88424e542b06cf7e",
+      "source_hash_basis": "Original ledger bytes",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "yelp-A1",
+          "paper_point_id": "A1",
+          "result_id": "s-d85433d558c2d9564fe7a227290555bd289297b1bd3b7d632d6912e78070eee1",
+          "path": "yelp/astra/A1-columns-packed-adaptive-lz4hc12-zstd"
+        },
+        {
+          "key": "yelp-A2",
+          "paper_point_id": "A2",
+          "result_id": "s-e2d10badabe47f5b5e6f41f9ffb584d6b90cdc130b4d60fd9d029a82750d9a52",
+          "path": "yelp/astra/A2-columns-packed-adaptive-lz4-zstd"
+        },
+        {
+          "key": "yelp-A3",
+          "paper_point_id": "A3",
+          "result_id": "s-e5c7406d04f109acd1a0fe1ded8f974a4bdfd8d167d069873b69afe5dbd4a873",
+          "path": "yelp/astra/A3-token-nested-transient-nozero-lz4hc9"
+        },
+        {
+          "key": "yelp-A4",
+          "paper_point_id": "A4",
+          "result_id": "s-6cf6478c8f594bc58df6644faaff4b33f13e3eff3b7b5df5e8c23bed47bd3b51",
+          "path": "yelp/astra/A4-columns-packed-zstd19"
+        }
+      ]
+    },
+    {
+      "run_id": "yelp-glm-standard",
+      "dataset": "yelp",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "standard",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "bcc6fc6a1e0836f0e192304c3ce460ce9213f9b2be774c73c2fdcaf97ab7db15",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "yelp-G1",
+          "paper_point_id": "G1",
+          "result_id": "s-12164f17b48db6dee68b0a06b3eecd6b5862b49c0fd53e4d7042823689a43dde",
+          "path": "yelp/glm-5.3-flash/G1-ycol"
+        },
+        {
+          "key": "yelp-G2",
+          "paper_point_id": "G2",
+          "result_id": "s-2ddf43d09765cf341484ed353233b10921a57ce3f95beeab4d9e80716b7054bf",
+          "path": "yelp/glm-5.3-flash/G2-ycol"
+        }
+      ]
+    },
+    {
+      "run_id": "yelp-glm-decode-first",
+      "dataset": "yelp",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "decode-first",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "c468cfc538bbd51cd2914b0530aaf5d7eb297965004cc23eab4bbc446c2f6c8f",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "yelp-G3",
+          "paper_point_id": "G3",
+          "result_id": "s-a683b735c79e66d787d9eddabd96fb3c22d43be496343f24d33becfc1d6a9d8a",
+          "path": "yelp/glm-5.3-flash/G3-yelp-col"
+        }
+      ]
+    },
+    {
+      "run_id": "yelp-glm-lz4-frontier",
+      "dataset": "yelp",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "lz4-frontier",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "8850045fa2edeb086e9a95f821b5b469ce81a84d8f95b5c20451901826549cb5",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 3,
+      "configurations": [
+        {
+          "key": "yelp-M1",
+          "paper_point_id": "G4",
+          "result_id": "s-5fba987bd39c3b5f0dceb4311a385ce92c4726d77092d6a39a99db3c204b2c63",
+          "path": "yelp/glm-5.3-flash-subagents/M1-yelp-frontier-v1"
+        },
+        {
+          "key": "yelp-M2",
+          "paper_point_id": "G5",
+          "result_id": "s-097e4e6c647eddac0ba25242cadc1c5f0e28738bd4c83d481cb43e47dbd13d5d",
+          "path": "yelp/glm-5.3-flash-subagents/M2-yelp-frontier-v2-corrected"
+        }
+      ]
+    },
+    {
+      "run_id": "openstack-astra-standard",
+      "dataset": "openstack",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "prompt": "standard",
+      "source_kind": "Settled request cost ledger",
+      "source_sha256": "40c95b5b8295c7cb043d70678c982f6d9a6e6efef26b3b18d58327b3da8b670a",
+      "source_hash_basis": "Original ledger bytes",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "openstack-A1",
+          "paper_point_id": "A1",
+          "result_id": "s-888caddc5bd82785bb380e10a8f3e18df0b851673ea05060c35fbcb5bfbebdec",
+          "path": "openstack/astra/A1-layout-fast-m3-z1"
+        },
+        {
+          "key": "openstack-A2",
+          "paper_point_id": "A2",
+          "result_id": "s-d000612d87c362d7fbd72b87303a3fc86c19a14d47670984e4c9e725d350407b",
+          "path": "openstack/astra/A2-typed-plainfast-zstd9"
+        },
+        {
+          "key": "openstack-A3",
+          "paper_point_id": "A3",
+          "result_id": "s-8fbf326fcbb2032638a6dea87974676862f3cf687fa94809c02d5fde7bb870ca",
+          "path": "openstack/astra/A3-template-columns-uuid-direct-lz4hc9"
+        },
+        {
+          "key": "openstack-A4",
+          "paper_point_id": "A4",
+          "result_id": "s-f2645f9fcd5ee5876fdb216c4fcbaa1933d31547669049f9e1a8507df84da6b7",
+          "path": "openstack/astra/A4-typed-encodefast-zstd19"
+        },
+        {
+          "key": "openstack-A5",
+          "paper_point_id": "A5",
+          "result_id": "s-f904a50621f1bdeda3aad62b8e8c1299caea2796c09f8148eab5649c62f17962",
+          "path": "openstack/astra/A5-typed-encodefast-zstd9"
+        },
+        {
+          "key": "openstack-A6",
+          "paper_point_id": "A6",
+          "result_id": "s-18e97dd12e48b86c8071ce586ccb376a6ef42a743edc05333788aa985c378558",
+          "path": "openstack/astra/A6-typed-delta-zstd19"
+        }
+      ]
+    },
+    {
+      "run_id": "openstack-glm-standard",
+      "dataset": "openstack",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "standard",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "b68e76eeb79a88dd5b0d8b6179abe06721a9108d0e5b83c7433d9c53c0c1cc02",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "openstack-G1",
+          "paper_point_id": "G1",
+          "result_id": "s-48cd66c24b8f65b544267fc441263af117298495fc37bf714d0a336c13796506",
+          "path": "openstack/glm-5.3-flash/G1-logtmpl-bal"
+        },
+        {
+          "key": "openstack-G2",
+          "paper_point_id": "G2",
+          "result_id": "s-8ea1ddc7a25f843e88117f9a507e8901761e30c8d6e886cc592619bb134cba6a",
+          "path": "openstack/glm-5.3-flash/G2-logtmpl-size"
+        }
+      ]
+    },
+    {
+      "run_id": "openstack-glm-decode-first",
+      "dataset": "openstack",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "decode-first",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "60e8d3fbd5cf50889394df7a9be1769c14c040c94ca5726e332a4a6301da0607",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "openstack-G3",
+          "paper_point_id": "G3",
+          "result_id": "s-393d767a2ddcee0f38411dbb8754324f225b8fa2e9206eb2b68ee25ecd08d6bd",
+          "path": "openstack/glm-5.3-flash/G3-tslog-corrected"
+        }
+      ]
+    },
+    {
+      "run_id": "openstack-glm-lz4-frontier",
+      "dataset": "openstack",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "lz4-frontier",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "d0ac1d8a29f78dcc66a8352cb7df5f836340455d69d0dfc5301d3522113799ea",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "openstack-M1",
+          "paper_point_id": "G4",
+          "result_id": "s-89c40f32d7eb9bb3dea0dfb85f88b682dd2c8c3cb569a0406c004c98689e86ad",
+          "path": "openstack/glm-5.3-flash-subagents/M1-hex-lz4-frontier"
+        }
+      ]
+    },
+    {
+      "run_id": "sqlstorm-tpcds-astra-standard",
+      "dataset": "sqlstorm-tpcds",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "prompt": "standard",
+      "source_kind": "Settled request cost ledger",
+      "source_sha256": "9accbc4da7bbc645dbd806394369eac67b2b18844ea8fcd3df33cf61c956dde2",
+      "source_hash_basis": "Original ledger bytes",
+      "agent_sessions": 4,
+      "configurations": [
+        {
+          "key": "sqlstorm-tpcds-A1",
+          "paper_point_id": "A1",
+          "result_id": "s-5cc0b548542bfdf29d69800ce430212cfe4efa95efee63622620dfe97ccafa04",
+          "path": "sqlstorm-tpcds/astra/A1-repair4-frontplanes-batch4-zstd19-owned-state"
+        },
+        {
+          "key": "sqlstorm-tpcds-A2",
+          "paper_point_id": "A2",
+          "result_id": "s-b0679131a05168ac030cc9a93d692c0c31ff31b22064a74f2d9030c60679b694",
+          "path": "sqlstorm-tpcds/astra/A2-tpcds-phrase-fast-owned-state"
+        },
+        {
+          "key": "sqlstorm-tpcds-A3",
+          "paper_point_id": "A3",
+          "result_id": "s-b07807dea1c6c3a995bc9b0d7f6945e57c534091a5dbb6d2720ea95e5dbb6212",
+          "path": "sqlstorm-tpcds/astra/A3-tpcds-phrase-balanced-state"
+        },
+        {
+          "key": "sqlstorm-tpcds-A4",
+          "paper_point_id": "A4",
+          "result_id": "s-cd23487b958d0dfb7cf22d153886245d38a37a3043931db1867950f51e805a00",
+          "path": "sqlstorm-tpcds/astra/A4-repair4-frontplanes-batch4-brotli-fast9raw"
+        },
+        {
+          "key": "sqlstorm-tpcds-A5",
+          "paper_point_id": "A5",
+          "result_id": "s-61aa08ff180726bc20aa5291adf3ca585602d1bc7310bb8143e04ca75a68d7ab",
+          "path": "sqlstorm-tpcds/astra/A5-repair4-frontplanes-batch4-brotli-q11compact"
+        }
+      ]
+    },
+    {
+      "run_id": "sqlstorm-tpcds-glm-standard",
+      "dataset": "sqlstorm-tpcds",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "standard",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "3bab592f3d3a21ff54411a9bb4a5705c86135ee499e5384582141fa177a0da62",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "sqlstorm-tpcds-G1",
+          "paper_point_id": "G1",
+          "result_id": "s-14d2cdc3412a34ebea5fcc6834084673402fbcdf8b25a34068a174139c451ce0",
+          "path": "sqlstorm-tpcds/glm-5.3-flash/G1-slz"
+        }
+      ]
+    },
+    {
+      "run_id": "sqlstorm-tpcds-glm-decode-first",
+      "dataset": "sqlstorm-tpcds",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "decode-first",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "42eabb54f9dec1f88f19e63ef2a93b630f8c11df121ddec4e643eb1f2c6b991d",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 1,
+      "configurations": [
+        {
+          "key": "sqlstorm-tpcds-G2",
+          "paper_point_id": "G2",
+          "result_id": "s-925bdf0d1b0452147365cb2c98a2c9a3641ed976122be99fcf86307c9798156f",
+          "path": "sqlstorm-tpcds/glm-5.3-flash/G2-sqlsortlz"
+        }
+      ]
+    },
+    {
+      "run_id": "sqlstorm-tpcds-glm-lz4-frontier",
+      "dataset": "sqlstorm-tpcds",
+      "model": "GLM-5.3-Flash",
+      "effort": "max",
+      "prompt": "lz4-frontier",
+      "source_kind": "ZCode model_usage SQLite rows",
+      "source_sha256": "65d788bb6ba3865d2b2a5c417b3bc7adeea6703360cd1d5855c1a231c51dc04e",
+      "source_hash_basis": "Canonical JSON of selected accounting fields, including original row and session IDs",
+      "agent_sessions": 3,
+      "configurations": [
+        {
+          "key": "sqlstorm-tpcds-M1",
+          "paper_point_id": "G3",
+          "result_id": "s-f6770492a5de9c76371913a84bddf5e76481e365ac6387dec27c11fca260e2a3",
+          "path": "sqlstorm-tpcds/glm-5.3-flash-subagents/M1-stormz5-v1-corrected"
+        },
+        {
+          "key": "sqlstorm-tpcds-M2",
+          "paper_point_id": "G4",
+          "result_id": "s-f065c5990d8216ac18a1963057d4f5b1cb7c062d3dd32c160f62482fab75c82d",
+          "path": "sqlstorm-tpcds/glm-5.3-flash-subagents/M2-stormz5-v2-corrected"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "method": "Zstd-3",
+  "package_bytes": 14391433,
+  "archive_bytes": 14391433,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.8897482808500428,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 17480505,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 2.768407218377767,
+  "median": 806.7599296052863,
+  "low": 788.4997830313538,
+  "high": 812.1879646823525,
+  "encode_MB_s": 137.71003306135356,
+  "exact_decodes": 184
+}

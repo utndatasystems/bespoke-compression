@@ -1,0 +1,27 @@
+[
+  {
+    "name": "limit_dictionary",
+    "seconds": 0.16422977298498154,
+    "command": [
+      "python3",
+      "/work/root/fitting_limit/limitdict.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "dp16",
+    "seconds": 14.041341699659824,
+    "command": [
+      "taskset",
+      "-c",
+      "12",
+      "/work/grammar/dp2",
+      "/work/root/fitting_limit/dict16.bin",
+      "/work/root/fitting_limit/tokens16.bin"
+    ],
+    "returncode": 0
+  },
+  {
+    "verified_identical": true
+  }
+]

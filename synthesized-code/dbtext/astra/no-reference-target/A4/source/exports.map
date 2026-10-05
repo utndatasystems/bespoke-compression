@@ -1,0 +1,1 @@
+{ global: lab_open; lab_decode; lab_rows; lab_close; local: *; };

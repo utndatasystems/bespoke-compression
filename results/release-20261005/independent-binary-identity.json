@@ -1,0 +1,99 @@
+{
+  "independent_binary_count": 84,
+  "sha256_matches": 81,
+  "mismatches": [
+    {
+      "id": "dbtext-astra-tools-allowed-04-intermediate-decompression",
+      "artifact": "encoder",
+      "measured_sha256": "f9eafa8a1e407c87920eb7d34fb97b72d75fa797aa38dc3395d05506c135f8d7",
+      "checkout_sha256": "c58f86dfd85c37bd174dc832f770e3bf01c776a78cead7b6101804bf7c5fdb99",
+      "dynamic_tags": [
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ],
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ]
+      ],
+      "embedded_build_paths": [
+        [
+          "/dev/shm/bespoke-release-20261005/replay/build/dbtext-astra-tools-allowed-04-intermediate-decompression/source/fsst/libfsst.cpp",
+          "/dev/shm/bespoke-release-20261005/replay/build/dbtext-astra-tools-allowed-04-intermediate-decompression/source/fsst/libfsst.hpp"
+        ],
+        [
+          "/dev/shm/bespoke-release-20261005/commit-test-c33ab3c56ad4/replay/build/dbtext-astra-tools-allowed-04-intermediate-decompression/source/fsst/libfsst.cpp",
+          "/dev/shm/bespoke-release-20261005/commit-test-c33ab3c56ad4/replay/build/dbtext-astra-tools-allowed-04-intermediate-decompression/source/fsst/libfsst.hpp"
+        ]
+      ]
+    },
+    {
+      "id": "glm-5.3-flash-dbtext-tools-allowed-G3",
+      "artifact": "encoder",
+      "measured_sha256": "de9282ec1bcdadcb7db6738a8c467b1ca119b34fe5b0cc82ef5dd92d299ba7be",
+      "checkout_sha256": "9d2adc92b61183256d6879071b35af7e52fbdf080a1c956a7d20d7d649991cf3",
+      "dynamic_tags": [
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ],
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ]
+      ],
+      "embedded_build_paths": [
+        [
+          "/dev/shm/bespoke-release-20261005/replay/build/glm-5.3-flash-dbtext-tools-allowed-G3/source/src/fsst/libfsst.hpp",
+          "/dev/shm/bespoke-release-20261005/replay/build/glm-5.3-flash-dbtext-tools-allowed-G3/source/src/fsst/libfsst.cpp"
+        ],
+        [
+          "/dev/shm/bespoke-release-20261005/commit-test-c33ab3c56ad4/replay/build/glm-5.3-flash-dbtext-tools-allowed-G3/source/src/fsst/libfsst.hpp",
+          "/dev/shm/bespoke-release-20261005/commit-test-c33ab3c56ad4/replay/build/glm-5.3-flash-dbtext-tools-allowed-G3/source/src/fsst/libfsst.cpp"
+        ]
+      ]
+    },
+    {
+      "id": "glm-5.3-flash-yelp-tools-allowed-G3",
+      "artifact": "encoder",
+      "measured_sha256": "4ae73d3ef0faf6761f9a3cfcddcbd3ab57c43109fd87ea226492fd06252466db",
+      "checkout_sha256": "cf21665f355d3c9416b1d0f1e440e622375e36e238617ecc4f64b3ba9984c0bd",
+      "dynamic_tags": [
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ],
+        [
+          "0x0000000000000001 (NEEDED)             Shared library: [libzstd.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ]
+      ],
+      "embedded_build_paths": [
+        [
+          "/dev/shm/bespoke-release-20261005/replay/build/glm-5.3-flash-yelp-tools-allowed-G3/source/src/common.h"
+        ],
+        [
+          "/dev/shm/bespoke-release-20261005/commit-test-c33ab3c56ad4/replay/build/glm-5.3-flash-yelp-tools-allowed-G3/source/src/common.h"
+        ]
+      ]
+    }
+  ],
+  "missing": [],
+  "decoder_sha256_matches": 42,
+  "scope": "42 independent encoder and decoder builds; source identity is checked separately."
+}

@@ -1,0 +1,17 @@
+{
+  "method": "FSST",
+  "package_bytes": 24043323,
+  "archive_bytes": 24043323,
+  "original_bytes": 39841347,
+  "bits_per_byte": 4.82781327649389,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 27124363,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 1.6570649156940578,
+  "median": 650.319598261022,
+  "low": 632.3506512142364,
+  "high": 659.3228953007307,
+  "encode_MB_s": 144.7099955006302,
+  "exact_decodes": 184
+}

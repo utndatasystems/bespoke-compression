@@ -1,0 +1,28 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "from-scratch",
+  "generation": "server API",
+  "stage": 2,
+  "objective": "Maximize compression factor at the required decompression speed; row speed is secondary.",
+  "result_id": "r-4add78cf369024800a7102f86303aba1dcc718edfc7fed4119ddb1c9a0d5f232",
+  "build_id": "b-c98dc111b535d6ae35da47324f774a09f163bbfab2fe0ba2a1ca98e4883e81d3",
+  "build_export_sha256": "deafae8623c480bd4babf5c9c3f404a0778e9806fc618388e22c0ece7484e8f7",
+  "source_manifest_sha256": "0f949757ad3e9b872daeef64416d6fc1ff1e4f078ec21757ce5b17ea31b25357",
+  "file_sha256": {
+    "source/FORMAT.md": "748c16b6a1b39f5f54c250c1cd82b5c3665b9d214a2e9c62b1ad5a7520262b52",
+    "source/codec.cpp": "d38d62f05be82acca077e7bf1f79123c54e803787f1dc7062f8bd6ea157fa9e3",
+    "source/context.h": "c84c50882c16447979fc6fae11e1aa77379fda28dd460ac64ae2cf5ebf7c4f9e",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/location.h": "55085b2e7917dfca362fbd1dcabbbae4916f287b278de48643583a099504e924",
+    "source/special.h": "1e3ab129f216ca5fb9bfa4f524bdb48317d58a62287ad06bce4bdd8a6cdd0c0d",
+    "source/templates.h": "ae2f5e3d7edbe87039c910ff5e29bf2db1fb02e19c6b1729a884a4043fd0cf5e",
+    "build-spec.json": "d1f262a209581ef75d40d64b4482150a7a710b694b75151a39966dff18bc7fa7"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "2a8c45861e12130c35c599f8188701dc456ba0b65e7def30871bd31ae6a6efbc",
+    "encoder.so": "b1259068c7ff5b27e58828719d9522ea690694ddda4d77fec856a201f2165b09"
+  },
+  "source_modified": false
+}

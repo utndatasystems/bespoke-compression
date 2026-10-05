@@ -1,0 +1,14 @@
+{
+  "dataset": "yelp",
+  "files": [
+    {
+      "input": "corpus.bin",
+      "bytes": 100000488,
+      "input_sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02",
+      "archive_bytes": 9243864,
+      "archive_sha256": "9a5f9ecb48ef7e360ba01426ed9bfda316b88a88a9995aac2999bdd7a256a3ee",
+      "bulk_roundtrip": true,
+      "selected_rows_roundtrip": null
+    }
+  ]
+}

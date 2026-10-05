@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "yelp",
+  "workload": "bulk",
+  "implementation": "from-scratch",
+  "stage": 1,
+  "result_id": "r-9d6f7b5e42a61484846c8294b233c94bb42294c703cfa0d53e2e7adf39fe54f9",
+  "build_id": "b-afa74c13da3dbd37e2463557754505897d492b3e0895a6b6b5c83358b7af4d22",
+  "build_export_sha256": "ea277dcc844760d9f2be74feefb0ae83733eb4490de2af89a62be6969f65cc2a",
+  "source_sha256": {
+    "build-spec.json": "f18f209416ac41c13c68eac8f13f33edb4cb4db8a7520cf3b04c2475b2ac5cef",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/yelp_final.cpp": "e2c96909fdd9220b6fab6d91fc4043a334687fd7c107fb25cac36964358817e7"
+  },
+  "input_bytes": 100000488,
+  "qualification": "qualified"
+}

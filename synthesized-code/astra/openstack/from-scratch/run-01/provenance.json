@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "openstack",
+  "run": 1,
+  "original_bytes": 61442082,
+  "result_id": "r-76de554f3375be2ec2d11702ce3e480014b5553adf0c39bd6d62c4dc2c096caf",
+  "build_id": "b-bd7a208b2cb9b65bad155d667743800762f055ae3ff61c94b6c6e461093dee9e",
+  "package_bytes": 5375551,
+  "compression_factor": 11.42991332423411,
+  "decompression_median_MB_s": 12954.03623465239,
+  "decompression_range_MB_s": [
+    12573.448943479309,
+    13209.087131229253
+  ],
+  "source_sha256": {
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/simd_codec_compact.cpp": "466d16014a7994282f01618c11779a34f6a73c2f1f6d59653d40b0170dab1fdd"
+  }
+}

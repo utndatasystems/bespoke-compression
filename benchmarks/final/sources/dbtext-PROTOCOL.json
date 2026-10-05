@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "purpose": "Final DBText bulk comparison with corrected codec interfaces and full representation accounting, per owner request.",
+  "dataset": {
+    "columns": 23,
+    "raw_bytes": 39841347,
+    "input_repetition": false,
+    "rows_repeated": false,
+    "column_concatenation": false,
+    "manifest": "INPUTS.json"
+  },
+  "measurement": {
+    "cpu": 8,
+    "discarded_warmups": 1,
+    "timed_trials": 7,
+    "calls_per_trial": 1,
+    "statistic": "median",
+    "cache_flush": false,
+    "shared_benchmark_locks": [
+      "/home/iachnyk/compression-research/results/benchmark.lock",
+      "/tmp/compression-lab-host-benchmark-v1.lock"
+    ]
+  },
+  "timing": {
+    "primary": "codec_open_plus_decode",
+    "includes": "Per-call codec initialization, dictionary reconstruction, and complete output reconstruction.",
+    "excludes": "File I/O, process startup, dynamic linking, compilation, input parsing, output allocation/prefault, correctness verification, artifact writes and cleanup.",
+    "secondary": "Decode-only durations are separately retained. Primary scores never remove actual decoding work performed inside lab_open."
+  },
+  "size_accounting": {
+    "formula": "sum(original column bytes) / (sum(complete archive bytes) + custom decoder binary bytes)",
+    "included": [
+      "compressed payload",
+      "serialized dictionaries and symbol tables",
+      "headers and framing",
+      "row and block indexes where used",
+      "serialized padding",
+      "entire measured custom decoder shared library for LLM methods, once across all 23 columns"
+    ],
+    "excluded": [
+      "encoder binaries",
+      "installed standard codec libraries",
+      "conventional baseline executables",
+      "benchmark harness and evidence receipts",
+      "temporary RAM and allocation capacity"
+    ],
+    "no_binary_deductions": "Do not subtract statically included code from a custom decoder. Record exact binary SHA256 and byte count.",
+    "baseline_framing": "General-purpose codec archives retain the historical uint64 original-size prefix. FSST column has uint64 original size plus uint32 table length. OnPair+ retains its unchanged author archive."
+  },
+  "aggregation": {
+    "factor": "ratio of corpus totals; decoder charged once",
+    "speed": "sum(original column bytes) / median of seven sums of per-column open+decode seconds",
+    "spread": "min and max of the seven aggregate throughputs",
+    "encoding": "One observed encoding measurement per column, summed for corpus throughput; not a seven-trial median. FSST rows uses the author-reported training+compression duration."
+  },
+  "configurations": {
+    "FSST": "Original FSST paper per-string API; shared symbol table, retained row offsets and serialized safety padding. All rows decoded.",
+    "FSST-column": "Original FSST library with documented one-line sampling memory-safety repair, one complete LF-bearing column as one input string. Distinct from the OnPair+ artifact adaptation of FSST.",
+    "OnPair+": "Unchanged author OnPairAdvancedCompressor<16>, cutoff=true and store_lengths=true, whole original column, fresh decode object per call.",
+    "LZ4-paper-1000": "Historical paper row-block layout retained as a labeled diagnostic. Charge the actual indexed archive used for decoding, not the separate bare-size probe.",
+    "LLMs": "Retained A1-A3 and G1-G4 binaries and archives; no model calls or algorithm changes."
+  },
+  "coverage": "All 30 original DBText methods, plus FSST column and LZ4 paper 1000-row diagnostic; 32 total.",
+  "interpretation": "Bulk complete reconstruction. Whole-column compression does not establish random-row access. Both FSST configurations remain explicitly labeled pending supervisor preference.",
+  "published_artifacts": "New output folder only. Preserve all earlier raw evidence, plots, and tables.",
+  "model_calls": 0,
+  "fsst_safety_repair": "Both FSST configurations use the isolated pinned library plus FSST_SAFETY_PATCH.diff. FSST_REPAIR.json and FSST_REPAIR_BUILD.json retain source/library identities and a guard-page regression. Original source and failed attempt are preserved."
+}

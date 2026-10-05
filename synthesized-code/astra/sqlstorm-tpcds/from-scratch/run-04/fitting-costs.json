@@ -1,0 +1,149 @@
+{
+  "archive_bytes": 1135117,
+  "archive_sha256": "c971c8d424e0899db20a2ff0be014d37f64467e0845091063d3cad4823ac6e67",
+  "stages": [
+    {
+      "stage": "compile analysis_repair",
+      "seconds": 2.420399487018585,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "/work/final_refit/analysis_repair.cpp",
+        "-o",
+        "/work/final_refit/analysis_repair"
+      ]
+    },
+    {
+      "stage": "compile lzexp_tok",
+      "seconds": 2.200371563434601,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "/work/final_refit/lzexp_tok.cpp",
+        "-o",
+        "/work/final_refit/lzexp_tok"
+      ]
+    },
+    {
+      "stage": "compile lzexp_dp",
+      "seconds": 2.9619898721575737,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "/work/final_refit/lzexp_dp.cpp",
+        "-o",
+        "/work/final_refit/lzexp_dp"
+      ]
+    },
+    {
+      "stage": "compile lzfinal_pack",
+      "seconds": 2.690849967300892,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "/work/final_refit/lzfinal_pack.cpp",
+        "-o",
+        "/work/final_refit/lzfinal_pack"
+      ]
+    },
+    {
+      "stage": "fit 6144-symbol RePair",
+      "seconds": 18.805873312056065,
+      "argv": [
+        "/work/final_refit/analysis_repair",
+        "6144",
+        "0",
+        "/work/final_refit/analysis_repair.bin"
+      ]
+    },
+    {
+      "stage": "derive token sequence and suffix array",
+      "seconds": 0.3151339739561081,
+      "argv": [
+        "/work/final_refit/lzexp_tok",
+        "6144",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "stage": "twenty token dynamic-programming fits with 256 candidates",
+      "seconds": 9.32741779834032,
+      "argv": [
+        "/work/final_refit/lzexp_dp",
+        "6144",
+        "3",
+        "1",
+        "256",
+        "20"
+      ]
+    },
+    {
+      "stage": "pack rANS archive and encoder payload",
+      "seconds": 0.1332470253109932,
+      "argv": [
+        "/work/final_refit/lzfinal_pack",
+        "6144",
+        "/work/final_refit/lzsearch_dp6144_d256_r20_matches.bin",
+        "15"
+      ]
+    },
+    {
+      "stage": "compile encoder",
+      "seconds": 1.6614017635583878,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "-shared",
+        "-fPIC",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-nostartfiles",
+        "-Wl,--build-id=none,-z,noseparate-code,-z,norelro",
+        "-s",
+        "-I/interface",
+        "/work/final_refit/lzfinal_encoder.cpp",
+        "-o",
+        "/work/final_refit/encoder.so"
+      ]
+    },
+    {
+      "stage": "compile decoder",
+      "seconds": 1.184320129454136,
+      "argv": [
+        "g++",
+        "-w",
+        "-O3",
+        "-march=icelake-server",
+        "-shared",
+        "-fPIC",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-nostartfiles",
+        "-Wl,--build-id=none,-z,noseparate-code,-z,norelro",
+        "-s",
+        "-I/interface",
+        "/work/final_refit/lzfinal_decoder.cpp",
+        "-o",
+        "/work/final_refit/decoder.so"
+      ]
+    }
+  ],
+  "total_seconds": 41.70100489258766,
+  "matches_selected_archive": true,
+  "matches_selected_payload": true
+}

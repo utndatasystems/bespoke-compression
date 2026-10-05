@@ -1,0 +1,268 @@
+% ---------------------------------------------------------------------------
+% Syntax-conditioned indentation coding -- editable vector artwork.
+% Drawn entirely in TikZ; no raster assets, screenshots, minted, or shell escape.
+%
+% Required in the host document:
+%   \usepackage[T1]{fontenc}
+%   \usepackage{textcomp,tikz,graphicx}
+%   \usetikzlibrary{arrows.meta}
+%
+% The three typefaces are selected LOCALLY and do not change your paper fonts.
+% TeX Live / Overleaf supplies TeX Gyre Termes (qtm), Heros (qhv), Inconsolata (zi4).
+%
+% Natural drawing coordinates: 1520 x 416 pt, y increases DOWNWARD.
+% Resize the entire input with \resizebox{\linewidth}{!}{\input{short-paper/figures/...tikz}}.
+% Panel widths = 492; gaps = 22; shared main-flow centerline = y = 224.
+% ---------------------------------------------------------------------------
+\begingroup%
+
+% ---- EDITABLE PALETTE -------------------------------------------------------
+% Paper surfaces.
+\definecolor{bcInk}{HTML}{19212C}%
+\definecolor{bcMuted}{HTML}{566172}%
+\definecolor{bcBorder}{HTML}{98A3B3}%
+\definecolor{bcHeader}{HTML}{F5F7FA}%
+\definecolor{bcRule}{HTML}{E1E6ED}%
+\definecolor{bcArrow}{HTML}{364354}%
+\definecolor{bcGrid}{HTML}{E9EDF2}%
+% Pastel syntax conditions.
+\definecolor{bcPeach}{HTML}{FFF0E5}%
+\definecolor{bcPeachEdge}{HTML}{E8BE9B}%
+\definecolor{bcPeachInk}{HTML}{B96837}%
+\definecolor{bcBlue}{HTML}{EAF2FF}%
+\definecolor{bcBlueEdge}{HTML}{A5BFEB}%
+\definecolor{bcBlueInk}{HTML}{3264AE}%
+\definecolor{bcMint}{HTML}{EAF5E9}%
+\definecolor{bcMintEdge}{HTML}{ACCEAF}%
+\definecolor{bcLavender}{HTML}{F2EBFA}%
+\definecolor{bcLavenderEdge}{HTML}{B89AD9}%
+\definecolor{bcWellEdge}{HTML}{DDD4EA}%
+\definecolor{bcGreenInk}{HTML}{2D773C}%
+% VS Code-style midnight editor / synthetic syntax highlighting.
+\definecolor{bcEditor}{HTML}{1E1E2E}%
+\definecolor{bcEditorTop}{HTML}{181825}%
+\definecolor{bcEditorEdge}{HTML}{36364F}%
+\definecolor{bcEditorRule}{HTML}{35364A}%
+\definecolor{bcActiveRow}{HTML}{27273B}%
+\definecolor{bcCode}{HTML}{CDD6F4}%
+\definecolor{bcCodeMuted}{HTML}{7F849C}%
+\definecolor{bcPunctuation}{HTML}{BAC2DE}%
+\definecolor{bcKeyword}{HTML}{CBA6F7}%
+\definecolor{bcFunction}{HTML}{89B4FA}%
+\definecolor{bcConstant}{HTML}{FAB387}%
+\definecolor{bcPositive}{HTML}{A6E3A1}%
+\definecolor{bcNegative}{HTML}{F38BA8}%
+\definecolor{bcIndent}{HTML}{2C413C}%
+\definecolor{bcPositiveWell}{HTML}{294137}%
+\definecolor{bcNegativeWell}{HTML}{442C3A}%
+% Histogram / entropy encoder.
+\definecolor{bcBarStrong}{HTML}{7FBF91}%
+\definecolor{bcBarStrongEdge}{HTML}{5EA676}%
+\definecolor{bcBarSoft}{HTML}{BDDCC5}%
+\definecolor{bcBarSoftEdge}{HTML}{94C3A1}%
+\definecolor{bcBarRed}{HTML}{F0C1C8}%
+\definecolor{bcBarRedEdge}{HTML}{D78F9D}%
+\definecolor{bcEncoder}{HTML}{F8FAFC}%
+\definecolor{bcEncoderEdge}{HTML}{C7CFDB}%
+\definecolor{bcBitWell}{HTML}{EDF1F6}%
+
+% ---- LOCAL TYPOGRAPHY AND HELPERS ------------------------------------------
+\newcommand{\BCserif}[1]{\fontencoding{T1}\fontfamily{qtm}\fontseries{m}\fontshape{n}\fontsize{#1}{#1}\selectfont}%
+\newcommand{\BCsans}[1]{\fontencoding{T1}\fontfamily{qhv}\fontseries{m}\fontshape{n}\fontsize{#1}{#1}\selectfont}%
+\newcommand{\BCmono}[1]{\fontencoding{T1}\fontfamily{zi4}\fontseries{m}\fontshape{n}\fontsize{#1}{#1}\selectfont\spaceskip=.5em\xspaceskip=.5em}%
+\newcommand{\BCkw}[1]{\textcolor{bcKeyword}{#1}}%
+\newcommand{\BCfn}[1]{\textcolor{bcFunction}{#1}}%
+\newcommand{\BCvar}[1]{\textcolor{bcCode}{#1}}%
+\newcommand{\BCconst}[1]{\textcolor{bcConstant}{#1}}%
+\newcommand{\BCpn}[1]{\textcolor{bcPunctuation}{#1}}%
+% #1 x, #2 baseline y, #3 font size, #4 code. Spaces are exactly half an em.
+\newcommand{\BCcode}[4]{\node[anchor=base west,font=\BCmono{#3},text=bcCode] at (#1,#2) {#4};}%
+% #1 x, #2 baseline y, #3 font size, #4 text.
+\newcommand{\BClabel}[4]{\node[anchor=base,font=\BCserif{#3}] at (#1,#2) {#4};}%
+
+\begin{tikzpicture}[
+  x=1pt,y=-1pt,
+  every node/.style={inner sep=0pt,outer sep=0pt,text=bcInk},
+  line cap=round,line join=round,
+  bc flow/.style={draw=bcArrow,line width=2.5pt,-{Latex[length=10pt,width=9.5pt]}},
+  bc branch/.style={draw=bcArrow,line width=1.6pt,-{Latex[length=7.5pt,width=7pt]}},
+  bc title/.style={font=\BCserif{29}\bfseries,text height=22pt,text depth=6pt},
+  bc condition/.style={rounded corners=6pt,line width=1pt},
+  bc snippet/.style={fill=bcEditor,draw=bcEditorEdge,line width=.8pt,rounded corners=6pt}
+]
+% Fixed page boundary. A 1 pt bleed prevents the outside stroke being cropped.
+\path[use as bounding box,fill=white] (-1,-1) rectangle (1521,417);
+
+% ---- PANEL SHELLS ----------------------------------------------------------
+\foreach \X in {0,514,1028}{
+  \begin{scope}[shift={(\X,0)}]
+    \path[fill=white,rounded corners=7pt] (0,0) rectangle (492,416);
+    \begin{scope}
+      \clip[rounded corners=7pt] (0,0) rectangle (492,416);
+      \fill[bcHeader] (0,0) rectangle (492,58);
+    \end{scope}
+    \draw[bcRule,line width=.8pt] (.7,58) -- (491.3,58);
+    \draw[bcBorder,line width=1pt,rounded corners=7pt] (0,0) rectangle (492,416);
+  \end{scope}
+}
+\node[bc title] at (246,30) {Python source lines};
+\node[bc title] at (760,30) {Same syntax\,\textrightarrow\,one bucket};
+\node[bc title] at (1274,30) {Low-entropy bucket\,\textrightarrow\,short code};
+
+% Main arrows: identical lengths, shared y = 224, clear of the outer borders.
+\draw[bc flow] (494.8,224) -- (511.2,224);
+\draw[bc flow] (1008.8,224) -- (1025.2,224);
+
+% ==========================================================================
+% PANEL 1 -- A SMALL EDITOR, NOT A SCREENSHOT.
+% ==========================================================================
+\begin{scope}
+  % The editor's geometric center lies on the main flow centerline.
+  \path[fill=bcEditor,rounded corners=8pt] (18,80) rectangle (474,368);
+  \begin{scope}
+    \clip[rounded corners=8pt] (18,80) rectangle (474,368);
+    \fill[bcEditorTop] (18,80) rectangle (474,114);
+    % Active file tab and a restrained blue accent.
+    \fill[bcEditor] (18,80) rectangle (183,114);
+    \fill[bcFunction] (18,80) rectangle (183,82);
+    % Current line and gutter are subtle, not ruled table rows.
+    \fill[bcActiveRow] (18,243) rectangle (474,299);
+    \fill[bcFunction] (18,257) rectangle (20,285);
+  \end{scope}
+  \draw[bcEditorEdge,line width=.9pt,rounded corners=8pt] (18,80) rectangle (474,368);
+  \draw[bcEditorRule,line width=.65pt] (18.5,114) -- (473.5,114);
+  \draw[bcEditorRule,line width=.7pt] (62,131) -- (62,351);
+
+  % A vector file icon, file name, close mark and overflow dots.
+  \draw[bcFunction,line width=1.25pt] (33,91) -- (40,91) -- (44,95) -- (44,105) -- (33,105) -- cycle;
+  \draw[bcFunction,line width=1pt] (40,91) -- (40,95) -- (44,95);
+  \node[anchor=base west,font=\BCsans{14.7},text=bcCode] at (54,103) {parser.py};
+  \draw[bcCodeMuted,line width=1.1pt] (165,95) -- (171,101) (165,101) -- (171,95);
+  \foreach \X in {444,450,456}{\fill[bcCodeMuted] (\X,98) circle (1.15pt);}
+
+  % Native editor indentation guides, with small green indentation markers.
+  \draw[bcEditorRule,line width=.9pt] (70,188) -- (70,347);
+  \draw[bcEditorRule,line width=.9pt] (114,247) -- (114,292);
+  \foreach \Y in {196,255,314}{
+    \path[fill=bcIndent,rounded corners=2pt] (74,\Y) rectangle ++(15,32);
+  }
+  \path[fill=bcIndent,rounded corners=2pt] (118,255) rectangle (133,287);
+
+  % Source lines. 22 pt Inconsolata => 11 pt cells => 44 pt / four spaces.
+  \foreach \N/\Y in {118/160,119/219,120/278,121/337}{
+    \node[anchor=base east,font=\BCmono{18.5},text=bcCodeMuted] at (52,\Y) {\N};
+  }
+  \BCcode{70}{160}{22}{\BCkw{def}\ \BCfn{parse\_rows}\BCpn{(}\BCvar{path}\BCpn{):}}
+  \BCcode{114}{219}{22}{\BCkw{if}\ \BCvar{path}\ \BCkw{is}\ \BCconst{None}\BCpn{:}}
+  \BCcode{158}{278}{22}{\BCkw{return}\ \BCpn{[]}}
+  \BCcode{114}{337}{22}{\BCkw{return}\ \BCfn{read\_rows}\BCpn{(}\BCvar{path}\BCpn{)}}
+
+  % A separate annotation column keeps deltas clear of the source code.
+  \foreach \Y in {212,271}{
+    \path[fill=bcPositiveWell,rounded corners=5pt] (416,{\Y-15}) rectangle (460,{\Y+15});
+    \node[anchor=base,font=\BCmono{21}\bfseries,text=bcPositive] at (438,{\Y+7}) {+4};
+  }
+  \path[fill=bcNegativeWell,rounded corners=5pt] (416,315) rectangle (460,345);
+  \node[anchor=base,font=\BCmono{21}\bfseries,text=bcNegative] at (438,337) {-4};
+\end{scope}
+
+% ==========================================================================
+% PANEL 2 -- IDENTICAL CARD GRIDS AND SYNCHRONIZED BASELINES.
+% ==========================================================================
+\begin{scope}[shift={(514,0)}]
+  % Width = 142; gap = 16; total = 458, centered in the 492 pt panel.
+  \path[bc condition,fill=bcPeach,draw=bcPeachEdge] (17,76) rectangle (159,151);
+  \path[bc condition,fill=bcBlue,draw=bcBlueEdge] (175,76) rectangle (317,151);
+  \path[bc condition,fill=bcMint,draw=bcMintEdge] (333,76) rectangle (475,151);
+
+  \BClabel{88}{107}{22}{prev ends}
+  \BClabel{88}{132}{22}{with {\BCmono{21}\textcolor{bcPeachInk}{\textquotesingle:\textquotesingle}}}
+  \BClabel{246}{97}{22}{current}
+  \BClabel{246}{120}{22}{starts with}
+  \node[anchor=base,font=\BCmono{20},text=bcBlueInk] at (246,143) {return};
+  \BClabel{404}{97}{22}{prev indent}
+  \BClabel{404}{120}{22}{4--7}
+  \BClabel{404}{143}{22}{spaces}
+
+  \foreach \X in {88,246,404}{\draw[bc branch] (\X,156) -- (\X,175);}
+
+  % These three snippet cards, the chart and the encoder share center y=224.
+  \foreach \X in {17,175,333}{
+    \path[bc snippet] (\X,180) rectangle ++(142,88);
+    \node[anchor=base west,font=\BCmono{16.8},text=bcCodeMuted] at ({\X+9},198) {...};
+    \node[anchor=base west,font=\BCmono{16.8},text=bcCodeMuted] at ({\X+9},260) {...};
+  }
+  % Four-space indentation in every miniature is 4 * 8.4 = 33.6 pt.
+  \BCcode{26}{219}{16.8}{\BCkw{for}\ \BCvar{x}\ \BCkw{in}\ \BCvar{items}\BCpn{:}}
+  \BCcode{59.6}{240}{16.8}{\BCkw{return}\ \BCvar{x}}
+  \BCcode{184}{219}{16.8}{\BCkw{if}\ \BCvar{cond}\BCpn{:}}
+  \BCcode{217.6}{240}{16.8}{\BCkw{return}\ \BCpn{[]}}
+  \BCcode{342}{219}{16.8}{\BCkw{try}\BCpn{:}}
+  \BCcode{375.6}{240}{16.8}{\BCkw{return}\ \BCconst{None}}
+
+  % Symmetric branch angles. Each arrow has air at both ends.
+  \draw[bc branch] (88,274.5) -- (106,292.5);
+  \draw[bc branch] (246,274.5) -- (246,292.5);
+  \draw[bc branch] (404,274.5) -- (386,292.5);
+
+  % Shared syntax bucket and equal-width sequence cells.
+  \path[fill=bcLavender,draw=bcLavenderEdge,line width=1.1pt,rounded corners=9pt] (17,299) rectangle (475,382);
+  \node[font=\BCserif{24.5}\bfseries] at (246,316) {same syntax bucket};
+  \path[fill=white,draw=bcWellEdge,line width=.9pt,rounded corners=7pt] (27,337) rectangle (465,373);
+  \foreach \X/\D in {64/+4,116/+4,168/+4,220/+8,272/+4,324/+4,376/+4}{
+    \node[font=\BCserif{23}\bfseries,text=bcGreenInk] at (\X,355) {\D};
+  }
+  \node[font=\BCmono{22},text=bcMuted] at (428,355) {...};
+  \node[font=\BCserif{21.5},text=bcMuted] at (246,399) {many similar cases};
+\end{scope}
+
+% ==========================================================================
+% PANEL 3 -- AN ACTUAL VECTOR HISTOGRAM AND CENTERED ENCODER.
+% ==========================================================================
+\begin{scope}[shift={(1028,0)}]
+  \node[font=\BCserif{27}] at (176.5,101) {mostly +4};
+
+  % Schematic counts reconstructed from the reference, not measured results.
+  % Edit these four numbers to change the bars; axis maximum = 840.
+  \def\BCHistMax{840}
+  \def\BCCountPlusFour{760}
+  \def\BCCountPlusEight{100}
+  \def\BCCountZero{50}
+  \def\BCCountMinusFour{50}
+  % Plot x=79..274; y=137..311. Geometric centerline y=224.
+  \foreach \V in {0,200,400,600,800}{
+    \pgfmathsetmacro{\YY}{311-174*(\V/\BCHistMax)}
+    \ifnum\V>0
+      \draw[bcGrid,line width=.7pt] (79,\YY) -- (274,\YY);
+    \fi
+    \draw[bcMuted,line width=.8pt] (75,\YY) -- (79,\YY);
+    \node[anchor=east,font=\BCserif{19},text=bcMuted] at (68,\YY) {\V};
+  }
+  \node[rotate=90,font=\BCserif{21},text=bcMuted] at (27,224) {count};
+
+  \foreach \X/\V/\Fill/\Stroke in {
+    104.5/\BCCountPlusFour/bcBarStrong/bcBarStrongEdge,
+    152.5/\BCCountPlusEight/bcBarSoft/bcBarSoftEdge,
+    200.5/\BCCountZero/bcBarSoft/bcBarSoftEdge,
+    248.5/\BCCountMinusFour/bcBarRed/bcBarRedEdge}{
+    \pgfmathsetmacro{\YY}{311-174*(\V/\BCHistMax)}
+    \path[fill=\Fill,draw=\Stroke,line width=.85pt] ({\X-16},\YY) rectangle ({\X+16},311);
+  }
+  % Draw axes last so no bar edges or grid lines overprint the baseline.
+  \draw[bcInk,line width=1.25pt] (79,137) -- (79,311) -- (274,311);
+  \foreach \X/\V in {104.5/+4,152.5/+8,200.5/0,248.5/\textminus4}{
+    \draw[bcMuted,line width=.8pt] (\X,311) -- (\X,316);
+    \node[font=\BCserif{21}] at (\X,336) {\V};
+  }
+  \node[font=\BCserif{21.5},text=bcMuted] at (176.5,367) {indentation delta};
+
+  % Encoder centered on y=224, exactly like the plot and the linking arrow.
+  \draw[bc flow,line width=2pt] (286.5,224) -- (318.5,224);
+  \path[fill=bcEncoder,draw=bcEncoderEdge,line width=1.1pt,rounded corners=10pt] (331,164) rectangle (477,284);
+  \node[font=\BCserif{29}] at (404,194) {rANS};
+  \path[fill=bcBitWell,draw=bcEncoderEdge,line width=.85pt,rounded corners=6pt] (343,219) rectangle (465,268);
+  \node[font=\BCmono{22},text=bcMuted] at (404,243.5) {010110...};
+  \node[font=\BCserif{19.3},text=bcMuted] at (404,305) {(compact bitstream)};
+\end{scope}
+\end{tikzpicture}%
+\endgroup%

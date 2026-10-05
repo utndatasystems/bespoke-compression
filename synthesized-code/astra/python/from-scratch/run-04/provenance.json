@@ -1,0 +1,40 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "python",
+  "run": 4,
+  "original_bytes": 99999986,
+  "result_id": "r-b7fda4fe80951dbfde2197d179071b734cb61e192616713662beb2b3ba640702",
+  "build_id": "b-0591b1be218b9da34a761d79f1319a8e6c3d55b00365bb8fb493ac8dbd2bb216",
+  "package_bytes": 19322651,
+  "compression_factor": 5.175272585526696,
+  "decompression_median_MB_s": 1168.9861205440188,
+  "decompression_range_MB_s": [
+    1138.5724371840959,
+    1187.7558790271892
+  ],
+  "online_encoding_median_seconds": 0.43800745,
+  "source_sha256": {
+    "build-spec.json": "c07d95668aba2392db5325e1e9680f78b0a23e2c9bd2499d51369f7821a156ac",
+    "source/FIT_README.md": "59db9a1b6c8066ba6ee6671681694a5d426c4a582523fd6adc562960b6732b5d",
+    "source/advanced_blockpack.h": "9dc9cb76c15b02864c5f4583bb4382b3987e91cb5e42aecab8bc856232392825",
+    "source/advanced_entropy.h": "486b8422bdd03b4ce4a1422b55c808cdb731070e1e17bacc3c3ae4ac33bd7b5c",
+    "source/advanced_lzpack.h": "0adcee32cf13b24dd3838b59311e0c5d712d0694bcbc3cc3ec1b837b788121c4",
+    "source/analysis_costs.h": "8344021270980023435ced176bc08f3377332597810e6c45a6c5a36e8929780d",
+    "source/analysis_costs_refit.h": "994ce2b4944cb75f1a5916f59fcd1a3db4f10ff292f1821eebd2887817edeb94",
+    "source/analysis_generate_costs.py": "3f99a64e076168bf5c876f0ff1c8a646662c93c90f54e54ac297f36c149507fc",
+    "source/analysis_generate_refit.py": "e7afa78be6c14ccd3de2790980753d2cd78c189d3797ac5e54a3ba63109e3c38",
+    "source/analysis_merge.py": "e8c8177352d206b1b54c2cef879cc37aecc2a7778fcfe7a68f5befc33675a2aa",
+    "source/final_1m_costs.json": "3480eec6360a3ea6ebf0eb36ee9124b894979aa44a51ae8bbb9af794215e226f",
+    "source/final_1m_encoder.cpp": "bbc4bc1c0d43c7e838f337c0649a53aa2b96347c0f322ad8d1f3ed65dc9d6ecf",
+    "source/final_blob.S": "c7156e0ee86a00a0abd1af81243377a85a64b43362eebb314e083e64fe552714",
+    "source/final_fit_source.cpp": "5d705dc9581e07f68fe3f62fa01a5c88308056c3c2158a09c8bf8d8e940d00f4",
+    "source/final_trace.bin": "77633d6e025c906db90545d0bd412d5aa01e661f9eadc21d81000b3e57cf2c0c",
+    "source/fit_trace.py": "e6d6a0aecbd2d0ada71793103b61b6062cb19b7b5bbfb1079945093fc5292a0b",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/optfinal_fit.json": "051b60b9d3926a084ceba5e257d885ac344a9576ebc93b68cc55fb20ffc23e5a",
+    "source/optparse_advanced.cpp": "2e87880b5e95b92d3d038bbe00c3149d2175cc9a81d7293502dc53c6d23e2951",
+    "source/parse.cpp": "d9134047977f750c9a796144d0aada8e669a13572c36417ecfeec42abe7bfe9f",
+    "source/wide_decoder.cpp": "39244ad4b82fd903bb36cceaf42a94739c42055b19e1b6115ea3a5e588620cc0"
+  }
+}

@@ -1,0 +1,61 @@
+Verified retained source hashes for 42 codecs.
+Verified final figure, driver and tool-only runtime hashes.
+dbtext FSST
+dbtext FSST-column
+dbtext LZ4-paper-1000
+dbtext OnPair+
+dbtext Uncompressed
+dbtext LZ4-default
+dbtext LZ4-HC9
+dbtext LZ4-HC12
+dbtext Zstd-1
+dbtext Zstd-3
+dbtext Zstd-19
+dbtext Zstd-20
+dbtext Zstd-21
+dbtext Zstd-22
+dbtext Brotli-5
+dbtext Brotli-9
+dbtext Brotli-11
+dbtext zlib-1
+dbtext zlib-6
+dbtext zlib-9
+dbtext bzip2-1
+dbtext bzip2-9
+dbtext XZ-0
+dbtext XZ-6
+dbtext XZ-9
+dbtext dbtext-astra-from-scratch-01-maximum-decompression
+dbtext dbtext-astra-from-scratch-02-maximum-compression
+dbtext dbtext-astra-from-scratch-03-intermediate-compression
+dbtext dbtext-astra-from-scratch-04-intermediate-decompression
+dbtext dbtext-astra-no-reference-target-A1
+dbtext dbtext-astra-no-reference-target-A2
+dbtext dbtext-astra-no-reference-target-A3
+dbtext dbtext-astra-no-reference-target-A4
+dbtext dbtext-astra-tools-allowed-01-maximum-decompression
+dbtext dbtext-astra-tools-allowed-02-maximum-compression
+dbtext dbtext-astra-tools-allowed-03-intermediate-compression
+dbtext dbtext-astra-tools-allowed-04-intermediate-decompression
+dbtext glm-5.3-flash-dbtext-tools-allowed-G1
+dbtext glm-5.3-flash-dbtext-tools-allowed-G2
+dbtext glm-5.3-flash-dbtext-tools-allowed-G3
+dbtext glm-5.3-flash-dbtext-tools-allowed-G4
+Traceback (most recent call last):
+  File "/dev/shm/bespoke-release-20261005/source/benchmarks/final/run.py", line 300, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/dev/shm/bespoke-release-20261005/source/benchmarks/final/run.py", line 212, in main
+    update_dbtext(figures, bulk_points, folder)
+  File "/dev/shm/bespoke-release-20261005/source/benchmarks/final/run.py", line 276, in update_dbtext
+    values = onpair if r['name']=='OnPair+ row adapter' else controls[{'FSST':'fsst','LZ4 block':'lz4','Uncompressed':'uncompressed'}[r['name']]]
+                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'OnPair+ old block'
+Traceback (most recent call last):
+  File "/dev/shm/bespoke-release-20261005/source/reproduce.py", line 149, in <module>
+    main()
+  File "/dev/shm/bespoke-release-20261005/source/reproduce.py", line 139, in main
+    subprocess.run(argv,check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/dev/shm/bespoke-release-20261005/source/.venv/bin/python', '/dev/shm/bespoke-release-20261005/source/benchmarks/final/run.py', '--work', '/dev/shm/bespoke-release-20261005/replay', '--data', '/dev/shm/bespoke-release-20261005/data', '--cpu', '8', '--deps-prefix', '/home/iachnyk/compression-research/builds/deps/usr', '--project-lock', '/home/iachnyk/compression-research/results/benchmark.lock']' returned non-zero exit status 1.

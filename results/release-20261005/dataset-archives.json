@@ -1,0 +1,54 @@
+{
+  "observed_utc": "2026-10-04T23:23:45.469123+00:00",
+  "archive_count": 5,
+  "input_files": 29,
+  "sha256_and_bytes_passed": true,
+  "git_storage": "ordinary Git blobs, no LFS",
+  "archives": [
+    {
+      "dataset": "dbtext",
+      "path": "archives/dbtext.zip",
+      "bytes": 14388115,
+      "sha256": "5d1824aee5446debed1885521f84945f69a36ec10e0699dabf004044267e288e",
+      "input_bytes": 39841347,
+      "files": 23,
+      "manifest": "dbtext.json"
+    },
+    {
+      "dataset": "python",
+      "path": "archives/python.zip",
+      "bytes": 28680729,
+      "sha256": "cad50ff622cf8091e8d1a775171e64aab6ba9c22d85af75e894703f570db1aef",
+      "input_bytes": 99999986,
+      "files": 1,
+      "manifest": "python.json"
+    },
+    {
+      "dataset": "yelp",
+      "path": "archives/yelp.zip",
+      "bytes": 17112364,
+      "sha256": "6b72738e689b4570412c1be07738c8bc5ba80c52bc3e7ec53f1527105010c14f",
+      "input_bytes": 100000488,
+      "files": 1,
+      "manifest": "yelp.json"
+    },
+    {
+      "dataset": "openstack",
+      "path": "archives/openstack.zip",
+      "bytes": 5056218,
+      "sha256": "0a143fdd66aba63781b44db734f3696aeafb72b02177ada657189a09c53ea551",
+      "input_bytes": 61442082,
+      "files": 3,
+      "manifest": "openstack.json"
+    },
+    {
+      "dataset": "sqlstorm-tpcds",
+      "path": "archives/sqlstorm-tpcds.zip",
+      "bytes": 2406914,
+      "sha256": "37d5c29c2927aadb3608780ad3a869d085d8e94ef4062e8f78e82f0e4a2d6ede",
+      "input_bytes": 18444591,
+      "files": 1,
+      "manifest": "sqlstorm-tpcds.json"
+    }
+  ]
+}

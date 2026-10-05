@@ -1,0 +1,23 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "sqlstorm-tpcds",
+  "run": 2,
+  "original_bytes": 18444591,
+  "result_id": "r-1868b957853cb78554015f1f7b24191afed9e75975e8aab34af4c9b00e26d73f",
+  "build_id": "b-3617d9a320b8231a7ed9fa3905a9ff9c82075eb6dc4333897a3dd6dea6a500b8",
+  "package_bytes": 880138,
+  "compression_factor": 20.956476143513857,
+  "decompression_median_MB_s": 46.49125995343361,
+  "decompression_range_MB_s": [
+    45.8940997523174,
+    46.80520577189475
+  ],
+  "online_encoding_median_seconds": 10.298799098,
+  "source_sha256": {
+    "build-spec.json": "0c48e4a40d2722010d0057a87b926188e1107e9fba07e377710b9d1380904a24",
+    "source/codec.cpp": "be63fe6d9b91e5556891d7f849f612c02960f14c20fc268209014a6b84fc2c4b",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/stripelf.py": "f1106db25d7de4c902900e2024fa7c71b53d6d20fc8f3bafb0c1bf6dbee0acf8"
+  }
+}

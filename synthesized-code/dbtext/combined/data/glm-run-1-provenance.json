@@ -1,0 +1,59 @@
+{
+  "stage": 1,
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "original_bytes": 39841347,
+  "result_id": "r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309",
+  "package_bytes": 15428538,
+  "strict_package_bytes": 15428538,
+  "exempt_standard_library_bytes": 0,
+  "compression_factor": 2.582315122793877,
+  "decode_MB_s": 925.913267867622,
+  "bulk_range_MB_s": [
+    904.9632009973885,
+    935.874646648208
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 58.27531874140393,
+      "min": 57.63016585430461,
+      "max": 59.43713869121794
+    },
+    "3": {
+      "median": 46.137079539270566,
+      "min": 44.710266272401924,
+      "max": 46.67416723775639
+    },
+    "10": {
+      "median": 39.0852153280022,
+      "min": 38.860517019016115,
+      "max": 39.37189292529739
+    },
+    "30": {
+      "median": 33.74544292703062,
+      "min": 32.89781223344568,
+      "max": 33.811466434805304
+    },
+    "100": {
+      "median": 31.75371127140218,
+      "min": 31.628041207674805,
+      "max": 32.37246964974675
+    }
+  },
+  "target_met": false,
+  "source_sha256": {
+    "build-spec.json": "2af9bb74729c8899203d2c13b035332f7a0e9ab46e7b1e43b069421a38287a86",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/src/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/src/dec.cpp": "452943a66ec06b27e7fc6fe89db2c48ac65138f4ff7a13f3f63aba0d61c795a9",
+    "source/src/enc.cpp": "659224af27732343d4eaa3dc5fa026c35651e21a8e7c3688e5a65cca537aa326",
+    "source/src/fmt.h": "68b6f8d9f5bff1715108615d2a44c0ccd99ba3e673a3ea59cedf717b1935499c"
+  },
+  "exports_sha256": {
+    "b-18501588f42db0f1687b0834ebd2a9689ecf3a841ba296b826c58600ca6b85cc.zip": "9f0f468abd3f063a00675d5a1d1120cd12a6c78863cbdb7b2719e9af9c4239d7",
+    "r-b1a3eea3f6ee4aacd548a7d56b1dd66a56b9c277d83dc3bfde9268bb44725309.zip": "064cb4197d8c8bf721c2ce4fe326a9817fd284c6337f9147c0b0c14bc1d2af5a",
+    "v-e3611161120612e12b37807104443f8bd3a7ab136fb1b068ada9d76bdd0ac77c.zip": "dd19e956233d5f274a6b9806b223791d00aaf4f2e85d67091b67381b0b17cfcf"
+  },
+  "qualification_sha256": "5668942550cf8e006ac0d543f1c0605e305e86744607ef8dcce23ae3c6ee3086"
+}

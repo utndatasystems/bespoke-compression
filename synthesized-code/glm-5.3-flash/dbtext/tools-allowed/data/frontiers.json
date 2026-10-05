@@ -1,0 +1,40 @@
+{
+  "glm": [
+    {
+      "name": "OnPair+",
+      "arm": "baseline",
+      "ratio": 2.462001977444771,
+      "decode_GB_s": 4.361396834613083
+    },
+    {
+      "name": "Run 3",
+      "arm": "glm",
+      "ratio": 2.9771862879201985,
+      "decode_GB_s": 1.1791287592596138
+    },
+    {
+      "name": "Zstd-21",
+      "arm": "baseline",
+      "ratio": 3.419130849249404,
+      "decode_GB_s": 1.0655402792567905
+    },
+    {
+      "name": "Zstd-22",
+      "arm": "baseline",
+      "ratio": 3.419137891469042,
+      "decode_GB_s": 1.0615962681249977
+    },
+    {
+      "name": "Brotli-11",
+      "arm": "baseline",
+      "ratio": 3.491642382723475,
+      "decode_GB_s": 0.2918114456122725
+    },
+    {
+      "name": "bzip2-9",
+      "arm": "baseline",
+      "ratio": 3.531983270099909,
+      "decode_GB_s": 0.02306466930350025
+    }
+  ]
+}

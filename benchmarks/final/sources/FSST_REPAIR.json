@@ -1,0 +1,37 @@
+{
+  "original_revision": "4e188a2d3279983dd575434f533d57783c5afe0c",
+  "reason": "Negative sampleParam is the number of leading bytes to skip. The histogram loop subtracted the positive sampleSize, reading before the input. Match the existing subsequent sampling loop by subtracting sampleParam instead.",
+  "changed_source_files": [
+    "libfsst.cpp"
+  ],
+  "original_source_sha256": "e097e17862c161cf1d07eada3afe81c0adc2baa5b8eff4e4143352386b614640",
+  "fixed_source_sha256": "e364553aec4ff992c5bbb4df470794a750d54277b7488eaf248240ef2ddd3e8b",
+  "original_library_sha256": "cd66933448f8084898eb1ef2742fc06092eb70e9ccdaa68dd346feeefc3a133f",
+  "fixed_library_sha256": "4a6626ac66c3a43119ab601618ebe30dcfe47201d06491a61235b82c075c5813",
+  "regression": "Guarded original input: original library SIGSEGV; fixed library byte-exact reconstruction.",
+  "original_evidence_untouched": true,
+  "files": {
+    "sources/fsst/libfsst.hpp": "d848483dbe4ef4a0526e9d43554e9965f475d8345319e268a63ae4827cc55f77",
+    "sources/fsst/libfsst.a": "4a6626ac66c3a43119ab601618ebe30dcfe47201d06491a61235b82c075c5813",
+    "sources/fsst/libfsst.cpp": "e364553aec4ff992c5bbb4df470794a750d54277b7488eaf248240ef2ddd3e8b",
+    "sources/fsst/.fsst_avx512_unroll1.inc": "6550072d76ba9635a20436563ab003ca79769f170bbbeedc2517e91cf6006ea6",
+    "sources/fsst/LICENSE": "0e9fc7da34a895e837eb24f3951166a824098f7e0232db235019b897db573cfc",
+    "sources/fsst/.fsst_avx512_unroll4.inc": "02414d55cf2991dd087e1e21664e53fed6732e6a16f5703137ce7b0071b29ee0",
+    "sources/fsst/fsst_avx512.cpp": "bbbf01cc733298db6c9fa8d2fbab67ef888067fecf8c7188fd5427071e84cefa",
+    "sources/fsst/fsst_avx512.inc": "aaa25f71091b8cd84fd1dd0bb22139207f47442e3cca893c61f2f3e2db1fa605",
+    "sources/fsst/.fsst_avx512_unroll2.inc": "b7ad2940997140eb682ee1ffafd32036055ef20b1a4dfd1c088e7a66e395361c",
+    "sources/fsst/fsst_avx512.o": "2dd5635aa3342afcdcb135a0532242ca0d837101c64b40f2242a9ff1a2472246",
+    "sources/fsst/.fsst_avx512_unroll3.inc": "036fd3dfd954050bdefc13f55ea14cbe2dc5bb4e47824699f5f3c709eab7ca08",
+    "sources/fsst/fsst.h": "38d701049a0696004c97afd9c38ead8b203a3c6aeca16814ba6d6aa1e5842785",
+    "sources/fsst/Makefile": "1a3f9f378a45e24f5f607897a3f2152b83a9826ec83214bb0673bd73ec240184",
+    "sources/fsst/libfsst.o": "c27722da7ac900cbb8088c7112a4591dfb5a8ddbf21cdc3abdcda2c1612d6756",
+    "sources/fsst/paper/plots.R": "4236935f7e993f175e33547fcca07e630fba058615d3bdcf3bd33beb0d829fb2",
+    "sources/fsst/paper/filtertest.cpp": "88b9a452c9f31e1bea5cfc9240f2fccc981d17f2d85ad23e3205d3a9f5105879",
+    "sources/fsst/paper/Makefile": "ae12b1b6566152b83765c97ab8890e71b2f73cb542b148173573be749c25e881",
+    "sources/fsst/paper/PerfEvent.hpp": "aacefad07addad2dca75352fe76606ec193f6542faa085d052ef357b39db1a7a",
+    "sources/fsst/paper/linetest.cpp": "40a5b5a4c18131bb017cb61c08dc38bdf0d560fa11a027497c27576f6711f97a",
+    "sources/fsst/paper/results/perline.csv": "098163b3f4957dc805538e90353d2099b68977742358c6172e4a3947855d5c82",
+    "sources/fsst/paper/results/line.csv": "8c764b80e9ac3344bf2e77f515ebb02e474ccc1ee1ce4a5c978ba06601fdaa44",
+    "sources/fsst/paper/results/fullblock.csv": "f2c9bbc71486dc97b3a81085aea71217619eb0ff2256e75c32b5896045e6707a"
+  }
+}

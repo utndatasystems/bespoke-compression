@@ -1,0 +1,25 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "openstack",
+  "run": 3,
+  "original_bytes": 61442082,
+  "result_id": "r-28ac9072107bf5ff85e03a750f9fc67966676515c16add8d276360ee2d8da470",
+  "build_id": "b-77f8de8780c70f2b8231ac3f6828c6d6db446533be13a64ec51780dad79c6ecc",
+  "package_bytes": 3158304,
+  "compression_factor": 19.454138043709534,
+  "decompression_median_MB_s": 11708.731170238878,
+  "decompression_range_MB_s": [
+    10676.538770908599,
+    11949.007239172744
+  ],
+  "source_sha256": {
+    "source/alt_gen.py": "b56f230606256ab6886f1a0339fd295c25115992ac0efd786d241d35ddbdbf75",
+    "source/compact_decoder.cpp": "e88ed5253d04dbac78ce8090cf6ed54083250dea61d0083c7030732bfad0dc7f",
+    "source/compact_gen.py": "ff573713f93bcf974e37188a568109b060cd3d305cdd37ce4d0f7c258b60c735",
+    "source/compact_generated.h": "afbd1d56bdc6e7eaf5c5e6efa88e0125627bc679ade7024540257768173fa0eb",
+    "source/fast_fields.h": "b1c59a2db433fd4904be550981215329adc76c4b25aaf83207e8144c83b77390",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/template_encoder.cpp": "9c51cffd231d32eac671a68202c84c5ebce02fa57f5e2c98a6762ffd05e8293c"
+  }
+}

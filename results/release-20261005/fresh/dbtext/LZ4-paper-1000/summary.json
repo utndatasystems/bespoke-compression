@@ -1,0 +1,17 @@
+{
+  "method": "LZ4-paper-1000",
+  "package_bytes": 29903706,
+  "archive_bytes": 29903706,
+  "original_bytes": 39841347,
+  "bits_per_byte": 6.004557225437182,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 32992778,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 1.3323213851821576,
+  "median": 858.6645614003932,
+  "low": 846.7868024662173,
+  "high": 864.5125307983027,
+  "encode_MB_s": 260.4947491094735,
+  "exact_decodes": 184
+}

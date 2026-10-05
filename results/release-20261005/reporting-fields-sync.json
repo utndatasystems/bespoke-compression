@@ -1,0 +1,12 @@
+{
+  "file": "benchmarks/paper/run.py",
+  "before_sha256": "13a463379e0cbd0df4a0e1770e7bc3500ee9133baac1ecce2dc2d8c904521e5b",
+  "after_sha256": "95accacc1b1de3089de0605223fe00d3cef418644f0cf0f95fee2df515feb15a",
+  "changes": [
+    "CSV bits_per_byte = 8 * package_bytes / original_bytes",
+    "CSV roundtrip_failures = 0 for passed measurements"
+  ],
+  "timed_kernels_changed": false,
+  "structured_measurements_started": false,
+  "jobs_resubmitted": 0
+}

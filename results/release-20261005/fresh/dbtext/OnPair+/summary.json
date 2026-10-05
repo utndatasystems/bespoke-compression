@@ -1,0 +1,17 @@
+{
+  "method": "OnPair+",
+  "package_bytes": 16182500,
+  "archive_bytes": 16182500,
+  "original_bytes": 39841347,
+  "bits_per_byte": 3.249388129372232,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 19267476,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 2.462001977444771,
+  "median": 2403.8469300853535,
+  "low": 2357.4539742495913,
+  "high": 2420.9941588198685,
+  "encode_MB_s": 21.023595130807227,
+  "exact_decodes": 184
+}

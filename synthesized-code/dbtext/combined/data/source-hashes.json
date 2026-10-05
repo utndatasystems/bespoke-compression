@@ -1,0 +1,7 @@
+{
+  "output/bespoke-compression-synthesized-2026-09-26/synthesized-code/dbtext/astra/data/bulk-points.csv": "9d8a41eef50a03f0b3eb32bc8438ca1a6834892d3d5dbe675e3070fc70e8e9f1",
+  "experiments/dbtext-reference-ablation-2026-09-28/stage-01/QUALIFICATION.json": "c0af0180d4a59dcfe8758111a7d6776bf574a82c43b096e2cab8372c1cb097a3",
+  "experiments/dbtext-reference-ablation-2026-09-28/stage-02/QUALIFICATION.json": "03db1c0c319748b57ac34a5045b8ed435b4765fb1a9ec3b9a158227525a9a7c7",
+  "experiments/dbtext-reference-ablation-2026-09-28/stage-03/QUALIFICATION.json": "664a9456a83b499f0e5089041352848cfefd9fd77f540ed8fe0508680478dc47",
+  "experiments/dbtext-reference-ablation-2026-09-28/stage-04/QUALIFICATION.json": "0cd6e437c5ca51ee8aedbbc255caf910b0480f24ca21aab54a40e2448a9aef41"
+}

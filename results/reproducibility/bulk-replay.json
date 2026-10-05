@@ -1,0 +1,896 @@
+{
+  "dataset": "dbtext",
+  "cpu": 0,
+  "warmups": 1,
+  "measured_passes": 7,
+  "methods": [
+    {
+      "name": "lz4",
+      "result_id": "s-fbe13e3e895b59dbda2d59e8e3bcbf531530168f00489313cb4982051327fe43",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.009228532,
+          "median_seconds": 0.008062117,
+          "min_seconds": 0.007320984,
+          "relative_MAD": 0.03634578858133656,
+          "work_per_second": 4941797173.124627
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.008623384999999999,
+          "median_seconds": 0.008363975000000001,
+          "min_seconds": 0.007349331,
+          "relative_MAD": 0.03050846039114173,
+          "work_per_second": 4763446447.412863
+        },
+        "encode_seconds": {
+          "max_seconds": 0.064270949,
+          "median_seconds": 0.05146953,
+          "min_seconds": 0.047487052,
+          "relative_MAD": 0.018501742681543854,
+          "work_per_second": 774076371.010188
+        }
+      },
+      "accounting": {
+        "archive_bytes": 24606522,
+        "custom_decoder_bytes": 16496,
+        "excluded_standard_codec_bytes": 137440,
+        "nonplatform_dependency_bytes": 137440,
+        "package_bytes": 24623018,
+        "strict_deployment_bytes": 24760458
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "lz4hc9",
+      "result_id": "s-09572641f859ef1589c55c459127912e1ec579231a253638f2a9addf8ccb426b",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.009250244,
+          "median_seconds": 0.008338446,
+          "min_seconds": 0.007769619,
+          "relative_MAD": 0.06536733583212026,
+          "work_per_second": 4778030222.897648
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.009923139000000001,
+          "median_seconds": 0.008951437,
+          "min_seconds": 0.007682449,
+          "relative_MAD": 0.05965980657630733,
+          "work_per_second": 4450832531.134387
+        },
+        "encode_seconds": {
+          "max_seconds": 1.421810619,
+          "median_seconds": 1.2575197359999999,
+          "min_seconds": 1.213046474,
+          "relative_MAD": 0.031389520871901416,
+          "work_per_second": 31682482.47676011
+        }
+      },
+      "accounting": {
+        "archive_bytes": 17238273,
+        "custom_decoder_bytes": 16496,
+        "excluded_standard_codec_bytes": 137440,
+        "nonplatform_dependency_bytes": 137440,
+        "package_bytes": 17254769,
+        "strict_deployment_bytes": 17392209
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "lz4hc12",
+      "result_id": "s-a1628d07c1cbbec711ba6c27dd0f2442676aed7fabb457872cd75622c70bed55",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.008078655,
+          "median_seconds": 0.00787985,
+          "min_seconds": 0.007825036,
+          "relative_MAD": 0.005628406632106131,
+          "work_per_second": 5056104748.1868305
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.008154009,
+          "median_seconds": 0.007791315,
+          "min_seconds": 0.0077115809999999995,
+          "relative_MAD": 0.010233702526467044,
+          "work_per_second": 5113558750.993896
+        },
+        "encode_seconds": {
+          "max_seconds": 2.835797203,
+          "median_seconds": 2.092532678,
+          "min_seconds": 2.056759765,
+          "relative_MAD": 0.011176131797546103,
+          "work_per_second": 19039772.9119717
+        }
+      },
+      "accounting": {
+        "archive_bytes": 17051360,
+        "custom_decoder_bytes": 16496,
+        "excluded_standard_codec_bytes": 137440,
+        "nonplatform_dependency_bytes": 137440,
+        "package_bytes": 17067856,
+        "strict_deployment_bytes": 17205296
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd1",
+      "result_id": "s-2c962a16139c8378399637e482b7a33d3ae9eb9af9ebd765430bcdeb681f1ba1",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.021893649,
+          "median_seconds": 0.02066511,
+          "min_seconds": 0.018759124,
+          "relative_MAD": 0.04110890288026531,
+          "work_per_second": 1927952331.2481763
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.021911818,
+          "median_seconds": 0.020265593,
+          "min_seconds": 0.018172061,
+          "relative_MAD": 0.028958836783113003,
+          "work_per_second": 1965960088.1158526
+        },
+        "encode_seconds": {
+          "max_seconds": 0.102509483,
+          "median_seconds": 0.08312532,
+          "min_seconds": 0.072629238,
+          "relative_MAD": 0.12626816955411424,
+          "work_per_second": 479292554.90384877
+        }
+      },
+      "accounting": {
+        "archive_bytes": 15383446,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 15399982,
+        "strict_deployment_bytes": 16155846
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd3",
+      "result_id": "s-e5d44141c0c6863cbe96973b4f4de123e2e3eae9c449ff2e31620dd01540c3cf",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.022642388,
+          "median_seconds": 0.021406058,
+          "min_seconds": 0.020783784,
+          "relative_MAD": 0.02649628436959294,
+          "work_per_second": 1861218305.584335
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.022427091,
+          "median_seconds": 0.021520524,
+          "min_seconds": 0.020546331,
+          "relative_MAD": 0.015352786019522644,
+          "work_per_second": 1851318629.6021416
+        },
+        "encode_seconds": {
+          "max_seconds": 0.151699156,
+          "median_seconds": 0.148167346,
+          "min_seconds": 0.139331515,
+          "relative_MAD": 0.011761262160962377,
+          "work_per_second": 268894247.4544965
+        }
+      },
+      "accounting": {
+        "archive_bytes": 14391433,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 14407969,
+        "strict_deployment_bytes": 15163833
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd19",
+      "result_id": "s-89a3931b5f16fe65779659c73d2c93bdef21df873d916d8beca20e0c1b41353f",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.020940295,
+          "median_seconds": 0.020081237000000002,
+          "min_seconds": 0.019792128,
+          "relative_MAD": 0.01439697166066028,
+          "work_per_second": 1984008604.6492054
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.020108428,
+          "median_seconds": 0.019649189,
+          "min_seconds": 0.018989387,
+          "relative_MAD": 0.00716431604378177,
+          "work_per_second": 2027633150.6608236
+        },
+        "encode_seconds": {
+          "max_seconds": 10.930614777999999,
+          "median_seconds": 10.167078478,
+          "min_seconds": 9.306273188,
+          "relative_MAD": 0.03446246930798997,
+          "work_per_second": 3918662.2869303674
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11652481,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 11669017,
+        "strict_deployment_bytes": 12424881
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd20",
+      "result_id": "s-cde74913cf72618bcca8af904bf1593f3d27b1dc788c2e6ebd7f2394261b37b3",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.022252537,
+          "median_seconds": 0.020737025,
+          "min_seconds": 0.019796093,
+          "relative_MAD": 0.030848639088779717,
+          "work_per_second": 1921266285.7859313
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.021627772,
+          "median_seconds": 0.020108343,
+          "min_seconds": 0.019632687,
+          "relative_MAD": 0.023654659163114603,
+          "work_per_second": 1981334165.6246862
+        },
+        "encode_seconds": {
+          "max_seconds": 10.971579028,
+          "median_seconds": 10.083294910000001,
+          "min_seconds": 9.771773133,
+          "relative_MAD": 0.020929248413701473,
+          "work_per_second": 3951223.023387699
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11652481,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 11669017,
+        "strict_deployment_bytes": 12424881
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd21",
+      "result_id": "s-797bd9a62180791b71cc603eb83ef9a4e8d196fc5e74a69263e5b9f6614b3d37",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.024152754000000002,
+          "median_seconds": 0.02168006,
+          "min_seconds": 0.020131909,
+          "relative_MAD": 0.06493796603883942,
+          "work_per_second": 1837695421.5071359
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.025794143,
+          "median_seconds": 0.021163399,
+          "min_seconds": 0.019439614,
+          "relative_MAD": 0.08145123569233839,
+          "work_per_second": 1882558987.8072045
+        },
+        "encode_seconds": {
+          "max_seconds": 15.995632708,
+          "median_seconds": 10.590659736,
+          "min_seconds": 9.926898661,
+          "relative_MAD": 0.0626741951442108,
+          "work_per_second": 3761932.4945895895
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11652478,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 11669014,
+        "strict_deployment_bytes": 12424878
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zstd22",
+      "result_id": "s-74906bedc8f96b254e54549fdb32b1aa704793fcd1abb5ebb7d66c240f63e062",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.02238174,
+          "median_seconds": 0.020516337,
+          "min_seconds": 0.019874898000000002,
+          "relative_MAD": 0.027008378737393448,
+          "work_per_second": 1941932763.1438303
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.020970574,
+          "median_seconds": 0.019963372,
+          "min_seconds": 0.019273569,
+          "relative_MAD": 0.014339761839833555,
+          "work_per_second": 1995722315.8492463
+        },
+        "encode_seconds": {
+          "max_seconds": 10.172691584,
+          "median_seconds": 10.011868364,
+          "min_seconds": 9.880110673999999,
+          "relative_MAD": 0.010139541822685482,
+          "work_per_second": 3979411.7892379435
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11652454,
+        "custom_decoder_bytes": 16536,
+        "excluded_standard_codec_bytes": 755864,
+        "nonplatform_dependency_bytes": 755864,
+        "package_bytes": 11668990,
+        "strict_deployment_bytes": 12424854
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "brotli5",
+      "result_id": "s-1227681321d5b292035c71097adf5fb435185c4e93a5256aa1ec2b8735b6e743",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.088405272,
+          "median_seconds": 0.077325983,
+          "min_seconds": 0.07469285,
+          "relative_MAD": 0.024604407550822827,
+          "work_per_second": 515238804.01235896
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.085255256,
+          "median_seconds": 0.076169703,
+          "min_seconds": 0.0719392,
+          "relative_MAD": 0.0333703152288779,
+          "work_per_second": 523060290.7825438
+        },
+        "encode_seconds": {
+          "max_seconds": 1.049728902,
+          "median_seconds": 0.923986308,
+          "min_seconds": 0.893863762,
+          "relative_MAD": 0.005134064172734522,
+          "work_per_second": 43118979.8539742
+        }
+      },
+      "accounting": {
+        "archive_bytes": 13208824,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 193152,
+        "nonplatform_dependency_bytes": 193152,
+        "package_bytes": 13225400,
+        "strict_deployment_bytes": 13418552
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "brotli9",
+      "result_id": "s-0f542698d84c46263821d014b01b69aab7b5d43837a35b40f7e30921613f225f",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.092233429,
+          "median_seconds": 0.08119404399999999,
+          "min_seconds": 0.075829083,
+          "relative_MAD": 0.048884928061964705,
+          "work_per_second": 490692974.9674743
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.080910419,
+          "median_seconds": 0.072791189,
+          "min_seconds": 0.07034027,
+          "relative_MAD": 0.023115860904538734,
+          "work_per_second": 547337494.3772384
+        },
+        "encode_seconds": {
+          "max_seconds": 4.564267815,
+          "median_seconds": 3.036783813,
+          "min_seconds": 2.942559146,
+          "relative_MAD": 0.010865626278283837,
+          "work_per_second": 13119586.198215816
+        }
+      },
+      "accounting": {
+        "archive_bytes": 12630142,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 193152,
+        "nonplatform_dependency_bytes": 193152,
+        "package_bytes": 12646718,
+        "strict_deployment_bytes": 12839870
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "brotli11",
+      "result_id": "s-479743034d476cbeaffa405c2a204529c844e8f82db0644893f8aa1cc1b1c681",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.098379024,
+          "median_seconds": 0.092354198,
+          "min_seconds": 0.089056505,
+          "relative_MAD": 0.018054620538202313,
+          "work_per_second": 431397249.5327175
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.09429710399999999,
+          "median_seconds": 0.089037564,
+          "min_seconds": 0.08544244200000001,
+          "relative_MAD": 0.030266944410114394,
+          "work_per_second": 447466723.1461993
+        },
+        "encode_seconds": {
+          "max_seconds": 42.123063423000005,
+          "median_seconds": 38.352462944,
+          "min_seconds": 38.170355068,
+          "relative_MAD": 0.0043544049372747935,
+          "work_per_second": 1038821.0806219663
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11410489,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 193152,
+        "nonplatform_dependency_bytes": 193152,
+        "package_bytes": 11427065,
+        "strict_deployment_bytes": 11620217
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zlib1",
+      "result_id": "s-1ab4c26a73344cb3a2953f646b51661868138401a41bbb936d91282b555720e7",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.102949088,
+          "median_seconds": 0.094607424,
+          "min_seconds": 0.08398831699999999,
+          "relative_MAD": 0.05710762191347701,
+          "work_per_second": 421122839.15477926
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.102934735,
+          "median_seconds": 0.093403813,
+          "min_seconds": 0.086346609,
+          "relative_MAD": 0.059326721490481384,
+          "work_per_second": 426549470.7373456
+        },
+        "encode_seconds": {
+          "max_seconds": 0.341996325,
+          "median_seconds": 0.306806974,
+          "min_seconds": 0.279645857,
+          "relative_MAD": 0.05366602911705652,
+          "work_per_second": 129858022.71887079
+        }
+      },
+      "accounting": {
+        "archive_bytes": 16668592,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 113000,
+        "nonplatform_dependency_bytes": 113000,
+        "package_bytes": 16685168,
+        "strict_deployment_bytes": 16798168
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zlib6",
+      "result_id": "s-bbf8fc6c9b5b3921c0584a68cf95e47b7b7004f0ae2b7b7ad119cdee9527a304",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.109779522,
+          "median_seconds": 0.0922397,
+          "min_seconds": 0.086214576,
+          "relative_MAD": 0.060624004631411314,
+          "work_per_second": 431932746.96253353
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.111165941,
+          "median_seconds": 0.09118192,
+          "min_seconds": 0.085056615,
+          "relative_MAD": 0.03453330440947065,
+          "work_per_second": 436943497.13188756
+        },
+        "encode_seconds": {
+          "max_seconds": 1.336670004,
+          "median_seconds": 1.128002658,
+          "min_seconds": 1.062775427,
+          "relative_MAD": 0.043892869089320906,
+          "work_per_second": 35320259.85704725
+        }
+      },
+      "accounting": {
+        "archive_bytes": 14547690,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 113000,
+        "nonplatform_dependency_bytes": 113000,
+        "package_bytes": 14564266,
+        "strict_deployment_bytes": 14677266
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "zlib9",
+      "result_id": "s-2b3677c4d39504feb81e706af1b77c9b340fc927157562028957ef8a3ea4be1e",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.10902356,
+          "median_seconds": 0.101118445,
+          "min_seconds": 0.087954089,
+          "relative_MAD": 0.06594156980954365,
+          "work_per_second": 394006721.523457
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.10785207,
+          "median_seconds": 0.097906031,
+          "min_seconds": 0.087136117,
+          "relative_MAD": 0.0507793947851895,
+          "work_per_second": 406934553.398452
+        },
+        "encode_seconds": {
+          "max_seconds": 2.513120014,
+          "median_seconds": 2.362101889,
+          "min_seconds": 2.010210381,
+          "relative_MAD": 0.06376688054881782,
+          "work_per_second": 16866904.508029882
+        }
+      },
+      "accounting": {
+        "archive_bytes": 14386051,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 113000,
+        "nonplatform_dependency_bytes": 113000,
+        "package_bytes": 14402627,
+        "strict_deployment_bytes": 14515627
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "bzip2-1",
+      "result_id": "s-5a0e538eab282a2054cbb10ba2fc69717f84ff08b3ad19425c56c79a4456364d",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.7504788069999999,
+          "median_seconds": 0.749659274,
+          "min_seconds": 0.731569277,
+          "relative_MAD": 0.0010932073122061155,
+          "work_per_second": 53145940.27152661
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.749300417,
+          "median_seconds": 0.741095493,
+          "min_seconds": 0.73556741,
+          "relative_MAD": 0.006958703768557455,
+          "work_per_second": 53760071.9155905
+        },
+        "encode_seconds": {
+          "max_seconds": 1.783070934,
+          "median_seconds": 1.750205572,
+          "min_seconds": 1.725473608,
+          "relative_MAD": 0.008472646434929707,
+          "work_per_second": 22763809.941750087
+        }
+      },
+      "accounting": {
+        "archive_bytes": 12587110,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 78944,
+        "nonplatform_dependency_bytes": 78944,
+        "package_bytes": 12603686,
+        "strict_deployment_bytes": 12682630
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "bzip2-9",
+      "result_id": "s-8a4257747f1f4cab61fd343358b984f836af8f12afb89765fdd0817cfa08dd52",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.948288983,
+          "median_seconds": 0.9428212380000001,
+          "min_seconds": 0.930649666,
+          "relative_MAD": 0.005799344329152577,
+          "work_per_second": 42257583.29809707
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.940768933,
+          "median_seconds": 0.935057544,
+          "min_seconds": 0.9222352620000001,
+          "relative_MAD": 0.006063052521610386,
+          "work_per_second": 42608443.999677524
+        },
+        "encode_seconds": {
+          "max_seconds": 1.997471931,
+          "median_seconds": 1.980092908,
+          "min_seconds": 1.9510177069999999,
+          "relative_MAD": 0.007121304229225536,
+          "work_per_second": 20120948.284311514
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11280163,
+        "custom_decoder_bytes": 16576,
+        "excluded_standard_codec_bytes": 78944,
+        "nonplatform_dependency_bytes": 78944,
+        "package_bytes": 11296739,
+        "strict_deployment_bytes": 11375683
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "xz0",
+      "result_id": "s-012cab6178c59495e3233764262bfb505c0199908cecdce814b8736283739195",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.756027826,
+          "median_seconds": 0.592824741,
+          "min_seconds": 0.512495612,
+          "relative_MAD": 0.13550232209353757,
+          "work_per_second": 67205945.10410286
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.743093718,
+          "median_seconds": 0.587123581,
+          "min_seconds": 0.512401385,
+          "relative_MAD": 0.12726825904817468,
+          "work_per_second": 67858536.58294812
+        },
+        "encode_seconds": {
+          "max_seconds": 2.39220154,
+          "median_seconds": 1.874780776,
+          "min_seconds": 1.52584734,
+          "relative_MAD": 0.17518647897635573,
+          "work_per_second": 21251203.07933006
+        }
+      },
+      "accounting": {
+        "archive_bytes": 15017388,
+        "custom_decoder_bytes": 16584,
+        "excluded_standard_codec_bytes": 202904,
+        "nonplatform_dependency_bytes": 202904,
+        "package_bytes": 15033972,
+        "strict_deployment_bytes": 15236876
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "xz6",
+      "result_id": "s-4c35d3e0927ac0044329cd2eab38919ae07cdcfddb0dc9312040057cc51e32dc",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.41257541799999997,
+          "median_seconds": 0.40902163,
+          "min_seconds": 0.40719063099999997,
+          "relative_MAD": 0.0017747643321455158,
+          "work_per_second": 97406455.00825958
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.40952043,
+          "median_seconds": 0.405424831,
+          "min_seconds": 0.402161761,
+          "relative_MAD": 0.006317543485638073,
+          "work_per_second": 98270613.81940861
+        },
+        "encode_seconds": {
+          "max_seconds": 11.096837896,
+          "median_seconds": 10.921099978,
+          "min_seconds": 10.736117361,
+          "relative_MAD": 0.010806105359142663,
+          "work_per_second": 3648107.523991023
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11611576,
+        "custom_decoder_bytes": 16584,
+        "excluded_standard_codec_bytes": 202904,
+        "nonplatform_dependency_bytes": 202904,
+        "package_bytes": 11628160,
+        "strict_deployment_bytes": 11831064
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "xz9",
+      "result_id": "s-ba335f5e7dfbf4fa379b414d5900da34c471d73dcbca763220862e22fed0579b",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.469998916,
+          "median_seconds": 0.419414909,
+          "min_seconds": 0.412501661,
+          "relative_MAD": 0.016483076427786174,
+          "work_per_second": 94992681.81713589
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.461982175,
+          "median_seconds": 0.413608716,
+          "min_seconds": 0.409189373,
+          "relative_MAD": 0.010582366450904322,
+          "work_per_second": 96326178.48411106
+        },
+        "encode_seconds": {
+          "max_seconds": 14.744799584999999,
+          "median_seconds": 12.327201203,
+          "min_seconds": 11.567132238,
+          "relative_MAD": 0.057639058396084436,
+          "work_per_second": 3231986.429353002
+        }
+      },
+      "accounting": {
+        "archive_bytes": 11611576,
+        "custom_decoder_bytes": 16584,
+        "excluded_standard_codec_bytes": 202904,
+        "nonplatform_dependency_bytes": 202904,
+        "package_bytes": 11628160,
+        "strict_deployment_bytes": 11831064
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "raw-copy",
+      "result_id": "s-1f8f1439752fd12bbb80eec2c734a4ec66a40dd0d00f4745efad33c28d9bfe8a",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.001440322,
+          "median_seconds": 0.001267394,
+          "min_seconds": 0.001176075,
+          "relative_MAD": 0.01848517509156587,
+          "work_per_second": 31435644322.128716
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.001539889,
+          "median_seconds": 0.001434817,
+          "min_seconds": 0.001387774,
+          "relative_MAD": 0.011662114402045624,
+          "work_per_second": 27767545965.792156
+        },
+        "encode_seconds": {
+          "max_seconds": 0.002811404,
+          "median_seconds": 0.0022538610000000002,
+          "min_seconds": 0.00221849,
+          "relative_MAD": 0.015580818870374128,
+          "work_per_second": 17676931718.50438
+        }
+      },
+      "accounting": {
+        "archive_bytes": 39841531,
+        "custom_decoder_bytes": 16512,
+        "excluded_standard_codec_bytes": 0,
+        "nonplatform_dependency_bytes": 0,
+        "package_bytes": 39858043,
+        "strict_deployment_bytes": 39858043
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "fsst",
+      "result_id": "s-de81206a756237ae89b36071458bdd1cdd56abb23b282ea5e7824d15d8ba6e10",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.0072375980000000005,
+          "median_seconds": 0.006888457,
+          "min_seconds": 0.006607188,
+          "relative_MAD": 0.03507650552220909,
+          "work_per_second": 5783783944.648272
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.00787509,
+          "median_seconds": 0.006773022,
+          "min_seconds": 0.006240436,
+          "relative_MAD": 0.0305411675910694,
+          "work_per_second": 5882359011.974271
+        },
+        "encode_seconds": {
+          "max_seconds": 0.125472836,
+          "median_seconds": 0.120708609,
+          "min_seconds": 0.11382923,
+          "relative_MAD": 0.014918422264314229,
+          "work_per_second": 330062183.0544
+        }
+      },
+      "accounting": {
+        "archive_bytes": 24941267,
+        "custom_decoder_bytes": 16672,
+        "excluded_standard_codec_bytes": 55312,
+        "nonplatform_dependency_bytes": 55312,
+        "package_bytes": 24957939,
+        "strict_deployment_bytes": 25013251
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "onpairplus",
+      "result_id": "s-4c1785d28929af4befd97c4c50e48ab03966c8fc3c9a12809d18eac194df79d0",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.01663088,
+          "median_seconds": 0.014583392,
+          "min_seconds": 0.014147151,
+          "relative_MAD": 0.028230469289997916,
+          "work_per_second": 2731967089.686679
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.007042735,
+          "median_seconds": 0.0062930270000000005,
+          "min_seconds": 0.005410909,
+          "relative_MAD": 0.0826961333552199,
+          "work_per_second": 6331030678.876795
+        },
+        "encode_seconds": {
+          "max_seconds": 0.819917584,
+          "median_seconds": 0.778652242,
+          "min_seconds": 0.739378501,
+          "relative_MAD": 0.03503142934506574,
+          "work_per_second": 51167061.30282997
+        }
+      },
+      "accounting": {
+        "archive_bytes": 22197790,
+        "custom_decoder_bytes": 16784,
+        "excluded_standard_codec_bytes": 0,
+        "nonplatform_dependency_bytes": 0,
+        "package_bytes": 22214574,
+        "strict_deployment_bytes": 22214574
+      },
+      "quality_passed": true
+    },
+    {
+      "name": "dbtext-astra-from-scratch-01-maximum-decompression",
+      "result_id": "s-7352447bc4ec638502f3847a6bc13881b5bc6eb366b584c8a0ba55a864260131",
+      "original_bytes": 39841347,
+      "timing": {
+        "decode_seconds": {
+          "max_seconds": 0.004371016,
+          "median_seconds": 0.003871768,
+          "min_seconds": 0.003653488,
+          "relative_MAD": 0.04215567668310722,
+          "work_per_second": 10290220643.385658
+        },
+        "decode_warm_seconds": {
+          "max_seconds": 0.003860747,
+          "median_seconds": 0.003505424,
+          "min_seconds": 0.003442006,
+          "relative_MAD": 0.018091392082669595,
+          "work_per_second": 11365628523.111612
+        },
+        "encode_seconds": {
+          "max_seconds": 19.0626231,
+          "median_seconds": 18.260734305,
+          "min_seconds": 17.951876973,
+          "relative_MAD": 0.014805647762257316,
+          "work_per_second": 2181804.210857555
+        }
+      },
+      "accounting": {
+        "archive_bytes": 16041257,
+        "custom_decoder_bytes": 30840,
+        "excluded_standard_codec_bytes": 0,
+        "nonplatform_dependency_bytes": 0,
+        "package_bytes": 16072097,
+        "strict_deployment_bytes": 16072097
+      },
+      "quality_passed": true
+    }
+  ]
+}

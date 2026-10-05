@@ -1,0 +1,5 @@
+{
+  "dataset": "sqlstorm-tpcds",
+  "full": true,
+  "byte_exact": true
+}

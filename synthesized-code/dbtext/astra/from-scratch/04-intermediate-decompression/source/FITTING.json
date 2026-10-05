@@ -1,0 +1,305 @@
+{
+  "fitting_scope": "Sum of resident lab_encode calls with exhaustive dictionary size/method search; includes phrase training, optimal parsing, representation construction and selected-archive verification separately. Original inputs independently encoded.",
+  "fitting_seconds": 196.86509251594543,
+  "settings": {
+    "763287": {
+      "target": 8192,
+      "precise": true,
+      "archive_bytes": 276045
+    },
+    "133839": {
+      "target": 4096,
+      "precise": true,
+      "archive_bytes": 64729
+    },
+    "154265": {
+      "target": 2048,
+      "precise": true,
+      "archive_bytes": 63582
+    },
+    "2217251": {
+      "target": 16384,
+      "precise": true,
+      "archive_bytes": 870004
+    },
+    "321380": {
+      "target": 8192,
+      "precise": true,
+      "archive_bytes": 139941
+    },
+    "437523": {
+      "target": 16384,
+      "precise": true,
+      "archive_bytes": 242437
+    },
+    "279663": {
+      "target": 4096,
+      "precise": true,
+      "archive_bytes": 89179
+    },
+    "208425": {
+      "target": 8192,
+      "precise": true,
+      "archive_bytes": 62725
+    },
+    "2745949": {
+      "target": 8192,
+      "precise": true,
+      "archive_bytes": 573783
+    },
+    "2488607": {
+      "target": 16384,
+      "precise": true,
+      "archive_bytes": 1218298
+    },
+    "2123578": {
+      "target": 32768,
+      "precise": true,
+      "archive_bytes": 1033327
+    },
+    "2491298": {
+      "target": 16384,
+      "precise": false,
+      "archive_bytes": 408648
+    },
+    "138155": {
+      "target": 2048,
+      "precise": true,
+      "archive_bytes": 51836
+    },
+    "308194": {
+      "target": 16384,
+      "precise": true,
+      "archive_bytes": 173870
+    },
+    "1671154": {
+      "target": 16384,
+      "precise": false,
+      "archive_bytes": 628772
+    },
+    "2342244": {
+      "target": 32768,
+      "precise": true,
+      "archive_bytes": 1062458
+    },
+    "2862830": {
+      "target": 32768,
+      "precise": true,
+      "archive_bytes": 1000947
+    },
+    "1926988": {
+      "target": 32768,
+      "precise": false,
+      "archive_bytes": 931480
+    }
+  },
+  "columns": [
+    {
+      "name": "c_name",
+      "raw": 1900000,
+      "sz": 225048,
+      "enc": 0.0016322135925292969,
+      "sec": 0.0001597777009010315,
+      "mbps": 11891.52171601772,
+      "archive_sha256": "6d30c160fe66548d1ba0205abf657901d6f9e8db668f941d89adfd9f1a1e73c3"
+    },
+    {
+      "name": "chinese",
+      "raw": 763287,
+      "sz": 276045,
+      "enc": 6.149099349975586,
+      "sec": 0.0005694255232810974,
+      "mbps": 1340.4509787370432,
+      "archive_sha256": "cd0292d42a3efec34178c3d1dc9f2adb2ce993181cd5e866b0adb18ca5a74d73"
+    },
+    {
+      "name": "city",
+      "raw": 133839,
+      "sz": 64729,
+      "enc": 0.578606367111206,
+      "sec": 0.00013424456119537354,
+      "mbps": 996.9789376063936,
+      "archive_sha256": "4e77829ef652ec62808d1f975b2f666c70242a0b650b5af75ddda1257e1a5882"
+    },
+    {
+      "name": "credentials",
+      "raw": 154265,
+      "sz": 63582,
+      "enc": 0.6198227405548096,
+      "sec": 0.00013495981693267822,
+      "mbps": 1143.0439334172463,
+      "archive_sha256": "5db531e6b9805e6b49fd510a3489c361cd0dbd34f99174ea415f519da430f828"
+    },
+    {
+      "name": "email",
+      "raw": 2217251,
+      "sz": 870004,
+      "enc": 19.311984539031982,
+      "sec": 0.0015410110354423523,
+      "mbps": 1438.828761770373,
+      "archive_sha256": "3442955c623920754ef47c3dbc463438947242c6c62fbf61f13de3c289120c50"
+    },
+    {
+      "name": "faust",
+      "raw": 321380,
+      "sz": 139941,
+      "enc": 1.886350393295288,
+      "sec": 0.0003334134817123413,
+      "mbps": 963.9082329528492,
+      "archive_sha256": "40d94a3c6ce1f0ef952e47800ebcc9f82ab6b80afbb526fc4a42311cfd7eaa97"
+    },
+    {
+      "name": "firstname",
+      "raw": 437523,
+      "sz": 242437,
+      "enc": 2.2827796936035156,
+      "sec": 0.0005261152982711792,
+      "mbps": 831.6104881148781,
+      "archive_sha256": "efbd8b953c405e5a1b320127bb266712c67a3956e81e77aefda86edaa8f2759a"
+    },
+    {
+      "name": "genome",
+      "raw": 1000000,
+      "sz": 225048,
+      "enc": 0.00824427604675293,
+      "sec": 0.0001444295048713684,
+      "mbps": 6923.793035852463,
+      "archive_sha256": "0547d852b0ca619a3c10c3dff2aa1a7085352c5f488e37d58738104acdb4dec0"
+    },
+    {
+      "name": "hamlet",
+      "raw": 279663,
+      "sz": 89179,
+      "enc": 1.1839814186096191,
+      "sec": 0.0002517774701118469,
+      "mbps": 1110.7546671104667,
+      "archive_sha256": "ac0c6e07f08f2f34b59d8ae26de9a083f184227a4c37c178775ea2047c34c20c"
+    },
+    {
+      "name": "hex",
+      "raw": 893322,
+      "sz": 400048,
+      "enc": 0.005540132522583008,
+      "sec": 0.00031261146068573,
+      "mbps": 2857.611163840412,
+      "archive_sha256": "cf88d3ac4a4de18500a942d5fd582fd989ae2f0df6e7cc025d48d01763177f1a"
+    },
+    {
+      "name": "japanese",
+      "raw": 208425,
+      "sz": 62725,
+      "enc": 1.013763427734375,
+      "sec": 0.00018796324729919434,
+      "mbps": 1108.8603915649278,
+      "archive_sha256": "9f1249c38aa6e2cd5100ac36275066c5c9701e58e96a7033b71f360999e13dfd"
+    },
+    {
+      "name": "l_comment",
+      "raw": 2745949,
+      "sz": 573783,
+      "enc": 11.319138526916504,
+      "sec": 0.001280270516872406,
+      "mbps": 2144.819367322559,
+      "archive_sha256": "ca4f41914a6c7fc0b91b5c1f66ca73443c0fc587c2c1a9130eee24fa97fdd434"
+    },
+    {
+      "name": "lastname",
+      "raw": 2488607,
+      "sz": 1218298,
+      "enc": 23.220787286758423,
+      "sec": 0.0023301690816879272,
+      "mbps": 1067.99417242173,
+      "archive_sha256": "a6d8e4a13688d4d70d606e943b28dfc2bb4c7a1f52d341585b016feb4ce20d0d"
+    },
+    {
+      "name": "location",
+      "raw": 2713714,
+      "sz": 813036,
+      "enc": 0.0036056041717529297,
+      "sec": 0.0008319541811943054,
+      "mbps": 3261.855113348128,
+      "archive_sha256": "5ef80992c5f6d0f38bcc212b859f18545d41fc8941100fd537b0c6d8d4459b42"
+    },
+    {
+      "name": "movies",
+      "raw": 2123578,
+      "sz": 1033327,
+      "enc": 26.66294503211975,
+      "sec": 0.002011440694332123,
+      "mbps": 1055.7497449384712,
+      "archive_sha256": "ac048e338e18286a2fa93c430d1e35dfd82d6a0d6b33009d7ae2abe1a7a379c6"
+    },
+    {
+      "name": "ps_comment",
+      "raw": 2491298,
+      "sz": 408648,
+      "enc": 8.010838747024536,
+      "sec": 0.0008870139718055725,
+      "mbps": 2808.6344513027307,
+      "archive_sha256": "cd361ec62013dfe5bd303bc40808c03a4182dc14d04612c8d78882ae5a8a92ed"
+    },
+    {
+      "name": "street",
+      "raw": 138155,
+      "sz": 51836,
+      "enc": 0.5092201232910156,
+      "sec": 0.00010925531387329102,
+      "mbps": 1264.515153562466,
+      "archive_sha256": "b562d2cfb38f81eedd55c63fed28bbf3ffb9e266a024c55ba35eca7c505e8d18"
+    },
+    {
+      "name": "urls",
+      "raw": 6327875,
+      "sz": 939954,
+      "enc": 1.9710280895233154,
+      "sec": 0.004757687449455261,
+      "mbps": 1330.0316734182527,
+      "archive_sha256": "4e91e2e1c51a2df16cca259e27329d2ea9af989a66598f780e03153713900549"
+    },
+    {
+      "name": "urls2",
+      "raw": 1671154,
+      "sz": 628772,
+      "enc": 12.747726917266846,
+      "sec": 0.0013121068477630615,
+      "mbps": 1273.6417029215709,
+      "archive_sha256": "74783b1c38e9b42e235cb5030ab2303840cb3f85b3ae67feae32a62febed5719"
+    },
+    {
+      "name": "uuid",
+      "raw": 3700000,
+      "sz": 975048,
+      "enc": 0.012798070907592773,
+      "sec": 0.000393107533454895,
+      "mbps": 9412.182889200561,
+      "archive_sha256": "14fefaf0a1215c4dc2f6460f4edf4d6d470b9409ab1ae6b56102835068537676"
+    },
+    {
+      "name": "wiki",
+      "raw": 2342244,
+      "sz": 1062458,
+      "enc": 26.401851654052734,
+      "sec": 0.0020034238696098328,
+      "mbps": 1169.1205418532586,
+      "archive_sha256": "e3361c6fe3d263e12870f4ea8d11d4796bb254f2304b9235a47a0f2931cd436b"
+    },
+    {
+      "name": "wikipedia",
+      "raw": 2862830,
+      "sz": 1000947,
+      "enc": 32.07779502868652,
+      "sec": 0.0020813941955566406,
+      "mbps": 1375.438639211913,
+      "archive_sha256": "a9bd445af8a14a4678fb08c734f064e7dc720e8da49fe1f6f4bb61330c750f9d"
+    },
+    {
+      "name": "yago",
+      "raw": 1926988,
+      "sz": 931480,
+      "enc": 20.885552883148193,
+      "sec": 0.0017546489834785461,
+      "mbps": 1098.218514440305,
+      "archive_sha256": "10a56eddc8202b27e828f7deaa64a17ed05b8c8da1748bed96bd54aeef0a7294"
+    }
+  ]
+}

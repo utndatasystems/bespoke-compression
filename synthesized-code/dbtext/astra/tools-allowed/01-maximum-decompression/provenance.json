@@ -1,0 +1,28 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "tools-allowed",
+  "generation": "local ChatGPT subscription",
+  "stage": 1,
+  "objective": "Maximize decompression speed at the required compression factor.",
+  "result_id": "r-769349650dabdf37f260fcbfedcc83fe8fd640eacc47435aa0dbda23967a3174",
+  "build_id": "b-ab76809f8bdfef24ad3fa837a10b5c9a640a8a3a2038cd0885f4c18e41573883",
+  "build_export_sha256": "657b44a9db0d1b98223a124e2e9632af264a2b42671d5ee397e9e360d6cb14cc",
+  "source_manifest_sha256": "fd60ea3ae5c35bb183f1020679ac688450eb57fa3a1f27635d754e11a2afc3d0",
+  "file_sha256": {
+    "source/codec.cpp": "73defd1720af7f0220db19ecce02916594efa1b4824ce1aeb325efe52443fabe",
+    "source/fixed.h": "17e47928e8fb33975d5c555f63ef9a58400b2ceb63718cbbc7a62d2279192df4",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/location.h": "e1094c8cf1626f134ff68c9fbb7a5e84bd8e9b93ab97fbb6f0374438d4655c05",
+    "source/prefix.h": "a85fc84522c7e00e00da2fe3daf832d66761de78e987f47da4bea0e7687c69fe",
+    "source/text.h": "6703998771a4eee4bec162b92f97bb8097916d947af80800cee1daa0bde16734",
+    "source/text_simd_candidate.h": "bca0a91921333b5bd0c07679289d80d724d275504e57920b3ac0333ad95a8f45",
+    "build-spec.json": "a8625478ea8a63838f7ee2d80913516de414d664f9e803a9db0ecc53dec36e4c"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "b53cf64e92698a2bf9a194624fea23eebc7c91caba02628fcf1dad01892042b5",
+    "encoder.so": "b12e434562548bb6b5ef6325470bea6052873076796cb39132c9854d57d9ea44"
+  },
+  "source_modified": false
+}

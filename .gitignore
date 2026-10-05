@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+wheelhouse/
+# Scratch results stay local; the root results folder is published.
+results/
+!/results/
+/results/plots_paper/_build/
+work/
+workspaces/
+releases/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Fetched upstream sources and generated benchmark output.
+benchmarks/upstream/token/
+benchmarks/_build/
+benchmarks/_runs/
+*.so
+*.o
+*.a

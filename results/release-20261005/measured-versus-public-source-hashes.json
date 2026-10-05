@@ -1,0 +1,2853 @@
+{
+  "published_commit": "3743a9a042e371af37af76bd568a38760659147e",
+  "files_compared": 695,
+  "different": [
+    "benchmarks/README.md",
+    "benchmarks/SOURCE_MAP.json",
+    "benchmarks/dbtext/build.py",
+    "benchmarks/dbtext/run.py",
+    "benchmarks/final/resume_structured.py",
+    "benchmarks/final/rows.py",
+    "benchmarks/final/run.py",
+    "benchmarks/fsst-paper/run.py",
+    "benchmarks/upstream/fetch.py",
+    "compression-lab-isolated/README.md",
+    "compression-lab-isolated/runtime-lock.json",
+    "compression-lab-isolated/src/lab_interface/api.py",
+    "compression-lab-isolated/src/lab_interface/cli.py",
+    "compression-lab-isolated/src/lab_interface/dbtext.py",
+    "compression-lab-isolated/src/lab_interface/linux_sandbox.py",
+    "compression-lab-isolated/src/lab_interface/mcp_server.py",
+    "compression-lab-isolated/src/lab_interface/profiling.py",
+    "compression-lab-isolated/src/lab_interface/remote.py",
+    "compression-lab-isolated/src/lab_interface/remote_worker.py",
+    "compression-lab-isolated/src/lab_interface/validation.py",
+    "compression-lab-isolated/src/lab_interface/workflow.py",
+    "compression-lab-isolated/tests/test_interface.py",
+    "compression-lab-isolated/vendor/compression_lab/_sandbox.py",
+    "compression-lab-isolated/vendor/compression_lab/benchmark_run.py",
+    "compression-lab-isolated/vendor/compression_lab/candidate.py",
+    "compression-lab-isolated/vendor/compression_lab/runner.py",
+    "compression-lab-isolated/vendor/compression_lab/strings.py",
+    "datasets/ARCHIVES.json",
+    "datasets/fetch_dbtext.py",
+    "datasets/fetch_upstream.py",
+    "reproduce.py",
+    "synthesized-code/.gitignore",
+    "synthesized-code/README.md",
+    "synthesized-code/astra/openstack/from-scratch/README.md",
+    "synthesized-code/astra/python/from-scratch/README.md",
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/README.md",
+    "synthesized-code/astra/yelp/from-scratch/README.md",
+    "synthesized-code/build.py",
+    "synthesized-code/dbtext/astra/README.md",
+    "synthesized-code/dbtext/astra/no-reference-target/A1/README.md",
+    "synthesized-code/dbtext/astra/no-reference-target/A1/measurements.json",
+    "synthesized-code/dbtext/astra/no-reference-target/A1/provenance.json",
+    "synthesized-code/dbtext/astra/no-reference-target/A2/README.md",
+    "synthesized-code/dbtext/astra/no-reference-target/A2/measurements.json",
+    "synthesized-code/dbtext/astra/no-reference-target/A2/provenance.json",
+    "synthesized-code/dbtext/astra/no-reference-target/A3/README.md",
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/UPSTREAM_HASHES.json",
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/build.py",
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/run.py",
+    "synthesized-code/dbtext/astra/three-workloads/README.md",
+    "synthesized-code/dbtext/combined/README.md",
+    "synthesized-code/dbtext/luna/tools-allowed/L1/README.md",
+    "synthesized-code/dbtext/luna/tools-allowed/L1/measurements.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L1/provenance.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L2/README.md",
+    "synthesized-code/dbtext/luna/tools-allowed/L2/measurements.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L2/provenance.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L3/README.md",
+    "synthesized-code/dbtext/luna/tools-allowed/L3/measurements.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L3/provenance.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L4/README.md",
+    "synthesized-code/dbtext/luna/tools-allowed/L4/measurements.json",
+    "synthesized-code/dbtext/luna/tools-allowed/L4/provenance.json",
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/README.md",
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/README.md"
+  ],
+  "files": {
+    "benchmarks/README.md": {
+      "public_sha256": "9507e6e8c90a53a43932111efa52628d03f4fa6d6eb3b18b7858306fdafd573a",
+      "legacy_source_sha256": "d5a151aff004be03935a72c68d7e2dfe513749152513c90014477cb4f65ccc20"
+    },
+    "benchmarks/SOURCE_MAP.json": {
+      "public_sha256": "f3c1274fd7c06de6585d42361f979c5964e0f27bab539537e46abf4e5e008382",
+      "legacy_source_sha256": "f03cd72bac05d526f61520e30f7d9dcfba273c6c2a2027e9a38fda45fa482ff6"
+    },
+    "benchmarks/dbtext/README.md": {
+      "public_sha256": "25de496a5519deb33cd227645f7a6d5ad8024a83c1d8aa734a04f203b194a226",
+      "legacy_source_sha256": "25de496a5519deb33cd227645f7a6d5ad8024a83c1d8aa734a04f203b194a226"
+    },
+    "benchmarks/dbtext/benchmark.cpp": {
+      "public_sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0",
+      "legacy_source_sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0"
+    },
+    "benchmarks/dbtext/build.py": {
+      "public_sha256": "c314e95df3de9463e266015f5e9c986c714e3f94f00cddf9c5f192aecfe29339",
+      "legacy_source_sha256": "5828679ff221430b93b91b0c563b6b26efd0eced05855f52efc84db6dc67fe21"
+    },
+    "benchmarks/dbtext/codec.h": {
+      "public_sha256": "95ca377d103cfc75f115ba8bc1f6e5397ca0aa38508fb98b92985c9ae048883c",
+      "legacy_source_sha256": "95ca377d103cfc75f115ba8bc1f6e5397ca0aa38508fb98b92985c9ae048883c"
+    },
+    "benchmarks/dbtext/columns.json": {
+      "public_sha256": "691f9dafc976ee7f2aa570f208996b101dcbbfbbb7b09f45f0f38d179197f451",
+      "legacy_source_sha256": "691f9dafc976ee7f2aa570f208996b101dcbbfbbb7b09f45f0f38d179197f451"
+    },
+    "benchmarks/dbtext/onpair-base.cpp": {
+      "public_sha256": "bc4176958764914984cc82015c5e04ddc052b76b498814c84287e19cab9d28e8",
+      "legacy_source_sha256": "bc4176958764914984cc82015c5e04ddc052b76b498814c84287e19cab9d28e8"
+    },
+    "benchmarks/dbtext/onpair.cpp": {
+      "public_sha256": "f2a8ff96ae2401bd86c13b01e30537cb70494bebbfb4f19d774cfc65895897bb",
+      "legacy_source_sha256": "f2a8ff96ae2401bd86c13b01e30537cb70494bebbfb4f19d774cfc65895897bb"
+    },
+    "benchmarks/dbtext/reference.cpp": {
+      "public_sha256": "160cf6d5e2e66ad644b122dc403350c5349e2597978f7df769629003f4ce3127",
+      "legacy_source_sha256": "160cf6d5e2e66ad644b122dc403350c5349e2597978f7df769629003f4ce3127"
+    },
+    "benchmarks/dbtext/run.py": {
+      "public_sha256": "0a43f1af0e22a82c1aa5d31fd42c778c4e5359a8dda5c7cb4fd5d77b77483d99",
+      "legacy_source_sha256": "2c465328ceb4de8390457742547b504a86e6c912133a9b64d509a7a35cb7336a"
+    },
+    "benchmarks/final/build.py": {
+      "public_sha256": "d1510b0b874e243d7ae99e0fa6bfc7e0ff755b9e092252bc94cb032426c47505",
+      "legacy_source_sha256": "d1510b0b874e243d7ae99e0fa6bfc7e0ff755b9e092252bc94cb032426c47505"
+    },
+    "benchmarks/final/resume_structured.py": {
+      "public_sha256": "a8e4d9bb3c2d2a786637386257c086b0bb1171057b215d2bd26832251c900f17",
+      "legacy_source_sha256": "1a7050fa03f321871e3e6b4a0021f5d9b7ac212a730bc29c3f278f1c25d42046"
+    },
+    "benchmarks/final/rows.py": {
+      "public_sha256": "5241d6273f7c80e12bd16fecf50c81baccab3045d1abcbfaf875a1e6bb57b985",
+      "legacy_source_sha256": "b3cd66c9c127ac169bfd173f5a316c26340ebffd5a735d84ede1eb902ab098d0"
+    },
+    "benchmarks/final/run.py": {
+      "public_sha256": "0af587e792a74d045d7fa0bf889e9e314cb9178462ad655dff5367185468da54",
+      "legacy_source_sha256": "3e665d03d8c313b62e82d86c7c144676a6f2df75e060b51053ffdd1659325a1e"
+    },
+    "benchmarks/final/sources/FSST_REPAIR.json": {
+      "public_sha256": "9b9d2bb2038d790d8854848cc4b8eb5cfd25a6f7f47e8cecee122e5c34acc004",
+      "legacy_source_sha256": "9b9d2bb2038d790d8854848cc4b8eb5cfd25a6f7f47e8cecee122e5c34acc004"
+    },
+    "benchmarks/final/sources/FSST_REPAIR_BUILD.json": {
+      "public_sha256": "b27b5e2b912f1ec661ab2693140013f0d98b95913fbf158b192960b138939865",
+      "legacy_source_sha256": "b27b5e2b912f1ec661ab2693140013f0d98b95913fbf158b192960b138939865"
+    },
+    "benchmarks/final/sources/FSST_SAFETY_PATCH.diff": {
+      "public_sha256": "c40f50e8df5b9bd4edfda1d1b979f8ac6ec72304d84f79bbee0942af4b64bfb1",
+      "legacy_source_sha256": "c40f50e8df5b9bd4edfda1d1b979f8ac6ec72304d84f79bbee0942af4b64bfb1"
+    },
+    "benchmarks/final/sources/SOURCES.json": {
+      "public_sha256": "77d22aab13140a130df7894cc7c8183193c5bedb6d30dcfbe0d72a24aa91e07b",
+      "legacy_source_sha256": "77d22aab13140a130df7894cc7c8183193c5bedb6d30dcfbe0d72a24aa91e07b"
+    },
+    "benchmarks/final/sources/bulk-BUILD.json": {
+      "public_sha256": "ba900f5d73c831c3ba23f1c84134e6386f758b250d7f8a62bc3239bf2b2677bb",
+      "legacy_source_sha256": "ba900f5d73c831c3ba23f1c84134e6386f758b250d7f8a62bc3239bf2b2677bb"
+    },
+    "benchmarks/final/sources/bulk-measure.cpp": {
+      "public_sha256": "a126c1dd982adc0a0997fce03e7b75e9cebc59ad85561054fc0f77edfbd664c9",
+      "legacy_source_sha256": "a126c1dd982adc0a0997fce03e7b75e9cebc59ad85561054fc0f77edfbd664c9"
+    },
+    "benchmarks/final/sources/dbtext-BUILD.json": {
+      "public_sha256": "3472534fba62775b120a0e428e43bcf3c1674af03c91d206cbb9b7b5961ed765",
+      "legacy_source_sha256": "3472534fba62775b120a0e428e43bcf3c1674af03c91d206cbb9b7b5961ed765"
+    },
+    "benchmarks/final/sources/dbtext-PROTOCOL.json": {
+      "public_sha256": "a6ab9c2ffa40f673ee959f0ad39f553f9225f776fb1b7537aac189614de96871",
+      "legacy_source_sha256": "a6ab9c2ffa40f673ee959f0ad39f553f9225f776fb1b7537aac189614de96871"
+    },
+    "benchmarks/final/sources/dbtext-measure.cpp": {
+      "public_sha256": "392fb4f7b65cf05e30311e7775eae3b53603c34c8d07185d8e397d9a757c1916",
+      "legacy_source_sha256": "392fb4f7b65cf05e30311e7775eae3b53603c34c8d07185d8e397d9a757c1916"
+    },
+    "benchmarks/final/sources/filtertest-observed.cpp": {
+      "public_sha256": "1a808493289c5a0e805ce0fcc9b2e3fdb00ea7ba75da26c80da0c5c484578238",
+      "legacy_source_sha256": "1a808493289c5a0e805ce0fcc9b2e3fdb00ea7ba75da26c80da0c5c484578238"
+    },
+    "benchmarks/final/sources/fsst-guard-repro.cpp": {
+      "public_sha256": "5d542ec890a74c3979ee82fd6d5112738a0c2d2731aa36362308460d8bd65ea0",
+      "legacy_source_sha256": "5d542ec890a74c3979ee82fd6d5112738a0c2d2731aa36362308460d8bd65ea0"
+    },
+    "benchmarks/final/sources/fsst/.fsst_avx512_unroll1.inc": {
+      "public_sha256": "6550072d76ba9635a20436563ab003ca79769f170bbbeedc2517e91cf6006ea6",
+      "legacy_source_sha256": "6550072d76ba9635a20436563ab003ca79769f170bbbeedc2517e91cf6006ea6"
+    },
+    "benchmarks/final/sources/fsst/.fsst_avx512_unroll2.inc": {
+      "public_sha256": "b7ad2940997140eb682ee1ffafd32036055ef20b1a4dfd1c088e7a66e395361c",
+      "legacy_source_sha256": "b7ad2940997140eb682ee1ffafd32036055ef20b1a4dfd1c088e7a66e395361c"
+    },
+    "benchmarks/final/sources/fsst/.fsst_avx512_unroll3.inc": {
+      "public_sha256": "036fd3dfd954050bdefc13f55ea14cbe2dc5bb4e47824699f5f3c709eab7ca08",
+      "legacy_source_sha256": "036fd3dfd954050bdefc13f55ea14cbe2dc5bb4e47824699f5f3c709eab7ca08"
+    },
+    "benchmarks/final/sources/fsst/.fsst_avx512_unroll4.inc": {
+      "public_sha256": "02414d55cf2991dd087e1e21664e53fed6732e6a16f5703137ce7b0071b29ee0",
+      "legacy_source_sha256": "02414d55cf2991dd087e1e21664e53fed6732e6a16f5703137ce7b0071b29ee0"
+    },
+    "benchmarks/final/sources/fsst/LICENSE": {
+      "public_sha256": "0e9fc7da34a895e837eb24f3951166a824098f7e0232db235019b897db573cfc",
+      "legacy_source_sha256": "0e9fc7da34a895e837eb24f3951166a824098f7e0232db235019b897db573cfc"
+    },
+    "benchmarks/final/sources/fsst/Makefile": {
+      "public_sha256": "1a3f9f378a45e24f5f607897a3f2152b83a9826ec83214bb0673bd73ec240184",
+      "legacy_source_sha256": "1a3f9f378a45e24f5f607897a3f2152b83a9826ec83214bb0673bd73ec240184"
+    },
+    "benchmarks/final/sources/fsst/fsst.h": {
+      "public_sha256": "38d701049a0696004c97afd9c38ead8b203a3c6aeca16814ba6d6aa1e5842785",
+      "legacy_source_sha256": "38d701049a0696004c97afd9c38ead8b203a3c6aeca16814ba6d6aa1e5842785"
+    },
+    "benchmarks/final/sources/fsst/fsst_avx512.cpp": {
+      "public_sha256": "bbbf01cc733298db6c9fa8d2fbab67ef888067fecf8c7188fd5427071e84cefa",
+      "legacy_source_sha256": "bbbf01cc733298db6c9fa8d2fbab67ef888067fecf8c7188fd5427071e84cefa"
+    },
+    "benchmarks/final/sources/fsst/fsst_avx512.inc": {
+      "public_sha256": "aaa25f71091b8cd84fd1dd0bb22139207f47442e3cca893c61f2f3e2db1fa605",
+      "legacy_source_sha256": "aaa25f71091b8cd84fd1dd0bb22139207f47442e3cca893c61f2f3e2db1fa605"
+    },
+    "benchmarks/final/sources/fsst/libfsst.cpp": {
+      "public_sha256": "e364553aec4ff992c5bbb4df470794a750d54277b7488eaf248240ef2ddd3e8b",
+      "legacy_source_sha256": "e364553aec4ff992c5bbb4df470794a750d54277b7488eaf248240ef2ddd3e8b"
+    },
+    "benchmarks/final/sources/fsst/libfsst.hpp": {
+      "public_sha256": "d848483dbe4ef4a0526e9d43554e9965f475d8345319e268a63ae4827cc55f77",
+      "legacy_source_sha256": "d848483dbe4ef4a0526e9d43554e9965f475d8345319e268a63ae4827cc55f77"
+    },
+    "benchmarks/fsst-paper/README.md": {
+      "public_sha256": "c7c4dba1cf4e5b766ff096b552636a04043b02b09ad5ba50232be944206aadb9",
+      "legacy_source_sha256": "c7c4dba1cf4e5b766ff096b552636a04043b02b09ad5ba50232be944206aadb9"
+    },
+    "benchmarks/fsst-paper/run.py": {
+      "public_sha256": "d00731f13b062a704cd2d325c8d1af4cf263f05d24f07beba6702a0796a019a0",
+      "legacy_source_sha256": "f0411211baa080413ca042c0e3b6201c20b5349a8f5cc2488f3d56b978e68207"
+    },
+    "benchmarks/fsst-paper/wrapper.cpp": {
+      "public_sha256": "a820b48d2be319a0b04bf67f74a1fc0dd1a99840f50a99ba3b3a244389b994de",
+      "legacy_source_sha256": "a820b48d2be319a0b04bf67f74a1fc0dd1a99840f50a99ba3b3a244389b994de"
+    },
+    "benchmarks/paper/SOURCE.json": {
+      "public_sha256": "ed1049a230097c1132beeb52940323741a13426674a1f9700785075fd1ca29cd",
+      "legacy_source_sha256": "ed1049a230097c1132beeb52940323741a13426674a1f9700785075fd1ca29cd"
+    },
+    "benchmarks/paper/build.py": {
+      "public_sha256": "a39c553da0e6f662835833c24a8e061ec18593bb8d31d33d7db25243d7ba3255",
+      "legacy_source_sha256": "a39c553da0e6f662835833c24a8e061ec18593bb8d31d33d7db25243d7ba3255"
+    },
+    "benchmarks/paper/bulk-reference.cpp": {
+      "public_sha256": "89a87a6d4de486458fcc72ced1f9b1410d3260f9aabe038ac1e9299103505639",
+      "legacy_source_sha256": "89a87a6d4de486458fcc72ced1f9b1410d3260f9aabe038ac1e9299103505639"
+    },
+    "benchmarks/paper/extra_baseline.cpp": {
+      "public_sha256": "edb102ded36e7e542df97212d703837c1cebf6b92d9fc7e5210d8fa8e8579017",
+      "legacy_source_sha256": "edb102ded36e7e542df97212d703837c1cebf6b92d9fc7e5210d8fa8e8579017"
+    },
+    "benchmarks/paper/run.py": {
+      "public_sha256": "95accacc1b1de3089de0605223fe00d3cef418644f0cf0f95fee2df515feb15a",
+      "legacy_source_sha256": "95accacc1b1de3089de0605223fe00d3cef418644f0cf0f95fee2df515feb15a"
+    },
+    "benchmarks/upstream/README.md": {
+      "public_sha256": "bce80b391e58713d196a5b317cb34ad5f69ffcddc8ac1df3d38e0e50e5c74e10",
+      "legacy_source_sha256": "bce80b391e58713d196a5b317cb34ad5f69ffcddc8ac1df3d38e0e50e5c74e10"
+    },
+    "benchmarks/upstream/fetch.py": {
+      "public_sha256": "df4167eda2b624dd6db0e5447b3eb5c6f28d4cb939b4f7648add3246f5f4dac2",
+      "legacy_source_sha256": "a1d3a964075b5361c2d10682e85a5a5f70c4e5b76fffee975fbdd2a83510fe99"
+    },
+    "benchmarks/upstream/fsst/CMakeLists.txt": {
+      "public_sha256": "7cc705fc96e6a69384b5eb56442f61d7ce3ffd26377523a77bf13c252d6ddce5",
+      "legacy_source_sha256": "7cc705fc96e6a69384b5eb56442f61d7ce3ffd26377523a77bf13c252d6ddce5"
+    },
+    "benchmarks/upstream/fsst/LICENSE": {
+      "public_sha256": "20e9c14ff437a73a6e2b105f1b5aaf9ef24a84d962741c0ab01d04b4910294ab",
+      "legacy_source_sha256": "20e9c14ff437a73a6e2b105f1b5aaf9ef24a84d962741c0ab01d04b4910294ab"
+    },
+    "benchmarks/upstream/fsst/fsst.cpp": {
+      "public_sha256": "d3d520cc5291d2b6219f1efe94d1c6e0cb0c234332a601d7d180920369b03697",
+      "legacy_source_sha256": "d3d520cc5291d2b6219f1efe94d1c6e0cb0c234332a601d7d180920369b03697"
+    },
+    "benchmarks/upstream/fsst/fsst.h": {
+      "public_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+      "legacy_source_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881"
+    },
+    "benchmarks/upstream/fsst/fsst12.h": {
+      "public_sha256": "79cbd05e391d54452e74bdcf1d6d37f0af8eb8e5c443d6b9003f8f3babb0518e",
+      "legacy_source_sha256": "79cbd05e391d54452e74bdcf1d6d37f0af8eb8e5c443d6b9003f8f3babb0518e"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512.cpp": {
+      "public_sha256": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9",
+      "legacy_source_sha256": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512.inc": {
+      "public_sha256": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477",
+      "legacy_source_sha256": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512_unroll1.inc": {
+      "public_sha256": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729",
+      "legacy_source_sha256": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512_unroll2.inc": {
+      "public_sha256": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36",
+      "legacy_source_sha256": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512_unroll3.inc": {
+      "public_sha256": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27",
+      "legacy_source_sha256": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27"
+    },
+    "benchmarks/upstream/fsst/fsst_avx512_unroll4.inc": {
+      "public_sha256": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2",
+      "legacy_source_sha256": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2"
+    },
+    "benchmarks/upstream/fsst/libfsst.cpp": {
+      "public_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+      "legacy_source_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d"
+    },
+    "benchmarks/upstream/fsst/libfsst.hpp": {
+      "public_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+      "legacy_source_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8"
+    },
+    "benchmarks/upstream/fsst/libfsst12.cpp": {
+      "public_sha256": "56b44984eb8d9b6599c6d0a344733d89632dd18748a7b905609f496f0de84792",
+      "legacy_source_sha256": "56b44984eb8d9b6599c6d0a344733d89632dd18748a7b905609f496f0de84792"
+    },
+    "benchmarks/upstream/fsst/libfsst12.hpp": {
+      "public_sha256": "50d67f29cb51c9f7fe7d9cf12a8c264e5382a9698f5d1de431fa509c9d1340a9",
+      "legacy_source_sha256": "50d67f29cb51c9f7fe7d9cf12a8c264e5382a9698f5d1de431fa509c9d1340a9"
+    },
+    "benchmarks/upstream/fsst/paper/PerfEvent.hpp": {
+      "public_sha256": "aacefad07addad2dca75352fe76606ec193f6542faa085d052ef357b39db1a7a",
+      "legacy_source_sha256": "aacefad07addad2dca75352fe76606ec193f6542faa085d052ef357b39db1a7a"
+    },
+    "benchmarks/upstream/fsst/paper/filtertest.cpp": {
+      "public_sha256": "5ea56bce7ecd9a7bc00c89bfe1e3b40085f63333660e7afb83aa3b9316a59e25",
+      "legacy_source_sha256": "5ea56bce7ecd9a7bc00c89bfe1e3b40085f63333660e7afb83aa3b9316a59e25"
+    },
+    "benchmarks/upstream/onpair-lock.json": {
+      "public_sha256": "3893132af4aae9a279ece7d3c5af82d679990f70219d0663337826f823819b5e",
+      "legacy_source_sha256": "3893132af4aae9a279ece7d3c5af82d679990f70219d0663337826f823819b5e"
+    },
+    "compression-lab-isolated/LICENSE": {
+      "public_sha256": "39d2e4576bac7918d0246cd334c469c3e43c0a20351346144f06105a095867c0",
+      "legacy_source_sha256": "39d2e4576bac7918d0246cd334c469c3e43c0a20351346144f06105a095867c0"
+    },
+    "compression-lab-isolated/README.md": {
+      "public_sha256": "c9dec1ed242e6c322344035bf694d29894e61c758332f85ed59abed9e5ea68a2",
+      "legacy_source_sha256": "c1f875dc7ff8eca585b87bf1617dc451a3f432e58cf0f26b04edc9e99583ab28"
+    },
+    "compression-lab-isolated/SOURCE.json": {
+      "public_sha256": "0090727bd40acf769d1e2f014440635baf53e6a68c718ceae90a1a2ad935587c",
+      "legacy_source_sha256": "0090727bd40acf769d1e2f014440635baf53e6a68c718ceae90a1a2ad935587c"
+    },
+    "compression-lab-isolated/include/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "compression-lab-isolated/include/dbtext_rows.cpp": {
+      "public_sha256": "9454d404090af4f6c8319738183098a7e637555242851ee1cd01033693d9215d",
+      "legacy_source_sha256": "9454d404090af4f6c8319738183098a7e637555242851ee1cd01033693d9215d"
+    },
+    "compression-lab-isolated/include/validate.cpp": {
+      "public_sha256": "c49a77e2928c080d1ec79fdbec8b9ba97953a61347ba0281b3bb652d28e95d29",
+      "legacy_source_sha256": "c49a77e2928c080d1ec79fdbec8b9ba97953a61347ba0281b3bb652d28e95d29"
+    },
+    "compression-lab-isolated/lab": {
+      "public_sha256": "6682edcf3d42f6a968b057aef6b8ba7c0ae7215e0ac212832bfa8fc1ef298c02",
+      "legacy_source_sha256": "6682edcf3d42f6a968b057aef6b8ba7c0ae7215e0ac212832bfa8fc1ef298c02"
+    },
+    "compression-lab-isolated/pyproject.toml": {
+      "public_sha256": "d7be6ea4a52db0fc154607d85a8817941fc3ff234ec284781bd0751b6657ebbf",
+      "legacy_source_sha256": "d7be6ea4a52db0fc154607d85a8817941fc3ff234ec284781bd0751b6657ebbf"
+    },
+    "compression-lab-isolated/remote-entry.py": {
+      "public_sha256": "a1dd17363a7ec341caf7227f6b0b026f44aafcbdf2ba3f6a7f4ab64a7695b676",
+      "legacy_source_sha256": "a1dd17363a7ec341caf7227f6b0b026f44aafcbdf2ba3f6a7f4ab64a7695b676"
+    },
+    "compression-lab-isolated/requirements-mcp.lock": {
+      "public_sha256": "0af4e7147909130c128374b0ab8e4e5516fd103cf7cefe78b82a3a6b8046f6e3",
+      "legacy_source_sha256": "0af4e7147909130c128374b0ab8e4e5516fd103cf7cefe78b82a3a6b8046f6e3"
+    },
+    "compression-lab-isolated/runtime-lock.json": {
+      "public_sha256": "a6a7028adf3252938f2fa679a1c2695a629b2bc3f88b81b432e8c765611eb697",
+      "legacy_source_sha256": "2a7fd94469ee2a0b5cda6395aaf07227212ea2b7090782e1030a2708dafbc970"
+    },
+    "compression-lab-isolated/server-shell-entry.py": {
+      "public_sha256": "40565fc0971820829e48e23c343ae76fe595ae73d28377367f911c87f4af24de",
+      "legacy_source_sha256": "40565fc0971820829e48e23c343ae76fe595ae73d28377367f911c87f4af24de"
+    },
+    "compression-lab-isolated/src/lab_interface/__init__.py": {
+      "public_sha256": "71101b2d3e62cff281f1b3262f0296d4b646a7349614d4aa9d7461a63b66d7e5",
+      "legacy_source_sha256": "71101b2d3e62cff281f1b3262f0296d4b646a7349614d4aa9d7461a63b66d7e5"
+    },
+    "compression-lab-isolated/src/lab_interface/api.py": {
+      "public_sha256": "161a34c4091a1e02b7c7f1e8c251ef20df35dd0d8a3e98ad59a49bce907c448a",
+      "legacy_source_sha256": "128dcc68237b5023625285edb92fb0016414c755b6bdffbcb5c3d610c170eeb5"
+    },
+    "compression-lab-isolated/src/lab_interface/cli.py": {
+      "public_sha256": "a81bf075df8d5eba8b51c081eed3470001660c9703e214cad51043697ef71636",
+      "legacy_source_sha256": "318bf812348a14358d64b3f30b01490c35b9b83f40f7289dc55c7838290bd773"
+    },
+    "compression-lab-isolated/src/lab_interface/dbtext.py": {
+      "public_sha256": "766bef77799b24534e052e2d2c3279c02f82294180e2ade7db7de78a74e8a83f",
+      "legacy_source_sha256": "05d952883044e4bfd28ed57015c920b64790037eeba2a9e47418d0b8f2e84d52"
+    },
+    "compression-lab-isolated/src/lab_interface/diagnostics.py": {
+      "public_sha256": "d02b917d6bfe4d3154efc71c71c17ba2fb60931ff72393dc517ddad65e4f9413",
+      "legacy_source_sha256": "d02b917d6bfe4d3154efc71c71c17ba2fb60931ff72393dc517ddad65e4f9413"
+    },
+    "compression-lab-isolated/src/lab_interface/linux_sandbox.py": {
+      "public_sha256": "f12abea3a1193b9007cec5accd99e301e7ac8aa8d107ffe3d686fe411355ea54",
+      "legacy_source_sha256": "1aefedabd1118a9ddf27a685ea158139a23501a66c21ed5afae31a3d49595281"
+    },
+    "compression-lab-isolated/src/lab_interface/mcp_server.py": {
+      "public_sha256": "df1a854e29b9823b91fd42e96d612ea0f6038d8274fb8d49090c36d36c47b157",
+      "legacy_source_sha256": "7fd733f0e01028fa6bc03c7c4f0c59f0332d6723fdeaea8034dffd517942346a"
+    },
+    "compression-lab-isolated/src/lab_interface/profiling.py": {
+      "public_sha256": "30b276339f87fc006d90cc0db6df6202f9dfa11d82f6254d22d95a8389bf28db",
+      "legacy_source_sha256": "2998500962d7ca74299f43099fbd46171e66ee5d8156863d416978735d5f7b64"
+    },
+    "compression-lab-isolated/src/lab_interface/remote.py": {
+      "public_sha256": "40ddaeabc26eba2a8c2ca7bf8f52cc1ffabab744fc16de198bef54e67b05a012",
+      "legacy_source_sha256": "bf894b6336848c8fa01e49af3d372174cb70265214c4eb8533c939a400b51c57"
+    },
+    "compression-lab-isolated/src/lab_interface/remote_worker.py": {
+      "public_sha256": "3f114e507c5fd30dd97317a167f478069446dd12751d0e9c909c3ddc75f24933",
+      "legacy_source_sha256": "3cb598634154ed502088549f9b169f8193576e5224ce81d201af7aa3bb624f89"
+    },
+    "compression-lab-isolated/src/lab_interface/scoring.py": {
+      "public_sha256": "a6a3500399e4005d6be6921d0866db1ec6db19e4e3d223f2d415b6067e285732",
+      "legacy_source_sha256": "a6a3500399e4005d6be6921d0866db1ec6db19e4e3d223f2d415b6067e285732"
+    },
+    "compression-lab-isolated/src/lab_interface/server_shell.py": {
+      "public_sha256": "ecef1a40acfe525954de243ff8eca18942d54c4691652363b629679b56babaca",
+      "legacy_source_sha256": "ecef1a40acfe525954de243ff8eca18942d54c4691652363b629679b56babaca"
+    },
+    "compression-lab-isolated/src/lab_interface/validation.py": {
+      "public_sha256": "816928a29a4856ced1e10857020929ab6f2dbcdd9d20061aa23482d164f66364",
+      "legacy_source_sha256": "8d77fa44f5a51d1d46cec907d2442eedb4568c3d219b636283149a71a82b9782"
+    },
+    "compression-lab-isolated/src/lab_interface/worker.py": {
+      "public_sha256": "29689210d0afba94e72ac557c69a48f8420025335b7954818fbc7a7111a538a8",
+      "legacy_source_sha256": "29689210d0afba94e72ac557c69a48f8420025335b7954818fbc7a7111a538a8"
+    },
+    "compression-lab-isolated/src/lab_interface/workflow.py": {
+      "public_sha256": "45afa35506159c3ad963d4b5be92707861d636d0df8035c545645088d98c7b53",
+      "legacy_source_sha256": "1a01b791c9ede064481e27200e51d585b0316b8d205ac2ea797a1f4ba70787ed"
+    },
+    "compression-lab-isolated/tests/test_dbtext.py": {
+      "public_sha256": "d417b6ee22cda78c357fbdbbeca7dde83ee73af25b72605a1807a58a52083786",
+      "legacy_source_sha256": "d417b6ee22cda78c357fbdbbeca7dde83ee73af25b72605a1807a58a52083786"
+    },
+    "compression-lab-isolated/tests/test_interface.py": {
+      "public_sha256": "c3854630eef28a034cf9b093cbe37155ec53e420c6f24b3ff8c11b359854e40c",
+      "legacy_source_sha256": "4160560d27ca7f0371e46185adac2674c741c4a24e8fa1025b07313a48f729e8"
+    },
+    "compression-lab-isolated/tests/test_mcp.py": {
+      "public_sha256": "e122b8787d17007fd8c4f20479cfe5983d817f1e4121108a506425d03b9150a1",
+      "legacy_source_sha256": "e122b8787d17007fd8c4f20479cfe5983d817f1e4121108a506425d03b9150a1"
+    },
+    "compression-lab-isolated/tests/test_profiling.py": {
+      "public_sha256": "e8ecd6d5a54e57f899b05f45bb8b3c02d9ed785ebd414cbacf36f7c6ece7cec8",
+      "legacy_source_sha256": "e8ecd6d5a54e57f899b05f45bb8b3c02d9ed785ebd414cbacf36f7c6ece7cec8"
+    },
+    "compression-lab-isolated/tests/test_sanitizer.py": {
+      "public_sha256": "48b67339d9bc0d6aa4118a284c7fe43892a5a68272d472c2206cb521ecefeac5",
+      "legacy_source_sha256": "48b67339d9bc0d6aa4118a284c7fe43892a5a68272d472c2206cb521ecefeac5"
+    },
+    "compression-lab-isolated/tests/test_validation.py": {
+      "public_sha256": "1add4b5113f33fc6089919923fbab3ee0c3280c761d436864a35bae5b5a6f603",
+      "legacy_source_sha256": "1add4b5113f33fc6089919923fbab3ee0c3280c761d436864a35bae5b5a6f603"
+    },
+    "compression-lab-isolated/tests/test_workflow.py": {
+      "public_sha256": "547b1842abbfde001d4e7d499b80920fc35f25bdf3717f345412cd41d7f6729a",
+      "legacy_source_sha256": "547b1842abbfde001d4e7d499b80920fc35f25bdf3717f345412cd41d7f6729a"
+    },
+    "compression-lab-isolated/uv.lock": {
+      "public_sha256": "3a3e9d62c724330377a0feac15c86402d40b0856f151e3fd1ab5b82b1ab210c2",
+      "legacy_source_sha256": "3a3e9d62c724330377a0feac15c86402d40b0856f151e3fd1ab5b82b1ab210c2"
+    },
+    "compression-lab-isolated/vendor/compression_lab/__init__.py": {
+      "public_sha256": "54ae52f5a2a0184b461b9a6897c152da4bb5de9eee61d83321c460aabf79e0c5",
+      "legacy_source_sha256": "54ae52f5a2a0184b461b9a6897c152da4bb5de9eee61d83321c460aabf79e0c5"
+    },
+    "compression-lab-isolated/vendor/compression_lab/_launch.py": {
+      "public_sha256": "ed5551c8546c0c047fd5ca413a0382c6e40f270bdfd768051e5ee20a09cd7bfe",
+      "legacy_source_sha256": "ed5551c8546c0c047fd5ca413a0382c6e40f270bdfd768051e5ee20a09cd7bfe"
+    },
+    "compression-lab-isolated/vendor/compression_lab/_sandbox.py": {
+      "public_sha256": "ead593536f4091fd911d88950411f39ebb7f3ce01b4011ce31a87ea3a9dca9b3",
+      "legacy_source_sha256": "c89b7a2661d702bc857b94205b84197cc88c974fbc7c9a4e272b312c50bd4935"
+    },
+    "compression-lab-isolated/vendor/compression_lab/benchmark_run.py": {
+      "public_sha256": "4b26fd3865fb9ef977ea4271610c20149ec63f6baa679513690501f3d1065fe0",
+      "legacy_source_sha256": "cfe69f1364c2a8739962488e963ab2e908953805412587df8696ead6fccfcc79"
+    },
+    "compression-lab-isolated/vendor/compression_lab/candidate.py": {
+      "public_sha256": "1ee37b849e66a5150a24907db353524d709a35a867e37a222be26de8cfd7c0d3",
+      "legacy_source_sha256": "ec88954f464a4c19a428e55a1427172aaa424a430f11e0076dde5f2d6de0a4fb"
+    },
+    "compression-lab-isolated/vendor/compression_lab/data/LICENSE": {
+      "public_sha256": "39d2e4576bac7918d0246cd334c469c3e43c0a20351346144f06105a095867c0",
+      "legacy_source_sha256": "39d2e4576bac7918d0246cd334c469c3e43c0a20351346144f06105a095867c0"
+    },
+    "compression-lab-isolated/vendor/compression_lab/data/strings/codec.h": {
+      "public_sha256": "4c044be13dcac5991080a8b1f12e0dcf0906c5a749e1ef88bf43e29dab2c44e3",
+      "legacy_source_sha256": "4c044be13dcac5991080a8b1f12e0dcf0906c5a749e1ef88bf43e29dab2c44e3"
+    },
+    "compression-lab-isolated/vendor/compression_lab/data/strings/driver.cpp": {
+      "public_sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0",
+      "legacy_source_sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0"
+    },
+    "compression-lab-isolated/vendor/compression_lab/data/strings/onpair.cpp": {
+      "public_sha256": "5744ad32d75829020ede46cf847c57bcd7f28724b6f9a06cec124a60f6ab5d29",
+      "legacy_source_sha256": "5744ad32d75829020ede46cf847c57bcd7f28724b6f9a06cec124a60f6ab5d29"
+    },
+    "compression-lab-isolated/vendor/compression_lab/data/strings/reference.cpp": {
+      "public_sha256": "55b08502bc97ec442adc0051a5e145d1d68e1decc5202f5c767b949ab6493d62",
+      "legacy_source_sha256": "55b08502bc97ec442adc0051a5e145d1d68e1decc5202f5c767b949ab6493d62"
+    },
+    "compression-lab-isolated/vendor/compression_lab/native_workloads.py": {
+      "public_sha256": "879ab9101b8d2fea5ee4117da019a890aa2bd290eb31f4c0459e63d8fb0f0c30",
+      "legacy_source_sha256": "879ab9101b8d2fea5ee4117da019a890aa2bd290eb31f4c0459e63d8fb0f0c30"
+    },
+    "compression-lab-isolated/vendor/compression_lab/resources.py": {
+      "public_sha256": "a939e62ce073d44a6255b3c38019d934fcbd71090de37f127d66763ad2662b95",
+      "legacy_source_sha256": "a939e62ce073d44a6255b3c38019d934fcbd71090de37f127d66763ad2662b95"
+    },
+    "compression-lab-isolated/vendor/compression_lab/runner.py": {
+      "public_sha256": "63365d6ef0cca8808a75bd3c89f1fa4e6fdf59ef134f3c1da450df032452bd4b",
+      "legacy_source_sha256": "6f83f2f76fb65851938efbb8d4589a76088ebbedcee956cfa348c539468b4c25"
+    },
+    "compression-lab-isolated/vendor/compression_lab/strings.py": {
+      "public_sha256": "2a1e021cd692b114ff0a51455fc0f3b7f30f3772242af4082a20bed3cd9c3203",
+      "legacy_source_sha256": "67c150f60e63f9dbf10e36a63d88aec2e894bb5666d1680cb05f2644faead336"
+    },
+    "compression-lab-isolated/vendor/compression_lab/util.py": {
+      "public_sha256": "715cb36d533578e8f85b05c78e8f4746f8f1f3a04b434522080b47c554dbdd97",
+      "legacy_source_sha256": "715cb36d533578e8f85b05c78e8f4746f8f1f3a04b434522080b47c554dbdd97"
+    },
+    "datasets/ARCHIVES.json": {
+      "public_sha256": "9f28d93c3e1bf16f3fdafe51f27c5e06b8fe7f1fa4ddc772654d51625bf42f64",
+      "legacy_source_sha256": "01c90cdfff340752b78d675014b3424e7afa0f72574afb7a59c8f532afb28a35"
+    },
+    "datasets/DBTEXT_SOURCES.json": {
+      "public_sha256": "c6ba5e0082e58b7556dc05b40914bebae348b42e2aab5e1b19cf4806ff308cc1",
+      "legacy_source_sha256": "c6ba5e0082e58b7556dc05b40914bebae348b42e2aab5e1b19cf4806ff308cc1"
+    },
+    "datasets/README.md": {
+      "public_sha256": "c38a890f6be7f6f264d67053421f4e8a7ce204c17842763d1815f60a180da39e",
+      "legacy_source_sha256": "c38a890f6be7f6f264d67053421f4e8a7ce204c17842763d1815f60a180da39e"
+    },
+    "datasets/archives/dbtext.zip": {
+      "public_sha256": "5d1824aee5446debed1885521f84945f69a36ec10e0699dabf004044267e288e",
+      "legacy_source_sha256": "5d1824aee5446debed1885521f84945f69a36ec10e0699dabf004044267e288e"
+    },
+    "datasets/archives/openstack.zip": {
+      "public_sha256": "0a143fdd66aba63781b44db734f3696aeafb72b02177ada657189a09c53ea551",
+      "legacy_source_sha256": "0a143fdd66aba63781b44db734f3696aeafb72b02177ada657189a09c53ea551"
+    },
+    "datasets/archives/python.zip": {
+      "public_sha256": "cad50ff622cf8091e8d1a775171e64aab6ba9c22d85af75e894703f570db1aef",
+      "legacy_source_sha256": "cad50ff622cf8091e8d1a775171e64aab6ba9c22d85af75e894703f570db1aef"
+    },
+    "datasets/archives/sqlstorm-tpcds.zip": {
+      "public_sha256": "37d5c29c2927aadb3608780ad3a869d085d8e94ef4062e8f78e82f0e4a2d6ede",
+      "legacy_source_sha256": "37d5c29c2927aadb3608780ad3a869d085d8e94ef4062e8f78e82f0e4a2d6ede"
+    },
+    "datasets/archives/yelp.zip": {
+      "public_sha256": "6b72738e689b4570412c1be07738c8bc5ba80c52bc3e7ec53f1527105010c14f",
+      "legacy_source_sha256": "6b72738e689b4570412c1be07738c8bc5ba80c52bc3e7ec53f1527105010c14f"
+    },
+    "datasets/dbtext.json": {
+      "public_sha256": "f88d46a0a1587734e5fd402253306aad931ef6360f71173214e254835b6a31b3",
+      "legacy_source_sha256": "f88d46a0a1587734e5fd402253306aad931ef6360f71173214e254835b6a31b3"
+    },
+    "datasets/fetch.py": {
+      "public_sha256": "6ddff70f850b6236bcc4402ef46acc520340013ced2a1c3640d7dfe3faa00902",
+      "legacy_source_sha256": "6ddff70f850b6236bcc4402ef46acc520340013ced2a1c3640d7dfe3faa00902"
+    },
+    "datasets/fetch_dbtext.py": {
+      "public_sha256": "9addc4873a457551c094b8f212d6aee34e1e8ab4052abf1eceac854a2f810bb3",
+      "legacy_source_sha256": "350f93b1cbf42c60a88031bf8b7fa61ff2e14a2f26ce90e47ebfcc12f6d176d8"
+    },
+    "datasets/fetch_upstream.py": {
+      "public_sha256": "62b6b4d4e9e49395e73ff47f34356f02e2c11618c6bde4d66ac21fdc25545dd5",
+      "legacy_source_sha256": "02ac5ea760f5bae1f542b60db87ccb9751d73ae6d715c540262cb16c1bc2edfd"
+    },
+    "datasets/openstack.json": {
+      "public_sha256": "6f94619f16f7fa72991e86bd83a39856e4749f08157934c71f51df225b615e0f",
+      "legacy_source_sha256": "6f94619f16f7fa72991e86bd83a39856e4749f08157934c71f51df225b615e0f"
+    },
+    "datasets/prepare.py": {
+      "public_sha256": "04df48e7ac547dad1729eab7b05f729607002c3f47aa0ea07f7846a8a34b246d",
+      "legacy_source_sha256": "04df48e7ac547dad1729eab7b05f729607002c3f47aa0ea07f7846a8a34b246d"
+    },
+    "datasets/python.json": {
+      "public_sha256": "420dabb76ccab3cd0514d8ebed805b0047d05af02b543bc686c8ccb67826faab",
+      "legacy_source_sha256": "420dabb76ccab3cd0514d8ebed805b0047d05af02b543bc686c8ccb67826faab"
+    },
+    "datasets/sqlstorm-source.json": {
+      "public_sha256": "ed3174ceb1da1e517d3dd4f7b276002f9ab5a768f4e2bbf1449a29f8b4f854d7",
+      "legacy_source_sha256": "ed3174ceb1da1e517d3dd4f7b276002f9ab5a768f4e2bbf1449a29f8b4f854d7"
+    },
+    "datasets/sqlstorm-tpcds.json": {
+      "public_sha256": "59c0a9f599ca56c363422202d627d074fd84e1089e1e92eaaa02937c81e2cad4",
+      "legacy_source_sha256": "59c0a9f599ca56c363422202d627d074fd84e1089e1e92eaaa02937c81e2cad4"
+    },
+    "datasets/yelp.json": {
+      "public_sha256": "c70468042380cb36bb153e080dbc8eae238693eb3085a0e54a416715dfe77259",
+      "legacy_source_sha256": "c70468042380cb36bb153e080dbc8eae238693eb3085a0e54a416715dfe77259"
+    },
+    "paper/figures/FILES.json": {
+      "public_sha256": "12af674663b65446cfff8711c8352a1b869b14484ed90ba36e7ac2387694145d",
+      "legacy_source_sha256": "12af674663b65446cfff8711c8352a1b869b14484ed90ba36e7ac2387694145d"
+    },
+    "paper/figures/IMPORT.json": {
+      "public_sha256": "59a9b051445fcc98a54bbf8ef47f00858df9b27d6ecc99a136cb69d0fc9aee39",
+      "legacy_source_sha256": "59a9b051445fcc98a54bbf8ef47f00858df9b27d6ecc99a136cb69d0fc9aee39"
+    },
+    "paper/figures/README.md": {
+      "public_sha256": "f8bae08752b8b20874dc680b56172523c75c515290eafbc7e1787445590db052",
+      "legacy_source_sha256": "f8bae08752b8b20874dc680b56172523c75c515290eafbc7e1787445590db052"
+    },
+    "paper/figures/bulk/data/openstack-baseline.csv": {
+      "public_sha256": "2a24c99b47fb72303c3b26c957f20f4822098870480ecdad24371bd4fcd8868d",
+      "legacy_source_sha256": "2a24c99b47fb72303c3b26c957f20f4822098870480ecdad24371bd4fcd8868d"
+    },
+    "paper/figures/bulk/data/openstack-generated.csv": {
+      "public_sha256": "433ee4acd3d188dec3cb500254dbcc0fef970f8ebe950fe8f96feb4e7b780ad3",
+      "legacy_source_sha256": "433ee4acd3d188dec3cb500254dbcc0fef970f8ebe950fe8f96feb4e7b780ad3"
+    },
+    "paper/figures/bulk/data/python-baseline.csv": {
+      "public_sha256": "0a7dc51b8d1b9375653858b223433f6f77b4ec4f12d1482e0e57e3b0ff13f040",
+      "legacy_source_sha256": "0a7dc51b8d1b9375653858b223433f6f77b4ec4f12d1482e0e57e3b0ff13f040"
+    },
+    "paper/figures/bulk/data/python-generated.csv": {
+      "public_sha256": "802e598421eb93fbff6f15cde5e482ed67bd000a6b0cbb3819addfdc409b099f",
+      "legacy_source_sha256": "802e598421eb93fbff6f15cde5e482ed67bd000a6b0cbb3819addfdc409b099f"
+    },
+    "paper/figures/bulk/data/sqlstorm-tpcds-baseline.csv": {
+      "public_sha256": "f2dd80acd600a8dd5802f12d1adb7aedb92a911e7b71b3929c2f0f63260b3725",
+      "legacy_source_sha256": "f2dd80acd600a8dd5802f12d1adb7aedb92a911e7b71b3929c2f0f63260b3725"
+    },
+    "paper/figures/bulk/data/sqlstorm-tpcds-generated.csv": {
+      "public_sha256": "c2869914f0bf9c2a40e25cf247e933fa87d1d07484dede08ee9860e1adcb7ab9",
+      "legacy_source_sha256": "c2869914f0bf9c2a40e25cf247e933fa87d1d07484dede08ee9860e1adcb7ab9"
+    },
+    "paper/figures/bulk/data/yelp-baseline.csv": {
+      "public_sha256": "71fa45ba212697318dce2b92791214833286da67986361b54f2321d0b5b24727",
+      "legacy_source_sha256": "71fa45ba212697318dce2b92791214833286da67986361b54f2321d0b5b24727"
+    },
+    "paper/figures/bulk/data/yelp-generated.csv": {
+      "public_sha256": "1cc234f3cf2f62d63610e3cdad9c3afdd392bd09f92a5425b9c4ad03215be45c",
+      "legacy_source_sha256": "1cc234f3cf2f62d63610e3cdad9c3afdd392bd09f92a5425b9c4ad03215be45c"
+    },
+    "paper/figures/bulk/plot.py": {
+      "public_sha256": "4f367e318831f695f2529f3d2d9a9d8d0a76e619c6fe335e2c0176f9e2e03cad",
+      "legacy_source_sha256": "4f367e318831f695f2529f3d2d9a9d8d0a76e619c6fe335e2c0176f9e2e03cad"
+    },
+    "paper/figures/dbtext/data/bulk-points.csv": {
+      "public_sha256": "47d29efc1245ca1bb5ea1b04a85cf6cfad4779ccf08bfd87d429f9aabcd20956",
+      "legacy_source_sha256": "47d29efc1245ca1bb5ea1b04a85cf6cfad4779ccf08bfd87d429f9aabcd20956"
+    },
+    "paper/figures/dbtext/plotting/plot.py": {
+      "public_sha256": "ded8c852fb65c824146db23d125a732724c604df250aa7f7cbe5d259c857a1f3",
+      "legacy_source_sha256": "ded8c852fb65c824146db23d125a732724c604df250aa7f7cbe5d259c857a1f3"
+    },
+    "paper/figures/random-access/data/ablation/stage-01/QUALIFICATION.json": {
+      "public_sha256": "6147038a771afb1e7f88fd2003d0574234e521ad5574e7013a300df33fa56827",
+      "legacy_source_sha256": "6147038a771afb1e7f88fd2003d0574234e521ad5574e7013a300df33fa56827"
+    },
+    "paper/figures/random-access/data/ablation/stage-02/QUALIFICATION.json": {
+      "public_sha256": "e02a3b9274f93072ea84d360a115f2661e0eaf67cef3120172c0122d34ecc5ab",
+      "legacy_source_sha256": "e02a3b9274f93072ea84d360a115f2661e0eaf67cef3120172c0122d34ecc5ab"
+    },
+    "paper/figures/random-access/data/ablation/stage-03/QUALIFICATION.json": {
+      "public_sha256": "81b695dd84ac00804678ae367d52fd51b0b7f73f33eb7c6cd14041db1fcda26a",
+      "legacy_source_sha256": "81b695dd84ac00804678ae367d52fd51b0b7f73f33eb7c6cd14041db1fcda26a"
+    },
+    "paper/figures/random-access/data/ablation/stage-04/QUALIFICATION.json": {
+      "public_sha256": "28d8671671d36b30dd987be52c67700bbd559f1719b534c6fcb8880e01b9346f",
+      "legacy_source_sha256": "28d8671671d36b30dd987be52c67700bbd559f1719b534c6fcb8880e01b9346f"
+    },
+    "paper/figures/random-access/data/synthesized-code/dbtext/astra/data/row-points.csv": {
+      "public_sha256": "e9545df8bab910e363015e2bddcf2c3fe605a88ca9495b6fd739e18f4e9d5130",
+      "legacy_source_sha256": "e9545df8bab910e363015e2bddcf2c3fe605a88ca9495b6fd739e18f4e9d5130"
+    },
+    "paper/figures/random-access/data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/provenance.json": {
+      "public_sha256": "32124eb22721e178d6d3fde2a04e82673b7a4e0af555d4681cf070b6ea433c00",
+      "legacy_source_sha256": "32124eb22721e178d6d3fde2a04e82673b7a4e0af555d4681cf070b6ea433c00"
+    },
+    "paper/figures/random-access/data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/provenance.json": {
+      "public_sha256": "95900c9df8ab3c9ded35e1335cccb56037fdfd0b3bca328dea007fb86ecc3ab6",
+      "legacy_source_sha256": "95900c9df8ab3c9ded35e1335cccb56037fdfd0b3bca328dea007fb86ecc3ab6"
+    },
+    "paper/figures/random-access/data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/provenance.json": {
+      "public_sha256": "0c260cb2ca1beeebf0a6a4c7b08c361ed3df930c9a619f47a427382c6eec0a3d",
+      "legacy_source_sha256": "0c260cb2ca1beeebf0a6a4c7b08c361ed3df930c9a619f47a427382c6eec0a3d"
+    },
+    "paper/figures/random-access/data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/provenance.json": {
+      "public_sha256": "2170fe995cb9eb863a4df5c5aa378428e5e9bc93682ae644a393e3c1a10de389",
+      "legacy_source_sha256": "2170fe995cb9eb863a4df5c5aa378428e5e9bc93682ae644a393e3c1a10de389"
+    },
+    "paper/figures/random-access/data/synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/row-points.csv": {
+      "public_sha256": "cf7619fe09921fe165225c7d5c6b1f409ad256dd7c2cf28256a830ea468bf1ab",
+      "legacy_source_sha256": "cf7619fe09921fe165225c7d5c6b1f409ad256dd7c2cf28256a830ea468bf1ab"
+    },
+    "paper/figures/random-access/plot.py": {
+      "public_sha256": "6cb2ce0ab5e08ca51970a71cd537761c6e26d2bd041972f0ae9c1298547bf983",
+      "legacy_source_sha256": "6cb2ce0ab5e08ca51970a71cd537761c6e26d2bd041972f0ae9c1298547bf983"
+    },
+    "paper/figures/schematics/dbtext-uuid.pdf": {
+      "public_sha256": "57dc0353eefe49b4fc3ab4ee9e69bcd954f6f9daf74ac89e9fbd0a5584760e69",
+      "legacy_source_sha256": "57dc0353eefe49b4fc3ab4ee9e69bcd954f6f9daf74ac89e9fbd0a5584760e69"
+    },
+    "paper/figures/schematics/dbtext-uuid.tex": {
+      "public_sha256": "9b94788eb72a6f7b0f327b19a4604b18fa8bc9bf8b6e3706fd44ea17a7c62bf0",
+      "legacy_source_sha256": "9b94788eb72a6f7b0f327b19a4604b18fa8bc9bf8b6e3706fd44ea17a7c62bf0"
+    },
+    "paper/figures/schematics/dbtext-uuid.tikz": {
+      "public_sha256": "fe9cbc220e3277f6d8243f1f2beb8a7c5a2c8d000d3625a5c8f78cd41c2b29c5",
+      "legacy_source_sha256": "fe9cbc220e3277f6d8243f1f2beb8a7c5a2c8d000d3625a5c8f78cd41c2b29c5"
+    },
+    "paper/figures/schematics/indentation_buckets.pdf": {
+      "public_sha256": "99063ea2a8033c0d6b77e541dc2b6d60fb4a854c92cae0f8cc9b138370675b1b",
+      "legacy_source_sha256": "99063ea2a8033c0d6b77e541dc2b6d60fb4a854c92cae0f8cc9b138370675b1b"
+    },
+    "paper/figures/schematics/indentation_buckets.tex": {
+      "public_sha256": "98c2ed077a6d8001b49d742cd6f61f600b7fcd81088db37cedf11e37436b5a72",
+      "legacy_source_sha256": "98c2ed077a6d8001b49d742cd6f61f600b7fcd81088db37cedf11e37436b5a72"
+    },
+    "paper/figures/schematics/indentation_buckets.tikz": {
+      "public_sha256": "cd06627f0795035f6227da27bbac45e4e2922d166d9571c97cefeafd47ed81ac",
+      "legacy_source_sha256": "cd06627f0795035f6227da27bbac45e4e2922d166d9571c97cefeafd47ed81ac"
+    },
+    "paper/figures/schematics/openstack-run1-full-row.pdf": {
+      "public_sha256": "f537396db15460750fd5c9c63fb3a32f94541c0d8383d332e27825cda7018447",
+      "legacy_source_sha256": "f537396db15460750fd5c9c63fb3a32f94541c0d8383d332e27825cda7018447"
+    },
+    "paper/figures/schematics/openstack-run1-full-row.tex": {
+      "public_sha256": "b35182e0c0115bf8e844109cf8ae68b1cfa6605cf775fe111e295cc46ae3d9d7",
+      "legacy_source_sha256": "b35182e0c0115bf8e844109cf8ae68b1cfa6605cf775fe111e295cc46ae3d9d7"
+    },
+    "paper/figures/schematics/openstack-run1-full-row.tikz": {
+      "public_sha256": "160ee4574cb737c04478b854bc36f9e19c6518d9f3da1734d25b5fa9a2544718",
+      "legacy_source_sha256": "160ee4574cb737c04478b854bc36f9e19c6518d9f3da1734d25b5fa9a2544718"
+    },
+    "paper/figures/schematics/sysdiag-crop.pdf": {
+      "public_sha256": "33e1586a771dc42be6ad7f0c36188eb75cf0656c4ab903cdf35e63673e9279c2",
+      "legacy_source_sha256": "33e1586a771dc42be6ad7f0c36188eb75cf0656c4ab903cdf35e63673e9279c2"
+    },
+    "reproduce.py": {
+      "public_sha256": "37c88d272eeec9ecb4d5b0fba11e6fdd2b5f0efd7a64c2e45313df07654f5147",
+      "legacy_source_sha256": "f14143d1d55760430e6a6371e7d14fdc0667c9c4f95d5a1259d146a59ba82b57"
+    },
+    "requirements-plots.txt": {
+      "public_sha256": "1fbcfa4000ec69478c6e187670ee98320b20f75a1e1e2bc3559425a8e04d4cb2",
+      "legacy_source_sha256": "1fbcfa4000ec69478c6e187670ee98320b20f75a1e1e2bc3559425a8e04d4cb2"
+    },
+    "setup.sh": {
+      "public_sha256": "82f457c5edcda6991bbbf5ecad01c147e6fc2b71eb6ad50419bb8514e5636ce7",
+      "legacy_source_sha256": "82f457c5edcda6991bbbf5ecad01c147e6fc2b71eb6ad50419bb8514e5636ce7"
+    },
+    "synthesized-code/.gitignore": {
+      "public_sha256": "d54bcb69ef239d9edf865ad00b62bdc8898de25d8ec44337a46303eb9796d0dd",
+      "legacy_source_sha256": "16e8a081e950575820d1b56d730cd4dbdbef23223f407c10c9303cb77c2883fc"
+    },
+    "synthesized-code/FIGURES.json": {
+      "public_sha256": "a098d36bd0099c2aba4e02c974d72a8bec8ff96e3c5c96902b795ca07894cf35",
+      "legacy_source_sha256": "a098d36bd0099c2aba4e02c974d72a8bec8ff96e3c5c96902b795ca07894cf35"
+    },
+    "synthesized-code/INDEX.json": {
+      "public_sha256": "86866a24d42191322366b34678561c5c08acfa8121238f264b06e3b5ec4f2e12",
+      "legacy_source_sha256": "86866a24d42191322366b34678561c5c08acfa8121238f264b06e3b5ec4f2e12"
+    },
+    "synthesized-code/README.md": {
+      "public_sha256": "db33a0c61f6d814f7390820c709f1796f4378578db3298f1a4b7851aa0918f04",
+      "legacy_source_sha256": "9b45f974f6925600ea91a67d0d0cae68609496bc2b4c0085116dd3f631aa96fa"
+    },
+    "synthesized-code/astra/openstack/from-scratch/README.md": {
+      "public_sha256": "b396481cbcee10d726099553106cc86f5d89c56c809a26ab261f217e2ee80ffa",
+      "legacy_source_sha256": "bb8146b050881dfdf059973577b8a71bc3abef739fc9464ff6598a5133f7f7c4"
+    },
+    "synthesized-code/astra/openstack/from-scratch/data/baseline-provenance.json": {
+      "public_sha256": "de304594dfa23e549b769492433119d0d234f2499b1caf253d1a271b9eb14a97",
+      "legacy_source_sha256": "de304594dfa23e549b769492433119d0d234f2499b1caf253d1a271b9eb14a97"
+    },
+    "synthesized-code/astra/openstack/from-scratch/data/baseline-results.csv": {
+      "public_sha256": "f1c083a0460f3faf28ccdc1d2ff7d21315b89d3378ee53c6b08df3da19a1c86f",
+      "legacy_source_sha256": "f1c083a0460f3faf28ccdc1d2ff7d21315b89d3378ee53c6b08df3da19a1c86f"
+    },
+    "synthesized-code/astra/openstack/from-scratch/data/generated-results.csv": {
+      "public_sha256": "25ed0a270bb8e97ead0eedb6dfabea049ac613c29bafd591e946f23090b26529",
+      "legacy_source_sha256": "25ed0a270bb8e97ead0eedb6dfabea049ac613c29bafd591e946f23090b26529"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-01/README.md": {
+      "public_sha256": "b6aa879c7ff47a7915a576be514e5eb2893b0e4e94fbb20e8f927181d5e15f1b",
+      "legacy_source_sha256": "b6aa879c7ff47a7915a576be514e5eb2893b0e4e94fbb20e8f927181d5e15f1b"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-01/build-spec.json": {
+      "public_sha256": "5fbcc19782e0cd13adfccbd2d1356d40c155c3c4f17e2ad843c1d6e3e975ca4d",
+      "legacy_source_sha256": "5fbcc19782e0cd13adfccbd2d1356d40c155c3c4f17e2ad843c1d6e3e975ca4d"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-01/provenance.json": {
+      "public_sha256": "9a33ef157a241f6855571364b97e1a2b77fa802b3f8f4284e70b01ef772d735b",
+      "legacy_source_sha256": "9a33ef157a241f6855571364b97e1a2b77fa802b3f8f4284e70b01ef772d735b"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-01/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-01/source/simd_codec_compact.cpp": {
+      "public_sha256": "466d16014a7994282f01618c11779a34f6a73c2f1f6d59653d40b0170dab1fdd",
+      "legacy_source_sha256": "466d16014a7994282f01618c11779a34f6a73c2f1f6d59653d40b0170dab1fdd"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/README.md": {
+      "public_sha256": "2e260457d3e21a6a057af59941b0404a522ac88db0ec49655a55c002a98deadb",
+      "legacy_source_sha256": "2e260457d3e21a6a057af59941b0404a522ac88db0ec49655a55c002a98deadb"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/build-spec.json": {
+      "public_sha256": "5ba6549a83fb3d42a25cf29a36ee2abcbc2f4db60712f8fa3b9b8c68ad123fc3",
+      "legacy_source_sha256": "5ba6549a83fb3d42a25cf29a36ee2abcbc2f4db60712f8fa3b9b8c68ad123fc3"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/provenance.json": {
+      "public_sha256": "5c32a3fc1b6e0dc1e6322542b7be6952d86604e6f66c15265a717907cf8a9162",
+      "legacy_source_sha256": "5c32a3fc1b6e0dc1e6322542b7be6952d86604e6f66c15265a717907cf8a9162"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/common.h": {
+      "public_sha256": "e35b68c97c6edf9a7b19cd2887a902b900c3514bb3061c1b64dfe733f3d3ae36",
+      "legacy_source_sha256": "e35b68c97c6edf9a7b19cd2887a902b900c3514bb3061c1b64dfe733f3d3ae36"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/decoder.cpp": {
+      "public_sha256": "2211248fbf8bd13b62512ac5bd72aa2de9ec10f23342a3e653011168733ee667",
+      "legacy_source_sha256": "2211248fbf8bd13b62512ac5bd72aa2de9ec10f23342a3e653011168733ee667"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/encoder.cpp": {
+      "public_sha256": "96f0b8036b2a97cdf3f51542129c26b4b057e6151f018c65290ecdfcc55eb8bd",
+      "legacy_source_sha256": "96f0b8036b2a97cdf3f51542129c26b4b057e6151f018c65290ecdfcc55eb8bd"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/entropy.h": {
+      "public_sha256": "f96f561ec010ae5ed3c8149b46194aed5c28c696c5bdccffbd39b3aaa09e827e",
+      "legacy_source_sha256": "f96f561ec010ae5ed3c8149b46194aed5c28c696c5bdccffbd39b3aaa09e827e"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/exports.map": {
+      "public_sha256": "549d37c016d261aaa9bf7e31eb3e12d2278d25606e74fb9aa4291a5951142d80",
+      "legacy_source_sha256": "549d37c016d261aaa9bf7e31eb3e12d2278d25606e74fb9aa4291a5951142d80"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/lz.h": {
+      "public_sha256": "e447220a17cc9df8514f7adf63209a3e1313d5a1c4fb4eca4c9b12cd866d8602",
+      "legacy_source_sha256": "e447220a17cc9df8514f7adf63209a3e1313d5a1c4fb4eca4c9b12cd866d8602"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-02/source/time_extra.h": {
+      "public_sha256": "63639145987b74475ee9d8f9bdc559da3c11dc957819a34bdabf6fc614628763",
+      "legacy_source_sha256": "63639145987b74475ee9d8f9bdc559da3c11dc957819a34bdabf6fc614628763"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/README.md": {
+      "public_sha256": "4d9b2e34f70450d4ace0b98dc6dcecb0fc68da1dec2ee7aea8d63f0dca383c8b",
+      "legacy_source_sha256": "4d9b2e34f70450d4ace0b98dc6dcecb0fc68da1dec2ee7aea8d63f0dca383c8b"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/build-spec.json": {
+      "public_sha256": "73bd93a417b63001cedca9897b4514108116665bd7d178275cd301022f1999d0",
+      "legacy_source_sha256": "73bd93a417b63001cedca9897b4514108116665bd7d178275cd301022f1999d0"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/provenance.json": {
+      "public_sha256": "dc8ea13a21c5ec199b1dc33850580e7dc354889569a4ec7a8196755346a41d1f",
+      "legacy_source_sha256": "dc8ea13a21c5ec199b1dc33850580e7dc354889569a4ec7a8196755346a41d1f"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/alt_gen.py": {
+      "public_sha256": "b56f230606256ab6886f1a0339fd295c25115992ac0efd786d241d35ddbdbf75",
+      "legacy_source_sha256": "b56f230606256ab6886f1a0339fd295c25115992ac0efd786d241d35ddbdbf75"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/compact_decoder.cpp": {
+      "public_sha256": "e88ed5253d04dbac78ce8090cf6ed54083250dea61d0083c7030732bfad0dc7f",
+      "legacy_source_sha256": "e88ed5253d04dbac78ce8090cf6ed54083250dea61d0083c7030732bfad0dc7f"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/compact_gen.py": {
+      "public_sha256": "ff573713f93bcf974e37188a568109b060cd3d305cdd37ce4d0f7c258b60c735",
+      "legacy_source_sha256": "ff573713f93bcf974e37188a568109b060cd3d305cdd37ce4d0f7c258b60c735"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/compact_generated.h": {
+      "public_sha256": "afbd1d56bdc6e7eaf5c5e6efa88e0125627bc679ade7024540257768173fa0eb",
+      "legacy_source_sha256": "afbd1d56bdc6e7eaf5c5e6efa88e0125627bc679ade7024540257768173fa0eb"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/fast_fields.h": {
+      "public_sha256": "b1c59a2db433fd4904be550981215329adc76c4b25aaf83207e8144c83b77390",
+      "legacy_source_sha256": "b1c59a2db433fd4904be550981215329adc76c4b25aaf83207e8144c83b77390"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-03/source/template_encoder.cpp": {
+      "public_sha256": "9c51cffd231d32eac671a68202c84c5ebce02fa57f5e2c98a6762ffd05e8293c",
+      "legacy_source_sha256": "9c51cffd231d32eac671a68202c84c5ebce02fa57f5e2c98a6762ffd05e8293c"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/README.md": {
+      "public_sha256": "53c2251f93f262b5c6e92a0d69bc2cb20b5f35edd38008a11670df0564b70517",
+      "legacy_source_sha256": "53c2251f93f262b5c6e92a0d69bc2cb20b5f35edd38008a11670df0564b70517"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/build-spec.json": {
+      "public_sha256": "c1666398e1b1351969a709f8683438981507de053783d4560102cacf2c8c3634",
+      "legacy_source_sha256": "c1666398e1b1351969a709f8683438981507de053783d4560102cacf2c8c3634"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/provenance.json": {
+      "public_sha256": "17ee1d5ca9807cfcc0868f3c05f077662546d0616d3ae9f9d82b3790461d0c8f",
+      "legacy_source_sha256": "17ee1d5ca9807cfcc0868f3c05f077662546d0616d3ae9f9d82b3790461d0c8f"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/codec.cpp": {
+      "public_sha256": "e23f68c61c245e39428f69797fe456eb46b37135d1bb12e9bb0fb8d64c179f95",
+      "legacy_source_sha256": "e23f68c61c245e39428f69797fe456eb46b37135d1bb12e9bb0fb8d64c179f95"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/entropy.h": {
+      "public_sha256": "4c9a1f998ecd609a959207fddd37b9cd699730937ba22acc6e726c989d433696",
+      "legacy_source_sha256": "4c9a1f998ecd609a959207fddd37b9cd699730937ba22acc6e726c989d433696"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/smalllz.h": {
+      "public_sha256": "d8fb61f2307aa46ac43bd2689b15c81e66ea5a35d5863127c654c437d4ac0a9e",
+      "legacy_source_sha256": "d8fb61f2307aa46ac43bd2689b15c81e66ea5a35d5863127c654c437d4ac0a9e"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/split.h": {
+      "public_sha256": "5864a39cd44728f7d8682be9a1c80adf2de1c66f215dfeab347fda961f7741cc",
+      "legacy_source_sha256": "5864a39cd44728f7d8682be9a1c80adf2de1c66f215dfeab347fda961f7741cc"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/timestamp.h": {
+      "public_sha256": "2a9d658bffad318ac746c6d2b862378949743bbc304327a4d673efa37c42a2b2",
+      "legacy_source_sha256": "2a9d658bffad318ac746c6d2b862378949743bbc304327a4d673efa37c42a2b2"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/uuidpack.h": {
+      "public_sha256": "587ceb81b45deddea07cbfb6ab01c987605eafb9d378a698d7a0dc35a2b189de",
+      "legacy_source_sha256": "587ceb81b45deddea07cbfb6ab01c987605eafb9d378a698d7a0dc35a2b189de"
+    },
+    "synthesized-code/astra/openstack/from-scratch/run-04/source/wrapper.cpp": {
+      "public_sha256": "e7419dd74f30645dd12ebc8d7e8f643deeae0043f0fd1815dd098b62554bd2c1",
+      "legacy_source_sha256": "e7419dd74f30645dd12ebc8d7e8f643deeae0043f0fd1815dd098b62554bd2c1"
+    },
+    "synthesized-code/astra/python/from-scratch/README.md": {
+      "public_sha256": "f5adf317b731612eb1df50c473ca15d6ecdf7c740de46893e51980a023b0d8dc",
+      "legacy_source_sha256": "aee442d349519d28ceb70b1c1172fde483df020740b59eaf62fd2922b4102886"
+    },
+    "synthesized-code/astra/python/from-scratch/data/baseline-provenance.json": {
+      "public_sha256": "74732558eecc984297b2e7567462a00e8f5565d67b2808e69beb8207d4e893d7",
+      "legacy_source_sha256": "74732558eecc984297b2e7567462a00e8f5565d67b2808e69beb8207d4e893d7"
+    },
+    "synthesized-code/astra/python/from-scratch/data/baseline-results.csv": {
+      "public_sha256": "a0ddfe671704267a944c2e3c8f62f7c0d8153909cb35a9aa13d3002a3c99b5dc",
+      "legacy_source_sha256": "a0ddfe671704267a944c2e3c8f62f7c0d8153909cb35a9aa13d3002a3c99b5dc"
+    },
+    "synthesized-code/astra/python/from-scratch/data/generated-results.csv": {
+      "public_sha256": "5c7bc92d7ec6ed65eff3e21e6192201bc65eac2f1fc3a7c575e96f85b9021930",
+      "legacy_source_sha256": "5c7bc92d7ec6ed65eff3e21e6192201bc65eac2f1fc3a7c575e96f85b9021930"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/README.md": {
+      "public_sha256": "f75fc161a5089d94e7184795f18566871bbb4d69a4d554766e97de87ee533ce7",
+      "legacy_source_sha256": "f75fc161a5089d94e7184795f18566871bbb4d69a4d554766e97de87ee533ce7"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/build-spec.json": {
+      "public_sha256": "515109dda16ea74a5dea6c611ff2a7505953074494002850be137e3823750991",
+      "legacy_source_sha256": "515109dda16ea74a5dea6c611ff2a7505953074494002850be137e3823750991"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/provenance.json": {
+      "public_sha256": "a87bec850105142019ba7635f6f8664ff5f9b5ba4d14d3a9515ae1b7db95e7f5",
+      "legacy_source_sha256": "a87bec850105142019ba7635f6f8664ff5f9b5ba4d14d3a9515ae1b7db95e7f5"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/compact-cost.json": {
+      "public_sha256": "f5756be1b334b903911a847240bf5b2ca769b0df302951c72558579d48007f9f",
+      "legacy_source_sha256": "f5756be1b334b903911a847240bf5b2ca769b0df302951c72558579d48007f9f"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/compact.cpp": {
+      "public_sha256": "efd0ba16c573a163ed51baf0d3e835809186b7b18f56ce25141ddb999012b163",
+      "legacy_source_sha256": "efd0ba16c573a163ed51baf0d3e835809186b7b18f56ce25141ddb999012b163"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/decoder.cpp": {
+      "public_sha256": "610598cad5bd1596c731025c0c93ba9889127ca7831814be32643a859bf8f8ca",
+      "legacy_source_sha256": "610598cad5bd1596c731025c0c93ba9889127ca7831814be32643a859bf8f8ca"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/encoder.cpp": {
+      "public_sha256": "10075fa612b281975999a2243f0f941a59d8c3b786a084f77a0f1bcdd90d4a39",
+      "legacy_source_sha256": "10075fa612b281975999a2243f0f941a59d8c3b786a084f77a0f1bcdd90d4a39"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/fit_bpe.cpp": {
+      "public_sha256": "387d7c75c582807736bcd9cf39f3995e5fcbee63d7c6ffc8cb9c283953e7d6ba",
+      "legacy_source_sha256": "387d7c75c582807736bcd9cf39f3995e5fcbee63d7c6ffc8cb9c283953e7d6ba"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/fit_dp.cpp": {
+      "public_sha256": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9",
+      "legacy_source_sha256": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/fit_payload.cpp": {
+      "public_sha256": "7fc89bdded501bfee2887490545d5c5511ea1370430528ddf80401b4e3cb9585",
+      "legacy_source_sha256": "7fc89bdded501bfee2887490545d5c5511ea1370430528ddf80401b4e3cb9585"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/fit_refine.cpp": {
+      "public_sha256": "4459ab8c26237a03bc29613b2dfde1d351cea67cebf5adc5ea430cc9ad65f15b",
+      "legacy_source_sha256": "4459ab8c26237a03bc29613b2dfde1d351cea67cebf5adc5ea430cc9ad65f15b"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/fitting-costs.json": {
+      "public_sha256": "2cfa9db59ab5f1d2a6de8ebad8997f9564a7abff4a9b12cb3eb470bbbe123f77",
+      "legacy_source_sha256": "2cfa9db59ab5f1d2a6de8ebad8997f9564a7abff4a9b12cb3eb470bbbe123f77"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/limit-costs.json": {
+      "public_sha256": "ad838e41b2d3cc40627eec90676dff5a43e7999dc782a2b029e82c63a132179f",
+      "legacy_source_sha256": "ad838e41b2d3cc40627eec90676dff5a43e7999dc782a2b029e82c63a132179f"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/limitdict.py": {
+      "public_sha256": "b7984c4cebd2642fb9e752e5ccc92b05c9f79f1b629055cd21603a442cbb331b",
+      "legacy_source_sha256": "b7984c4cebd2642fb9e752e5ccc92b05c9f79f1b629055cd21603a442cbb331b"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/payload.inc": {
+      "public_sha256": "ec62c58a22ca587d16d568c056b7f1df1ac49f2d759f48d65c31d2a51b7d1d76",
+      "legacy_source_sha256": "ec62c58a22ca587d16d568c056b7f1df1ac49f2d759f48d65c31d2a51b7d1d76"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-cost1.json": {
+      "public_sha256": "fe542478899437935ec325e8b5d1b0271cf1befd4f23e7cc2e169c7fc8fa5439",
+      "legacy_source_sha256": "fe542478899437935ec325e8b5d1b0271cf1befd4f23e7cc2e169c7fc8fa5439"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-cost2.json": {
+      "public_sha256": "10ac77916dee924d5dc4af9ab785d78d4c9a9d39e9244544b6cd9425a5c2df08",
+      "legacy_source_sha256": "10ac77916dee924d5dc4af9ab785d78d4c9a9d39e9244544b6cd9425a5c2df08"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-cost3.json": {
+      "public_sha256": "485a28d63fe13be5ad6f58385f15281beee937b48ff0e885517b8c24bb9dcdc1",
+      "legacy_source_sha256": "485a28d63fe13be5ad6f58385f15281beee937b48ff0e885517b8c24bb9dcdc1"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-cost4w.json": {
+      "public_sha256": "ecb8096cf0e0a96202061105e9dabeb235dfd53f862649a830bd629093643de4",
+      "legacy_source_sha256": "ecb8096cf0e0a96202061105e9dabeb235dfd53f862649a830bd629093643de4"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-dp.cpp": {
+      "public_sha256": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9",
+      "legacy_source_sha256": "2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-refine.cpp": {
+      "public_sha256": "7a2a70c646d9c2fd3a525a09b8af81f4bc039fea1e4202ee0ca612ab7efe30e5",
+      "legacy_source_sha256": "7a2a70c646d9c2fd3a525a09b8af81f4bc039fea1e4202ee0ca612ab7efe30e5"
+    },
+    "synthesized-code/astra/python/from-scratch/run-01/source/r16-refine_weighted.cpp": {
+      "public_sha256": "eefdc069c6b6b121c0625967f7efc31680c9508e4ada20085680bb44713d691c",
+      "legacy_source_sha256": "eefdc069c6b6b121c0625967f7efc31680c9508e4ada20085680bb44713d691c"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/README.md": {
+      "public_sha256": "f87f37a828868bad68e3c90387ec38bed3f2c4e06c6b9997b910471ffed8ed61",
+      "legacy_source_sha256": "f87f37a828868bad68e3c90387ec38bed3f2c4e06c6b9997b910471ffed8ed61"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/build-spec.json": {
+      "public_sha256": "cae85fd5dc0d3972de1ed25e12eaef69881ec5fe42b3c89a5278693e72fa2a4e",
+      "legacy_source_sha256": "cae85fd5dc0d3972de1ed25e12eaef69881ec5fe42b3c89a5278693e72fa2a4e"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/provenance.json": {
+      "public_sha256": "f7ae48c0692577ab8139efd0805a03f940fe0ae79c3b4a434b101d41f34483b3",
+      "legacy_source_sha256": "f7ae48c0692577ab8139efd0805a03f940fe0ae79c3b4a434b101d41f34483b3"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/codec.cpp": {
+      "public_sha256": "811c47ac825ac4c68f604e3530d547aed79b66a1412f4893387d27e7207d297d",
+      "legacy_source_sha256": "811c47ac825ac4c68f604e3530d547aed79b66a1412f4893387d27e7207d297d"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/entropy.h": {
+      "public_sha256": "11875aef278452978f7a177894b5407fe4f23a0078ddac093eef65daa0a30c57",
+      "legacy_source_sha256": "11875aef278452978f7a177894b5407fe4f23a0078ddac093eef65daa0a30c57"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/fitted.bin": {
+      "public_sha256": "db88ebc8b2ad63d850389b2b172965ecf934ec5f09fb74141975f67f3e7de917",
+      "legacy_source_sha256": "db88ebc8b2ad63d850389b2b172965ecf934ec5f09fb74141975f67f3e7de917"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/fitted.h": {
+      "public_sha256": "23418b53c4975d44c132bf8dd4a8be39a38c6410a006a316d9b08b29cc391faa",
+      "legacy_source_sha256": "23418b53c4975d44c132bf8dd4a8be39a38c6410a006a316d9b08b29cc391faa"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/grammar_indent_best.h": {
+      "public_sha256": "bfef900ecbd767abf4803e187cc81371571e7f465b02b47e99283ff514871570",
+      "legacy_source_sha256": "bfef900ecbd767abf4803e187cc81371571e7f465b02b47e99283ff514871570"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/lexical.h": {
+      "public_sha256": "288ea10c115f70d8ecdc92b1adf06d053828d64ebafef0474bd960445b9ee48a",
+      "legacy_source_sha256": "288ea10c115f70d8ecdc92b1adf06d053828d64ebafef0474bd960445b9ee48a"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/lit2.h": {
+      "public_sha256": "387d306efbafe47da4e98843ffe4624614949be5bfb2c3198ed68446667a2d6d",
+      "legacy_source_sha256": "387d306efbafe47da4e98843ffe4624614949be5bfb2c3198ed68446667a2d6d"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/lzparse.h": {
+      "public_sha256": "722f70aa80bb03a0d8b4b2237bbece789028cb7374e1bb30e618a6c4cad528d3",
+      "legacy_source_sha256": "722f70aa80bb03a0d8b4b2237bbece789028cb7374e1bb30e618a6c4cad528d3"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/make_fitted.cpp": {
+      "public_sha256": "92fd6ceb36e5ca3b3651a0b585bb820c5a4b5f92c93f5e1527fdfea0ef2bcc7b",
+      "legacy_source_sha256": "92fd6ceb36e5ca3b3651a0b585bb820c5a4b5f92c93f5e1527fdfea0ef2bcc7b"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/stage.cpp": {
+      "public_sha256": "b3841d7750d5503c112a6f1029752de38260fe42ff3ecf76dd537cd0aafa80f0",
+      "legacy_source_sha256": "b3841d7750d5503c112a6f1029752de38260fe42ff3ecf76dd537cd0aafa80f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-02/source/train_plan.cpp": {
+      "public_sha256": "d6a22d721ced453bb2c773505aa801f0f0214fc5714c3d20ded8d55f389684e4",
+      "legacy_source_sha256": "d6a22d721ced453bb2c773505aa801f0f0214fc5714c3d20ded8d55f389684e4"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/README.md": {
+      "public_sha256": "4462e9a8d112a5ab57e4e25384d2e4ddd655608dcdfe29a08f7337fdea4d8be2",
+      "legacy_source_sha256": "4462e9a8d112a5ab57e4e25384d2e4ddd655608dcdfe29a08f7337fdea4d8be2"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/build-spec.json": {
+      "public_sha256": "91dc1500bbdffa083f135ffc925aee346e100518f2662040406612fd5ae18cfa",
+      "legacy_source_sha256": "91dc1500bbdffa083f135ffc925aee346e100518f2662040406612fd5ae18cfa"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/provenance.json": {
+      "public_sha256": "dffc1d6e43f5c0aba20800bf6854ff36ba4d9f9497ded1b6a9972b27f9d5d24f",
+      "legacy_source_sha256": "dffc1d6e43f5c0aba20800bf6854ff36ba4d9f9497ded1b6a9972b27f9d5d24f"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/analyze_ransn.h": {
+      "public_sha256": "cc7b05a5c796d0c46fe9485ce7c5d10f8fa9f94dc372fe581da9f1366e566c67",
+      "legacy_source_sha256": "cc7b05a5c796d0c46fe9485ce7c5d10f8fa9f94dc372fe581da9f1366e566c67"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/exp6_decoder.cpp": {
+      "public_sha256": "03c0d7cdc08d8ccbf9a20daaebf4d89490127750b8fb23bc6a2c6c09261ba11e",
+      "legacy_source_sha256": "03c0d7cdc08d8ccbf9a20daaebf4d89490127750b8fb23bc6a2c6c09261ba11e"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/exp6_encoder.cpp": {
+      "public_sha256": "4ec18a5ff6f35cdf6a7703d11a1e213e14a9eeaffd368519dfc65e36b257d4c1",
+      "legacy_source_sha256": "4ec18a5ff6f35cdf6a7703d11a1e213e14a9eeaffd368519dfc65e36b257d4c1"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/exp6_reconstruct.h": {
+      "public_sha256": "dce1774e52b4672d4c52c644af1f813b4ed3ace7ada8f684cca8773d8c44f4f0",
+      "legacy_source_sha256": "dce1774e52b4672d4c52c644af1f813b4ed3ace7ada8f684cca8773d8c44f4f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/exp_parser_runs.h": {
+      "public_sha256": "99da99c642f8ae1fbfc360c7f51834034160c7276e4f1d6a4a3e0609a8755c9c",
+      "legacy_source_sha256": "99da99c642f8ae1fbfc360c7f51834034160c7276e4f1d6a4a3e0609a8755c9c"
+    },
+    "synthesized-code/astra/python/from-scratch/run-03/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/README.md": {
+      "public_sha256": "873218bde76df8ebbd5b5b177d24cfc7efce3cb04a4852ebaebe136c48323d93",
+      "legacy_source_sha256": "873218bde76df8ebbd5b5b177d24cfc7efce3cb04a4852ebaebe136c48323d93"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/build-spec.json": {
+      "public_sha256": "c07d95668aba2392db5325e1e9680f78b0a23e2c9bd2499d51369f7821a156ac",
+      "legacy_source_sha256": "c07d95668aba2392db5325e1e9680f78b0a23e2c9bd2499d51369f7821a156ac"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/provenance.json": {
+      "public_sha256": "d381dd13a66b0acf4c9d119ffc855a9f9736505f4c7a38bd17add805c27d5d8c",
+      "legacy_source_sha256": "d381dd13a66b0acf4c9d119ffc855a9f9736505f4c7a38bd17add805c27d5d8c"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/FIT_README.md": {
+      "public_sha256": "59db9a1b6c8066ba6ee6671681694a5d426c4a582523fd6adc562960b6732b5d",
+      "legacy_source_sha256": "59db9a1b6c8066ba6ee6671681694a5d426c4a582523fd6adc562960b6732b5d"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/advanced_blockpack.h": {
+      "public_sha256": "9dc9cb76c15b02864c5f4583bb4382b3987e91cb5e42aecab8bc856232392825",
+      "legacy_source_sha256": "9dc9cb76c15b02864c5f4583bb4382b3987e91cb5e42aecab8bc856232392825"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/advanced_entropy.h": {
+      "public_sha256": "486b8422bdd03b4ce4a1422b55c808cdb731070e1e17bacc3c3ae4ac33bd7b5c",
+      "legacy_source_sha256": "486b8422bdd03b4ce4a1422b55c808cdb731070e1e17bacc3c3ae4ac33bd7b5c"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/advanced_lzpack.h": {
+      "public_sha256": "0adcee32cf13b24dd3838b59311e0c5d712d0694bcbc3cc3ec1b837b788121c4",
+      "legacy_source_sha256": "0adcee32cf13b24dd3838b59311e0c5d712d0694bcbc3cc3ec1b837b788121c4"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/analysis_costs.h": {
+      "public_sha256": "8344021270980023435ced176bc08f3377332597810e6c45a6c5a36e8929780d",
+      "legacy_source_sha256": "8344021270980023435ced176bc08f3377332597810e6c45a6c5a36e8929780d"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/analysis_costs_refit.h": {
+      "public_sha256": "994ce2b4944cb75f1a5916f59fcd1a3db4f10ff292f1821eebd2887817edeb94",
+      "legacy_source_sha256": "994ce2b4944cb75f1a5916f59fcd1a3db4f10ff292f1821eebd2887817edeb94"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/analysis_generate_costs.py": {
+      "public_sha256": "3f99a64e076168bf5c876f0ff1c8a646662c93c90f54e54ac297f36c149507fc",
+      "legacy_source_sha256": "3f99a64e076168bf5c876f0ff1c8a646662c93c90f54e54ac297f36c149507fc"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/analysis_generate_refit.py": {
+      "public_sha256": "e7afa78be6c14ccd3de2790980753d2cd78c189d3797ac5e54a3ba63109e3c38",
+      "legacy_source_sha256": "e7afa78be6c14ccd3de2790980753d2cd78c189d3797ac5e54a3ba63109e3c38"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/analysis_merge.py": {
+      "public_sha256": "e8c8177352d206b1b54c2cef879cc37aecc2a7778fcfe7a68f5befc33675a2aa",
+      "legacy_source_sha256": "e8c8177352d206b1b54c2cef879cc37aecc2a7778fcfe7a68f5befc33675a2aa"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/final_1m_costs.json": {
+      "public_sha256": "3480eec6360a3ea6ebf0eb36ee9124b894979aa44a51ae8bbb9af794215e226f",
+      "legacy_source_sha256": "3480eec6360a3ea6ebf0eb36ee9124b894979aa44a51ae8bbb9af794215e226f"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/final_1m_encoder.cpp": {
+      "public_sha256": "bbc4bc1c0d43c7e838f337c0649a53aa2b96347c0f322ad8d1f3ed65dc9d6ecf",
+      "legacy_source_sha256": "bbc4bc1c0d43c7e838f337c0649a53aa2b96347c0f322ad8d1f3ed65dc9d6ecf"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/final_blob.S": {
+      "public_sha256": "c7156e0ee86a00a0abd1af81243377a85a64b43362eebb314e083e64fe552714",
+      "legacy_source_sha256": "c7156e0ee86a00a0abd1af81243377a85a64b43362eebb314e083e64fe552714"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/final_fit_source.cpp": {
+      "public_sha256": "5d705dc9581e07f68fe3f62fa01a5c88308056c3c2158a09c8bf8d8e940d00f4",
+      "legacy_source_sha256": "5d705dc9581e07f68fe3f62fa01a5c88308056c3c2158a09c8bf8d8e940d00f4"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/final_trace.bin": {
+      "public_sha256": "77633d6e025c906db90545d0bd412d5aa01e661f9eadc21d81000b3e57cf2c0c",
+      "legacy_source_sha256": "77633d6e025c906db90545d0bd412d5aa01e661f9eadc21d81000b3e57cf2c0c"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/fit_trace.py": {
+      "public_sha256": "e6d6a0aecbd2d0ada71793103b61b6062cb19b7b5bbfb1079945093fc5292a0b",
+      "legacy_source_sha256": "e6d6a0aecbd2d0ada71793103b61b6062cb19b7b5bbfb1079945093fc5292a0b"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/optfinal_fit.json": {
+      "public_sha256": "051b60b9d3926a084ceba5e257d885ac344a9576ebc93b68cc55fb20ffc23e5a",
+      "legacy_source_sha256": "051b60b9d3926a084ceba5e257d885ac344a9576ebc93b68cc55fb20ffc23e5a"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/optparse_advanced.cpp": {
+      "public_sha256": "2e87880b5e95b92d3d038bbe00c3149d2175cc9a81d7293502dc53c6d23e2951",
+      "legacy_source_sha256": "2e87880b5e95b92d3d038bbe00c3149d2175cc9a81d7293502dc53c6d23e2951"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/parse.cpp": {
+      "public_sha256": "d9134047977f750c9a796144d0aada8e669a13572c36417ecfeec42abe7bfe9f",
+      "legacy_source_sha256": "d9134047977f750c9a796144d0aada8e669a13572c36417ecfeec42abe7bfe9f"
+    },
+    "synthesized-code/astra/python/from-scratch/run-04/source/wide_decoder.cpp": {
+      "public_sha256": "39244ad4b82fd903bb36cceaf42a94739c42055b19e1b6115ea3a5e588620cc0",
+      "legacy_source_sha256": "39244ad4b82fd903bb36cceaf42a94739c42055b19e1b6115ea3a5e588620cc0"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/README.md": {
+      "public_sha256": "368ffbf055d3e90ec83208e35aa0d014379999e530e1837fe5d09579b608b842",
+      "legacy_source_sha256": "6b1aeba908a9d4d926b81db56298b11eba8f61915ecd4b7eee7fff57a99ec7bd"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/data/baseline-provenance.json": {
+      "public_sha256": "ec536c43744e12fd9bd84a3f9efdc3f205626e0f7ee86b897869713990b0c6d2",
+      "legacy_source_sha256": "ec536c43744e12fd9bd84a3f9efdc3f205626e0f7ee86b897869713990b0c6d2"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/data/baseline-results.csv": {
+      "public_sha256": "f2dd80acd600a8dd5802f12d1adb7aedb92a911e7b71b3929c2f0f63260b3725",
+      "legacy_source_sha256": "f2dd80acd600a8dd5802f12d1adb7aedb92a911e7b71b3929c2f0f63260b3725"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/data/generated-results.csv": {
+      "public_sha256": "c2869914f0bf9c2a40e25cf247e933fa87d1d07484dede08ee9860e1adcb7ab9",
+      "legacy_source_sha256": "c2869914f0bf9c2a40e25cf247e933fa87d1d07484dede08ee9860e1adcb7ab9"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/README.md": {
+      "public_sha256": "3816a637481968e0815b33e6dc80c9e3eeebce6688665b7666bc2161f8ab47d0",
+      "legacy_source_sha256": "3816a637481968e0815b33e6dc80c9e3eeebce6688665b7666bc2161f8ab47d0"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/build-spec.json": {
+      "public_sha256": "8f223196978313ed855f2f2c0368cab18e5aaad9076053c7a47a35b35c3ea9be",
+      "legacy_source_sha256": "8f223196978313ed855f2f2c0368cab18e5aaad9076053c7a47a35b35c3ea9be"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/provenance.json": {
+      "public_sha256": "8b85dc0db9a19a296f2896869e31ccceaad985810998be7a527c62370d1b9907",
+      "legacy_source_sha256": "8b85dc0db9a19a296f2896869e31ccceaad985810998be7a527c62370d1b9907"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/source/root_direct24_encoder.cpp": {
+      "public_sha256": "7e90f023a3a93243212c28fc99001b6d71712dbeffc345850005dc6073642132",
+      "legacy_source_sha256": "7e90f023a3a93243212c28fc99001b6d71712dbeffc345850005dc6073642132"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/source/root_direct24_mask_decoder.cpp": {
+      "public_sha256": "42c5c72d37ba2e812a3d8bfd6cbdbf16e44fb8af2990a7e39ac455fcd9c9ca12",
+      "legacy_source_sha256": "42c5c72d37ba2e812a3d8bfd6cbdbf16e44fb8af2990a7e39ac455fcd9c9ca12"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/README.md": {
+      "public_sha256": "d8028ac5ccb5ac7efae70a4249b03bbe2d976a068ad60b18a2f1981424767c9f",
+      "legacy_source_sha256": "d8028ac5ccb5ac7efae70a4249b03bbe2d976a068ad60b18a2f1981424767c9f"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/build-spec.json": {
+      "public_sha256": "0c48e4a40d2722010d0057a87b926188e1107e9fba07e377710b9d1380904a24",
+      "legacy_source_sha256": "0c48e4a40d2722010d0057a87b926188e1107e9fba07e377710b9d1380904a24"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/provenance.json": {
+      "public_sha256": "6dae14f87bc84e79643fc287f8028724960259658b058b80184ef2d905765a21",
+      "legacy_source_sha256": "6dae14f87bc84e79643fc287f8028724960259658b058b80184ef2d905765a21"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/source/codec.cpp": {
+      "public_sha256": "be63fe6d9b91e5556891d7f849f612c02960f14c20fc268209014a6b84fc2c4b",
+      "legacy_source_sha256": "be63fe6d9b91e5556891d7f849f612c02960f14c20fc268209014a6b84fc2c4b"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/source/stripelf.py": {
+      "public_sha256": "f1106db25d7de4c902900e2024fa7c71b53d6d20fc8f3bafb0c1bf6dbee0acf8",
+      "legacy_source_sha256": "f1106db25d7de4c902900e2024fa7c71b53d6d20fc8f3bafb0c1bf6dbee0acf8"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/README.md": {
+      "public_sha256": "8cadd7d92bf58f5623b5581d4f92b96a8f0925db4df04b86ebbd65db16b59f58",
+      "legacy_source_sha256": "8cadd7d92bf58f5623b5581d4f92b96a8f0925db4df04b86ebbd65db16b59f58"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/build-spec.json": {
+      "public_sha256": "33b7c89cd5232a9afc952bfbfb00a37d1e6b04b4b309e95fe25a976edc4d692c",
+      "legacy_source_sha256": "33b7c89cd5232a9afc952bfbfb00a37d1e6b04b4b309e95fe25a976edc4d692c"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/provenance.json": {
+      "public_sha256": "315978ca98d8d597125c0bec3f23a387bd8b4359ed524bd4fc281354139311a4",
+      "legacy_source_sha256": "315978ca98d8d597125c0bec3f23a387bd8b4359ed524bd4fc281354139311a4"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/source/decoder.cpp": {
+      "public_sha256": "c60ca0e225aafb635ea1ea04f94000b67a82689794e3a38e34f1e7eaf6b210ab",
+      "legacy_source_sha256": "c60ca0e225aafb635ea1ea04f94000b67a82689794e3a38e34f1e7eaf6b210ab"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/source/encoder.cpp": {
+      "public_sha256": "7faf3628fe1047f88cc557660f72b5b6348dab9ae8ca60661355a8e5491a5041",
+      "legacy_source_sha256": "7faf3628fe1047f88cc557660f72b5b6348dab9ae8ca60661355a8e5491a5041"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/README.md": {
+      "public_sha256": "b4de1ac32e94a7e26806443226368d3a923b071bf6ccb6c049729974c706708b",
+      "legacy_source_sha256": "b4de1ac32e94a7e26806443226368d3a923b071bf6ccb6c049729974c706708b"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/build-spec.json": {
+      "public_sha256": "295387b208b51cfdb8b0e1da60db93b21f720aa04d208d18042fa3e9d799f34f",
+      "legacy_source_sha256": "295387b208b51cfdb8b0e1da60db93b21f720aa04d208d18042fa3e9d799f34f"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/fitting-costs.json": {
+      "public_sha256": "d0e66f24635c8c00032dcb1ea8e9c48288b69721a386e105d3af878fd8e44001",
+      "legacy_source_sha256": "d0e66f24635c8c00032dcb1ea8e9c48288b69721a386e105d3af878fd8e44001"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/provenance.json": {
+      "public_sha256": "719ab695762e105369e605557d2d86f7580673093d48bbc5fd3399e72156d9f8",
+      "legacy_source_sha256": "719ab695762e105369e605557d2d86f7580673093d48bbc5fd3399e72156d9f8"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/README.md": {
+      "public_sha256": "1f3fc7436e48e3686623a549c6c3e3ca85be2c852bf985eefc1589086cc99f1c",
+      "legacy_source_sha256": "1f3fc7436e48e3686623a549c6c3e3ca85be2c852bf985eefc1589086cc99f1c"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/analysis_repair.cpp": {
+      "public_sha256": "3805bae9e4936bf25557a1cc8c0342a0e8601bbac0b40eb83268660c364e4b2b",
+      "legacy_source_sha256": "3805bae9e4936bf25557a1cc8c0342a0e8601bbac0b40eb83268660c364e4b2b"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzexp_dp.cpp": {
+      "public_sha256": "46550da64b6a962dbfa49b9680a577e1dbea4ef23da29b02a95f3161ea11a086",
+      "legacy_source_sha256": "46550da64b6a962dbfa49b9680a577e1dbea4ef23da29b02a95f3161ea11a086"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzexp_tok.cpp": {
+      "public_sha256": "8c163fd5d2dda7f7df18e02ecc9a84276dcf6bef2e21273aaaafb80d83224c41",
+      "legacy_source_sha256": "8c163fd5d2dda7f7df18e02ecc9a84276dcf6bef2e21273aaaafb80d83224c41"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_decoder.cpp": {
+      "public_sha256": "21bd630042544ce3609bc73f5e38a190d044a10145f9a40f0762dd4e8d4156c1",
+      "legacy_source_sha256": "21bd630042544ce3609bc73f5e38a190d044a10145f9a40f0762dd4e8d4156c1"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_encoder.cpp": {
+      "public_sha256": "3ba800d9ce45fff5237a6502acaa3131010dfdcf26e6d4624ed2c1b1e162c4f2",
+      "legacy_source_sha256": "3ba800d9ce45fff5237a6502acaa3131010dfdcf26e6d4624ed2c1b1e162c4f2"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_entropy.h": {
+      "public_sha256": "ec089a2ea1862d358fff5f934e45a63a354908969f4b59ed4e6cbf88d25e051f",
+      "legacy_source_sha256": "ec089a2ea1862d358fff5f934e45a63a354908969f4b59ed4e6cbf88d25e051f"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_pack.cpp": {
+      "public_sha256": "61b3e09dcda3419570f7872272c19406d07fe5f67919bbd3407d83ed24ef6dc9",
+      "legacy_source_sha256": "61b3e09dcda3419570f7872272c19406d07fe5f67919bbd3407d83ed24ef6dc9"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_payload.h": {
+      "public_sha256": "b057c2b222f0c1dcd50c2d577abefc00267e605ed6dea6e4ac66c237aca8024b",
+      "legacy_source_sha256": "b057c2b222f0c1dcd50c2d577abefc00267e605ed6dea6e4ac66c237aca8024b"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/reproduce_final.py": {
+      "public_sha256": "6fc98cada93238d6057f708e9cea0b3021e26fe741c1c86a470155c96e5f7a62",
+      "legacy_source_sha256": "6fc98cada93238d6057f708e9cea0b3021e26fe741c1c86a470155c96e5f7a62"
+    },
+    "synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/yelp/from-scratch/README.md": {
+      "public_sha256": "2797d938d38ae293eb1a52082870923d880a3369ef745e5451438ab9317c52e6",
+      "legacy_source_sha256": "12edc7e08179bfff3886a76936fe5123fcc857245513870cd5516a7047e5d477"
+    },
+    "synthesized-code/astra/yelp/from-scratch/data/baseline-provenance.json": {
+      "public_sha256": "fd0277a2f47e534269db5f0c2759f05884ab54eb116fb7633c747ae24c6b1075",
+      "legacy_source_sha256": "fd0277a2f47e534269db5f0c2759f05884ab54eb116fb7633c747ae24c6b1075"
+    },
+    "synthesized-code/astra/yelp/from-scratch/data/baseline-results.csv": {
+      "public_sha256": "c2bca2d42ec00bfb2d2eb5f5282fcf8f7d5b3c1d0be76b2068ab817162710026",
+      "legacy_source_sha256": "c2bca2d42ec00bfb2d2eb5f5282fcf8f7d5b3c1d0be76b2068ab817162710026"
+    },
+    "synthesized-code/astra/yelp/from-scratch/data/generated-results.csv": {
+      "public_sha256": "c4cca490933ff5d1016fbf7670b10afa778307f2d4a7b7c987276abbc7d304b7",
+      "legacy_source_sha256": "c4cca490933ff5d1016fbf7670b10afa778307f2d4a7b7c987276abbc7d304b7"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-01/README.md": {
+      "public_sha256": "b2f3f5c0a9f7d68534714d715e3b779cd23ccaa06cca4a2c3fea81a9176a1976",
+      "legacy_source_sha256": "b2f3f5c0a9f7d68534714d715e3b779cd23ccaa06cca4a2c3fea81a9176a1976"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-01/build-spec.json": {
+      "public_sha256": "f18f209416ac41c13c68eac8f13f33edb4cb4db8a7520cf3b04c2475b2ac5cef",
+      "legacy_source_sha256": "f18f209416ac41c13c68eac8f13f33edb4cb4db8a7520cf3b04c2475b2ac5cef"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-01/provenance.json": {
+      "public_sha256": "abc1b93728d8aff99172cddea6bbfdeb76ca80f64b82408ff151066e0782db6c",
+      "legacy_source_sha256": "abc1b93728d8aff99172cddea6bbfdeb76ca80f64b82408ff151066e0782db6c"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-01/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-01/source/yelp_final.cpp": {
+      "public_sha256": "e2c96909fdd9220b6fab6d91fc4043a334687fd7c107fb25cac36964358817e7",
+      "legacy_source_sha256": "e2c96909fdd9220b6fab6d91fc4043a334687fd7c107fb25cac36964358817e7"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/README.md": {
+      "public_sha256": "dbeb1877e4585f229e6342b04ff7543a05a94436ce53e666d7784f1f2bcfdb7f",
+      "legacy_source_sha256": "dbeb1877e4585f229e6342b04ff7543a05a94436ce53e666d7784f1f2bcfdb7f"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/build-spec.json": {
+      "public_sha256": "a371b645b7ddaffefcd489999098804c3148e663b8362d6c47b4c7757cfd1301",
+      "legacy_source_sha256": "a371b645b7ddaffefcd489999098804c3148e663b8362d6c47b4c7757cfd1301"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/provenance.json": {
+      "public_sha256": "edb2ebea316188e38b3cbf4d2de52e79127e289c0852d687540eae83b0a611af",
+      "legacy_source_sha256": "edb2ebea316188e38b3cbf4d2de52e79127e289c0852d687540eae83b0a611af"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/codec.cpp": {
+      "public_sha256": "a1c470daab3efc1947f2eb28cadd5eb257235235ed383ca918f9fedb4724ecb6",
+      "legacy_source_sha256": "a1c470daab3efc1947f2eb28cadd5eb257235235ed383ca918f9fedb4724ecb6"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/complex.h": {
+      "public_sha256": "ce9a983fac6f8f1f59641024061baf5ed1bf54afe00811e5d81f32796ab7fa18",
+      "legacy_source_sha256": "ce9a983fac6f8f1f59641024061baf5ed1bf54afe00811e5d81f32796ab7fa18"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/id_simdfused.h": {
+      "public_sha256": "012f29e2897208213dea6cebc5011ee9bbc39f2300e44356261edcd84596c4f2",
+      "legacy_source_sha256": "012f29e2897208213dea6cebc5011ee9bbc39f2300e44356261edcd84596c4f2"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/location_huff.h": {
+      "public_sha256": "c63a9603b41e70ff17080a0e335c85252e98d49dee73b9043b9ed04c6a239f47",
+      "legacy_source_sha256": "c63a9603b41e70ff17080a0e335c85252e98d49dee73b9043b9ed04c6a239f47"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/numeric.h": {
+      "public_sha256": "03afc0d657ba00da939f42f7ff96026e328b6f0371be54430057a8fb5b3a231d",
+      "legacy_source_sha256": "03afc0d657ba00da939f42f7ff96026e328b6f0371be54430057a8fb5b3a231d"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/numeric_group_huff.h": {
+      "public_sha256": "d9439871afe9b3034b3245a10417f88896a9c340abb86f7862deed84470af986",
+      "legacy_source_sha256": "d9439871afe9b3034b3245a10417f88896a9c340abb86f7862deed84470af986"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-02/source/text.h": {
+      "public_sha256": "c950ae82ff31cb0684af621e28df197e98826d0555d845c6f3d61bf1f2963dbd",
+      "legacy_source_sha256": "c950ae82ff31cb0684af621e28df197e98826d0555d845c6f3d61bf1f2963dbd"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/README.md": {
+      "public_sha256": "0cd80155622af81b0e6989d3e4be9fac7ca3cf47d18828420d5d63191d5a9034",
+      "legacy_source_sha256": "0cd80155622af81b0e6989d3e4be9fac7ca3cf47d18828420d5d63191d5a9034"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/build-spec.json": {
+      "public_sha256": "eb76f980d2c948e0886f293bc92052011bfc7b43fdc8ee7dd6630258db15371a",
+      "legacy_source_sha256": "eb76f980d2c948e0886f293bc92052011bfc7b43fdc8ee7dd6630258db15371a"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/provenance.json": {
+      "public_sha256": "0588d4d46548246703ada0d702b9630ad42cb95692a9b0145c09de10ef459bf8",
+      "legacy_source_sha256": "0588d4d46548246703ada0d702b9630ad42cb95692a9b0145c09de10ef459bf8"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/source/codec_primitive_trim_runtime.cpp": {
+      "public_sha256": "9a941fc379bfb11dbc04bf29d9e73c06a61289084b0bb3b42d4bd2f007bafe98",
+      "legacy_source_sha256": "9a941fc379bfb11dbc04bf29d9e73c06a61289084b0bb3b42d4bd2f007bafe98"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/source/primitive_strcodec.h": {
+      "public_sha256": "a974db911b7b9598c7ba9bbeac1a7e8e87e2a363669f4a544bbdb25f97adbcce",
+      "legacy_source_sha256": "a974db911b7b9598c7ba9bbeac1a7e8e87e2a363669f4a544bbdb25f97adbcce"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-03/source/simd_helpers.h": {
+      "public_sha256": "7634eae8dcce56ed70a211834769ba9568aebbe908ace3e2bb85430db015985e",
+      "legacy_source_sha256": "7634eae8dcce56ed70a211834769ba9568aebbe908ace3e2bb85430db015985e"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/README.md": {
+      "public_sha256": "268fd4c015dc5bc413bcfa036fd546568a92c6857b5d26be22d3dae649d7745b",
+      "legacy_source_sha256": "268fd4c015dc5bc413bcfa036fd546568a92c6857b5d26be22d3dae649d7745b"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/build-spec.json": {
+      "public_sha256": "ec7991ca83f020e7836004b84175c1f113788439c1bf1c7634e6c4fb4e2ba22f",
+      "legacy_source_sha256": "ec7991ca83f020e7836004b84175c1f113788439c1bf1c7634e6c4fb4e2ba22f"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/provenance.json": {
+      "public_sha256": "1747c876ba42a2d239245c83d880d7b0254f619a3e59bac0887f8d56ba87e2a6",
+      "legacy_source_sha256": "1747c876ba42a2d239245c83d880d7b0254f619a3e59bac0887f8d56ba87e2a6"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/source/final_huff8.h": {
+      "public_sha256": "485b31aef8dd040aefb7f096a632be478611676b694ab25f8ec7e3882c9c3ee9",
+      "legacy_source_sha256": "485b31aef8dd040aefb7f096a632be478611676b694ab25f8ec7e3882c9c3ee9"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/source/final_huffjoin.cpp": {
+      "public_sha256": "f3c5f216879a25267c484906cc0519dedac1a3cfb38278dd51557f9132aa6bb4",
+      "legacy_source_sha256": "f3c5f216879a25267c484906cc0519dedac1a3cfb38278dd51557f9132aa6bb4"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/source/final_lz.h": {
+      "public_sha256": "60cba7c87007be52da0de4932b3b7f5731d39c408d2d04a195f688aab7b78b76",
+      "legacy_source_sha256": "60cba7c87007be52da0de4932b3b7f5731d39c408d2d04a195f688aab7b78b76"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/source/inspect_pack.h": {
+      "public_sha256": "43ab8cd18af7d09241e0ed0adea74027df053b7b0b54dc21f1c59822d0077b13",
+      "legacy_source_sha256": "43ab8cd18af7d09241e0ed0adea74027df053b7b0b54dc21f1c59822d0077b13"
+    },
+    "synthesized-code/astra/yelp/from-scratch/run-04/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/build.py": {
+      "public_sha256": "070c1ca395f4e370e77cbd6510510698aa1ea75ee222f3e59c7eb6339a3d707f",
+      "legacy_source_sha256": "3b0574c5d765933e45b78d1b13c5ce5da5c488f4ffefa32fda31b0d1ff2173f1"
+    },
+    "synthesized-code/dbtext/astra/README.md": {
+      "public_sha256": "8991821f1e5a1924cb9bab7944d434ce2d735474160e52a6fba8bb764cb0d7fb",
+      "legacy_source_sha256": "c6f6d82b18bee8c7e82ed573ed0ff9c5d24e81a35c7356338c8143e3db35f176"
+    },
+    "synthesized-code/dbtext/astra/data/baselines.csv": {
+      "public_sha256": "fa7b06f8c82f4a4299fa77dc1de6fba0e98c8e6befbe72b5b687364481bcbce6",
+      "legacy_source_sha256": "fa7b06f8c82f4a4299fa77dc1de6fba0e98c8e6befbe72b5b687364481bcbce6"
+    },
+    "synthesized-code/dbtext/astra/data/bulk-points.csv": {
+      "public_sha256": "9d8a41eef50a03f0b3eb32bc8438ca1a6834892d3d5dbe675e3070fc70e8e9f1",
+      "legacy_source_sha256": "9d8a41eef50a03f0b3eb32bc8438ca1a6834892d3d5dbe675e3070fc70e8e9f1"
+    },
+    "synthesized-code/dbtext/astra/data/generated-results.csv": {
+      "public_sha256": "863b3083608996e366f336ba836b66716113c6d1c211fc4d0c6f9f78b275629a",
+      "legacy_source_sha256": "863b3083608996e366f336ba836b66716113c6d1c211fc4d0c6f9f78b275629a"
+    },
+    "synthesized-code/dbtext/astra/data/row-points.csv": {
+      "public_sha256": "e9545df8bab910e363015e2bddcf2c3fe605a88ca9495b6fd739e18f4e9d5130",
+      "legacy_source_sha256": "e9545df8bab910e363015e2bddcf2c3fe605a88ca9495b6fd739e18f4e9d5130"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/README.md": {
+      "public_sha256": "84826e7f4816121b4cc253c2c03fe07e1ce2126ea302726ca1e99094285dd273",
+      "legacy_source_sha256": "84826e7f4816121b4cc253c2c03fe07e1ce2126ea302726ca1e99094285dd273"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/build-spec.json": {
+      "public_sha256": "881f4fa45b6be8511558237398e7f4088beb6434d7a0ea4a753ec61b9210726b",
+      "legacy_source_sha256": "881f4fa45b6be8511558237398e7f4088beb6434d7a0ea4a753ec61b9210726b"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/provenance.json": {
+      "public_sha256": "f15789f80106ac39c4efb601e2b3602641a179fc6a3d56e5671dd7ea6f44ab9d",
+      "legacy_source_sha256": "f15789f80106ac39c4efb601e2b3602641a179fc6a3d56e5671dd7ea6f44ab9d"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/FORMAT.md": {
+      "public_sha256": "66a5ae84b972c8ba2e0c72e1f4a34dc846a3ca05cf762189a0a155d495eb1e87",
+      "legacy_source_sha256": "66a5ae84b972c8ba2e0c72e1f4a34dc846a3ca05cf762189a0a155d495eb1e87"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/bytecodec.hpp": {
+      "public_sha256": "c22f7656e51b57fb071b1db2dd37200276136ad03bd47d96f90f85438b270b0e",
+      "legacy_source_sha256": "c22f7656e51b57fb071b1db2dd37200276136ad03bd47d96f90f85438b270b0e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/mosaic.cpp": {
+      "public_sha256": "ec3f1cb5e15595a6568d55a7f8df583f343873d9cd10a0e32684b80c14f9fbca",
+      "legacy_source_sha256": "ec3f1cb5e15595a6568d55a7f8df583f343873d9cd10a0e32684b80c14f9fbca"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/numeric.hpp": {
+      "public_sha256": "c8638a4beb67cf35dbb7e09bb556c2087bfc642c8c71330e5325585c18ec4e16",
+      "legacy_source_sha256": "c8638a4beb67cf35dbb7e09bb556c2087bfc642c8c71330e5325585c18ec4e16"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/phrase.hpp": {
+      "public_sha256": "ce92b691b6c45f19340171e4f1576005949264d8936e83b54e8964f360d28332",
+      "legacy_source_sha256": "ce92b691b6c45f19340171e4f1576005949264d8936e83b54e8964f360d28332"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/phrase16_masked.hpp": {
+      "public_sha256": "c26bfe1dc357e3c1040522780212754fd3741810d8b58d730135ab916aef8716",
+      "legacy_source_sha256": "c26bfe1dc357e3c1040522780212754fd3741810d8b58d730135ab916aef8716"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/special_hexfast.hpp": {
+      "public_sha256": "3b89e9f680613688e595c659355dd0ab5ebf4e383817676246de26bda0f9dd5a",
+      "legacy_source_sha256": "3b89e9f680613688e595c659355dd0ab5ebf4e383817676246de26bda0f9dd5a"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/README.md": {
+      "public_sha256": "b32e25d3496fd99136bbf4a94677716166ef96b51f783396438dc371b54c9712",
+      "legacy_source_sha256": "b32e25d3496fd99136bbf4a94677716166ef96b51f783396438dc371b54c9712"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/build-spec.json": {
+      "public_sha256": "d1f262a209581ef75d40d64b4482150a7a710b694b75151a39966dff18bc7fa7",
+      "legacy_source_sha256": "d1f262a209581ef75d40d64b4482150a7a710b694b75151a39966dff18bc7fa7"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/provenance.json": {
+      "public_sha256": "89f9b882d185a2471ccb7e4907e759f58463a45457bf4040cd944962427a8935",
+      "legacy_source_sha256": "89f9b882d185a2471ccb7e4907e759f58463a45457bf4040cd944962427a8935"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/FORMAT.md": {
+      "public_sha256": "748c16b6a1b39f5f54c250c1cd82b5c3665b9d214a2e9c62b1ad5a7520262b52",
+      "legacy_source_sha256": "748c16b6a1b39f5f54c250c1cd82b5c3665b9d214a2e9c62b1ad5a7520262b52"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/codec.cpp": {
+      "public_sha256": "d38d62f05be82acca077e7bf1f79123c54e803787f1dc7062f8bd6ea157fa9e3",
+      "legacy_source_sha256": "d38d62f05be82acca077e7bf1f79123c54e803787f1dc7062f8bd6ea157fa9e3"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/context.h": {
+      "public_sha256": "c84c50882c16447979fc6fae11e1aa77379fda28dd460ac64ae2cf5ebf7c4f9e",
+      "legacy_source_sha256": "c84c50882c16447979fc6fae11e1aa77379fda28dd460ac64ae2cf5ebf7c4f9e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/location.h": {
+      "public_sha256": "55085b2e7917dfca362fbd1dcabbbae4916f287b278de48643583a099504e924",
+      "legacy_source_sha256": "55085b2e7917dfca362fbd1dcabbbae4916f287b278de48643583a099504e924"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/special.h": {
+      "public_sha256": "1e3ab129f216ca5fb9bfa4f524bdb48317d58a62287ad06bce4bdd8a6cdd0c0d",
+      "legacy_source_sha256": "1e3ab129f216ca5fb9bfa4f524bdb48317d58a62287ad06bce4bdd8a6cdd0c0d"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/templates.h": {
+      "public_sha256": "ae2f5e3d7edbe87039c910ff5e29bf2db1fb02e19c6b1729a884a4043fd0cf5e",
+      "legacy_source_sha256": "ae2f5e3d7edbe87039c910ff5e29bf2db1fb02e19c6b1729a884a4043fd0cf5e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/README.md": {
+      "public_sha256": "bc6e30eb170767b45bee5cacbf1f46406655caee103bf79761b69b1806cf0fe2",
+      "legacy_source_sha256": "bc6e30eb170767b45bee5cacbf1f46406655caee103bf79761b69b1806cf0fe2"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/build-spec.json": {
+      "public_sha256": "df12b837b69241e47c4c7b19c956a09ba435e7335ff8a6cb2a23c99f596e999b",
+      "legacy_source_sha256": "df12b837b69241e47c4c7b19c956a09ba435e7335ff8a6cb2a23c99f596e999b"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/provenance.json": {
+      "public_sha256": "cd7c4a4a4465de363756d96291b4a8595f0f0932e14a9208ffbc9b79966bc835",
+      "legacy_source_sha256": "cd7c4a4a4465de363756d96291b4a8595f0f0932e14a9208ffbc9b79966bc835"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/README.md": {
+      "public_sha256": "2d5977d8389ccea2a4cfe56ad8986ff7b5e89e5f5fdcd140cad4605e60763b4e",
+      "legacy_source_sha256": "2d5977d8389ccea2a4cfe56ad8986ff7b5e89e5f5fdcd140cad4605e60763b4e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/huffman.h": {
+      "public_sha256": "83f6f148d2f7fd2b42cec349efe3340738ec8f1244c4244b9435e02bf96891df",
+      "legacy_source_sha256": "83f6f148d2f7fd2b42cec349efe3340738ec8f1244c4244b9435e02bf96891df"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/main.cpp": {
+      "public_sha256": "3a28623562187a6c48dbffc3e5cfc789740fd3b781a01e88745aaab9915cb30c",
+      "legacy_source_sha256": "3a28623562187a6c48dbffc3e5cfc789740fd3b781a01e88745aaab9915cb30c"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase.h": {
+      "public_sha256": "6bc8fdd751ffc7f36caf2f4401e276c77e326d090b843e6f1215a8ffdcdf1d5a",
+      "legacy_source_sha256": "6bc8fdd751ffc7f36caf2f4401e276c77e326d090b843e6f1215a8ffdcdf1d5a"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase_dict.h": {
+      "public_sha256": "ecf0c4ac087f5e5002edca098928efe676ad57bbcd3ec8125b618faf937b1d42",
+      "legacy_source_sha256": "ecf0c4ac087f5e5002edca098928efe676ad57bbcd3ec8125b618faf937b1d42"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase_grammar.h": {
+      "public_sha256": "50e918c93c1de1a1814c0cc7ac1205045748f91757bf12bbce1b485b63fe37d7",
+      "legacy_source_sha256": "50e918c93c1de1a1814c0cc7ac1205045748f91757bf12bbce1b485b63fe37d7"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/residual.h": {
+      "public_sha256": "c50e5f3d86eee090e55d080ceee7cbbf1051c6017e540ba5ae343ea261d1a8e2",
+      "legacy_source_sha256": "c50e5f3d86eee090e55d080ceee7cbbf1051c6017e540ba5ae343ea261d1a8e2"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/row_index.h": {
+      "public_sha256": "7e708bd0acc4c37dcb2314d06c6d8f303684899caeae98c3dad977b586398688",
+      "legacy_source_sha256": "7e708bd0acc4c37dcb2314d06c6d8f303684899caeae98c3dad977b586398688"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/special_compact.h": {
+      "public_sha256": "b32e93bdba20f6771fadd56203e9af7b638b50b3f898e14f25fd31103a778eb7",
+      "legacy_source_sha256": "b32e93bdba20f6771fadd56203e9af7b638b50b3f898e14f25fd31103a778eb7"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/structure_hybrid2.h": {
+      "public_sha256": "edd38bc97bfed781299ef8e71c8a38c320e14bf96778d870ab9929fa4357ef19",
+      "legacy_source_sha256": "edd38bc97bfed781299ef8e71c8a38c320e14bf96778d870ab9929fa4357ef19"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/README.md": {
+      "public_sha256": "e5f5347a2e37e6ccd083abecce040f99e88c04202e39ed392aa1d6326f0535f7",
+      "legacy_source_sha256": "e5f5347a2e37e6ccd083abecce040f99e88c04202e39ed392aa1d6326f0535f7"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/build-spec.json": {
+      "public_sha256": "bcf0019423aca3df6c2f4c0e6bf853d6a9888ef6dec36790c0cf25fb3b7fcb01",
+      "legacy_source_sha256": "bcf0019423aca3df6c2f4c0e6bf853d6a9888ef6dec36790c0cf25fb3b7fcb01"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/provenance.json": {
+      "public_sha256": "fed1be9a4f2dd43717a6c7075d4def30b6b1073a0f35d49cd8cb2f0ae31b8aa8",
+      "legacy_source_sha256": "fed1be9a4f2dd43717a6c7075d4def30b6b1073a0f35d49cd8cb2f0ae31b8aa8"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/FITTING.json": {
+      "public_sha256": "0c19fe446e7afdff910ad42168a4db6ce3a196d364ee21cc7c0e0e4301fd5165",
+      "legacy_source_sha256": "0c19fe446e7afdff910ad42168a4db6ce3a196d364ee21cc7c0e0e4301fd5165"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/FORMAT.md": {
+      "public_sha256": "78a21577132e7cbfec5d96d16c9001c78fe7acf04fcee6a2615edd0421f1ecf5",
+      "legacy_source_sha256": "78a21577132e7cbfec5d96d16c9001c78fe7acf04fcee6a2615edd0421f1ecf5"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/codec_final.cpp": {
+      "public_sha256": "64544020fa27a9627e5735c021d4e9a2a947e36d727024ea7062847f36f52363",
+      "legacy_source_sha256": "64544020fa27a9627e5735c021d4e9a2a947e36d727024ea7062847f36f52363"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/dpack.h": {
+      "public_sha256": "b37dd0da94870fc2227e1ef56e6375ea12ecacda4cb1c38f6eaa8920e6cf6b7a",
+      "legacy_source_sha256": "b37dd0da94870fc2227e1ef56e6375ea12ecacda4cb1c38f6eaa8920e6cf6b7a"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/fit_settings.h": {
+      "public_sha256": "f5a8071ec994cb1861d32ebc13eac624e1babe666318ac115bf8d254d8ca6e14",
+      "legacy_source_sha256": "f5a8071ec994cb1861d32ebc13eac624e1babe666318ac115bf8d254d8ca6e14"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/location.h": {
+      "public_sha256": "62e4251de6e71b24e62262101c3573e0a25ab9903a95384e101602fc3611549e",
+      "legacy_source_sha256": "62e4251de6e71b24e62262101c3573e0a25ab9903a95384e101602fc3611549e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/optparse.h": {
+      "public_sha256": "620ad779377bdf3d814f99ec75d86c07b0cd33dea46866ccee5f391693c876f6",
+      "legacy_source_sha256": "620ad779377bdf3d814f99ec75d86c07b0cd33dea46866ccee5f391693c876f6"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/repair_train.h": {
+      "public_sha256": "5ad40c2b602b8891efc62d1f0fa1d325f58f063fc067b1909a539e26fa6eb876",
+      "legacy_source_sha256": "5ad40c2b602b8891efc62d1f0fa1d325f58f063fc067b1909a539e26fa6eb876"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/structured.h": {
+      "public_sha256": "0bbb12918884398ee548aaea453c7a491ce73d58e4f6c21c57a0fe79e8397852",
+      "legacy_source_sha256": "0bbb12918884398ee548aaea453c7a491ce73d58e4f6c21c57a0fe79e8397852"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/textcodec_packed.h": {
+      "public_sha256": "6fa962caee537fb65931ed92dcf33a5a69a3bedf8737c57e4dbe62632579042a",
+      "legacy_source_sha256": "6fa962caee537fb65931ed92dcf33a5a69a3bedf8737c57e4dbe62632579042a"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/urls.h": {
+      "public_sha256": "2b9c7b3df84b8ae8097ee8ab45883c20baab11eec84d269d3b22b7c79327982b",
+      "legacy_source_sha256": "2b9c7b3df84b8ae8097ee8ab45883c20baab11eec84d269d3b22b7c79327982b"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/README.md": {
+      "public_sha256": "81f990956895ca695672e3ce15c4788836a968c7422e33db4001a6c3631e0a05",
+      "legacy_source_sha256": "81f990956895ca695672e3ce15c4788836a968c7422e33db4001a6c3631e0a05"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/build-spec.json": {
+      "public_sha256": "e9171ce077f13410d8c9ba3209640174a8c0250f1ef23caed4db39c32973216e",
+      "legacy_source_sha256": "e9171ce077f13410d8c9ba3209640174a8c0250f1ef23caed4db39c32973216e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/provenance.json": {
+      "public_sha256": "8d47b6d7dd2b23ddce703e88bba00b3506cfbb81fb3394e87de41ac28efe13dd",
+      "legacy_source_sha256": "8d47b6d7dd2b23ddce703e88bba00b3506cfbb81fb3394e87de41ac28efe13dd"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/README.md": {
+      "public_sha256": "459addf01e99967d9ea489f9ab692c7b8df8c96de88def511d570eee5dc97776",
+      "legacy_source_sha256": "459addf01e99967d9ea489f9ab692c7b8df8c96de88def511d570eee5dc97776"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/defpack.h": {
+      "public_sha256": "edfc13861571b0d13c9b20dba5c3ccab4505a7664a90cf3cd665151e95ea1cf9",
+      "legacy_source_sha256": "edfc13861571b0d13c9b20dba5c3ccab4505a7664a90cf3cd665151e95ea1cf9"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_fast.cpp": {
+      "public_sha256": "83fdc531d08959914adc419142464c14911909b11ca7423560f81b151e18e7bc",
+      "legacy_source_sha256": "83fdc531d08959914adc419142464c14911909b11ca7423560f81b151e18e7bc"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_hf_isolated.cpp": {
+      "public_sha256": "b83c19577ceedfce617a923dc3c582e66c72b4fb098a4a563831962d753c6ae5",
+      "legacy_source_sha256": "b83c19577ceedfce617a923dc3c582e66c72b4fb098a4a563831962d753c6ae5"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_mix.cpp": {
+      "public_sha256": "12cc06afb11a0f2332e34e54740432ede036c0ebe183a0b48cafbe9fb5f51a59",
+      "legacy_source_sha256": "12cc06afb11a0f2332e34e54740432ede036c0ebe183a0b48cafbe9fb5f51a59"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/main.cpp": {
+      "public_sha256": "41d074294e44075f10521b69913bba9422bde5ce61bc19ae76e57e692c8b5b1e",
+      "legacy_source_sha256": "41d074294e44075f10521b69913bba9422bde5ce61bc19ae76e57e692c8b5b1e"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/special.cpp": {
+      "public_sha256": "dce5be3b65f5fd68a274255abab05d22806ef02543a2ee17b53c1e597cf6e254",
+      "legacy_source_sha256": "dce5be3b65f5fd68a274255abab05d22806ef02543a2ee17b53c1e597cf6e254"
+    },
+    "synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/url.cpp": {
+      "public_sha256": "cbfc78edd7335f8cc40ddc1cc4c890b6b62e8f013d98e73ad2f59bf4f767228b",
+      "legacy_source_sha256": "cbfc78edd7335f8cc40ddc1cc4c890b6b62e8f013d98e73ad2f59bf4f767228b"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/README.md": {
+      "public_sha256": "f588f37f2f0759a89455b12f3a1e56140929404f73330787cdcfed61b6e3b61d",
+      "legacy_source_sha256": "2be0f45cd769bf6997f40e3d6dff08d80e6ee833d2c78f604f867dfdbc808334"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/build-spec.json": {
+      "public_sha256": "32ec2752d4c4ab64def1518c555ba2f997f68e23a8c7945613e27a0f99b37728",
+      "legacy_source_sha256": "32ec2752d4c4ab64def1518c555ba2f997f68e23a8c7945613e27a0f99b37728"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/measurements.json": {
+      "public_sha256": "d04ebf758385a2efab567eca581375315be9170c2bf6b9240bc86bd8d43f5c0a",
+      "legacy_source_sha256": "7ca00857d773f71f42e7a8e942caac4584ccbf0729b933b77594352750392a50"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/provenance.json": {
+      "public_sha256": "53f194f41737deb6011b4c0eb4c16794915688d33a3ffd21a6b0e233315efa5d",
+      "legacy_source_sha256": "a5732931d64c769e939c4444d626a48f2f2c2a8c4f1bf6b5d7ef0aee6c22b211"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/README.md": {
+      "public_sha256": "b75b33334efe3ff79023e38daeeb7d4fa905f9026ac3f1ee0564902fa478ce17",
+      "legacy_source_sha256": "b75b33334efe3ff79023e38daeeb7d4fa905f9026ac3f1ee0564902fa478ce17"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/bytetext.h": {
+      "public_sha256": "e7feaaab046962059f2cecc5863f90365f401a5e8936ace2b9f6ac92cf02f304",
+      "legacy_source_sha256": "e7feaaab046962059f2cecc5863f90365f401a5e8936ace2b9f6ac92cf02f304"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/codec.cpp": {
+      "public_sha256": "66dad4a92ee9da7d2d665e4d05fd375d83782f6757f22fcad10893d73cee0d8c",
+      "legacy_source_sha256": "66dad4a92ee9da7d2d665e4d05fd375d83782f6757f22fcad10893d73cee0d8c"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/location.h": {
+      "public_sha256": "76a6d29cd77c3bee2a58bb5b89ea4066f7c9ba249ba46e7187903713d4661206",
+      "legacy_source_sha256": "76a6d29cd77c3bee2a58bb5b89ea4066f7c9ba249ba46e7187903713d4661206"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/special.h": {
+      "public_sha256": "8bd53cd8b60c3dedb72a4380f3fdb62146b83d596eb6138e5a29e5668c74af73",
+      "legacy_source_sha256": "8bd53cd8b60c3dedb72a4380f3fdb62146b83d596eb6138e5a29e5668c74af73"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/text16.h": {
+      "public_sha256": "10d4605be1bdeb1a88cc0ca9f60f94578e5d7cf591b5032abd4f3316b4037e7a",
+      "legacy_source_sha256": "10d4605be1bdeb1a88cc0ca9f60f94578e5d7cf591b5032abd4f3316b4037e7a"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/textcodec.h": {
+      "public_sha256": "8a6abf666bdc885a7f36ac21484a145ae35e8f0c6bab7476d223c67cc001b65d",
+      "legacy_source_sha256": "8a6abf666bdc885a7f36ac21484a145ae35e8f0c6bab7476d223c67cc001b65d"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A1/source/zero8.h": {
+      "public_sha256": "9e0e653e8df95a2d65a0de0ecdf7d1c288664806cd2e5341de04ee2fd9da1c40",
+      "legacy_source_sha256": "9e0e653e8df95a2d65a0de0ecdf7d1c288664806cd2e5341de04ee2fd9da1c40"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/README.md": {
+      "public_sha256": "3422c0a4fe8d68d83498d7da9929b5ed2da2c6a5d99a5a67729ac48574af0660",
+      "legacy_source_sha256": "7bc3301005481ed9ac89e8dc720f709126e2b1d18144bdbd6fa7784863d311dc"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/build-spec.json": {
+      "public_sha256": "2a4ff439cbd71477ddce5900bc76f01b495b6e847587af74a8617125ec7f20d9",
+      "legacy_source_sha256": "2a4ff439cbd71477ddce5900bc76f01b495b6e847587af74a8617125ec7f20d9"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/measurements.json": {
+      "public_sha256": "2568affc3503d25714f42cf86fcfd7d25928ec12fff13418e31af2fe00c8c05a",
+      "legacy_source_sha256": "dc3c710680acc6eb1ff89606fb6f0b466216325c59727dcbf55cd00b3563bcce"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/provenance.json": {
+      "public_sha256": "0cf0455c34a0609de2a2b7fc481cf1146ebf0d4f935d9478870884b8c2eec3b9",
+      "legacy_source_sha256": "8e0a8c94804e959ec60803c1ff1122f3a9636eaa4d783e468a75418a9fd76324"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/codec.cpp": {
+      "public_sha256": "26a73613c88198aeeff453161f7adbc99660d27610fcc3747ac7b490431e5ad4",
+      "legacy_source_sha256": "26a73613c88198aeeff453161f7adbc99660d27610fcc3747ac7b490431e5ad4"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/context.h": {
+      "public_sha256": "1d2f47a94a5574fc2d474a14ecd90d0f05d42dc02bc32cfddc490f939f0fc83b",
+      "legacy_source_sha256": "1d2f47a94a5574fc2d474a14ecd90d0f05d42dc02bc32cfddc490f939f0fc83b"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/general.h": {
+      "public_sha256": "bd652c5731420b63d7a19f4819284b0f83b588d658a946e5abc95d28ac783fc1",
+      "legacy_source_sha256": "bd652c5731420b63d7a19f4819284b0f83b588d658a946e5abc95d28ac783fc1"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/grammar.h": {
+      "public_sha256": "155d2db5abcdcf0760bcf85c6d9ca45c74cea57eeba99ada75c8e80217b9a9c1",
+      "legacy_source_sha256": "155d2db5abcdcf0760bcf85c6d9ca45c74cea57eeba99ada75c8e80217b9a9c1"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/huffman.h": {
+      "public_sha256": "edd8a6f1bc3cf95982b78430b1fb9bba11ee5bf02dacb7705619c2de0b2273f6",
+      "legacy_source_sha256": "edd8a6f1bc3cf95982b78430b1fb9bba11ee5bf02dacb7705619c2de0b2273f6"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/location.h": {
+      "public_sha256": "bf58f6ec2acd02f4835f9f4c18a4129db9e5c7370fdb5162092dfbaea117ebd4",
+      "legacy_source_sha256": "bf58f6ec2acd02f4835f9f4c18a4129db9e5c7370fdb5162092dfbaea117ebd4"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/reparse.h": {
+      "public_sha256": "6b091982a71a13a9e97c5002178b67fc1f5d21419ec7c1099a7435e1fc7d3357",
+      "legacy_source_sha256": "6b091982a71a13a9e97c5002178b67fc1f5d21419ec7c1099a7435e1fc7d3357"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/shrink_elf.py": {
+      "public_sha256": "e7b6cd97c5cbedf4cbdae0a9ffa2b7813f42aecba43b8478ec9dfce25c6dec92",
+      "legacy_source_sha256": "e7b6cd97c5cbedf4cbdae0a9ffa2b7813f42aecba43b8478ec9dfce25c6dec92"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A2/source/special.h": {
+      "public_sha256": "3f53a0e68fa33d7b444d41674ee4da2ac5439dedc94a6086ae6c1a076ae6c792",
+      "legacy_source_sha256": "3f53a0e68fa33d7b444d41674ee4da2ac5439dedc94a6086ae6c1a076ae6c792"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/README.md": {
+      "public_sha256": "985233e058c2510a2b5a930d864f8b388abd3a6c8869b74d4717325d8fb3e14d",
+      "legacy_source_sha256": "991b042b1f26d04ca467866ce3d26a2d8fee1cd3dfcfb5088d741c40da90ed0f"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/build-spec.json": {
+      "public_sha256": "f6673667f8d230879dcac89542cb9fd6900558d47827cce5cfedc75703108e0b",
+      "legacy_source_sha256": "f6673667f8d230879dcac89542cb9fd6900558d47827cce5cfedc75703108e0b"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/provenance.json": {
+      "public_sha256": "44424c58cda406a5f0bf35f480681e32730dd3db0d5c4de7850361cedcf401ed",
+      "legacy_source_sha256": "44424c58cda406a5f0bf35f480681e32730dd3db0d5c4de7850361cedcf401ed"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/qualification.json": {
+      "public_sha256": "1ec88dbbd31f1108323e5a69b0fff0450b89eebcc64bdd09cb6e7e7e00075505",
+      "legacy_source_sha256": "1ec88dbbd31f1108323e5a69b0fff0450b89eebcc64bdd09cb6e7e7e00075505"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/codec.cpp": {
+      "public_sha256": "738684d6f3d9bef343ae4e738fc4254a59cacb8f4fc6b00365e62e53770a3b15",
+      "legacy_source_sha256": "738684d6f3d9bef343ae4e738fc4254a59cacb8f4fc6b00365e62e53770a3b15"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/dictpack.h": {
+      "public_sha256": "768159454b6170a83af4d15a0e58612455ff94f11dc141b875c18c061dcbfe2c",
+      "legacy_source_sha256": "768159454b6170a83af4d15a0e58612455ff94f11dc141b875c18c061dcbfe2c"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/entropy.h": {
+      "public_sha256": "c179a3ae7d2307382fdb7558b3e27abc9ca40db807055708e6281ef079e71a19",
+      "legacy_source_sha256": "c179a3ae7d2307382fdb7558b3e27abc9ca40db807055708e6281ef079e71a19"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/entropy_fast.h": {
+      "public_sha256": "a337f3854f7d9643d51c5cbc87036ee38b63d87c533b9458d50da594afa4fd46",
+      "legacy_source_sha256": "a337f3854f7d9643d51c5cbc87036ee38b63d87c533b9458d50da594afa4fd46"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/gphrase.h": {
+      "public_sha256": "478991c00040769c63e070d0e32c8bf98a0e473d1e426de97999c1ec8b839ffa",
+      "legacy_source_sha256": "478991c00040769c63e070d0e32c8bf98a0e473d1e426de97999c1ec8b839ffa"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/gphrase_fast.h": {
+      "public_sha256": "073059d6e7bf3b99f2b65c556deb8cb3ab2a4565658cd107e57e8b75966ed36c",
+      "legacy_source_sha256": "073059d6e7bf3b99f2b65c556deb8cb3ab2a4565658cd107e57e8b75966ed36c"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/location.h": {
+      "public_sha256": "48e3cb278f493a7b812888fab87cf97aef7d27aaf237e203c3c245620b90ddaa",
+      "legacy_source_sha256": "48e3cb278f493a7b812888fab87cf97aef7d27aaf237e203c3c245620b90ddaa"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/phrase.h": {
+      "public_sha256": "572f3e2ff5ea4c88d266cc1ddf38de065e850211b6d497a93e8033e1852c6f97",
+      "legacy_source_sha256": "572f3e2ff5ea4c88d266cc1ddf38de065e850211b6d497a93e8033e1852c6f97"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/phrase_fast.h": {
+      "public_sha256": "206481f77b3ba34dbb8dae6a1370510ebe34bfa212b931215f24184596392866",
+      "legacy_source_sha256": "206481f77b3ba34dbb8dae6a1370510ebe34bfa212b931215f24184596392866"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/reparse.inc": {
+      "public_sha256": "6a7ec88320c1eb0e592a4495a25d9adc47bba4e8bbe1687d78be7cad1d692c81",
+      "legacy_source_sha256": "6a7ec88320c1eb0e592a4495a25d9adc47bba4e8bbe1687d78be7cad1d692c81"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/structured.h": {
+      "public_sha256": "9c0562d120c050f82d9a45d358862414cf0d846a9fd4c73a66d22cda7d15f5d9",
+      "legacy_source_sha256": "9c0562d120c050f82d9a45d358862414cf0d846a9fd4c73a66d22cda7d15f5d9"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A3/source/url.h": {
+      "public_sha256": "2b4d178af105a1c359ff0f131d78f5f11ca9bb04d934fb5371b7420ca21e6023",
+      "legacy_source_sha256": "2b4d178af105a1c359ff0f131d78f5f11ca9bb04d934fb5371b7420ca21e6023"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/README.md": {
+      "public_sha256": "a9c965f76fe5ad4e87e27e85dfe1679a06aaf57a47040c725fa96c1af2924016",
+      "legacy_source_sha256": "a9c965f76fe5ad4e87e27e85dfe1679a06aaf57a47040c725fa96c1af2924016"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/build-spec.json": {
+      "public_sha256": "97b042f7415631a2cca06cbaf031ef765eb76456fddf389cabc3729ebda231b8",
+      "legacy_source_sha256": "97b042f7415631a2cca06cbaf031ef765eb76456fddf389cabc3729ebda231b8"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/provenance.json": {
+      "public_sha256": "dfc84f991b44a5dcbb6019916d4893050822ca85a509290fa772e3865318517b",
+      "legacy_source_sha256": "dfc84f991b44a5dcbb6019916d4893050822ca85a509290fa772e3865318517b"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/qualification.json": {
+      "public_sha256": "b98a6776fd611eceea46aed77ec3a6916cd2bfae17e7e4c3f09e974c89a53837",
+      "legacy_source_sha256": "b98a6776fd611eceea46aed77ec3a6916cd2bfae17e7e4c3f09e974c89a53837"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/codec.cpp": {
+      "public_sha256": "afe11a6842d67777e4c69b2e9c3704e23cfe36cffe282ad0c84a7fffe05e2077",
+      "legacy_source_sha256": "afe11a6842d67777e4c69b2e9c3704e23cfe36cffe282ad0c84a7fffe05e2077"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/exports.map": {
+      "public_sha256": "93ea007285bae33214d6d8a189826d3ef039404037f16b480620299ef5819984",
+      "legacy_source_sha256": "93ea007285bae33214d6d8a189826d3ef039404037f16b480620299ef5819984"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/location2.h": {
+      "public_sha256": "2a75ec7c21247c51fcdcef60e65146979f0aaffe8c13ccdad80a45fd0bf55cd7",
+      "legacy_source_sha256": "2a75ec7c21247c51fcdcef60e65146979f0aaffe8c13ccdad80a45fd0bf55cd7"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/special.h": {
+      "public_sha256": "68263975225c5572074308b6913340a1e995061af23a17d17771cca13804127f",
+      "legacy_source_sha256": "68263975225c5572074308b6913340a1e995061af23a17d17771cca13804127f"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/textbit.h": {
+      "public_sha256": "7777c75867d2e5f1212f8bf4c5fbb62517ad6386a8d7003756f4727fd8b6f003",
+      "legacy_source_sha256": "7777c75867d2e5f1212f8bf4c5fbb62517ad6386a8d7003756f4727fd8b6f003"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/texthuff.h": {
+      "public_sha256": "4a284ac80e3a661d8d62e95edcd086c9a4e8933f82914567369ad64319ea979e",
+      "legacy_source_sha256": "4a284ac80e3a661d8d62e95edcd086c9a4e8933f82914567369ad64319ea979e"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/train.h": {
+      "public_sha256": "e4be0b55c43cc2e54a5abedecba898a78af4503447da62e946a676ee0bfbb564",
+      "legacy_source_sha256": "e4be0b55c43cc2e54a5abedecba898a78af4503447da62e946a676ee0bfbb564"
+    },
+    "synthesized-code/dbtext/astra/no-reference-target/A4/source/url.h": {
+      "public_sha256": "98847e2fca1bab25b97e9cab71e0b2a4015df1ae6ab6d5e907678d740188d23a",
+      "legacy_source_sha256": "98847e2fca1bab25b97e9cab71e0b2a4015df1ae6ab6d5e907678d740188d23a"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/README.md": {
+      "public_sha256": "30a6d9437090eba790d5dd5dfb5ce666389734e20edc9b889382b08e74c94081",
+      "legacy_source_sha256": "30a6d9437090eba790d5dd5dfb5ce666389734e20edc9b889382b08e74c94081"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/UPSTREAM_HASHES.json": {
+      "public_sha256": "94045ce43a292262ac42956805eab97f22e10172c00296f4a38c958b94468a76",
+      "legacy_source_sha256": "71af36929a92002cf676ac510bf621d20ddf3a86bc82c2115c5ea07d4da8e2e7"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/build.py": {
+      "public_sha256": "718c0c33ad00995ad6df748d7ee555065f0682bfa4ed5dd409d81cd4210114cd",
+      "legacy_source_sha256": "85500f1997e6c240bbcd32ca2a4ab1e523b590e8189a7687a0cf3581d79dc499"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/decode_archive.cpp": {
+      "public_sha256": "18fc9c2abc9cd5340a3ff8bfafe010bd92bd8c279235bf6a1708f8e644ac8473",
+      "legacy_source_sha256": "18fc9c2abc9cd5340a3ff8bfafe010bd92bd8c279235bf6a1708f8e644ac8473"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/qualification.json": {
+      "public_sha256": "4491d7bdfd01c145c8c4c9d67f7ccc94918131ab00d7fb119a4b61fbcfa41998",
+      "legacy_source_sha256": "4491d7bdfd01c145c8c4c9d67f7ccc94918131ab00d7fb119a4b61fbcfa41998"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/row_adapter.cpp": {
+      "public_sha256": "288ffe815c53f1edbb03c088d623a43999ac1bf98492e54b7e1fdce976a01731",
+      "legacy_source_sha256": "288ffe815c53f1edbb03c088d623a43999ac1bf98492e54b7e1fdce976a01731"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/row_adapter.hpp": {
+      "public_sha256": "addd70f804818787a5d0cfaceb228cc672444c5c54386dfec31b42425d5f2767",
+      "legacy_source_sha256": "addd70f804818787a5d0cfaceb228cc672444c5c54386dfec31b42425d5f2767"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/rows.cpp": {
+      "public_sha256": "214e1a059a78591a628a1d30878e2b3053dda95094511e480eaf0c37ad95e38d",
+      "legacy_source_sha256": "214e1a059a78591a628a1d30878e2b3053dda95094511e480eaf0c37ad95e38d"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/run.py": {
+      "public_sha256": "d41436b523456f29df8ec1559869a1d2283225bc30f386117902c33ce2b9fe32",
+      "legacy_source_sha256": "5454e942a73bd2e79960f5d92d93ec1aa9561304b3dd2f6f36b9df44c890d448"
+    },
+    "synthesized-code/dbtext/astra/onpair16-row-baseline/source-hashes.json": {
+      "public_sha256": "2c40a7a880bb7990893aa06b1cf09921a1e09de7d83bc181eb23a349bd90997f",
+      "legacy_source_sha256": "2c40a7a880bb7990893aa06b1cf09921a1e09de7d83bc181eb23a349bd90997f"
+    },
+    "synthesized-code/dbtext/astra/three-workloads/README.md": {
+      "public_sha256": "2adfc439f30371e3370fb7de71e98595c7fd85d92a7154fba24c2755e762ed1a",
+      "legacy_source_sha256": "d80000d3b8ca03b4f7147006ce9ff234cf6e3c93f798f2be9088568bd73f1f96"
+    },
+    "synthesized-code/dbtext/astra/three-workloads/data/bulk-points.csv": {
+      "public_sha256": "c16c02fd98b6a08f5c8d120cb10621c9f838ac7d93a9bf526eea058ebb26e866",
+      "legacy_source_sha256": "c16c02fd98b6a08f5c8d120cb10621c9f838ac7d93a9bf526eea058ebb26e866"
+    },
+    "synthesized-code/dbtext/astra/three-workloads/data/frontiers.json": {
+      "public_sha256": "310e5d211a6f40559bf0efa0cdde60cddebbe6091a812720d03ab64e95b13d32",
+      "legacy_source_sha256": "310e5d211a6f40559bf0efa0cdde60cddebbe6091a812720d03ab64e95b13d32"
+    },
+    "synthesized-code/dbtext/astra/three-workloads/data/source-hashes.json": {
+      "public_sha256": "8261ea3c0ac037fad49b75106ab5f52b41f2ca3520e50962205693881c608120",
+      "legacy_source_sha256": "8261ea3c0ac037fad49b75106ab5f52b41f2ca3520e50962205693881c608120"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/README.md": {
+      "public_sha256": "a8f96279e472ec78ea3e066d143c73bd4f183780e9e476c92d96cb3ecb1b3a5a",
+      "legacy_source_sha256": "a8f96279e472ec78ea3e066d143c73bd4f183780e9e476c92d96cb3ecb1b3a5a"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/build-spec.json": {
+      "public_sha256": "a8625478ea8a63838f7ee2d80913516de414d664f9e803a9db0ecc53dec36e4c",
+      "legacy_source_sha256": "a8625478ea8a63838f7ee2d80913516de414d664f9e803a9db0ecc53dec36e4c"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/provenance.json": {
+      "public_sha256": "d2f994b537ddcceab53eaba41559771d5d0788408c9f3cf866e4b3caa9c8dee1",
+      "legacy_source_sha256": "d2f994b537ddcceab53eaba41559771d5d0788408c9f3cf866e4b3caa9c8dee1"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/codec.cpp": {
+      "public_sha256": "73defd1720af7f0220db19ecce02916594efa1b4824ce1aeb325efe52443fabe",
+      "legacy_source_sha256": "73defd1720af7f0220db19ecce02916594efa1b4824ce1aeb325efe52443fabe"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/fixed.h": {
+      "public_sha256": "17e47928e8fb33975d5c555f63ef9a58400b2ceb63718cbbc7a62d2279192df4",
+      "legacy_source_sha256": "17e47928e8fb33975d5c555f63ef9a58400b2ceb63718cbbc7a62d2279192df4"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/location.h": {
+      "public_sha256": "e1094c8cf1626f134ff68c9fbb7a5e84bd8e9b93ab97fbb6f0374438d4655c05",
+      "legacy_source_sha256": "e1094c8cf1626f134ff68c9fbb7a5e84bd8e9b93ab97fbb6f0374438d4655c05"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/prefix.h": {
+      "public_sha256": "a85fc84522c7e00e00da2fe3daf832d66761de78e987f47da4bea0e7687c69fe",
+      "legacy_source_sha256": "a85fc84522c7e00e00da2fe3daf832d66761de78e987f47da4bea0e7687c69fe"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/text.h": {
+      "public_sha256": "6703998771a4eee4bec162b92f97bb8097916d947af80800cee1daa0bde16734",
+      "legacy_source_sha256": "6703998771a4eee4bec162b92f97bb8097916d947af80800cee1daa0bde16734"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/text_simd_candidate.h": {
+      "public_sha256": "bca0a91921333b5bd0c07679289d80d724d275504e57920b3ac0333ad95a8f45",
+      "legacy_source_sha256": "bca0a91921333b5bd0c07679289d80d724d275504e57920b3ac0333ad95a8f45"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/README.md": {
+      "public_sha256": "1219a214a6db92bfde01ee57f4602c2f2bc97184c7cdac5fcbacb65d0414a4a3",
+      "legacy_source_sha256": "1219a214a6db92bfde01ee57f4602c2f2bc97184c7cdac5fcbacb65d0414a4a3"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/build-spec.json": {
+      "public_sha256": "a5f174b2a136256c73054fd081e269b007990fe8f186f4f5e67d138ce7420e9a",
+      "legacy_source_sha256": "a5f174b2a136256c73054fd081e269b007990fe8f186f4f5e67d138ce7420e9a"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/provenance.json": {
+      "public_sha256": "44807afd28b333f7754bb924cba8df8cbfeaf6e233cb18029a4b5cc8e2b8b4c2",
+      "legacy_source_sha256": "44807afd28b333f7754bb924cba8df8cbfeaf6e233cb18029a4b5cc8e2b8b4c2"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/codec.cpp": {
+      "public_sha256": "1cc9d8fc180e6d09443b6d8b3255b6f139518460af589532ac6014fbe08cce27",
+      "legacy_source_sha256": "1cc9d8fc180e6d09443b6d8b3255b6f139518460af589532ac6014fbe08cce27"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/encode_plans.h": {
+      "public_sha256": "984de0864c106b022c8d2abbfa86ceec234e54aba79ebee962383b7722040ffb",
+      "legacy_source_sha256": "984de0864c106b022c8d2abbfa86ceec234e54aba79ebee962383b7722040ffb"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/entropy_plan.h": {
+      "public_sha256": "390963a0deee538eaf4dc1ff06da25e800b346ddac3d6a552ab982778fd0151b",
+      "legacy_source_sha256": "390963a0deee538eaf4dc1ff06da25e800b346ddac3d6a552ab982778fd0151b"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/front.h": {
+      "public_sha256": "d6027b46e6be7581a0c265357272d65ee1da28be082270e00d51e16256620423",
+      "legacy_source_sha256": "d6027b46e6be7581a0c265357272d65ee1da28be082270e00d51e16256620423"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/7zTypes.h": {
+      "public_sha256": "5de943c886d5d7bbcf16203e9b292a9e7be327b43fe3dfd9f4ad07d6d0870ef6",
+      "legacy_source_sha256": "5de943c886d5d7bbcf16203e9b292a9e7be327b43fe3dfd9f4ad07d6d0870ef6"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Compiler.h": {
+      "public_sha256": "959dac87ac7109502f6467e910d0722b932176e243153bf8c663479aa8c29b20",
+      "legacy_source_sha256": "959dac87ac7109502f6467e910d0722b932176e243153bf8c663479aa8c29b20"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/CpuArch.h": {
+      "public_sha256": "051d8a61373d9b6c90eb3b80f2aa1d932126fec7091242b085276e0bbd9bec03",
+      "legacy_source_sha256": "051d8a61373d9b6c90eb3b80f2aa1d932126fec7091242b085276e0bbd9bec03"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd.h": {
+      "public_sha256": "c67e58afd6cd0b0d598ae92338bc32fc96d951d65d041c086627f46287896e00",
+      "legacy_source_sha256": "c67e58afd6cd0b0d598ae92338bc32fc96d951d65d041c086627f46287896e00"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8.c": {
+      "public_sha256": "c10d056bc7874f63af268d16a21da7308766b12c9af1942c4e11665d8a5417c8",
+      "legacy_source_sha256": "c10d056bc7874f63af268d16a21da7308766b12c9af1942c4e11665d8a5417c8"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8.h": {
+      "public_sha256": "48fab0dad3aee20bfd67ffc6b9d340b78c5f4e0317cd4d1b9c1c06a07b5c2486",
+      "legacy_source_sha256": "48fab0dad3aee20bfd67ffc6b9d340b78c5f4e0317cd4d1b9c1c06a07b5c2486"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8Dec.c": {
+      "public_sha256": "481cd1477cf93a0b08afb06a424907f510c4ea9206238f74096c9aacb9d3a3f2",
+      "legacy_source_sha256": "481cd1477cf93a0b08afb06a424907f510c4ea9206238f74096c9aacb9d3a3f2"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8Enc.c": {
+      "public_sha256": "8d1d2c23efcfa416d23d6686ecda091983119aa978959c3c0aa6a49359fef074",
+      "legacy_source_sha256": "8d1d2c23efcfa416d23d6686ecda091983119aa978959c3c0aa6a49359fef074"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Precomp.h": {
+      "public_sha256": "fea249c753dfbbdd69d9397e91497205452b784279f70cad4658dc567cd2f85f",
+      "legacy_source_sha256": "fea249c753dfbbdd69d9397e91497205452b784279f70cad4658dc567cd2f85f"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/README.origin": {
+      "public_sha256": "e76caf46d5cc66497ed78b62f1aeb09ecfca4fe40a9538f1d23bd3ff64d9b1ff",
+      "legacy_source_sha256": "e76caf46d5cc66497ed78b62f1aeb09ecfca4fe40a9538f1d23bd3ff64d9b1ff"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd_codec.h": {
+      "public_sha256": "df3b53f3eb2d49b4f43faea8a1bb33659525c3329eef4ede59b2505deddef3f3",
+      "legacy_source_sha256": "df3b53f3eb2d49b4f43faea8a1bb33659525c3329eef4ede59b2505deddef3f3"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/special.h": {
+      "public_sha256": "9a40a6bdd7cc117183f223cf0bef7f50cac2674d3e675dd85c5811318893f0c5",
+      "legacy_source_sha256": "9a40a6bdd7cc117183f223cf0bef7f50cac2674d3e675dd85c5811318893f0c5"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/wt.h": {
+      "public_sha256": "7194e9b472a39c3d4018a434784516aa8d32206f663b3cb6a32b3a504ecb95f8",
+      "legacy_source_sha256": "7194e9b472a39c3d4018a434784516aa8d32206f663b3cb6a32b3a504ecb95f8"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/README.md": {
+      "public_sha256": "b27bf0d8cc4f2f2d98229a18f9f795560dbc16e315558bfd6745788bdc4a67e0",
+      "legacy_source_sha256": "b27bf0d8cc4f2f2d98229a18f9f795560dbc16e315558bfd6745788bdc4a67e0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/build-spec.json": {
+      "public_sha256": "e9d49725fb9e5b5ad6b033884d4960f0fe706eb9fd6cc6bdcb03beec2aa4fe29",
+      "legacy_source_sha256": "e9d49725fb9e5b5ad6b033884d4960f0fe706eb9fd6cc6bdcb03beec2aa4fe29"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/provenance.json": {
+      "public_sha256": "87d42c21f0843882bd194d13ef052f251c8f4b76a26e49752b4dd14e31ea232e",
+      "legacy_source_sha256": "87d42c21f0843882bd194d13ef052f251c8f4b76a26e49752b4dd14e31ea232e"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/codec.cpp": {
+      "public_sha256": "b8adc545efa0b7344f9fa75c2e3dc284bd606f298fe9a57ca00c967dd539072f",
+      "legacy_source_sha256": "b8adc545efa0b7344f9fa75c2e3dc284bd606f298fe9a57ca00c967dd539072f"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/dict_codec.hpp": {
+      "public_sha256": "223e2551126b4826d2050efabcb0fdee5dd95a19c959a02e78dbeb3fe338dbb8",
+      "legacy_source_sha256": "223e2551126b4826d2050efabcb0fdee5dd95a19c959a02e78dbeb3fe338dbb8"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/location.h": {
+      "public_sha256": "9a38dcd9c298ffd3c6117a441e88c18265521db90edbc834dea2e98e5aaff5a7",
+      "legacy_source_sha256": "9a38dcd9c298ffd3c6117a441e88c18265521db90edbc834dea2e98e5aaff5a7"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/special.h": {
+      "public_sha256": "e8d211dd1329071628306492f4c62b09f6a1711f154f5e145f1feec867261b3a",
+      "legacy_source_sha256": "e8d211dd1329071628306492f4c62b09f6a1711f154f5e145f1feec867261b3a"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/README.md": {
+      "public_sha256": "c7da55bf176bb9f8b3dc965bb0cbb80ed6d828ff24956f8774354dd3f376aba6",
+      "legacy_source_sha256": "c7da55bf176bb9f8b3dc965bb0cbb80ed6d828ff24956f8774354dd3f376aba6"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/build-spec.json": {
+      "public_sha256": "04c937a4207a244669876d52a67ece37e574679574183d49cb98a2d98785fc85",
+      "legacy_source_sha256": "04c937a4207a244669876d52a67ece37e574679574183d49cb98a2d98785fc85"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/provenance.json": {
+      "public_sha256": "942fbd129460fa56cda5f306a703c3c18f0c826659591329dd65c9351f29c87c",
+      "legacy_source_sha256": "942fbd129460fa56cda5f306a703c3c18f0c826659591329dd65c9351f29c87c"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/FORMAT13.md": {
+      "public_sha256": "9580c9b9a23969835cac9143acec49ea65410c48d424188230bf2d3644c3131e",
+      "legacy_source_sha256": "9580c9b9a23969835cac9143acec49ea65410c48d424188230bf2d3644c3131e"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/codec13.cpp": {
+      "public_sha256": "0d180b34c92c862f8cb6dd91c2140a3c6f010a42e5c1101ea15e3b29be4c90b5",
+      "legacy_source_sha256": "0d180b34c92c862f8cb6dd91c2140a3c6f010a42e5c1101ea15e3b29be4c90b5"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_location_fast.h": {
+      "public_sha256": "699e3ddfd6c1a8f5614c5cbf53f1e7bfe8d470382c6fb47ee2e1297125e8411c",
+      "legacy_source_sha256": "699e3ddfd6c1a8f5614c5cbf53f1e7bfe8d470382c6fb47ee2e1297125e8411c"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_url.hpp": {
+      "public_sha256": "c467cc88fd9e4f6c5d0456e40a061645f64d9672dba3c18ac9cce8c3acf23942",
+      "legacy_source_sha256": "c467cc88fd9e4f6c5d0456e40a061645f64d9672dba3c18ac9cce8c3acf23942"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_url_codec_v4.hpp": {
+      "public_sha256": "ebd077f502cf59363500103f7d5c4e44def25da5437294d1799eb184b57870fe",
+      "legacy_source_sha256": "ebd077f502cf59363500103f7d5c4e44def25da5437294d1799eb184b57870fe"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/fsst.h": {
+      "public_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+      "legacy_source_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/libfsst.cpp": {
+      "public_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+      "legacy_source_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/libfsst.hpp": {
+      "public_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+      "legacy_source_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/hc_pruned.h": {
+      "public_sha256": "a423c4937058015462432f0ed8dc07a8fb3a8d1caeb2c57006e890fff476aa84",
+      "legacy_source_sha256": "a423c4937058015462432f0ed8dc07a8fb3a8d1caeb2c57006e890fff476aa84"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/ph_selective.h": {
+      "public_sha256": "6c9f9a3fe0c51f35387c1863158f82f53e47cf29ec3c9e68c43ae0a393fc5875",
+      "legacy_source_sha256": "6c9f9a3fe0c51f35387c1863158f82f53e47cf29ec3c9e68c43ae0a393fc5875"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/reparse.h": {
+      "public_sha256": "d8f60185c4aa0f8f9a6d6c5269093cc1288381c7e32bbeb4e78ed288e47b9db0",
+      "legacy_source_sha256": "d8f60185c4aa0f8f9a6d6c5269093cc1288381c7e32bbeb4e78ed288e47b9db0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/special_uuid18.h": {
+      "public_sha256": "acc0161562a5c144af13042941d057f3919004c2d1944fa7ef8e5733d0fe8f42",
+      "legacy_source_sha256": "acc0161562a5c144af13042941d057f3919004c2d1944fa7ef8e5733d0fe8f42"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/README.md": {
+      "public_sha256": "bd316e816a564d53bf1081151b0e77b999546148e1720d440503c8a472baad93",
+      "legacy_source_sha256": "bd316e816a564d53bf1081151b0e77b999546148e1720d440503c8a472baad93"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/build-spec.json": {
+      "public_sha256": "eac91478aada81b80b82df4a38d909345cbf452140aff799213b3a57239871c2",
+      "legacy_source_sha256": "eac91478aada81b80b82df4a38d909345cbf452140aff799213b3a57239871c2"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/provenance.json": {
+      "public_sha256": "a17e849652d21659b346bf2ef677a97da4498b2c4b33bf12d77838b4920974a9",
+      "legacy_source_sha256": "a17e849652d21659b346bf2ef677a97da4498b2c4b33bf12d77838b4920974a9"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/common.h": {
+      "public_sha256": "001564a626b45517cdfb5df6ea937671944490226016c643350d99f4d000e9a8",
+      "legacy_source_sha256": "001564a626b45517cdfb5df6ea937671944490226016c643350d99f4d000e9a8"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/decoder.cpp": {
+      "public_sha256": "285f51303efc83b3abc637198f5f3c1f02ebbdb61b003408450830c862473f0e",
+      "legacy_source_sha256": "285f51303efc83b3abc637198f5f3c1f02ebbdb61b003408450830c862473f0e"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/encoder.cpp": {
+      "public_sha256": "0d0f3f0888e940aaa91abaf999fbd5b7db51e6834be1166475d193d726ef8eba",
+      "legacy_source_sha256": "0d0f3f0888e940aaa91abaf999fbd5b7db51e6834be1166475d193d726ef8eba"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/fastfixed.h": {
+      "public_sha256": "96fb6776c7fe0eac87eecf77e08c56f96ff9cfa079bf03f278bbb0a77e0a3a66",
+      "legacy_source_sha256": "96fb6776c7fe0eac87eecf77e08c56f96ff9cfa079bf03f278bbb0a77e0a3a66"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/hufffast.h": {
+      "public_sha256": "9572884914c17ed788e5a79012898a7156a3aa91151c875429b92c388b2f94fb",
+      "legacy_source_sha256": "9572884914c17ed788e5a79012898a7156a3aa91151c875429b92c388b2f94fb"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/location.h": {
+      "public_sha256": "a7d3afd847839f8b24dc40218a070145a437b3e9c7a50469cec48480c4cd888e",
+      "legacy_source_sha256": "a7d3afd847839f8b24dc40218a070145a437b3e9c7a50469cec48480c4cd888e"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/phrase.h": {
+      "public_sha256": "8c17b5480f217d01d2572922fa85d4455b996db9d1f9d4f6c3b8a154386fe0e0",
+      "legacy_source_sha256": "8c17b5480f217d01d2572922fa85d4455b996db9d1f9d4f6c3b8a154386fe0e0"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/special.h": {
+      "public_sha256": "adf830ccbc92c43e99d6e8bfba7393b62f758cfedcf1616d46ea85476e3fa98c",
+      "legacy_source_sha256": "adf830ccbc92c43e99d6e8bfba7393b62f758cfedcf1616d46ea85476e3fa98c"
+    },
+    "synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/urlcodec.h": {
+      "public_sha256": "fb78110f98680edca7f864f060aedc3664090d8da51e99f2637a9a5e6b0505d8",
+      "legacy_source_sha256": "fb78110f98680edca7f864f060aedc3664090d8da51e99f2637a9a5e6b0505d8"
+    },
+    "synthesized-code/dbtext/combined/README.md": {
+      "public_sha256": "43e3072513bae4082845064045e0e2a122502ce5f1f6775444de31370aefe810",
+      "legacy_source_sha256": "8cada659a213056fd42ca17b1d0b6160cb055655ee048819e69a1290b336f436"
+    },
+    "synthesized-code/dbtext/combined/data/bulk-points.csv": {
+      "public_sha256": "47d29efc1245ca1bb5ea1b04a85cf6cfad4779ccf08bfd87d429f9aabcd20956",
+      "legacy_source_sha256": "47d29efc1245ca1bb5ea1b04a85cf6cfad4779ccf08bfd87d429f9aabcd20956"
+    },
+    "synthesized-code/dbtext/combined/data/frontiers.json": {
+      "public_sha256": "fc2089607b4e43f94653efc09e03b968b07ec7d183293551a00be8d923019221",
+      "legacy_source_sha256": "fc2089607b4e43f94653efc09e03b968b07ec7d183293551a00be8d923019221"
+    },
+    "synthesized-code/dbtext/combined/data/glm-run-1-provenance.json": {
+      "public_sha256": "f838e1dd215d0d0aa0a0364539b211561dcf967ccd64fd6071dedaa162cc8a78",
+      "legacy_source_sha256": "f838e1dd215d0d0aa0a0364539b211561dcf967ccd64fd6071dedaa162cc8a78"
+    },
+    "synthesized-code/dbtext/combined/data/glm-run-2-provenance.json": {
+      "public_sha256": "b562604d8d9eca9184b6540187080ff59200c793816fb31f05eb698734785895",
+      "legacy_source_sha256": "b562604d8d9eca9184b6540187080ff59200c793816fb31f05eb698734785895"
+    },
+    "synthesized-code/dbtext/combined/data/glm-run-3-provenance.json": {
+      "public_sha256": "10b0138d92c9bf840980ff15b68904fbeec7137f10952f410d4f87ddcdfda24b",
+      "legacy_source_sha256": "10b0138d92c9bf840980ff15b68904fbeec7137f10952f410d4f87ddcdfda24b"
+    },
+    "synthesized-code/dbtext/combined/data/glm-run-4-provenance.json": {
+      "public_sha256": "50a53eaa6a6b464c7b404d3b9cc34599b2d01dc4843cad36e9cf575598b2f971",
+      "legacy_source_sha256": "50a53eaa6a6b464c7b404d3b9cc34599b2d01dc4843cad36e9cf575598b2f971"
+    },
+    "synthesized-code/dbtext/combined/data/luna-source-hashes.json": {
+      "public_sha256": "d0de7a944656f70472facfe3ec40a2b39e5415d6b66884cf4339fac341e05686",
+      "legacy_source_sha256": "d0de7a944656f70472facfe3ec40a2b39e5415d6b66884cf4339fac341e05686"
+    },
+    "synthesized-code/dbtext/combined/data/source-hashes.json": {
+      "public_sha256": "8261ea3c0ac037fad49b75106ab5f52b41f2ca3520e50962205693881c608120",
+      "legacy_source_sha256": "8261ea3c0ac037fad49b75106ab5f52b41f2ca3520e50962205693881c608120"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/README.md": {
+      "public_sha256": "2162fbef947f6482dfb7929449151d6c678f4ff1b1dab12a709bb27883be4e48",
+      "legacy_source_sha256": "f20970da2918d1079f3473b772a1d05b30241d4142f0799214ab38fd9b0d3deb"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/build-spec.json": {
+      "public_sha256": "a3cc5eec86d63a0a5fdd111839afbc5a9d9a3df8226c337573d39ac4bebb7718",
+      "legacy_source_sha256": "a3cc5eec86d63a0a5fdd111839afbc5a9d9a3df8226c337573d39ac4bebb7718"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/measurements.json": {
+      "public_sha256": "b6e336c9aa5f07e03d3918a971feb6f13bc0ea3eb2b7f6ac23fc5d7dacd05ef5",
+      "legacy_source_sha256": "af826f3d313e3bc6811d04d8db4f033de47f464fb1b823122b8e317268c1b48e"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/provenance.json": {
+      "public_sha256": "a2f4ad35646e99e97aafa7731ba0f8f1435c6fb06aeb0e4cda00edfc226021c0",
+      "legacy_source_sha256": "605be3adfc1eadf645a7de86eccb55d62f987354d7f870dd9191ee95660f0cc2"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/source/codec-large-hybrid128j.cpp": {
+      "public_sha256": "44821bc0d41fd7d62ee3c9521b334707dd85a92d9611f57eecd9834989a3629e",
+      "legacy_source_sha256": "44821bc0d41fd7d62ee3c9521b334707dd85a92d9611f57eecd9834989a3629e"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L1/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/README.md": {
+      "public_sha256": "c6574f6469edd8302dadddf63372f4c06efa6855f4b5ab0f7beafc7adacf7761",
+      "legacy_source_sha256": "995ea1465f58dc3021ba12d0742b34da9bfc74bbe71d36a01ff28b18028f1722"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/build-spec.json": {
+      "public_sha256": "c94adac1ad165c145eb390aeacc929ded5c8057679845742a8f2c74a1e15f564",
+      "legacy_source_sha256": "c94adac1ad165c145eb390aeacc929ded5c8057679845742a8f2c74a1e15f564"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/measurements.json": {
+      "public_sha256": "629aba9fca178ca8b79b5a59e69e92f7b2d4a792d9a8fd9e2450ce44477ff112",
+      "legacy_source_sha256": "0e107be0c80763f8ddc0d54d7baf53b2c81c686e2068eba5325a64999db07008"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/provenance.json": {
+      "public_sha256": "f985482f90cb906e770c15a98075176474ffa762f0720954eb40e200f0c29def",
+      "legacy_source_sha256": "74c201d29c84d9aa31990c6ef56ba9cb383340aed6097b5237701c4fb9b71f9a"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/source/codec_bwtrows5.cpp": {
+      "public_sha256": "41f141fe70944432e87f3419b6afaa856720b1762e03b3114ae26b6408a31971",
+      "legacy_source_sha256": "41f141fe70944432e87f3419b6afaa856720b1762e03b3114ae26b6408a31971"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L2/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/README.md": {
+      "public_sha256": "07eff39de1ecec7db088578bfa2a2cfadd38e807b5030f6a2f85cd0cb205d54b",
+      "legacy_source_sha256": "fe395c1f1d6e4375fba2f1f3376f4cc7e8563dd4988bdeb06af241e0e34b6d88"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/build-spec.json": {
+      "public_sha256": "d8b6e17692bf87faa947305d70555d4d38946daeffefea80e9a49f1941024949",
+      "legacy_source_sha256": "d8b6e17692bf87faa947305d70555d4d38946daeffefea80e9a49f1941024949"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/measurements.json": {
+      "public_sha256": "1b42caf872cf09c04fa34cd69f0c49e434991b141299fad692174235b661b1c7",
+      "legacy_source_sha256": "db143ef20895fad78363c6666555ac186dc623b452de7612f245c8bb2f06b881"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/provenance.json": {
+      "public_sha256": "3301bc77d8d531bb7cba9f82bc64476d40cbe71d63b4af62fb68b737c926575d",
+      "legacy_source_sha256": "b9af2ec4bb4603a9f35120d7f65b54f80b6eb804ec93841717c37403f74575dd"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/source/codec.cpp": {
+      "public_sha256": "0429589e44ebbda97825527c37bc37ef027ddf2af5ba91124301adb73f8f4c9c",
+      "legacy_source_sha256": "0429589e44ebbda97825527c37bc37ef027ddf2af5ba91124301adb73f8f4c9c"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L3/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/README.md": {
+      "public_sha256": "08399415bb620f420cf69589666045be73ce83205a25626bca4b32c89b7fd435",
+      "legacy_source_sha256": "92bd94383024eff2d3675b103f4bc6286771ce56e15169ab2edba77395998361"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/build-spec.json": {
+      "public_sha256": "1383ab910f68d6a23cea1cc7afa16e442f4ff811a67796e7fceabb6e796f437d",
+      "legacy_source_sha256": "1383ab910f68d6a23cea1cc7afa16e442f4ff811a67796e7fceabb6e796f437d"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/measurements.json": {
+      "public_sha256": "e5b64cf1a793d74a42f04690c55ff35dd452f78be34e367a7e9dff40469f26ef",
+      "legacy_source_sha256": "f224c2fe63cd716d0fc14873ccd6f581182e767af74e52e72f34fb309b57457f"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/provenance.json": {
+      "public_sha256": "422c200ecfad1df7dda402c27639e1e42c386e93d0001f44e3709389744a47ae",
+      "legacy_source_sha256": "8332665ec7c6149ecd6f6f9f3e936bebe806107e659658c940b5c8a5f5865e34"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/source/codec.cpp": {
+      "public_sha256": "c004a604f8a523dcea9e3277a4dc3fd76156b66e0319832fc3c22382366f33fd",
+      "legacy_source_sha256": "c004a604f8a523dcea9e3277a4dc3fd76156b66e0319832fc3c22382366f33fd"
+    },
+    "synthesized-code/dbtext/luna/tools-allowed/L4/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/README.md": {
+      "public_sha256": "488f7aeb66d095ce2d2cbdc2e9d75cc6fa8fd94f4eb466e2fb4b612990b8ed16",
+      "legacy_source_sha256": "488f7aeb66d095ce2d2cbdc2e9d75cc6fa8fd94f4eb466e2fb4b612990b8ed16"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/SUMMARY.json": {
+      "public_sha256": "169484a6e7fd678f5dd67f272f45832bba29faeb96999db63a523178b6f50f6a",
+      "legacy_source_sha256": "169484a6e7fd678f5dd67f272f45832bba29faeb96999db63a523178b6f50f6a"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/build-spec.json": {
+      "public_sha256": "2af9bb74729c8899203d2c13b035332f7a0e9ab46e7b1e43b069421a38287a86",
+      "legacy_source_sha256": "2af9bb74729c8899203d2c13b035332f7a0e9ab46e7b1e43b069421a38287a86"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/provenance.json": {
+      "public_sha256": "f838e1dd215d0d0aa0a0364539b211561dcf967ccd64fd6071dedaa162cc8a78",
+      "legacy_source_sha256": "f838e1dd215d0d0aa0a0364539b211561dcf967ccd64fd6071dedaa162cc8a78"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/source/src/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/source/src/dec.cpp": {
+      "public_sha256": "452943a66ec06b27e7fc6fe89db2c48ac65138f4ff7a13f3f63aba0d61c795a9",
+      "legacy_source_sha256": "452943a66ec06b27e7fc6fe89db2c48ac65138f4ff7a13f3f63aba0d61c795a9"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/source/src/enc.cpp": {
+      "public_sha256": "659224af27732343d4eaa3dc5fa026c35651e21a8e7c3688e5a65cca537aa326",
+      "legacy_source_sha256": "659224af27732343d4eaa3dc5fa026c35651e21a8e7c3688e5a65cca537aa326"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/source/src/fmt.h": {
+      "public_sha256": "68b6f8d9f5bff1715108615d2a44c0ccd99ba3e673a3ea59cedf717b1935499c",
+      "legacy_source_sha256": "68b6f8d9f5bff1715108615d2a44c0ccd99ba3e673a3ea59cedf717b1935499c"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/targets.json": {
+      "public_sha256": "5c753c96ad02a5d07c3040fffad4c04ee7b012e34be845ea0418c028eb61df50",
+      "legacy_source_sha256": "5c753c96ad02a5d07c3040fffad4c04ee7b012e34be845ea0418c028eb61df50"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G1/trials.jsonl": {
+      "public_sha256": "1856b929b43080ffd6748510667d9e305cc797219f932734f5f732e5a387d11e",
+      "legacy_source_sha256": "1856b929b43080ffd6748510667d9e305cc797219f932734f5f732e5a387d11e"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/README.md": {
+      "public_sha256": "d5c29d0aa9230ff5397f14faa4831d114b0044e2c2a2e2ffb515438769bd52fe",
+      "legacy_source_sha256": "d5c29d0aa9230ff5397f14faa4831d114b0044e2c2a2e2ffb515438769bd52fe"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/SUMMARY.json": {
+      "public_sha256": "96cee0eb36bfb06382fa6c83749f3f2717caa97a21e0a76a446dec5f418d5193",
+      "legacy_source_sha256": "96cee0eb36bfb06382fa6c83749f3f2717caa97a21e0a76a446dec5f418d5193"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/build-spec.json": {
+      "public_sha256": "82eb412f1bac46e28c6b411628c70d6b98fb3c82e7603d961385d9d26e0a327d",
+      "legacy_source_sha256": "82eb412f1bac46e28c6b411628c70d6b98fb3c82e7603d961385d9d26e0a327d"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/provenance.json": {
+      "public_sha256": "b562604d8d9eca9184b6540187080ff59200c793816fb31f05eb698734785895",
+      "legacy_source_sha256": "b562604d8d9eca9184b6540187080ff59200c793816fb31f05eb698734785895"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/src/bpe.h": {
+      "public_sha256": "4178d602b597f795869fca0795590301262316cc9214fa3c263ed912c549d2a0",
+      "legacy_source_sha256": "4178d602b597f795869fca0795590301262316cc9214fa3c263ed912c549d2a0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/src/common.h": {
+      "public_sha256": "4345ddf8002eb5a62c1cf7b5b4c812ca467b47078422140a9ac09fc77a01977b",
+      "legacy_source_sha256": "4345ddf8002eb5a62c1cf7b5b4c812ca467b47078422140a9ac09fc77a01977b"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/src/dec.cpp": {
+      "public_sha256": "73a605e134753956e8393e5fe1fb79fa40dd0eb95ca293925a4b424d89878906",
+      "legacy_source_sha256": "73a605e134753956e8393e5fe1fb79fa40dd0eb95ca293925a4b424d89878906"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/src/enc.cpp": {
+      "public_sha256": "6a5163d02b4a3b64c82b2837c7c0280ee6d24d5fa6fc40980b7643a7868915f6",
+      "legacy_source_sha256": "6a5163d02b4a3b64c82b2837c7c0280ee6d24d5fa6fc40980b7643a7868915f6"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/source/src/huff.h": {
+      "public_sha256": "40dc749b096eaf133b34a6fe0abd1d943160f81804426cf68888bef43e4a15a3",
+      "legacy_source_sha256": "40dc749b096eaf133b34a6fe0abd1d943160f81804426cf68888bef43e4a15a3"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/targets.json": {
+      "public_sha256": "cf1842c5b79b8a203ea9a8f4c880c09ee86f6b3a8c9783841d4db8ac6805db26",
+      "legacy_source_sha256": "cf1842c5b79b8a203ea9a8f4c880c09ee86f6b3a8c9783841d4db8ac6805db26"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G2/trials.jsonl": {
+      "public_sha256": "9404dbbb79df54cb874c7a3dff0ae3922b65d8842e40432939b3944264fa24be",
+      "legacy_source_sha256": "9404dbbb79df54cb874c7a3dff0ae3922b65d8842e40432939b3944264fa24be"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/README.md": {
+      "public_sha256": "0f55c0582bae65fef3c4bc0479154a64dd2e00d367e273c6124f5e0b40c6426b",
+      "legacy_source_sha256": "0f55c0582bae65fef3c4bc0479154a64dd2e00d367e273c6124f5e0b40c6426b"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/SUMMARY.json": {
+      "public_sha256": "ebb35fc0e569bf01ee7378bd67612c3ec745b2637cbaade37fd704571e76249f",
+      "legacy_source_sha256": "ebb35fc0e569bf01ee7378bd67612c3ec745b2637cbaade37fd704571e76249f"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/build-spec.json": {
+      "public_sha256": "c5d509ec778cec0dced21ddeefd1614664b010d55c803a29e757da5e28aa3fa3",
+      "legacy_source_sha256": "c5d509ec778cec0dced21ddeefd1614664b010d55c803a29e757da5e28aa3fa3"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/provenance.json": {
+      "public_sha256": "10b0138d92c9bf840980ff15b68904fbeec7137f10952f410d4f87ddcdfda24b",
+      "legacy_source_sha256": "10b0138d92c9bf840980ff15b68904fbeec7137f10952f410d4f87ddcdfda24b"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/decoder.cpp": {
+      "public_sha256": "f22650754fdc4c0c3dcabcc77958af59ade78caec0bb4bfb8366991bb093b112",
+      "legacy_source_sha256": "f22650754fdc4c0c3dcabcc77958af59ade78caec0bb4bfb8366991bb093b112"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/encoder.cpp": {
+      "public_sha256": "42303187135b343665675f309ed6f3043c868e93155baaf02049220aa05b77d1",
+      "legacy_source_sha256": "42303187135b343665675f309ed6f3043c868e93155baaf02049220aa05b77d1"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/format.h": {
+      "public_sha256": "57d772430af157a3fbe1cc8b6a9d9b6068e16277c0ae3d217a21bbcb59e0affd",
+      "legacy_source_sha256": "57d772430af157a3fbe1cc8b6a9d9b6068e16277c0ae3d217a21bbcb59e0affd"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst.h": {
+      "public_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+      "legacy_source_sha256": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512.cpp": {
+      "public_sha256": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9",
+      "legacy_source_sha256": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512.inc": {
+      "public_sha256": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477",
+      "legacy_source_sha256": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512_unroll1.inc": {
+      "public_sha256": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729",
+      "legacy_source_sha256": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512_unroll2.inc": {
+      "public_sha256": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36",
+      "legacy_source_sha256": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512_unroll3.inc": {
+      "public_sha256": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27",
+      "legacy_source_sha256": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/fsst_avx512_unroll4.inc": {
+      "public_sha256": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2",
+      "legacy_source_sha256": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/libfsst.cpp": {
+      "public_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+      "legacy_source_sha256": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/fsst/libfsst.hpp": {
+      "public_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+      "legacy_source_sha256": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/source/src/huff.h": {
+      "public_sha256": "6966c8d9be365bc62872444712c040f9fa62e552206e08a0f261382b5e6df625",
+      "legacy_source_sha256": "6966c8d9be365bc62872444712c040f9fa62e552206e08a0f261382b5e6df625"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/targets.json": {
+      "public_sha256": "c781f31c6f6f65eb6eb0bab77b0c1164ab13c73a87664a8c66b686254a5463db",
+      "legacy_source_sha256": "c781f31c6f6f65eb6eb0bab77b0c1164ab13c73a87664a8c66b686254a5463db"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G3/trials.jsonl": {
+      "public_sha256": "6b7e72c5ef82fb4d15b227a51ad2d847d623df501cca7347b4402b4fdf1a6500",
+      "legacy_source_sha256": "6b7e72c5ef82fb4d15b227a51ad2d847d623df501cca7347b4402b4fdf1a6500"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/README.md": {
+      "public_sha256": "fd77cc7101c36d675a9f0870b372aa5fd828483369360b9a7ec3f9301cd45c30",
+      "legacy_source_sha256": "fd77cc7101c36d675a9f0870b372aa5fd828483369360b9a7ec3f9301cd45c30"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/SUMMARY.json": {
+      "public_sha256": "e0ba9502fcc0bb7d7472c496c602df397c6db653807992903037f35deb97c0ca",
+      "legacy_source_sha256": "e0ba9502fcc0bb7d7472c496c602df397c6db653807992903037f35deb97c0ca"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/build-spec.json": {
+      "public_sha256": "d669560fb25d3db33782a3d7c098aa8910e4efaaab0862f014f3e59225254f50",
+      "legacy_source_sha256": "d669560fb25d3db33782a3d7c098aa8910e4efaaab0862f014f3e59225254f50"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/provenance.json": {
+      "public_sha256": "50a53eaa6a6b464c7b404d3b9cc34599b2d01dc4843cad36e9cf575598b2f971",
+      "legacy_source_sha256": "50a53eaa6a6b464c7b404d3b9cc34599b2d01dc4843cad36e9cf575598b2f971"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/codec/decoder.c": {
+      "public_sha256": "17373406e1ffb125452d0a52f49ca3023cae1fcba682e83d97f4785c23eb2030",
+      "legacy_source_sha256": "17373406e1ffb125452d0a52f49ca3023cae1fcba682e83d97f4785c23eb2030"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/codec/encoder.c": {
+      "public_sha256": "d516fcaf94cf13ef197226acf0c0e812b3a282a52465247f6949ca71cf4c8d66",
+      "legacy_source_sha256": "d516fcaf94cf13ef197226acf0c0e812b3a282a52465247f6949ca71cf4c8d66"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/codec/fitdata.c": {
+      "public_sha256": "e838342b63c77f74722919d4d22470665d1b9f41e15c17d8472847e0eeb9f05f",
+      "legacy_source_sha256": "e838342b63c77f74722919d4d22470665d1b9f41e15c17d8472847e0eeb9f05f"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/codec/fitdata.h": {
+      "public_sha256": "93022a1b059d6b2fe2072c14b81f14260f81bc7584f7a91e0401a123a616ffdd",
+      "legacy_source_sha256": "93022a1b059d6b2fe2072c14b81f14260f81bc7584f7a91e0401a123a616ffdd"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/codec/zstd.h": {
+      "public_sha256": "0ba495bbc0d329c6ecc07a822e7a720da42027c54e6016d7cb5a9c5fa9f9d00c",
+      "legacy_source_sha256": "0ba495bbc0d329c6ecc07a822e7a720da42027c54e6016d7cb5a9c5fa9f9d00c"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/targets.json": {
+      "public_sha256": "71e2347f74d9a524110bbc2dfdf6946aa8c65ce1fd396e63e5af2a05d857ce24",
+      "legacy_source_sha256": "71e2347f74d9a524110bbc2dfdf6946aa8c65ce1fd396e63e5af2a05d857ce24"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/G4/trials.jsonl": {
+      "public_sha256": "58029a21e821ed7039951c8677b666eeb0dbfac25d85a53987b9549480a583c6",
+      "legacy_source_sha256": "58029a21e821ed7039951c8677b666eeb0dbfac25d85a53987b9549480a583c6"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/README.md": {
+      "public_sha256": "ab2333b0a317e64e0dce3e0bc1c572294fa81c7256f167712c0b20304761111b",
+      "legacy_source_sha256": "3967889b7876d789cbc7bcc7772cab7f5337f9202dc38fb60666a254a96e2ff4"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/bulk-points.csv": {
+      "public_sha256": "eeb94906d95ab436a385764a4ad76e3deb6c31bfb5d1910c8f6093970a981cea",
+      "legacy_source_sha256": "eeb94906d95ab436a385764a4ad76e3deb6c31bfb5d1910c8f6093970a981cea"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/frontiers.json": {
+      "public_sha256": "3eab97406822af32e525abf837398af0364509370897472fb5e007b80cc3c89a",
+      "legacy_source_sha256": "3eab97406822af32e525abf837398af0364509370897472fb5e007b80cc3c89a"
+    },
+    "synthesized-code/glm-5.3-flash/dbtext/tools-allowed/data/row-points.csv": {
+      "public_sha256": "cf7619fe09921fe165225c7d5c6b1f409ad256dd7c2cf28256a830ea468bf1ab",
+      "legacy_source_sha256": "cf7619fe09921fe165225c7d5c6b1f409ad256dd7c2cf28256a830ea468bf1ab"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/README.md": {
+      "public_sha256": "258ac8e80cc7e908c83747764165c9e3c02f4b3bf438996459ff4c1bc288afa9",
+      "legacy_source_sha256": "258ac8e80cc7e908c83747764165c9e3c02f4b3bf438996459ff4c1bc288afa9"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/build-spec.json": {
+      "public_sha256": "ad2c2ea4c74fe42fc60a1c50638e7731430526142ec139170e73dff3fb7d33d5",
+      "legacy_source_sha256": "ad2c2ea4c74fe42fc60a1c50638e7731430526142ec139170e73dff3fb7d33d5"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/provenance.json": {
+      "public_sha256": "0c406c38c64ac8b57d96dc6850260431a29ae7cd13522a32a984f8f5bc680bf9",
+      "legacy_source_sha256": "0c406c38c64ac8b57d96dc6850260431a29ae7cd13522a32a984f8f5bc680bf9"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/source/src/codec.c": {
+      "public_sha256": "79e51f3dee8f2af13339b84707a1356fcb26a5a7b7e73fff89afa81e12c84c81",
+      "legacy_source_sha256": "79e51f3dee8f2af13339b84707a1356fcb26a5a7b7e73fff89afa81e12c84c81"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G1/source/src/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/README.md": {
+      "public_sha256": "198857820b089705b853f264f01f337ab986894db1bfb1c607d65d407581a902",
+      "legacy_source_sha256": "198857820b089705b853f264f01f337ab986894db1bfb1c607d65d407581a902"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/build-spec.json": {
+      "public_sha256": "c459328e85371422175f1b238b1e05b2a202508503db9304188881f9332cfe38",
+      "legacy_source_sha256": "c459328e85371422175f1b238b1e05b2a202508503db9304188881f9332cfe38"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/provenance.json": {
+      "public_sha256": "a61765241dd6827a03abfa3f1c761703de9809e9ec7cde9241c6bce1d7d9d3e7",
+      "legacy_source_sha256": "a61765241dd6827a03abfa3f1c761703de9809e9ec7cde9241c6bce1d7d9d3e7"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/source/codec/codec_common.hpp": {
+      "public_sha256": "4effb9d3b1c4a89aa5dbfe028c5f86603b5c0a953edf5461ed32e9509c5780bd",
+      "legacy_source_sha256": "4effb9d3b1c4a89aa5dbfe028c5f86603b5c0a953edf5461ed32e9509c5780bd"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/source/codec/decoder.cpp": {
+      "public_sha256": "19301c7fa1821510322664da9952fa70ff80e6da81db92658ce3b373cc96fbd6",
+      "legacy_source_sha256": "19301c7fa1821510322664da9952fa70ff80e6da81db92658ce3b373cc96fbd6"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/source/codec/encoder.cpp": {
+      "public_sha256": "c57de917c8f538576c51dc607d02195e7d45c356f7b53c15d933ebb5b9f20290",
+      "legacy_source_sha256": "c57de917c8f538576c51dc607d02195e7d45c356f7b53c15d933ebb5b9f20290"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/source/codec/xxh64.hpp": {
+      "public_sha256": "60e86c48d94a8d1a7f9b027b5d1896b01ca3f6576751def6e13d7caf6fbfe8c6",
+      "legacy_source_sha256": "60e86c48d94a8d1a7f9b027b5d1896b01ca3f6576751def6e13d7caf6fbfe8c6"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G2/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/README.md": {
+      "public_sha256": "a6dbd20bc94885f76441597f2bedbf80fb0830fb62a5af116fee2c85e6becece",
+      "legacy_source_sha256": "a6dbd20bc94885f76441597f2bedbf80fb0830fb62a5af116fee2c85e6becece"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/build-spec.json": {
+      "public_sha256": "19946b3f29575167e212c9ff9d5b210936373b102bb3ebe1ad4b7a9dd8087632",
+      "legacy_source_sha256": "19946b3f29575167e212c9ff9d5b210936373b102bb3ebe1ad4b7a9dd8087632"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/provenance.json": {
+      "public_sha256": "92244f5649d7e197ac0ff121f10e1269478a07bfa842bcddbb52d590f9ae30e7",
+      "legacy_source_sha256": "92244f5649d7e197ac0ff121f10e1269478a07bfa842bcddbb52d590f9ae30e7"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/source/src/common.h": {
+      "public_sha256": "8fe9186afd7d865c82bf6c3a3c468585f14f92a802d390d80c0f28aaa1e7706e",
+      "legacy_source_sha256": "8fe9186afd7d865c82bf6c3a3c468585f14f92a802d390d80c0f28aaa1e7706e"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/source/src/decoder.cpp": {
+      "public_sha256": "a01024573abb5f38888921c13ec1a9383f703f700dd7b9d81340c5c573a51508",
+      "legacy_source_sha256": "a01024573abb5f38888921c13ec1a9383f703f700dd7b9d81340c5c573a51508"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G3/source/src/encoder.cpp": {
+      "public_sha256": "f52c873c2a4eb45a208c9e424d467c171db78a5205d71a4eca56a9dceaf73123",
+      "legacy_source_sha256": "f52c873c2a4eb45a208c9e424d467c171db78a5205d71a4eca56a9dceaf73123"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/README.md": {
+      "public_sha256": "49d5f869814e998ab2b8330774e054513545dffe0539b8c3a45b47cc39e97e41",
+      "legacy_source_sha256": "49d5f869814e998ab2b8330774e054513545dffe0539b8c3a45b47cc39e97e41"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/build-spec.json": {
+      "public_sha256": "a5827d21caa67a83cb40a1e3898e4bc692aec04710ebdd7a7da7a8502b98e84c",
+      "legacy_source_sha256": "a5827d21caa67a83cb40a1e3898e4bc692aec04710ebdd7a7da7a8502b98e84c"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/provenance.json": {
+      "public_sha256": "38ec4da79fae240b752cdf03fabd260c92b4af116cce15ec1e1aff0f34cc5d03",
+      "legacy_source_sha256": "38ec4da79fae240b752cdf03fabd260c92b4af116cce15ec1e1aff0f34cc5d03"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/source/common.h": {
+      "public_sha256": "4c8d8a876d17231462fe3751605cae46d0b38adfcb862e65e0e8d74060e675a4",
+      "legacy_source_sha256": "4c8d8a876d17231462fe3751605cae46d0b38adfcb862e65e0e8d74060e675a4"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/source/decoder.c": {
+      "public_sha256": "9df1aec48b79be8f2aea200a61d328dfb22b27977acac42bb7add62ff04ab749",
+      "legacy_source_sha256": "9df1aec48b79be8f2aea200a61d328dfb22b27977acac42bb7add62ff04ab749"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/source/encoder.c": {
+      "public_sha256": "28de8723bd0a078ff73ff027f6a2dcdea8247c1966e80fb8890c96283c3a7eba",
+      "legacy_source_sha256": "28de8723bd0a078ff73ff027f6a2dcdea8247c1966e80fb8890c96283c3a7eba"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/G4/source/interface/codec.h": {
+      "public_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+      "legacy_source_sha256": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/README.md": {
+      "public_sha256": "b2d614374f33bd1c11526180b84af6bc34bdfc1f815f7b08b1ecb74a141d9df7",
+      "legacy_source_sha256": "facc5348ef17aa692eb954c119ae5f6a202b6612c4dc92d797b5ef0ec3cebe59"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/data/baseline-provenance.json": {
+      "public_sha256": "3d76c28ec6e19730d7453a0a588882d8ee2671627613b6e11712ea8df009c00a",
+      "legacy_source_sha256": "3d76c28ec6e19730d7453a0a588882d8ee2671627613b6e11712ea8df009c00a"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/data/baseline-results.csv": {
+      "public_sha256": "3325005ba588b6cb7a00a9de19f5229802635290d9f7e305ea3f8371a99e4a10",
+      "legacy_source_sha256": "3325005ba588b6cb7a00a9de19f5229802635290d9f7e305ea3f8371a99e4a10"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/data/generated-results.csv": {
+      "public_sha256": "0109dcd775948fd88ef5cbb43afee2d494e30044040e6ea69c0f5e60aeedeae0",
+      "legacy_source_sha256": "0109dcd775948fd88ef5cbb43afee2d494e30044040e6ea69c0f5e60aeedeae0"
+    },
+    "synthesized-code/glm-5.3-flash/yelp/tools-allowed/data/per-trial-results.csv": {
+      "public_sha256": "1c8b7ab628786ab511c32c4113602cb77e9bc56113fb613173fb5d8d75498803",
+      "legacy_source_sha256": "1c8b7ab628786ab511c32c4113602cb77e9bc56113fb613173fb5d8d75498803"
+    },
+    "synthesized-code/run.py": {
+      "public_sha256": "718afe5d7c9ff8c7f0a7b5efcb836c81a381c1f19e55e54b4a4691e47de5bf1d",
+      "legacy_source_sha256": "718afe5d7c9ff8c7f0a7b5efcb836c81a381c1f19e55e54b4a4691e47de5bf1d"
+    }
+  }
+}

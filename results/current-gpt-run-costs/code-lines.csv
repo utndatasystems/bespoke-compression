@@ -1,0 +1,197 @@
+run_id,file,sha256,code_lines,exclusion
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/FORMAT.md,66a5ae84b972c8ba2e0c72e1f4a34dc846a3ca05cf762189a0a155d495eb1e87,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/bytecodec.hpp,c22f7656e51b57fb071b1db2dd37200276136ad03bd47d96f90f85438b270b0e,131,
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/mosaic.cpp,ec3f1cb5e15595a6568d55a7f8df583f343873d9cd10a0e32684b80c14f9fbca,62,
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/numeric.hpp,c8638a4beb67cf35dbb7e09bb556c2087bfc642c8c71330e5325585c18ec4e16,111,
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/phrase.hpp,ce92b691b6c45f19340171e4f1576005949264d8936e83b54e8964f360d28332,170,
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/phrase16_masked.hpp,c26bfe1dc357e3c1040522780212754fd3741810d8b58d730135ab916aef8716,170,
+dbtext-from-scratch-A1,synthesized-code/dbtext/astra/from-scratch/01-maximum-decompression/source/special_hexfast.hpp,3b89e9f680613688e595c659355dd0ab5ebf4e383817676246de26bda0f9dd5a,158,
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/FORMAT.md,748c16b6a1b39f5f54c250c1cd82b5c3665b9d214a2e9c62b1ad5a7520262b52,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/codec.cpp,d38d62f05be82acca077e7bf1f79123c54e803787f1dc7062f8bd6ea157fa9e3,80,
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/context.h,c84c50882c16447979fc6fae11e1aa77379fda28dd460ac64ae2cf5ebf7c4f9e,119,
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/location.h,55085b2e7917dfca362fbd1dcabbbae4916f287b278de48643583a099504e924,109,
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/special.h,1e3ab129f216ca5fb9bfa4f524bdb48317d58a62287ad06bce4bdd8a6cdd0c0d,52,
+dbtext-from-scratch-A2,synthesized-code/dbtext/astra/from-scratch/02-maximum-compression/source/templates.h,ae2f5e3d7edbe87039c910ff5e29bf2db1fb02e19c6b1729a884a4043fd0cf5e,45,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/README.md,2d5977d8389ccea2a4cfe56ad8986ff7b5e89e5f5fdcd140cad4605e60763b4e,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/huffman.h,83f6f148d2f7fd2b42cec349efe3340738ec8f1244c4244b9435e02bf96891df,193,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/main.cpp,3a28623562187a6c48dbffc3e5cfc789740fd3b781a01e88745aaab9915cb30c,32,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase.h,6bc8fdd751ffc7f36caf2f4401e276c77e326d090b843e6f1215a8ffdcdf1d5a,92,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase_dict.h,ecf0c4ac087f5e5002edca098928efe676ad57bbcd3ec8125b618faf937b1d42,21,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/phrase_grammar.h,50e918c93c1de1a1814c0cc7ac1205045748f91757bf12bbce1b485b63fe37d7,26,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/residual.h,c50e5f3d86eee090e55d080ceee7cbbf1051c6017e540ba5ae343ea261d1a8e2,33,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/row_index.h,7e708bd0acc4c37dcb2314d06c6d8f303684899caeae98c3dad977b586398688,59,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/special_compact.h,b32e93bdba20f6771fadd56203e9af7b638b50b3f898e14f25fd31103a778eb7,170,
+dbtext-from-scratch-A3,synthesized-code/dbtext/astra/from-scratch/03-intermediate-compression/source/structure_hybrid2.h,edd38bc97bfed781299ef8e71c8a38c320e14bf96778d870ab9929fa4357ef19,46,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/FITTING.json,0c19fe446e7afdff910ad42168a4db6ce3a196d364ee21cc7c0e0e4301fd5165,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/FORMAT.md,78a21577132e7cbfec5d96d16c9001c78fe7acf04fcee6a2615edd0421f1ecf5,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/codec_final.cpp,64544020fa27a9627e5735c021d4e9a2a947e36d727024ea7062847f36f52363,39,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/dpack.h,b37dd0da94870fc2227e1ef56e6375ea12ecacda4cb1c38f6eaa8920e6cf6b7a,41,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/fit_settings.h,f5a8071ec994cb1861d32ebc13eac624e1babe666318ac115bf8d254d8ca6e14,22,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/location.h,62e4251de6e71b24e62262101c3573e0a25ab9903a95384e101602fc3611549e,83,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/optparse.h,620ad779377bdf3d814f99ec75d86c07b0cd33dea46866ccee5f391693c876f6,19,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/repair_train.h,5ad40c2b602b8891efc62d1f0fa1d325f58f063fc067b1909a539e26fa6eb876,25,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/structured.h,0bbb12918884398ee548aaea453c7a491ce73d58e4f6c21c57a0fe79e8397852,168,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/textcodec_packed.h,6fa962caee537fb65931ed92dcf33a5a69a3bedf8737c57e4dbe62632579042a,109,
+dbtext-from-scratch-A4,synthesized-code/dbtext/astra/from-scratch/04-intermediate-decompression/source/urls.h,2b9c7b3df84b8ae8097ee8ab45883c20baab11eec84d269d3b22b7c79327982b,181,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/README.md,459addf01e99967d9ea489f9ab692c7b8df8c96de88def511d570eee5dc97776,,"Documentation, metadata or non-code artifact"
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/defpack.h,edfc13861571b0d13c9b20dba5c3ccab4505a7664a90cf3cd665151e95ea1cf9,38,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_fast.cpp,83fdc531d08959914adc419142464c14911909b11ca7423560f81b151e18e7bc,162,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_hf_isolated.cpp,b83c19577ceedfce617a923dc3c582e66c72b4fb098a4a563831962d753c6ae5,191,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/dict_mix.cpp,12cc06afb11a0f2332e34e54740432ede036c0ebe183a0b48cafbe9fb5f51a59,22,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/main.cpp,41d074294e44075f10521b69913bba9422bde5ce61bc19ae76e57e692c8b5b1e,58,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/special.cpp,dce5be3b65f5fd68a274255abab05d22806ef02543a2ee17b53c1e597cf6e254,114,
+dbtext-from-scratch-A5,synthesized-code/dbtext/astra/from-scratch/05-improve-both/source/url.cpp,cbfc78edd7335f8cc40ddc1cc4c890b6b62e8f013d98e73ad2f59bf4f767228b,142,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/codec.cpp,73defd1720af7f0220db19ecce02916594efa1b4824ce1aeb325efe52443fabe,59,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/fixed.h,17e47928e8fb33975d5c555f63ef9a58400b2ceb63718cbbc7a62d2279192df4,131,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/location.h,e1094c8cf1626f134ff68c9fbb7a5e84bd8e9b93ab97fbb6f0374438d4655c05,59,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/prefix.h,a85fc84522c7e00e00da2fe3daf832d66761de78e987f47da4bea0e7687c69fe,162,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/text.h,6703998771a4eee4bec162b92f97bb8097916d947af80800cee1daa0bde16734,105,
+dbtext-tools-allowed-A1,synthesized-code/dbtext/astra/tools-allowed/01-maximum-decompression/source/text_simd_candidate.h,bca0a91921333b5bd0c07679289d80d724d275504e57920b3ac0333ad95a8f45,83,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/codec.cpp,1cc9d8fc180e6d09443b6d8b3255b6f139518460af589532ac6014fbe08cce27,37,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/encode_plans.h,984de0864c106b022c8d2abbfa86ceec234e54aba79ebee962383b7722040ffb,,Generated data or fitted table
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/entropy_plan.h,390963a0deee538eaf4dc1ff06da25e800b346ddac3d6a552ab982778fd0151b,24,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/front.h,d6027b46e6be7581a0c265357272d65ee1da28be082270e00d51e16256620423,91,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/7zTypes.h,5de943c886d5d7bbcf16203e9b292a9e7be327b43fe3dfd9f4ad07d6d0870ef6,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Compiler.h,959dac87ac7109502f6467e910d0722b932176e243153bf8c663479aa8c29b20,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/CpuArch.h,051d8a61373d9b6c90eb3b80f2aa1d932126fec7091242b085276e0bbd9bec03,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd.h,c67e58afd6cd0b0d598ae92338bc32fc96d951d65d041c086627f46287896e00,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8.c,c10d056bc7874f63af268d16a21da7308766b12c9af1942c4e11665d8a5417c8,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8.h,48fab0dad3aee20bfd67ffc6b9d340b78c5f4e0317cd4d1b9c1c06a07b5c2486,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8Dec.c,481cd1477cf93a0b08afb06a424907f510c4ea9206238f74096c9aacb9d3a3f2,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Ppmd8Enc.c,8d1d2c23efcfa416d23d6686ecda091983119aa978959c3c0aa6a49359fef074,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/Precomp.h,fea249c753dfbbdd69d9397e91497205452b784279f70cad4658dc567cd2f85f,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd/README.origin,e76caf46d5cc66497ed78b62f1aeb09ecfca4fe40a9538f1d23bd3ff64d9b1ff,,Imported third-party codec
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/ppmd_codec.h,df3b53f3eb2d49b4f43faea8a1bb33659525c3329eef4ede59b2505deddef3f3,35,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/special.h,9a40a6bdd7cc117183f223cf0bef7f50cac2674d3e675dd85c5811318893f0c5,87,
+dbtext-tools-allowed-A2,synthesized-code/dbtext/astra/tools-allowed/02-maximum-compression/source/wt.h,7194e9b472a39c3d4018a434784516aa8d32206f663b3cb6a32b3a504ecb95f8,75,
+dbtext-tools-allowed-A3,synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/codec.cpp,b8adc545efa0b7344f9fa75c2e3dc284bd606f298fe9a57ca00c967dd539072f,24,
+dbtext-tools-allowed-A3,synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/dict_codec.hpp,223e2551126b4826d2050efabcb0fdee5dd95a19c959a02e78dbeb3fe338dbb8,50,
+dbtext-tools-allowed-A3,synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/location.h,9a38dcd9c298ffd3c6117a441e88c18265521db90edbc834dea2e98e5aaff5a7,131,
+dbtext-tools-allowed-A3,synthesized-code/dbtext/astra/tools-allowed/03-intermediate-compression/source/special.h,e8d211dd1329071628306492f4c62b09f6a1711f154f5e145f1feec867261b3a,121,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/FORMAT13.md,9580c9b9a23969835cac9143acec49ea65410c48d424188230bf2d3644c3131e,,"Documentation, metadata or non-code artifact"
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/codec13.cpp,0d180b34c92c862f8cb6dd91c2140a3c6f010a42e5c1101ea15e3b29be4c90b5,22,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_location_fast.h,699e3ddfd6c1a8f5614c5cbf53f1e7bfe8d470382c6fb47ee2e1297125e8411c,99,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_url.hpp,c467cc88fd9e4f6c5d0456e40a061645f64d9672dba3c18ac9cce8c3acf23942,38,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/dict_url_codec_v4.hpp,ebd077f502cf59363500103f7d5c4e44def25da5437294d1799eb184b57870fe,75,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/fsst.h,a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881,,Imported third-party codec
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/libfsst.cpp,fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d,,Imported third-party codec
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/fsst/libfsst.hpp,888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8,,Imported third-party codec
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/hc_pruned.h,a423c4937058015462432f0ed8dc07a8fb3a8d1caeb2c57006e890fff476aa84,147,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/ph_selective.h,6c9f9a3fe0c51f35387c1863158f82f53e47cf29ec3c9e68c43ae0a393fc5875,191,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/reparse.h,d8f60185c4aa0f8f9a6d6c5269093cc1288381c7e32bbeb4e78ed288e47b9db0,46,
+dbtext-tools-allowed-A4,synthesized-code/dbtext/astra/tools-allowed/04-intermediate-decompression/source/special_uuid18.h,acc0161562a5c144af13042941d057f3919004c2d1944fa7ef8e5733d0fe8f42,93,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/common.h,001564a626b45517cdfb5df6ea937671944490226016c643350d99f4d000e9a8,15,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/decoder.cpp,285f51303efc83b3abc637198f5f3c1f02ebbdb61b003408450830c862473f0e,148,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/encoder.cpp,0d0f3f0888e940aaa91abaf999fbd5b7db51e6834be1166475d193d726ef8eba,43,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/fastfixed.h,96fb6776c7fe0eac87eecf77e08c56f96ff9cfa079bf03f278bbb0a77e0a3a66,99,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/hufffast.h,9572884914c17ed788e5a79012898a7156a3aa91151c875429b92c388b2f94fb,51,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/location.h,a7d3afd847839f8b24dc40218a070145a437b3e9c7a50469cec48480c4cd888e,28,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/phrase.h,8c17b5480f217d01d2572922fa85d4455b996db9d1f9d4f6c3b8a154386fe0e0,111,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/special.h,adf830ccbc92c43e99d6e8bfba7393b62f758cfedcf1616d46ea85476e3fa98c,71,
+dbtext-tools-allowed-A5,synthesized-code/dbtext/astra/tools-allowed/05-improve-both/source/urlcodec.h,fb78110f98680edca7f864f060aedc3664090d8da51e99f2637a9a5e6b0505d8,103,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/compact-cost.json,f5756be1b334b903911a847240bf5b2ca769b0df302951c72558579d48007f9f,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/compact.cpp,efd0ba16c573a163ed51baf0d3e835809186b7b18f56ce25141ddb999012b163,15,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/decoder.cpp,610598cad5bd1596c731025c0c93ba9889127ca7831814be32643a859bf8f8ca,12,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/encoder.cpp,10075fa612b281975999a2243f0f941a59d8c3b786a084f77a0f1bcdd90d4a39,16,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/fit_bpe.cpp,387d7c75c582807736bcd9cf39f3995e5fcbee63d7c6ffc8cb9c283953e7d6ba,18,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/fit_dp.cpp,2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9,6,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/fit_payload.cpp,7fc89bdded501bfee2887490545d5c5511ea1370430528ddf80401b4e3cb9585,3,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/fit_refine.cpp,4459ab8c26237a03bc29613b2dfde1d351cea67cebf5adc5ea430cc9ad65f15b,3,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/fitting-costs.json,2cfa9db59ab5f1d2a6de8ebad8997f9564a7abff4a9b12cb3eb470bbbe123f77,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/limit-costs.json,ad838e41b2d3cc40627eec90676dff5a43e7999dc782a2b029e82c63a132179f,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/limitdict.py,b7984c4cebd2642fb9e752e5ccc92b05c9f79f1b629055cd21603a442cbb331b,15,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/payload.inc,ec62c58a22ca587d16d568c056b7f1df1ac49f2d759f48d65c31d2a51b7d1d76,,Generated data or fitted table
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-cost1.json,fe542478899437935ec325e8b5d1b0271cf1befd4f23e7cc2e169c7fc8fa5439,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-cost2.json,10ac77916dee924d5dc4af9ab785d78d4c9a9d39e9244544b6cd9425a5c2df08,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-cost3.json,485a28d63fe13be5ad6f58385f15281beee937b48ff0e885517b8c24bb9dcdc1,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-cost4w.json,ecb8096cf0e0a96202061105e9dabeb235dfd53f862649a830bd629093643de4,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-dp.cpp,2da3e25f05682e4bdfaaad300b0e9f02fbefca895d75d99bc4a367dfa5094fb9,6,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-refine.cpp,7a2a70c646d9c2fd3a525a09b8af81f4bc039fea1e4202ee0ca612ab7efe30e5,3,
+python-from-scratch-A1,synthesized-code/astra/python/from-scratch/run-01/source/r16-refine_weighted.cpp,eefdc069c6b6b121c0625967f7efc31680c9508e4ada20085680bb44713d691c,3,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/codec.cpp,811c47ac825ac4c68f604e3530d547aed79b66a1412f4893387d27e7207d297d,190,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/entropy.h,11875aef278452978f7a177894b5407fe4f23a0078ddac093eef65daa0a30c57,135,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/fitted.bin,db88ebc8b2ad63d850389b2b172965ecf934ec5f09fb74141975f67f3e7de917,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/fitted.h,23418b53c4975d44c132bf8dd4a8be39a38c6410a006a316d9b08b29cc391faa,41,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/grammar_indent_best.h,bfef900ecbd767abf4803e187cc81371571e7f465b02b47e99283ff514871570,49,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/lexical.h,288ea10c115f70d8ecdc92b1adf06d053828d64ebafef0474bd960445b9ee48a,54,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/lit2.h,387d306efbafe47da4e98843ffe4624614949be5bfb2c3198ed68446667a2d6d,82,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/lzparse.h,722f70aa80bb03a0d8b4b2237bbece789028cb7374e1bb30e618a6c4cad528d3,195,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/make_fitted.cpp,92fd6ceb36e5ca3b3651a0b585bb820c5a4b5f92c93f5e1527fdfea0ef2bcc7b,22,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/stage.cpp,b3841d7750d5503c112a6f1029752de38260fe42ff3ecf76dd537cd0aafa80f0,49,
+python-from-scratch-A2,synthesized-code/astra/python/from-scratch/run-02/source/train_plan.cpp,d6a22d721ced453bb2c773505aa801f0f0214fc5714c3d20ded8d55f389684e4,17,
+python-from-scratch-A3,synthesized-code/astra/python/from-scratch/run-03/source/analyze_ransn.h,cc7b05a5c796d0c46fe9485ce7c5d10f8fa9f94dc372fe581da9f1366e566c67,49,
+python-from-scratch-A3,synthesized-code/astra/python/from-scratch/run-03/source/exp6_decoder.cpp,03c0d7cdc08d8ccbf9a20daaebf4d89490127750b8fb23bc6a2c6c09261ba11e,10,
+python-from-scratch-A3,synthesized-code/astra/python/from-scratch/run-03/source/exp6_encoder.cpp,4ec18a5ff6f35cdf6a7703d11a1e213e14a9eeaffd368519dfc65e36b257d4c1,22,
+python-from-scratch-A3,synthesized-code/astra/python/from-scratch/run-03/source/exp6_reconstruct.h,dce1774e52b4672d4c52c644af1f813b4ed3ace7ada8f684cca8773d8c44f4f0,127,
+python-from-scratch-A3,synthesized-code/astra/python/from-scratch/run-03/source/exp_parser_runs.h,99da99c642f8ae1fbfc360c7f51834034160c7276e4f1d6a4a3e0609a8755c9c,23,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/FIT_README.md,59db9a1b6c8066ba6ee6671681694a5d426c4a582523fd6adc562960b6732b5d,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/advanced_blockpack.h,9dc9cb76c15b02864c5f4583bb4382b3987e91cb5e42aecab8bc856232392825,15,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/advanced_entropy.h,486b8422bdd03b4ce4a1422b55c808cdb731070e1e17bacc3c3ae4ac33bd7b5c,63,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/advanced_lzpack.h,0adcee32cf13b24dd3838b59311e0c5d712d0694bcbc3cc3ec1b837b788121c4,35,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/analysis_costs.h,8344021270980023435ced176bc08f3377332597810e6c45a6c5a36e8929780d,,Generated data or fitted table
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/analysis_costs_refit.h,994ce2b4944cb75f1a5916f59fcd1a3db4f10ff292f1821eebd2887817edeb94,,Generated data or fitted table
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/analysis_generate_costs.py,3f99a64e076168bf5c876f0ff1c8a646662c93c90f54e54ac297f36c149507fc,12,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/analysis_generate_refit.py,e7afa78be6c14ccd3de2790980753d2cd78c189d3797ac5e54a3ba63109e3c38,17,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/analysis_merge.py,e8c8177352d206b1b54c2cef879cc37aecc2a7778fcfe7a68f5befc33675a2aa,14,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/final_1m_costs.json,3480eec6360a3ea6ebf0eb36ee9124b894979aa44a51ae8bbb9af794215e226f,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/final_1m_encoder.cpp,bbc4bc1c0d43c7e838f337c0649a53aa2b96347c0f322ad8d1f3ed65dc9d6ecf,22,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/final_blob.S,c7156e0ee86a00a0abd1af81243377a85a64b43362eebb314e083e64fe552714,10,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/final_fit_source.cpp,5d705dc9581e07f68fe3f62fa01a5c88308056c3c2158a09c8bf8d8e940d00f4,90,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/final_trace.bin,77633d6e025c906db90545d0bd412d5aa01e661f9eadc21d81000b3e57cf2c0c,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/fit_trace.py,e6d6a0aecbd2d0ada71793103b61b6062cb19b7b5bbfb1079945093fc5292a0b,6,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/optfinal_fit.json,051b60b9d3926a084ceba5e257d885ac344a9576ebc93b68cc55fb20ffc23e5a,,"Documentation, metadata or non-code artifact"
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/optparse_advanced.cpp,2e87880b5e95b92d3d038bbe00c3149d2175cc9a81d7293502dc53c6d23e2951,74,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/parse.cpp,d9134047977f750c9a796144d0aada8e669a13572c36417ecfeec42abe7bfe9f,50,
+python-from-scratch-A4,synthesized-code/astra/python/from-scratch/run-04/source/wide_decoder.cpp,39244ad4b82fd903bb36cceaf42a94739c42055b19e1b6115ea3a5e588620cc0,166,
+yelp-from-scratch-A1,synthesized-code/astra/yelp/from-scratch/run-01/source/yelp_final.cpp,e2c96909fdd9220b6fab6d91fc4043a334687fd7c107fb25cac36964358817e7,132,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/codec.cpp,a1c470daab3efc1947f2eb28cadd5eb257235235ed383ca918f9fedb4724ecb6,98,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/complex.h,ce9a983fac6f8f1f59641024061baf5ed1bf54afe00811e5d81f32796ab7fa18,68,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/id_simdfused.h,012f29e2897208213dea6cebc5011ee9bbc39f2300e44356261edcd84596c4f2,18,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/location_huff.h,c63a9603b41e70ff17080a0e335c85252e98d49dee73b9043b9ed04c6a239f47,71,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/numeric.h,03afc0d657ba00da939f42f7ff96026e328b6f0371be54430057a8fb5b3a231d,105,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/numeric_group_huff.h,d9439871afe9b3034b3245a10417f88896a9c340abb86f7862deed84470af986,102,
+yelp-from-scratch-A2,synthesized-code/astra/yelp/from-scratch/run-02/source/text.h,c950ae82ff31cb0684af621e28df197e98826d0555d845c6f3d61bf1f2963dbd,140,
+yelp-from-scratch-A3,synthesized-code/astra/yelp/from-scratch/run-03/source/codec_primitive_trim_runtime.cpp,9a941fc379bfb11dbc04bf29d9e73c06a61289084b0bb3b42d4bd2f007bafe98,87,
+yelp-from-scratch-A3,synthesized-code/astra/yelp/from-scratch/run-03/source/primitive_strcodec.h,a974db911b7b9598c7ba9bbeac1a7e8e87e2a363669f4a544bbdb25f97adbcce,40,
+yelp-from-scratch-A3,synthesized-code/astra/yelp/from-scratch/run-03/source/simd_helpers.h,7634eae8dcce56ed70a211834769ba9568aebbe908ace3e2bb85430db015985e,30,
+yelp-from-scratch-A4,synthesized-code/astra/yelp/from-scratch/run-04/source/final_huff8.h,485b31aef8dd040aefb7f096a632be478611676b694ab25f8ec7e3882c9c3ee9,36,
+yelp-from-scratch-A4,synthesized-code/astra/yelp/from-scratch/run-04/source/final_huffjoin.cpp,f3c5f216879a25267c484906cc0519dedac1a3cfb38278dd51557f9132aa6bb4,170,
+yelp-from-scratch-A4,synthesized-code/astra/yelp/from-scratch/run-04/source/final_lz.h,60cba7c87007be52da0de4932b3b7f5731d39c408d2d04a195f688aab7b78b76,76,
+yelp-from-scratch-A4,synthesized-code/astra/yelp/from-scratch/run-04/source/inspect_pack.h,43ab8cd18af7d09241e0ed0adea74027df053b7b0b54dc21f1c59822d0077b13,104,
+openstack-from-scratch-A1,synthesized-code/astra/openstack/from-scratch/run-01/source/simd_codec_compact.cpp,466d16014a7994282f01618c11779a34f6a73c2f1f6d59653d40b0170dab1fdd,157,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/common.h,e35b68c97c6edf9a7b19cd2887a902b900c3514bb3061c1b64dfe733f3d3ae36,104,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/decoder.cpp,2211248fbf8bd13b62512ac5bd72aa2de9ec10f23342a3e653011168733ee667,86,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/encoder.cpp,96f0b8036b2a97cdf3f51542129c26b4b057e6151f018c65290ecdfcc55eb8bd,96,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/entropy.h,f96f561ec010ae5ed3c8149b46194aed5c28c696c5bdccffbd39b3aaa09e827e,212,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/exports.map,549d37c016d261aaa9bf7e31eb3e12d2278d25606e74fb9aa4291a5951142d80,,"Documentation, metadata or non-code artifact"
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/lz.h,e447220a17cc9df8514f7adf63209a3e1313d5a1c4fb4eca4c9b12cd866d8602,293,
+openstack-from-scratch-A2,synthesized-code/astra/openstack/from-scratch/run-02/source/time_extra.h,63639145987b74475ee9d8f9bdc559da3c11dc957819a34bdabf6fc614628763,79,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/alt_gen.py,b56f230606256ab6886f1a0339fd295c25115992ac0efd786d241d35ddbdbf75,54,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/compact_decoder.cpp,e88ed5253d04dbac78ce8090cf6ed54083250dea61d0083c7030732bfad0dc7f,44,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/compact_gen.py,ff573713f93bcf974e37188a568109b060cd3d305cdd37ce4d0f7c258b60c735,24,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/compact_generated.h,afbd1d56bdc6e7eaf5c5e6efa88e0125627bc679ade7024540257768173fa0eb,789,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/fast_fields.h,b1c59a2db433fd4904be550981215329adc76c4b25aaf83207e8144c83b77390,44,
+openstack-from-scratch-A3,synthesized-code/astra/openstack/from-scratch/run-03/source/template_encoder.cpp,9c51cffd231d32eac671a68202c84c5ebce02fa57f5e2c98a6762ffd05e8293c,53,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/codec.cpp,e23f68c61c245e39428f69797fe456eb46b37135d1bb12e9bb0fb8d64c179f95,114,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/entropy.h,4c9a1f998ecd609a959207fddd37b9cd699730937ba22acc6e726c989d433696,121,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/smalllz.h,d8fb61f2307aa46ac43bd2689b15c81e66ea5a35d5863127c654c437d4ac0a9e,75,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/split.h,5864a39cd44728f7d8682be9a1c80adf2de1c66f215dfeab347fda961f7741cc,69,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/timestamp.h,2a9d658bffad318ac746c6d2b862378949743bbc304327a4d673efa37c42a2b2,59,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/uuidpack.h,587ceb81b45deddea07cbfb6ab01c987605eafb9d378a698d7a0dc35a2b189de,39,
+openstack-from-scratch-A4,synthesized-code/astra/openstack/from-scratch/run-04/source/wrapper.cpp,e7419dd74f30645dd12ebc8d7e8f643deeae0043f0fd1815dd098b62554bd2c1,64,
+sqlstorm-tpcds-from-scratch-A1,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/source/root_direct24_encoder.cpp,7e90f023a3a93243212c28fc99001b6d71712dbeffc345850005dc6073642132,192,
+sqlstorm-tpcds-from-scratch-A1,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-01/source/root_direct24_mask_decoder.cpp,42c5c72d37ba2e812a3d8bfd6cbdbf16e44fb8af2990a7e39ac455fcd9c9ca12,33,
+sqlstorm-tpcds-from-scratch-A2,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/source/codec.cpp,be63fe6d9b91e5556891d7f849f612c02960f14c20fc268209014a6b84fc2c4b,110,
+sqlstorm-tpcds-from-scratch-A2,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-02/source/stripelf.py,f1106db25d7de4c902900e2024fa7c71b53d6d20fc8f3bafb0c1bf6dbee0acf8,9,
+sqlstorm-tpcds-from-scratch-A3,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/source/decoder.cpp,c60ca0e225aafb635ea1ea04f94000b67a82689794e3a38e34f1e7eaf6b210ab,47,
+sqlstorm-tpcds-from-scratch-A3,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-03/source/encoder.cpp,7faf3628fe1047f88cc557660f72b5b6348dab9ae8ca60661355a8e5491a5041,45,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/README.md,1f3fc7436e48e3686623a549c6c3e3ca85be2c852bf985eefc1589086cc99f1c,,"Documentation, metadata or non-code artifact"
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/analysis_repair.cpp,3805bae9e4936bf25557a1cc8c0342a0e8601bbac0b40eb83268660c364e4b2b,54,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzexp_dp.cpp,46550da64b6a962dbfa49b9680a577e1dbea4ef23da29b02a95f3161ea11a086,16,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzexp_tok.cpp,8c163fd5d2dda7f7df18e02ecc9a84276dcf6bef2e21273aaaafb80d83224c41,10,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_decoder.cpp,21bd630042544ce3609bc73f5e38a190d044a10145f9a40f0762dd4e8d4156c1,8,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_encoder.cpp,3ba800d9ce45fff5237a6502acaa3131010dfdcf26e6d4624ed2c1b1e162c4f2,4,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_entropy.h,ec089a2ea1862d358fff5f934e45a63a354908969f4b59ed4e6cbf88d25e051f,18,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_pack.cpp,61b3e09dcda3419570f7872272c19406d07fe5f67919bbd3407d83ed24ef6dc9,7,
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/lzfinal_payload.h,b057c2b222f0c1dcd50c2d577abefc00267e605ed6dea6e4ac66c237aca8024b,,Generated data or fitted table
+sqlstorm-tpcds-from-scratch-A4,synthesized-code/astra/sqlstorm-tpcds/from-scratch/run-04/source/final/reproduce_final.py,6fc98cada93238d6057f708e9cea0b3021e26fe741c1c86a470155c96e5f7a62,31,

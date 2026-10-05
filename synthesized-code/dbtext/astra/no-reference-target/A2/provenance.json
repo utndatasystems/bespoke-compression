@@ -1,0 +1,25 @@
+{
+  "dataset": "dbtext",
+  "model": "Astra",
+  "policy": "no-reference-target",
+  "stage": 2,
+  "result_id": "r-3a073b0c2a917430ac47bee2e33a8519228c4d5ea4a4adcb9c5f9b82f81612b6",
+  "source_sha256": {
+    "source/codec.cpp": "26a73613c88198aeeff453161f7adbc99660d27610fcc3747ac7b490431e5ad4",
+    "source/context.h": "1d2f47a94a5574fc2d474a14ecd90d0f05d42dc02bc32cfddc490f939f0fc83b",
+    "source/general.h": "bd652c5731420b63d7a19f4819284b0f83b588d658a946e5abc95d28ac783fc1",
+    "source/grammar.h": "155d2db5abcdcf0760bcf85c6d9ca45c74cea57eeba99ada75c8e80217b9a9c1",
+    "source/huffman.h": "edd8a6f1bc3cf95982b78430b1fb9bba11ee5bf02dacb7705619c2de0b2273f6",
+    "source/location.h": "bf58f6ec2acd02f4835f9f4c18a4129db9e5c7370fdb5162092dfbaea117ebd4",
+    "source/reparse.h": "6b091982a71a13a9e97c5002178b67fc1f5d21419ec7c1099a7435e1fc7d3357",
+    "source/shrink_elf.py": "e7b6cd97c5cbedf4cbdae0a9ffa2b7813f42aecba43b8478ec9dfce25c6dec92",
+    "source/special.h": "3f53a0e68fa33d7b444d41674ee4da2ac5439dedc94a6086ae6c1a076ae6c792",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "source_export_sha256": "d5760f184d2447871cace1d545e5e5ba1f926ff07bf147756b591fe081b30f92",
+  "plotted": {
+    "package_bytes": "10338776",
+    "ratio": "3.8535845055546227",
+    "qualification": "qualified"
+  }
+}

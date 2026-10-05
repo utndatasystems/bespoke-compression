@@ -1,0 +1,19 @@
+{
+  "old_generator_sha256": "ec7e74ab5834b72298939c4b9acbdf556bdfbdf37e95f639960f39d360d00f1a",
+  "new_generator_sha256": "4f367e318831f695f2529f3d2d9a9d8d0a76e619c6fe335e2c0176f9e2e03cad",
+  "timed_sources_changed": false,
+  "measurements_replayed": 0,
+  "saved_preview_identical": true,
+  "fresh_partial_collision_checks_passed": true,
+  "scope": "Four saved panels and three completed fresh panels; Yelp still pending",
+  "results": {
+    "saved": {
+      "png_sha256": "2a6eb20ecb5ec0307dcf5209243da76c3de31c71808d07500bca4b57b13cc763",
+      "log": "bulk-layout-after-repair-saved.log"
+    },
+    "fresh_partial": {
+      "png_sha256": "640617c061cc61c21b145330069da4bb36c15d22da68e8b1df435b30f555bccd",
+      "log": "bulk-layout-after-repair-fresh_partial.log"
+    }
+  }
+}

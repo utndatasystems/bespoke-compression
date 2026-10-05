@@ -1,0 +1,17 @@
+{
+  "method": "dbtext-astra-tools-allowed-01-maximum-decompression",
+  "package_bytes": 16057814,
+  "archive_bytes": 16031046,
+  "original_bytes": 39841347,
+  "bits_per_byte": 3.224351626464838,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 16195254,
+  "deployment_scope": "decoder and its full nonplatform closure",
+  "decoder_bytes": 26768,
+  "ratio": 2.4811189742265043,
+  "median": 5159.112849058707,
+  "low": 5055.825645899862,
+  "high": 5308.639091635152,
+  "encode_MB_s": 4.753529103970698,
+  "exact_decodes": 184
+}

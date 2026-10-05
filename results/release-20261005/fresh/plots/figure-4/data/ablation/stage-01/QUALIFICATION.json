@@ -1,0 +1,60 @@
+{
+  "campaign": "dbtext-reference-ablation-2026-09-28",
+  "arm": "scratch",
+  "stage": 1,
+  "result_id": "fresh-server-replay",
+  "qualification": "qualified",
+  "package_bytes": 16048384,
+  "decode_MB_s": 3962.901868081009,
+  "checked_utc": "2026-09-28T22:21:31.368168+00:00",
+  "exports": [
+    {
+      "path": "experiments/dbtext-reference-ablation-2026-09-28/stage-01/review/b-065af4ed356f18204a72dd205979eceb86b437151f12b77f80bbdf53aa97d750.zip",
+      "sha256": "9fb0c10c660d1d112c683b5b03dc5bfa4cf37378fd775cd2bf6154a73b6e4dcb"
+    },
+    {
+      "path": "experiments/dbtext-reference-ablation-2026-09-28/stage-01/review/r-d2caaa1620440cb178a3dd0d3440d19d2e85ae1a9cbd5df908b312eb7aafeabe.zip",
+      "sha256": "f38eba90489e911cfab14153b830d7602e199728af2182b6e11e81525fdda468"
+    },
+    {
+      "path": "experiments/dbtext-reference-ablation-2026-09-28/stage-01/review/v-87299445298282b2b2d4f48822c089345a4857276cf011deb81dbfa07a498ef0.zip",
+      "sha256": "13866c15f0f1ab9a34036c60103de7881ba00c84fbf702edffa1ef1021e6978f"
+    }
+  ],
+  "source_review_sha256": "8b6a4dd2924f9c59d483a1241f646164cfb8030e8dea27147cbdf9407fc5fa1d",
+  "source_manifest_sha256": "464937c7914903f5b9b960aa7b4129ef9171f4b5d1b17a0f7a004e2e85b7e9bb",
+  "diagnostic_calls": 391,
+  "bulk_range_MB_s": [
+    3821.3285266533453,
+    4020.0522589124794
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 42.583426549948605,
+      "min": 41.87177229388093,
+      "max": 43.46949064243939
+    },
+    "10": {
+      "median": 50.01939800023861,
+      "min": 49.84788228808065,
+      "max": 51.172489848633646
+    },
+    "100": {
+      "median": 83.82441074969029,
+      "min": 83.70021096145624,
+      "max": 83.97816310706493
+    },
+    "3": {
+      "median": 48.66788215784879,
+      "min": 47.979068895532066,
+      "max": 49.36369162757623
+    },
+    "30": {
+      "median": 49.07436963706339,
+      "min": 49.07351675963489,
+      "max": 49.075045605483204
+    }
+  },
+  "boundary_met": true,
+  "scope": "Retained evidence and numeric verification plus named owner source review; no fresh benchmark or comprehensive independent source audit. Later ablation boundaries remain fixed regardless of this result."
+}

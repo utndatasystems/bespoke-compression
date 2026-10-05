@@ -1,0 +1,48 @@
+{
+  "commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-fPIC",
+      "-shared",
+      "-s",
+      "-I/source/interface",
+      "/source/encoder.cpp",
+      "-o",
+      "/output/encoder.so"
+    ],
+    [
+      "g++",
+      "-Os",
+      "-flto",
+      "-std=c++17",
+      "-march=icelake-server",
+      "-fPIC",
+      "-shared",
+      "-s",
+      "-Wl,-z,noseparate-code",
+      "-Wl,--build-id=none",
+      "-Wl,--version-script=/source/exports.map",
+      "-I/source/interface",
+      "/source/decoder.cpp",
+      "-o",
+      "/output/decoder.so"
+    ]
+  ],
+  "decoder": "decoder.so",
+  "description": "Dataset-specialized byte-exact OpenStack codec: fixed-width message templates, constant-folded numeric columns, UUIDv4 122-bit packing with implicit singleton indices, exact binary-grid duration transform, template-pair timestamp prediction, from-scratch LZ77 and four-way rANS. All fitting runs in lab_encode; no external preprocessing or data-dependent code generation.",
+  "encoder": "encoder.so",
+  "name": "openstack-template-columns",
+  "sources": [
+    "encoder.cpp",
+    "decoder.cpp",
+    "common.h",
+    "entropy.h",
+    "lz.h",
+    "time_extra.h",
+    "exports.map"
+  ],
+  "variant": "bulk"
+}

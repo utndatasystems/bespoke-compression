@@ -1,0 +1,40 @@
+{
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "implementation": "tools allowed",
+  "stage": 4,
+  "objective": "Compression at an intermediate throughput target",
+  "original_bytes": 100000488,
+  "original_sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02",
+  "result_id": "r-aa5d2edcceadc421336cf6c9a545d24e961904162157add03d88485b5c041bba",
+  "build_id": "b-5665056fc69ae5c2395f34c3ce02e2d1f78bda38dcc1a13831c63a13ad9ba6c3",
+  "validation_id": "v-090164219eacefd4cc556eb1854fbccd66c7bf620865c6b2f8b099fbb1943df3",
+  "package_bytes": 9272488,
+  "strict_package_bytes": 10165792,
+  "exempt_standard_library_bytes": 893304,
+  "compression_factor": 10.784644639065588,
+  "decompression_median_MB_s": 1673.7735525988303,
+  "decompression_range_MB_s": [
+    1525.8496125688382,
+    1690.1883338936566
+  ],
+  "encoding_median_seconds": 1.059790129,
+  "target": {
+    "maximum_package_bytes": 17072815,
+    "minimum_decode_MB_s": 3770.2133297743517
+  },
+  "target_met": false,
+  "source_sha256": {
+    "build-spec.json": "a5827d21caa67a83cb40a1e3898e4bc692aec04710ebdd7a7da7a8502b98e84c",
+    "source/common.h": "4c8d8a876d17231462fe3751605cae46d0b38adfcb862e65e0e8d74060e675a4",
+    "source/decoder.c": "9df1aec48b79be8f2aea200a61d328dfb22b27977acac42bb7add62ff04ab749",
+    "source/encoder.c": "28de8723bd0a078ff73ff027f6a2dcdea8247c1966e80fb8890c96283c3a7eba",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "exports_sha256": {
+    "build": "fbac3b77a36e11173a04b4ec61ed29fe02ca086edab3812bd7f680413ff17aca",
+    "measurement": "6967a2c83ef04218777d2de60b2d2c89299dee345ac12fca3e210b92c9709d92",
+    "validation": "123278338a05588c4bf9e278687a21d53693bb4d66c2ee72f46d1ffa6a0e81ad"
+  }
+}

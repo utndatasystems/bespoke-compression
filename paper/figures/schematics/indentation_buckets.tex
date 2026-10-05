@@ -1,0 +1,17 @@
+% Compile with: pdflatex indentation_buckets.tex
+% The paper and this standalone wrapper share indentation_buckets.tikz.
+% Typeface selection is local and does not change a host paper's font families.
+\documentclass[border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp,graphicx,tikz}
+\usetikzlibrary{arrows.meta}
+\pdfinfo{
+  /Title (Syntax-conditioned indentation coding)
+  /Subject (Editable vector reconstruction with a VS Code-style editor)
+  /Creator (LaTeX / TikZ)
+}
+% Change only this width to choose a different native output size.
+\newcommand{\IndentationFigureWidth}{180mm}
+\begin{document}
+\resizebox{\IndentationFigureWidth}{!}{\input{indentation_buckets.tikz}}
+\end{document}

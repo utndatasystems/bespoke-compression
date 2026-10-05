@@ -1,0 +1,60 @@
+{
+  "published_on": "2026-09-18",
+  "toolkit_version": "0.6.6.dev1",
+  "note": "Core timing and adapter sources below are byte-identical to the measured snapshots. Portable Python runners replace host-specific orchestration. Recorded JSON extracts retain numerical values; private paths and process records are omitted. Data, archives, executables and research chats are not included.",
+  "kernels": {
+    "dbtext/codec.h": {
+      "sha256": "95ca377d103cfc75f115ba8bc1f6e5397ca0aa38508fb98b92985c9ae048883c",
+      "source": "experiments/dbtext-astra-2026-09-16/lab/src/compression_lab/data/strings/codec.h"
+    },
+    "dbtext/reference.cpp": {
+      "sha256": "160cf6d5e2e66ad644b122dc403350c5349e2597978f7df769629003f4ce3127",
+      "source": "experiments/dbtext-astra-2026-09-16/lab/src/compression_lab/data/strings/reference.cpp"
+    },
+    "dbtext/onpair.cpp": {
+      "sha256": "f2a8ff96ae2401bd86c13b01e30537cb70494bebbfb4f19d774cfc65895897bb",
+      "source": "experiments/dbtext-astra-2026-09-16/lab/src/compression_lab/data/strings/onpair.cpp"
+    },
+    "dbtext/benchmark.cpp": {
+      "sha256": "4f82558380a5a5f5efa8a0a6e68920d5a332a6e18396bfae0f4cd1bd2cbecee0",
+      "source": "experiments/dbtext-astra-2026-09-16/lab/src/compression_lab/data/strings/driver.cpp"
+    },
+    "fsst-paper/wrapper.cpp": {
+      "sha256": "a820b48d2be319a0b04bf67f74a1fc0dd1a99840f50a99ba3b3a244389b994de",
+      "source": "experiments/dbtext-astra-2026-09-16/paper-filtertest-2026-09-17/adapter.cpp"
+    }
+  },
+  "upstream": {
+    "fsst": {
+      "url": "https://github.com/cwida/fsst",
+      "commit": "e638d4cf8c26129d73c242a4127b42b975de5b63",
+      "files": {
+        "fsst_avx512_unroll4.inc": "650f3b79f1f5ba63540f8337e972a047193225555b7c702884700686ac1487f2",
+        "fsst.h": "a99e75e018f8709e9a0a44bc60e6fd9a7e3709f11b5e0f028582f237b7f32881",
+        "libfsst.hpp": "888e3e17baea8fbbb5d9d8d1304672bc7f5d923d976f92e192685e43e91b8aa8",
+        "libfsst12.hpp": "50d67f29cb51c9f7fe7d9cf12a8c264e5382a9698f5d1de431fa509c9d1340a9",
+        "fsst_avx512_unroll3.inc": "b09a98c29b40a3eb1875907ee99a05c42f3ce8c70030ff1c0484a0b3f1729b27",
+        "libfsst.cpp": "fb59f31731debedf2ebf80eebe5b379ce8c66dbc32c227d07e4f80fcde4a0e9d",
+        "fsst_avx512_unroll1.inc": "e6e93f3d38d80e926cb933bac47fb3496b3c70f5af021c3ea4d98f751b38e729",
+        "libfsst12.cpp": "56b44984eb8d9b6599c6d0a344733d89632dd18748a7b905609f496f0de84792",
+        "fsst12.h": "79cbd05e391d54452e74bdcf1d6d37f0af8eb8e5c443d6b9003f8f3babb0518e",
+        "fsst.cpp": "d3d520cc5291d2b6219f1efe94d1c6e0cb0c234332a601d7d180920369b03697",
+        "CMakeLists.txt": "7cc705fc96e6a69384b5eb56442f61d7ce3ffd26377523a77bf13c252d6ddce5",
+        "LICENSE": "20e9c14ff437a73a6e2b105f1b5aaf9ef24a84d962741c0ab01d04b4910294ab",
+        "fsst_avx512.cpp": "8aec402d8abb5228c16e5abdc0793c17ccb8733ad9474ad7bd52a41b922714d9",
+        "fsst_avx512.inc": "f1d7f0893c458e27d97cb630027a1fdc6f969b125149fe5b97e1b2920ce1f477",
+        "fsst_avx512_unroll2.inc": "36802c8ce12f6d036453c5f15978273e016b6856531eb1bca6ad2eadda40dc36",
+        "paper/filtertest.cpp": "5ea56bce7ecd9a7bc00c89bfe1e3b40085f63333660e7afb83aa3b9316a59e25",
+        "paper/PerfEvent.hpp": "aacefad07addad2dca75352fe76606ec193f6542faa085d052ef357b39db1a7a"
+      }
+    },
+    "onpairplus": {
+      "url": "https://github.com/umbra-db/token-vldb2026",
+      "commit": "e202e36e2b33a4768d1122f96880b64416234175"
+    }
+  },
+  "dataset_definitions": [
+    "dbtext/columns.json",
+    "whole/inputs.json"
+  ]
+}

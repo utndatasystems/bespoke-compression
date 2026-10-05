@@ -1,0 +1,86 @@
+{
+  "FSST_REPAIR_BUILD.json": {
+    "sha256": "b27b5e2b912f1ec661ab2693140013f0d98b95913fbf158b192960b138939865",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/FSST_REPAIR_BUILD.json"
+  },
+  "fsst-guard-repro.cpp": {
+    "sha256": "5d542ec890a74c3979ee82fd6d5112738a0c2d2731aa36362308460d8bd65ea0",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/diagnostics/guarded-fsst/repro.cpp"
+  },
+  "bulk-measure.cpp": {
+    "sha256": "a126c1dd982adc0a0997fce03e7b75e9cebc59ad85561054fc0f77edfbd664c9",
+    "source": "/home/iachnyk/compression-research/evaluations/string-baselines-all-datasets-2026-09-25/code/measure.cpp"
+  },
+  "bulk-BUILD.json": {
+    "sha256": "ba900f5d73c831c3ba23f1c84134e6386f758b250d7f8a62bc3239bf2b2677bb",
+    "source": "/home/iachnyk/compression-research/evaluations/string-baselines-all-datasets-2026-09-25/build/BUILD.json"
+  },
+  "dbtext-measure.cpp": {
+    "sha256": "392fb4f7b65cf05e30311e7775eae3b53603c34c8d07185d8e397d9a757c1916",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/code/measure.cpp"
+  },
+  "dbtext-BUILD.json": {
+    "sha256": "3472534fba62775b120a0e428e43bcf3c1674af03c91d206cbb9b7b5961ed765",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/build/BUILD.json"
+  },
+  "dbtext-PROTOCOL.json": {
+    "sha256": "a6ab9c2ffa40f673ee959f0ad39f553f9225f776fb1b7537aac189614de96871",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/PROTOCOL.json"
+  },
+  "filtertest-observed.cpp": {
+    "sha256": "1a808493289c5a0e805ce0fcc9b2e3fdb00ea7ba75da26c80da0c5c484578238",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-payload-evaluation-2026-09-24/build/filtertest-observed.cpp"
+  },
+  "FSST_SAFETY_PATCH.diff": {
+    "sha256": "c40f50e8df5b9bd4edfda1d1b979f8ac6ec72304d84f79bbee0942af4b64bfb1",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/FSST_SAFETY_PATCH.diff"
+  },
+  "FSST_REPAIR.json": {
+    "sha256": "9b9d2bb2038d790d8854848cc4b8eb5cfd25a6f7f47e8cecee122e5c34acc004",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/FSST_REPAIR.json"
+  },
+  "fsst/libfsst.cpp": {
+    "sha256": "e364553aec4ff992c5bbb4df470794a750d54277b7488eaf248240ef2ddd3e8b",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/libfsst.cpp"
+  },
+  "fsst/libfsst.hpp": {
+    "sha256": "d848483dbe4ef4a0526e9d43554e9965f475d8345319e268a63ae4827cc55f77",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/libfsst.hpp"
+  },
+  "fsst/fsst.h": {
+    "sha256": "38d701049a0696004c97afd9c38ead8b203a3c6aeca16814ba6d6aa1e5842785",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/fsst.h"
+  },
+  "fsst/fsst_avx512.cpp": {
+    "sha256": "bbbf01cc733298db6c9fa8d2fbab67ef888067fecf8c7188fd5427071e84cefa",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/fsst_avx512.cpp"
+  },
+  "fsst/fsst_avx512.inc": {
+    "sha256": "aaa25f71091b8cd84fd1dd0bb22139207f47442e3cca893c61f2f3e2db1fa605",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/fsst_avx512.inc"
+  },
+  "fsst/Makefile": {
+    "sha256": "1a3f9f378a45e24f5f607897a3f2152b83a9826ec83214bb0673bd73ec240184",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/Makefile"
+  },
+  "fsst/LICENSE": {
+    "sha256": "0e9fc7da34a895e837eb24f3951166a824098f7e0232db235019b897db573cfc",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/LICENSE"
+  },
+  "fsst/.fsst_avx512_unroll1.inc": {
+    "sha256": "6550072d76ba9635a20436563ab003ca79769f170bbbeedc2517e91cf6006ea6",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/.fsst_avx512_unroll1.inc"
+  },
+  "fsst/.fsst_avx512_unroll2.inc": {
+    "sha256": "b7ad2940997140eb682ee1ffafd32036055ef20b1a4dfd1c088e7a66e395361c",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/.fsst_avx512_unroll2.inc"
+  },
+  "fsst/.fsst_avx512_unroll3.inc": {
+    "sha256": "036fd3dfd954050bdefc13f55ea14cbe2dc5bb4e47824699f5f3c709eab7ca08",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/.fsst_avx512_unroll3.inc"
+  },
+  "fsst/.fsst_avx512_unroll4.inc": {
+    "sha256": "02414d55cf2991dd087e1e21664e53fed6732e6a16f5703137ce7b0071b29ee0",
+    "source": "/home/iachnyk/compression-research/evaluations/dbtext-final-fullsize-2026-09-24/sources/fsst/.fsst_avx512_unroll4.inc"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "dataset": "yelp",
+  "original_bytes": 100000488,
+  "source_sha256": {
+    "output/compla6-publish-2026-09-15/results/tables/data.csv": "b22b610b0c5c2206c87c8d6061f226897559b84a247a14a3dfcdae9fb7145e84",
+    "experiments/string-baseline-timing-audit-2026-09-25/BASELINE_SUMMARY.csv": "41c16c24ad7e463e0bd329f8a1e11da8ee1d4463dacbf819d3ca413fedbaf3cd"
+  },
+  "points": [
+    {
+      "method": "LZ4 default",
+      "package_bytes": 30102816,
+      "decode_MB_s": 3068.1349993675067,
+      "result_id": "s-323a87f935e1d38ed9281f19bd695fcf3535dd90315df9cec71c2d1a187b2067",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "LZ4 HC-9",
+      "package_bytes": 18743599,
+      "decode_MB_s": 3466.137921460818,
+      "result_id": "s-4762d9b7bee8bc7da2ad95bc99c67b417c754a5e7b4766e4dab359bf4f949a38",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "LZ4 HC-12",
+      "package_bytes": 18475276,
+      "decode_MB_s": 3661.8508192692093,
+      "result_id": "s-0f7a57793f90710f077fb8f7f6f15cff1e614a1afcb1138e437e9bc6936be3a4",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-1",
+      "package_bytes": 19388768,
+      "decode_MB_s": 1319.7077342004932,
+      "result_id": "s-223caa455efea0c7b485afe3f6391eea9f4fb04fc91db921e0d50697e72f4ba2",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-3 (default)",
+      "package_bytes": 17915259,
+      "decode_MB_s": 1326.237748441247,
+      "result_id": "s-2f16de65044d3df56983e45aca5fa0c71e22fcc4e29d4b7729ea4b72a1636b2f",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-19",
+      "package_bytes": 9440101,
+      "decode_MB_s": 2154.5501248038613,
+      "result_id": "s-28a724f8891366b18452655d5871ae1b8794eff36cd020571ace7c8169c7325c",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-20",
+      "package_bytes": 9053599,
+      "decode_MB_s": 1963.6709297885425,
+      "result_id": "s-6acb796116ffc5e95c8315c28339ff71b77213f8be2a4260342cf98aeefe2201",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-21",
+      "package_bytes": 8880351,
+      "decode_MB_s": 1893.6388757770817,
+      "result_id": "s-1da38f4bddc7dd9a73ac0ae3911a679c54ea663022982c32169cb8d49b05c7a9",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Zstd-22",
+      "package_bytes": 8808805,
+      "decode_MB_s": 1847.9082132208096,
+      "result_id": "s-46779651f79ba90155a0aa179a33c0c10b60d80440e33d6c1bc43f88ea123fe2",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Brotli-5",
+      "package_bytes": 13143604,
+      "decode_MB_s": 728.3161635335073,
+      "result_id": "s-c1ca6d1687834eeb2d5fd330c40d1e4a7b1691db2f7187784533e598b3bc2021",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Brotli-9",
+      "package_bytes": 10902841,
+      "decode_MB_s": 859.2319516008689,
+      "result_id": "s-eab487bc1f6ddc2f3774445f465d5d83bdbf0badae8da92304dfb25ce91dd532",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "Brotli-11 (default)",
+      "package_bytes": 9459396,
+      "decode_MB_s": 864.7584337208484,
+      "result_id": "s-600cd6d96c3e400235aead6ea2150cce88ac8a4020e66b7f537b32327f2e64eb",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "zlib-1",
+      "package_bytes": 24460790,
+      "decode_MB_s": 363.20534401463703,
+      "result_id": "s-29865ee6ed8ac245458bbf0633de5fef2ddde641dafce9897ce743145b3483dc",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "zlib-6 (default)",
+      "package_bytes": 17606753,
+      "decode_MB_s": 478.9074526878861,
+      "result_id": "s-c8e6d7a8c2013dd44c504c893962fcb5d1d62a68139bc3c872d2c0946c5cdc16",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "zlib-9",
+      "package_bytes": 17112250,
+      "decode_MB_s": 487.4642667891002,
+      "result_id": "s-83eb895fd034d08c98b386f8aeb2958a163e51af68ba8a8ced28002da2714762",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "bzip2-9 (default)",
+      "package_bytes": 9892353,
+      "decode_MB_s": 31.402140735474973,
+      "result_id": "s-6b9cc5b0ee71a1432d763e1fb82735af322de14ed7d11913b5fde9dea3107844",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "bzip2-1",
+      "package_bytes": 14483174,
+      "decode_MB_s": 53.31014478452359,
+      "result_id": "s-2326965f48bb9a603c529126fa5a3c7400b2ac4feb13c4c71c2ec017c8593e30",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "XZ-0",
+      "package_bytes": 17844936,
+      "decode_MB_s": 96.82280582440906,
+      "result_id": "s-59369e7c443dece5809456a7adf57e98e1a658e32031a226e45943759c1a756c",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "XZ-6 (default)",
+      "package_bytes": 9909340,
+      "decode_MB_s": 182.81616975390116,
+      "result_id": "s-b61a94e242b5282a26f39cb725da1941c6b0168a49a96a50e2e632b358b8e089",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "XZ-9",
+      "package_bytes": 9376364,
+      "decode_MB_s": 181.47393108034464,
+      "result_id": "s-d9c4206f4a7d1ed83ca48eb3c179af86bf6298b6aa3194c81861edd72bdf0aca",
+      "source": "output/compla6-publish-2026-09-15/results/tables/data.csv"
+    },
+    {
+      "method": "FSST (bulk)",
+      "package_bytes": 43182151,
+      "decode_MB_s": 3711.525741773564,
+      "result_id": "fresh-process-20260925-23fd4095723d1fea92b58b8e29bc8b246e3eeb716a81ebd1f64b64ba6ef0b17d",
+      "source": "experiments/string-baseline-timing-audit-2026-09-25/BASELINE_SUMMARY.csv"
+    },
+    {
+      "method": "OnPair+",
+      "package_bytes": 20020714,
+      "decode_MB_s": 7110.641684639319,
+      "result_id": "fresh-process-20260925-1f7417db3912c768196fcd5fc171e67048fbde1f0eefbb62f4f1347e37796074",
+      "source": "experiments/string-baseline-timing-audit-2026-09-25/BASELINE_SUMMARY.csv"
+    }
+  ]
+}

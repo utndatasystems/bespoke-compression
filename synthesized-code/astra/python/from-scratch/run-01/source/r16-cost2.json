@@ -1,0 +1,27 @@
+[
+  {
+    "argv": [
+      "taskset",
+      "-c",
+      "14",
+      "/work/analyzebpe/r16/refine",
+      "1",
+      "2",
+      "49152"
+    ],
+    "wall_seconds": 3.6033263206481934,
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "taskset",
+      "-c",
+      "14",
+      "/work/analyzebpe/r16/dp",
+      "/work/analyzebpe/r16/dict2.bin",
+      "/work/analyzebpe/r16/tokens2.bin"
+    ],
+    "wall_seconds": 14.571484714746475,
+    "returncode": 0
+  }
+]

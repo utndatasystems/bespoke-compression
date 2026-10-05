@@ -1,0 +1,17 @@
+{
+  "method": "Brotli-11",
+  "package_bytes": 11410489,
+  "archive_bytes": 11410489,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.2911853858756333,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 14499561,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 3.491642382723475,
+  "median": 228.45207671828814,
+  "low": 227.88104311628962,
+  "high": 229.14065376967025,
+  "encode_MB_s": 0.44317043368309805,
+  "exact_decodes": 184
+}

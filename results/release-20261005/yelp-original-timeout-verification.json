@@ -1,0 +1,13 @@
+{
+  "sha256": "9e73e50641b38e6e55ca9f0f6459312a23e9e9a360c609600deb77421777c221",
+  "bytes": 17703,
+  "files": 19,
+  "every_member_sha256_verified": true,
+  "verified_members": 19,
+  "method": "brotli11",
+  "operation": "encode",
+  "trial": 0,
+  "timeout_seconds": 300,
+  "success_claim": false,
+  "note": "Original failed attempt retained; no complete trial or size/speed point was obtained."
+}

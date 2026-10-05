@@ -1,0 +1,17 @@
+{
+  "method": "Zstd-22",
+  "package_bytes": 11652454,
+  "archive_bytes": 11652454,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.3397710925787725,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 14741526,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 3.419137891469042,
+  "median": 868.300354291181,
+  "low": 861.3428642253467,
+  "high": 869.5391801129495,
+  "encode_MB_s": 1.6947062206450059,
+  "exact_decodes": 184
+}

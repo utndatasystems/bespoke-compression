@@ -1,0 +1,153 @@
+{
+  "note": "Final layouts imported from the submitted-paper work area. Paths below are historical provenance, not runtime dependencies.",
+  "files": [
+    {
+      "source": "output\\paper-layout\\data\\openstack-baseline.csv",
+      "destination": "paper\\figures\\bulk\\data\\openstack-baseline.csv",
+      "sha256": "2a24c99b47fb72303c3b26c957f20f4822098870480ecdad24371bd4fcd8868d"
+    },
+    {
+      "source": "output\\paper-layout\\data\\openstack-generated.csv",
+      "destination": "paper\\figures\\bulk\\data\\openstack-generated.csv",
+      "sha256": "433ee4acd3d188dec3cb500254dbcc0fef970f8ebe950fe8f96feb4e7b780ad3"
+    },
+    {
+      "source": "output\\paper-layout\\data\\python-baseline.csv",
+      "destination": "paper\\figures\\bulk\\data\\python-baseline.csv",
+      "sha256": "0a7dc51b8d1b9375653858b223433f6f77b4ec4f12d1482e0e57e3b0ff13f040"
+    },
+    {
+      "source": "output\\paper-layout\\data\\python-generated.csv",
+      "destination": "paper\\figures\\bulk\\data\\python-generated.csv",
+      "sha256": "802e598421eb93fbff6f15cde5e482ed67bd000a6b0cbb3819addfdc409b099f"
+    },
+    {
+      "source": "output\\paper-layout\\data\\yelp-baseline.csv",
+      "destination": "paper\\figures\\bulk\\data\\yelp-baseline.csv",
+      "sha256": "71fa45ba212697318dce2b92791214833286da67986361b54f2321d0b5b24727"
+    },
+    {
+      "source": "output\\paper-layout\\data\\yelp-generated.csv",
+      "destination": "paper\\figures\\bulk\\data\\yelp-generated.csv",
+      "sha256": "1cc234f3cf2f62d63610e3cdad9c3afdd392bd09f92a5425b9c4ad03215be45c"
+    },
+    {
+      "source": "output\\paper-layout\\data\\sqlstorm-tpcds-baseline.csv",
+      "destination": "paper\\figures\\bulk\\data\\sqlstorm-tpcds-baseline.csv",
+      "sha256": "f2dd80acd600a8dd5802f12d1adb7aedb92a911e7b71b3929c2f0f63260b3725"
+    },
+    {
+      "source": "output\\paper-layout\\data\\sqlstorm-tpcds-generated.csv",
+      "destination": "paper\\figures\\bulk\\data\\sqlstorm-tpcds-generated.csv",
+      "sha256": "c2869914f0bf9c2a40e25cf247e933fa87d1d07484dede08ee9860e1adcb7ab9"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\dbtext\\astra\\data\\row-points.csv",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\dbtext\\astra\\data\\row-points.csv",
+      "sha256": "e9545df8bab910e363015e2bddcf2c3fe605a88ca9495b6fd739e18f4e9d5130"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\data\\row-points.csv",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\data\\row-points.csv",
+      "sha256": "cf7619fe09921fe165225c7d5c6b1f409ad256dd7c2cf28256a830ea468bf1ab"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\ablation\\stage-01\\QUALIFICATION.json",
+      "destination": "paper\\figures\\random-access\\data\\ablation\\stage-01\\QUALIFICATION.json",
+      "sha256": "6147038a771afb1e7f88fd2003d0574234e521ad5574e7013a300df33fa56827"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\ablation\\stage-02\\QUALIFICATION.json",
+      "destination": "paper\\figures\\random-access\\data\\ablation\\stage-02\\QUALIFICATION.json",
+      "sha256": "e02a3b9274f93072ea84d360a115f2661e0eaf67cef3120172c0122d34ecc5ab"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\ablation\\stage-03\\QUALIFICATION.json",
+      "destination": "paper\\figures\\random-access\\data\\ablation\\stage-03\\QUALIFICATION.json",
+      "sha256": "81b695dd84ac00804678ae367d52fd51b0b7f73f33eb7c6cd14041db1fcda26a"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\ablation\\stage-04\\QUALIFICATION.json",
+      "destination": "paper\\figures\\random-access\\data\\ablation\\stage-04\\QUALIFICATION.json",
+      "sha256": "28d8671671d36b30dd987be52c67700bbd559f1719b534c6fcb8880e01b9346f"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G1\\provenance.json",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G1\\provenance.json",
+      "sha256": "32124eb22721e178d6d3fde2a04e82673b7a4e0af555d4681cf070b6ea433c00"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G2\\provenance.json",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G2\\provenance.json",
+      "sha256": "95900c9df8ab3c9ded35e1335cccb56037fdfd0b3bca328dea007fb86ecc3ab6"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G3\\provenance.json",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G3\\provenance.json",
+      "sha256": "0c260cb2ca1beeebf0a6a4c7b08c361ed3df930c9a619f47a427382c6eec0a3d"
+    },
+    {
+      "source": "tmp\\paper-layout\\dbtext-writing-20260929\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G4\\provenance.json",
+      "destination": "paper\\figures\\random-access\\data\\synthesized-code\\glm-5.3-flash\\dbtext\\tools-allowed\\G4\\provenance.json",
+      "sha256": "2170fe995cb9eb863a4df5c5aa378428e5e9bc93682ae644a393e3c1a10de389"
+    },
+    {
+      "source": "output\\paper-layout\\dbtext-combined\\data\\bulk-points.csv",
+      "destination": "paper\\figures\\dbtext\\data\\bulk-points.csv",
+      "sha256": "47d29efc1245ca1bb5ea1b04a85cf6cfad4779ccf08bfd87d429f9aabcd20956"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\sysdiag-crop.pdf",
+      "destination": "paper\\figures\\schematics\\sysdiag-crop.pdf",
+      "sha256": "33e1586a771dc42be6ad7f0c36188eb75cf0656c4ab903cdf35e63673e9279c2"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\dbtext-uuid.pdf",
+      "destination": "paper\\figures\\schematics\\dbtext-uuid.pdf",
+      "sha256": "57dc0353eefe49b4fc3ab4ee9e69bcd954f6f9daf74ac89e9fbd0a5584760e69"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\dbtext-uuid.tex",
+      "destination": "paper\\figures\\schematics\\dbtext-uuid.tex",
+      "sha256": "3be2b6ee8ce482ef96e6a818f2772ca7666d7b1bc9cfdc65a18083e1512eb43d"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\dbtext-uuid.tikz",
+      "destination": "paper\\figures\\schematics\\dbtext-uuid.tikz",
+      "sha256": "fe9cbc220e3277f6d8243f1f2beb8a7c5a2c8d000d3625a5c8f78cd41c2b29c5"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\indentation_buckets.pdf",
+      "destination": "paper\\figures\\schematics\\indentation_buckets.pdf",
+      "sha256": "99063ea2a8033c0d6b77e541dc2b6d60fb4a854c92cae0f8cc9b138370675b1b"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\indentation_buckets.tex",
+      "destination": "paper\\figures\\schematics\\indentation_buckets.tex",
+      "sha256": "39c601c53a9af82f8a9c7252f7089dd2b068c3951a9a080836ba179b1c327018"
+    },
+    {
+      "source": "tmp\\paper-layout\\major-review-20261004\\source-latest\\short-paper\\figures\\indentation_buckets.tikz",
+      "destination": "paper\\figures\\schematics\\indentation_buckets.tikz",
+      "sha256": "cd06627f0795035f6227da27bbac45e4e2922d166d9571c97cefeafd47ed81ac"
+    },
+    {
+      "source": "short-paper/figures/openstack-run1-full-row.pdf",
+      "destination": "paper/figures/schematics/openstack-run1-full-row.pdf",
+      "sha256": "f537396db15460750fd5c9c63fb3a32f94541c0d8383d332e27825cda7018447",
+      "note": "Standalone TeX input path relocated; PDF and TikZ artwork unchanged."
+    },
+    {
+      "source": "short-paper/figures/openstack-run1-full-row.tex",
+      "destination": "paper/figures/schematics/openstack-run1-full-row.tex",
+      "sha256": "b35182e0c0115bf8e844109cf8ae68b1cfa6605cf775fe111e295cc46ae3d9d7",
+      "note": "Standalone TeX input path relocated; PDF and TikZ artwork unchanged."
+    },
+    {
+      "source": "short-paper/figures/openstack-run1-full-row.tikz",
+      "destination": "paper/figures/schematics/openstack-run1-full-row.tikz",
+      "sha256": "160ee4574cb737c04478b854bc36f9e19c6518d9f3da1734d25b5fa9a2544718",
+      "note": "Standalone TeX input path relocated; PDF and TikZ artwork unchanged."
+    }
+  ]
+}

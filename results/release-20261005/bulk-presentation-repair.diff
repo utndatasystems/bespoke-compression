@@ -1,0 +1,108 @@
+diff --git a/paper/figures/bulk/plot.py b/paper/figures/bulk/plot.py
+index 306ff98..ba4c0a3 100644
+--- a/paper/figures/bulk/plot.py
++++ b/paper/figures/bulk/plot.py
+@@ -12,7 +12,8 @@ matplotlib.use("Agg")
+ import matplotlib.pyplot as plt
+ from matplotlib.lines import Line2D
+ from matplotlib.colors import to_rgb
+-from matplotlib.ticker import FuncFormatter, NullLocator
++from matplotlib.ticker import FuncFormatter, NullLocator
++from matplotlib.transforms import Bbox
+ 
+ OUT = Path(__file__).resolve().parent
+ DATA = OUT / "data"
+@@ -81,14 +82,64 @@ def legend_line(label, color, marker=None, ls="-", linewidth=.9, **kw):
+                   label=label, **kw)
+ 
+ 
+-def save(fig, name):
++def save(fig, name):
+     # Fixed physical width prevents the document from shrinking the typography.
+     fig.savefig(OUT / f"{name}.pdf", facecolor="white")
+     fig.savefig(OUT / f"{name}.png", dpi=200, facecolor="white")
+-    plt.close(fig)
+-
+-
+-def bulk_workloads():
++    plt.close(fig)
++
++
++def label_collisions(ds, ax, labels, lines, renderer):
++    boxes = [label.get_bbox_patch().get_window_extent(renderer).padded(.75)
++             for label in labels]
++    paths = [line.get_path().transformed(line.get_transform()) for line in lines]
++    collisions = []
++    for i, (label, box) in enumerate(zip(labels, boxes)):
++        if any(path.intersects_bbox(box, filled=False) for path in paths):
++            collisions.append(f"{ds}: {label.get_text()} crosses a frontier")
++        if not all(ax.bbox.contains(*corner) for corner in box.get_points()):
++            collisions.append(f"{ds}: {label.get_text()} extends outside axes")
++        for other, other_box in zip(labels[:i], boxes[:i]):
++            if box.overlaps(other_box):
++                collisions.append(f"{ds}: {label.get_text()} overlaps {other.get_text()}")
++    return collisions
++
++
++def reposition_labels(fig, ax, labels, lines):
++    """Move colliding text only; keep saved layouts and measured points intact."""
++    paths = [line.get_path().transformed(line.get_transform()) for line in lines]
++    points = [Bbox.from_bounds(x-3, y-3, 6, 6)
++              for line in ax.lines[len(lines):]
++              for x, y in line.get_transform().transform(line.get_xydata())]
++    for label in labels:
++        renderer = fig.canvas.get_renderer()
++        box = label.get_bbox_patch().get_window_extent(renderer).padded(.75)
++        others = [other.get_bbox_patch().get_window_extent(renderer).padded(.75)
++                  for other in labels if other is not label]
++
++        def clear(candidate):
++            return (all(ax.bbox.contains(*p) for p in candidate.get_points())
++                    and not any(path.intersects_bbox(candidate, filled=False) for path in paths)
++                    and not any(candidate.overlaps(other) for other in others))
++
++        if clear(box):
++            continue
++        cx, cy = (box.x0+box.x1)/2, (box.y0+box.y1)/2
++        candidates = [(ax.bbox.x0+ax.bbox.width*x/40,
++                       ax.bbox.y0+ax.bbox.height*y/30)
++                      for x in range(1, 40) for y in range(1, 30)]
++        candidates.sort(key=lambda p: (p[0]-cx)**2+(p[1]-cy)**2)
++        for x, y in candidates:
++            candidate = box.translated(x-cx, y-cy)
++            if clear(candidate) and not any(candidate.overlaps(p) for p in points):
++                transform = label.get_transform()
++                px, py = transform.transform(label.get_position())
++                label.set_position(transform.inverted().transform((px+x-cx, py+y-cy)))
++                fig.canvas.draw()
++                break
++
++
++def bulk_workloads():
+     """Four Pareto panels with zero-based linear axes and unchanged measurements.
+ 
+     Compare package compression factor and bulk throughput for 4 Astra runs
+@@ -183,18 +234,11 @@ def bulk_workloads():
+     collisions = []
+     if not all(fig.bbox.contains(*corner) for corner in legend.get_window_extent(renderer).get_points()):
+         collisions.append("Legend extends outside figure")
+-    for ds, ax, labels, lines in label_groups:
+-        boxes = [label.get_bbox_patch().get_window_extent(renderer).padded(.75)
+-                 for label in labels]
+-        for i, (label, box) in enumerate(zip(labels, boxes)):
+-            if any(line.get_path().transformed(line.get_transform()).intersects_bbox(box, filled=False)
+-                   for line in lines):
+-                collisions.append(f"{ds}: {label.get_text()} crosses a frontier")
+-            if not all(ax.bbox.contains(*corner) for corner in box.get_points()):
+-                collisions.append(f"{ds}: {label.get_text()} extends outside axes")
+-            for other, other_box in zip(labels[:i], boxes[:i]):
+-                if box.overlaps(other_box):
+-                    collisions.append(f"{ds}: {label.get_text()} overlaps {other.get_text()}")
++    for ds, ax, labels, lines in label_groups:
++        if label_collisions(ds, ax, labels, lines, renderer):
++            reposition_labels(fig, ax, labels, lines)
++            renderer = fig.canvas.get_renderer()
++        collisions.extend(label_collisions(ds, ax, labels, lines, renderer))
+     if collisions:
+         plt.close(fig)
+         raise ValueError("Label layout requires adjustment:\n" + "\n".join(collisions))

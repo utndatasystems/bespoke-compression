@@ -1,0 +1,26 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "dataset": "python",
+  "run": 3,
+  "original_bytes": 99999986,
+  "result_id": "r-6f0f5d5ca0c31bba891ab41a4b8c33cc4abe7c041503b20c51f2b4d10fecad85",
+  "build_id": "b-58eb12e4c8087274e2806d4ad00ef442310d5f1dcc1bbcabecd6d1fd38add401",
+  "package_bytes": 22406025,
+  "compression_factor": 4.463084639064716,
+  "decompression_median_MB_s": 1242.5908151352157,
+  "decompression_range_MB_s": [
+    1234.3092091884705,
+    1247.1566974662449
+  ],
+  "online_encoding_median_seconds": 92.42214119,
+  "source_sha256": {
+    "build-spec.json": "91dc1500bbdffa083f135ffc925aee346e100518f2662040406612fd5ae18cfa",
+    "source/analyze_ransn.h": "cc7b05a5c796d0c46fe9485ce7c5d10f8fa9f94dc372fe581da9f1366e566c67",
+    "source/exp6_decoder.cpp": "03c0d7cdc08d8ccbf9a20daaebf4d89490127750b8fb23bc6a2c6c09261ba11e",
+    "source/exp6_encoder.cpp": "4ec18a5ff6f35cdf6a7703d11a1e213e14a9eeaffd368519dfc65e36b257d4c1",
+    "source/exp6_reconstruct.h": "dce1774e52b4672d4c52c644af1f813b4ed3ace7ada8f684cca8773d8c44f4f0",
+    "source/exp_parser_runs.h": "99da99c642f8ae1fbfc360c7f51834034160c7276e4f1d6a4a3e0609a8755c9c",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "sqlstorm-tpcds",
+  "returncode": 1,
+  "scope": "Completed fresh panels with remaining saved panels; partial layout check only"
+}
+Traceback (most recent call last):
+  File "/dev/shm/bespoke-release-20261005/fresh-bulk-layout-check-sqlstorm-tpcds/plot.py", line 205, in <module>
+    bulk_workloads()
+  File "/dev/shm/bespoke-release-20261005/fresh-bulk-layout-check-sqlstorm-tpcds/plot.py", line 200, in bulk_workloads
+    raise ValueError("Label layout requires adjustment:\n" + "\n".join(collisions))
+ValueError: Label layout requires adjustment:
+sqlstorm-tpcds: LZ4 HC-12 crosses a frontier
+sqlstorm-tpcds: Zstandard-19/21/22 crosses a frontier
+sqlstorm-tpcds: bzip2-9 crosses a frontier
+

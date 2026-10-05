@@ -1,0 +1,60 @@
+{
+  "campaign": "dbtext-reference-ablation-2026-09-28",
+  "arm": "scratch",
+  "stage": 3,
+  "result_id": "fresh-server-replay",
+  "qualification": "qualified",
+  "package_bytes": 12997570,
+  "decode_MB_s": 1989.8907080490005,
+  "checked_utc": "2026-09-29T00:51:55.168077+00:00",
+  "exports": [
+    {
+      "path": "/home/iachnyk/compression-research/campaigns/dbtext-reference-ablation-2026-09-28/stage-03/research/workspace/public/exports/b-100e42a0f753768d91eac0cc1a2e6aa8122d7c60f62043ff0a3717f7be23faff.zip",
+      "sha256": "b7ea23e633496e7bcce928f5102ac09a667b04f7ea6830a85d2e4f234ad8b8cc"
+    },
+    {
+      "path": "/home/iachnyk/compression-research/campaigns/dbtext-reference-ablation-2026-09-28/stage-03/research/workspace/public/exports/r-5ec4e979e868b2f74220c1cc2a8adcc9c187fd5755ae1545a3b8adc01bbc241f.zip",
+      "sha256": "18000b3aecf98b6841f086277c7bfa0c66dcb6a7c8ae4ae8fc9115431541b596"
+    },
+    {
+      "path": "/home/iachnyk/compression-research/campaigns/dbtext-reference-ablation-2026-09-28/stage-03/research/workspace/public/exports/v-46c3cc1b23af8be775744f1fdad5873f4f40f21bd65333ce68ad0e7c554c4812.zip",
+      "sha256": "417f770583c78181f2f27c632e7e0c60428156ca26a82a3eadf8df9fc03468aa"
+    }
+  ],
+  "source_review_sha256": "776bfe5ffbc8242e83ac38925890a40faa66999d6058a388f19ed1c93565ade4",
+  "source_manifest_sha256": "1232f4789c092ade8c380a14fc910e03c1e848fba9b901e8036c9f6fd3559eda",
+  "diagnostic_calls": 391,
+  "bulk_range_MB_s": [
+    1897.5754910882217,
+    2024.7066332818194
+  ],
+  "rows_M_s": {
+    "1": {
+      "median": 14.99319692098638,
+      "min": 14.505586547764791,
+      "max": 15.205681532316454
+    },
+    "10": {
+      "median": 18.10961296586686,
+      "min": 17.96289136244614,
+      "max": 18.286512966647297
+    },
+    "100": {
+      "median": 83.69162897535725,
+      "min": 83.5501734533681,
+      "max": 84.17344586845724
+    },
+    "3": {
+      "median": 16.350829524493964,
+      "min": 16.122571926416462,
+      "max": 16.363520016460072
+    },
+    "30": {
+      "median": 21.42199277350735,
+      "min": 21.371018355386703,
+      "max": 21.898112907122492
+    }
+  },
+  "boundary_met": true,
+  "scope": "Retained evidence and numeric verification plus named owner source review; no fresh benchmark or comprehensive independent source audit. Later ablation boundaries remain fixed regardless of this result."
+}

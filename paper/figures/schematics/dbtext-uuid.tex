@@ -1,0 +1,17 @@
+% Self-contained native TikZ figure. Compile with pdfLaTeX.
+% No external images, shell escape, or nonstandard system fonts are required.
+\documentclass[border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
+\usepackage{newtxmath}
+\usepackage{tikz}
+\pdfinfo{/Title (UUID column to compact representation) /Author () /Subject (Native vector TikZ diagram)}
+
+% USER SETTINGS
+\providecommand{\UUIDPanelGap}{32}   % Equal gaps between the three right cards.
+\providecommand{\UUIDCorrectBits}{1} % 0 = PNG replica; 1 = corrected for publication.
+\providecommand{\UUIDShowTitle}{0}   % 0 omits the title and subtitle and crops the page.
+
+\begin{document}
+\input{dbtext-uuid.tikz}
+\end{document}

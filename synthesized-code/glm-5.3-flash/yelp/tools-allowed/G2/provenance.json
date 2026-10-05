@@ -1,0 +1,41 @@
+{
+  "model": "GLM-5.3-Flash",
+  "effort": "max",
+  "workers": 0,
+  "implementation": "tools allowed",
+  "stage": 2,
+  "objective": "Maximum compression",
+  "original_bytes": 100000488,
+  "original_sha256": "105818626671580aee4d42b8cac985f00f467099b03d3b9ab3be5afd49fe6d02",
+  "result_id": "r-e59404f45bcaf318e07ce1a29b15be81f0acf9494aed547386f4e15e909cdc48",
+  "build_id": "b-676449718a72475f5d329267e7104d9256b85335527ca79309b895f097363c37",
+  "validation_id": "v-407b872524cd9d43942b83fa0d11d48d550d9c75026f0e0a72410aab9f5d4a25",
+  "package_bytes": 7056780,
+  "strict_package_bytes": 8005796,
+  "exempt_standard_library_bytes": 949016,
+  "compression_factor": 14.170838257675596,
+  "decompression_median_MB_s": 1995.9079695318153,
+  "decompression_range_MB_s": [
+    1985.14270863222,
+    2027.7973977484096
+  ],
+  "encoding_median_seconds": 5.978779997,
+  "target": {
+    "maximum_package_bytes": 8808804,
+    "minimum_decode_MB_s": 1847.9082132208093
+  },
+  "target_met": true,
+  "source_sha256": {
+    "build-spec.json": "c459328e85371422175f1b238b1e05b2a202508503db9304188881f9332cfe38",
+    "source/codec/codec_common.hpp": "4effb9d3b1c4a89aa5dbfe028c5f86603b5c0a953edf5461ed32e9509c5780bd",
+    "source/codec/decoder.cpp": "19301c7fa1821510322664da9952fa70ff80e6da81db92658ce3b373cc96fbd6",
+    "source/codec/encoder.cpp": "c57de917c8f538576c51dc607d02195e7d45c356f7b53c15d933ebb5b9f20290",
+    "source/codec/xxh64.hpp": "60e86c48d94a8d1a7f9b027b5d1896b01ca3f6576751def6e13d7caf6fbfe8c6",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0"
+  },
+  "exports_sha256": {
+    "build": "c15d2d7084b39881a62407a0733e1d5fe86e317f7f1fe6fb4276d1e96f2ab3ea",
+    "measurement": "be31e8bbcc1d1a67033f2b32bd11883202d8a029cb7f9f249da41285c37ea15d",
+    "validation": "e8ee18164efabf5e594b4bc095a5c6983560616a3dc225f4558fe3d2ffd692f0"
+  }
+}

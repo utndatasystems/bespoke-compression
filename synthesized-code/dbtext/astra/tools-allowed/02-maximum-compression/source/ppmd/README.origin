@@ -1,0 +1,9 @@
+PPMd8 sources from the official 7-Zip repository, immutable release tag 24.09:
+https://github.com/ip7z/7zip/tree/24.09/C
+Downloaded Ppmd8.c, Ppmd8Enc.c, Ppmd8Dec.c, Ppmd8.h, Ppmd.h,
+7zTypes.h, Compiler.h, Precomp.h, CpuArch.h on 2026-09-26.
+PPMd implementation files identify Igor Pavlov and Dmitry Shkarin and are public domain.
+Model and decoder: compile Ppmd8.c and Ppmd8Dec.c.
+Encoder: additionally compile Ppmd8Enc.c.
+Wrapper ppmd_codec.h records order, allocation exponent and restore strategy inside each stream.
+No dictionary fitting, data-dependent generated code, or external reconstruction file is needed.

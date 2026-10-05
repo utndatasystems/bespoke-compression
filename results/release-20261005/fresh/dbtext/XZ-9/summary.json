@@ -1,0 +1,17 @@
+{
+  "method": "XZ-9",
+  "package_bytes": 11611576,
+  "archive_bytes": 11611576,
+  "original_bytes": 39841347,
+  "bits_per_byte": 2.3315629363635724,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 14700648,
+  "deployment_scope": "upper bound: shared measurement driver includes multiple codecs and encoders",
+  "decoder_bytes": 0,
+  "ratio": 3.4311748034892076,
+  "median": 46.762846302865455,
+  "low": 46.06610727476057,
+  "high": 46.818723199588845,
+  "encode_MB_s": 1.3621859598063946,
+  "exact_decodes": 184
+}

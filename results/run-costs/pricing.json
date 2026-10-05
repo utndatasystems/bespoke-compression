@@ -1,0 +1,31 @@
+{
+  "currency": "USD",
+  "checked_date": "2026-09-22",
+  "unit": "USD per 1000000 tokens",
+  "models": {
+    "GLM-5.3-Flash": {
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "basis": "Current API list rates applied to recorded Coding Plan usage",
+      "input": "0.15",
+      "cached_input": "0.03",
+      "cache_write_input": "0.15",
+      "output": "0.50",
+      "note": "No cache-write tokens are recorded in these runs. Cached-input storage is currently free. Subscription fees are not allocated to runs."
+    },
+    "gpt-6-astra": {
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "basis": "Standard rates used in the recorded per-request ledger, verified against current documentation",
+      "input": "10.00",
+      "cached_input": "1.00",
+      "cache_write_input": "12.50",
+      "output": "50.00",
+      "long_context_threshold_input_tokens": 272000,
+      "long_context": {
+        "input": "20.00",
+        "cached_input": "2.00",
+        "cache_write_input": "25.00",
+        "output": "75.00"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "method": "dbtext-astra-from-scratch-01-maximum-decompression",
+  "package_bytes": 16072097,
+  "archive_bytes": 16041257,
+  "original_bytes": 39841347,
+  "bits_per_byte": 3.2272196017870582,
+  "roundtrip_failures": 0,
+  "deployment_bytes": 16072097,
+  "deployment_scope": "decoder and its full nonplatform closure",
+  "decoder_bytes": 30840,
+  "ratio": 2.4789140458771497,
+  "median": 4003.3113620866675,
+  "low": 3948.8340975846418,
+  "high": 4055.995584978175,
+  "encode_MB_s": 0.5874147768431311,
+  "exact_decodes": 184
+}

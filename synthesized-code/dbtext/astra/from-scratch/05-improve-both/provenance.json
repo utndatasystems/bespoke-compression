@@ -1,0 +1,30 @@
+{
+  "campaign": "dbtext-five-stage-policy-pair-2026-09-26",
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "implementation_policy": "from-scratch",
+  "generation": "server API",
+  "stage": 5,
+  "objective": "Improve compression factor and decompression speed together over the selected reference point.",
+  "result_id": "r-77099eda1216c0b99f697638e6273ff10fa7fb1219a7746266a763315c6a0020",
+  "build_id": "b-f59eef08abaab8b939a33513c7cf9a30f63082239188d8d66f00f65b5581620f",
+  "build_export_sha256": "2ee85897bbf4d5234f670263f1ed331f4d39a35efa1662ade91abc6080a8a53e",
+  "source_manifest_sha256": "32f3dc9a040ea3c1a7db1335f5b9b1c7d94a9bc8e927a156b041998a42c6beab",
+  "file_sha256": {
+    "source/README.md": "459addf01e99967d9ea489f9ab692c7b8df8c96de88def511d570eee5dc97776",
+    "source/defpack.h": "edfc13861571b0d13c9b20dba5c3ccab4505a7664a90cf3cd665151e95ea1cf9",
+    "source/dict_fast.cpp": "83fdc531d08959914adc419142464c14911909b11ca7423560f81b151e18e7bc",
+    "source/dict_hf_isolated.cpp": "b83c19577ceedfce617a923dc3c582e66c72b4fb098a4a563831962d753c6ae5",
+    "source/dict_mix.cpp": "12cc06afb11a0f2332e34e54740432ede036c0ebe183a0b48cafbe9fb5f51a59",
+    "source/interface/codec.h": "41706dc5753d9dcefd644a1f6bc8d0f103f238dba4aed35f12f3572a40c751f0",
+    "source/main.cpp": "41d074294e44075f10521b69913bba9422bde5ce61bc19ae76e57e692c8b5b1e",
+    "source/special.cpp": "dce5be3b65f5fd68a274255abab05d22806ef02543a2ee17b53c1e597cf6e254",
+    "source/url.cpp": "cbfc78edd7335f8cc40ddc1cc4c890b6b62e8f013d98e73ad2f59bf4f767228b",
+    "build-spec.json": "e9171ce077f13410d8c9ba3209640174a8c0250f1ef23caed4db39c32973216e"
+  },
+  "original_binary_sha256": {
+    "decoder.so": "8c26317777817e9d96a3ca75b36e8026c692314ee7d92e4f5b7d994f09ff3def",
+    "encoder.so": "3012961da1d8705461def6a7182efb729429cf5651cc8e99e21e42c5028a8c3c"
+  },
+  "source_modified": false
+}
